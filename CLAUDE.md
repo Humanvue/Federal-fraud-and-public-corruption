@@ -15,7 +15,10 @@ Optimize for simplicity, plain-language explanations, and few moving parts.
 3. **Status is per participant and rendered from data.** Summaries never state status
    ("pleaded guilty", "was acquitted"). The validator enforces this.
 4. **Every money figure has a `basis`** (alleged / admitted / adjudicated / estimated).
-   Headline totals never include `alleged`.
+   Headline totals never include `alleged`. Each money field holds the total the source states for
+   that measure. Never use one payment as the total, add payments up yourself, or copy one measure
+   into another (restitution is not loss). If no source states the total, leave the field `null` and
+   put the individual figures in the summary.
 5. **Neutral language.** No loaded adjectives. Titles match legal status.
 6. **Computed fields are never stored** (`current_status`, `event_status`, `resolved`,
    `requires_human_review`, edges). Schemas are strict and will reject them.
