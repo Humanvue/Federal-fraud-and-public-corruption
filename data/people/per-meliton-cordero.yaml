@@ -1,0 +1,7 @@
+id: per-meliton-cordero
+name: "Meliton Cordero"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Supervisory Special Agent, Drug Enforcement Administration (assigned to the U.S. Embassy, Dominican Republic)", org_id: org-dea, start: null, end: null, source_ids: [src-usao-dc-20260213-01, src-doj-oig-20260212-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

@@ -1,0 +1,220 @@
+id: evt-2019-seguin-quantadyn-bribery
+title: Air Force civilian employee sentenced for steering simulator contracts to QuantaDyn in exchange for bribes
+categories:
+  - bribery_kickbacks
+  - procurement_fraud
+agencies:
+  - org-air-force
+  - org-army
+  - org-gsa
+investigating_agencies:
+  - org-gsa-oig
+  - org-irs-ci
+  - org-dcis
+  - org-army-cid
+  - org-air-force-osi
+prosecuting_office: org-usao-wdtx
+court_cases:
+  - court: W.D. Tex.
+    docket: null
+    courtlistener_id: null
+    source_ids:
+      - src-usao-wdtx-20200915-01
+      - src-usao-wdtx-20230425-01
+jurisdiction_note: null
+summary: |
+  In October 2019 a federal grand jury in San Antonio indicted Keith Alan Seguin, a civilian employee of the 502 Trainer Development Squadron at Randolph Air Force Base, together with QuantaDyn Corporation, an Ashburn, Virginia software engineering company, its co-owner David Joseph Bolduc Jr., and Rubens Wilson Fiuza Lima, on charges of conspiracy to defraud the United States, conspiracy to commit wire fraud and conspiracy to commit money laundering. According to the indictment, from 2006 to 2018 Bolduc and QuantaDyn paid more than $2.3 million in bribes to Seguin, who used his position to steer contracts and subcontracts for aircraft and close-air-support training simulators to QuantaDyn, and part of the bribe money was laundered through Fiuza Lima's business, Impex, for a ten percent fee. Seguin admitted leaking confidential competitor proposals and government budget information to prime contractors and to QuantaDyn. The court later found that co-conspirators paid Seguin $2,375,725.26 and that the scheme involved $100 million in work on Air Force projects. QuantaDyn's $37,757,713.91 restitution obligation also resolved its civil False Claims Act liability, and its majority owner separately paid $500,000 to resolve his personal False Claims Act liability. Investigated by GSA OIG, IRS-CI, DCIS, Army CID and AFOSI.
+dates:
+  conduct_start: 2006
+  conduct_end: 2018
+  first_public_action: 2019-10
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 2375725
+    basis: adjudicated
+    source_ids:
+      - src-usao-wdtx-20230504-01
+      - src-usao-wdtx-20210615-01
+    note: $2,375,725.26 paid to Seguin from 2007 through 2018 per court documents cited in the 2023-05-04 sentencing release; Seguin admitted 'more than $2.3 million' in his plea.
+  contract_value_involved: null
+  settlement_amount:
+    amount: 37757713
+    basis: adjudicated
+    source_ids:
+      - src-usao-wdtx-20200915-01
+    note: QuantaDyn's agreement to pay $37,757,713.91 in restitution, ordered by Judge Biery on 2020-09-15, also resolved the company's civil False Claims Act liability; William T. Dunn Jr. separately paid $500,000 to resolve his personal FCA liability. The release does not say whether the settlement included an admission.
+  restitution_ordered:
+    amount: 38733720
+    basis: adjudicated
+    source_ids:
+      - src-usao-wdtx-20230425-01
+    note: "$38,733,720.65 ordered against Seguin, payable to the Air Force, Army and GSA, plus $736,618 to the IRS. Other defendants: QuantaDyn more than $37 million ($37,757,713.91); Bolduc $37,757,713.93; Hancock $23,769,884.41; Paulsen $8,015,860; Fiuza Lima $653,984.20. Figures are not summed."
+  fines:
+    amount: 6300000
+    basis: adjudicated
+    source_ids:
+      - src-usao-wdtx-20200915-01
+    note: Imposed on QuantaDyn Corporation.
+  forfeiture:
+    amount: 2342095
+    basis: adjudicated
+    source_ids:
+      - src-usao-wdtx-20230425-01
+    note: "Ordered against Seguin (bribe money received). QuantaDyn: $22,834,526.31 money judgment plus $7,099,863.77 in seized assets; Bolduc: $8,750,775.77 plus property."
+  whistleblower_share: null
+participants:
+  - entity_id: per-keith-seguin
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Civilian employee, 502 Trainer Development Squadron, Randolph Air Force Base; authorized to solicit and accept orders for flight simulator technology and to manage related contracts
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2019-10
+        source_ids:
+          - src-usao-wdtx-20200915-01
+        note: "Three-count indictment: conspiracy to defraud the United States, conspiracy to commit wire fraud, conspiracy to commit money laundering."
+      - track: criminal
+        status: pleaded_guilty
+        date: 2021-06-15
+        source_ids:
+          - src-usao-wdtx-20210615-01
+        note: One count of conspiracy to commit wire fraud and one count of tax fraud and false statements; admitted accepting more than $2.3 million in bribes from 2007 to 2018 (Judge Fred Biery).
+      - track: criminal
+        status: sentenced
+        date: 2023-04-24
+        source_ids:
+          - src-usao-wdtx-20230425-01
+        note: 188 months (wire fraud conspiracy) and 36 months (false tax return), concurrent; three years of supervised release; $736,618 restitution to the IRS; $38,733,720.65 restitution to the Air Force, Army and GSA; forfeiture of $2,342,095 (Senior Judge David Ezra). Release dated 2023-04-25 says 'Monday'.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-quantadyn
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2019-10
+        source_ids:
+          - src-usao-wdtx-20200915-01
+        note: Indicted with Seguin, Bolduc and Fiuza Lima.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2020-09-15
+        source_ids:
+          - src-usao-wdtx-20200915-01
+        note: Conspiracy to commit wire fraud; plea entered on the corporation's behalf by majority owner William T. Dunn Jr.
+      - track: criminal
+        status: sentenced
+        date: 2020-09-15
+        source_ids:
+          - src-usao-wdtx-20200915-01
+        note: Five years of probation; $6.3 million fine; more than $37 million restitution ($37,757,713.91); money-judgment forfeiture of $22,834,526.31 and forfeiture of $7,099,863.77 in seized assets. The restitution also resolved the company's civil False Claims Act liability.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-david-bolduc
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Owner and director of operations, QuantaDyn Corporation
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2019-10
+        source_ids:
+          - src-usao-wdtx-20200915-01
+        note: Indicted with Seguin, QuantaDyn and Fiuza Lima.
+      - track: criminal
+        status: sentenced
+        date: 2023-05
+        source_ids:
+          - src-usao-wdtx-20230504-01
+        note: 120 months on one count of conspiracy to commit wire fraud; $37,757,713.93 restitution; forfeiture of property and $8,750,775.77. Release dated 2023-05-04 says 'this week'; the day and the plea or verdict date are not on the fetched pages.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-rubens-fiuza-lima
+    actor_type: contractor
+    roles:
+      - defendant
+      - co_conspirator
+    position: Owner, Impex Import Export Inc.; subcontractor on a Randolph Trainer Development contract
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2019-10
+        source_ids:
+          - src-usao-wdtx-20200915-01
+        note: Indicted with Seguin, QuantaDyn and Bolduc; the indictment alleged bribe money was laundered through his business for a ten percent fee.
+      - track: criminal
+        status: sentenced
+        date: 2023-05
+        source_ids:
+          - src-usao-wdtx-20230504-01
+        note: 27 months on one count of conspiracy; $653,984.20 restitution. Release dated 2023-05-04 says 'this week'; plea or verdict date not on the fetched pages.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-john-hancock
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    status_history:
+      - track: criminal
+        status: sentenced
+        date: 2023-05
+        source_ids:
+          - src-usao-wdtx-20230504-01
+        note: 40 months on one count of conspiracy to commit wire fraud; $23,769,884.41 restitution. The release says Hancock and Paulsen helped Seguin manipulate award amounts and winners of federal contracts; their employer and charging date are not on the fetched pages.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-karen-paulsen
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    status_history:
+      - track: criminal
+        status: sentenced
+        date: 2023-05
+        source_ids:
+          - src-usao-wdtx-20230504-01
+        note: Five years of probation with six months home confinement and 100 hours of community service each year, on one count of conspiracy; $8,015,860 restitution. Employer and charging date not on the fetched pages.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-air-force
+    actor_type: official
+    roles:
+      - victim_agency
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-wdtx-20200915-01
+  - src-usao-wdtx-20210615-01
+  - src-usao-wdtx-20230425-01
+  - src-usao-wdtx-20230504-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

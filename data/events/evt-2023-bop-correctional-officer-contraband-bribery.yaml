@@ -1,0 +1,86 @@
+id: evt-2023-bop-correctional-officer-contraband-bribery
+title: Bureau of Prisons correctional officer sentenced for accepting bribes to smuggle contraband into a federal prison
+categories:
+  - bribery_kickbacks
+agencies:
+  - org-bop
+investigating_agencies:
+  - org-doj-oig
+  - org-irs-ci
+prosecuting_office: org-usao-sc
+court_cases:
+  - court: D.S.C.
+    docket: null
+    courtlistener_id: null
+    source_ids:
+      - src-doj-oig-20231114-01
+      - src-usao-sc-20250203-01
+jurisdiction_note: null
+summary: |
+  Angela Crosland worked as a correctional officer at Federal Correctional Institution Williamsburg in Salters, South Carolina, a Federal Bureau of Prisons facility. According to a federal indictment returned in the District of South Carolina on November 14, 2023, from about September 2021 through about June 2022 Crosland accepted money in exchange for smuggling contraband, including methamphetamine and suboxone, into the prison for inmates, and conducted financial transactions designed to conceal the source of those payments. The indictment included a forfeiture provision for $56,791, described as the total of the bribery payments. According to the U.S. Attorney's Office for the District of South Carolina, evidence presented to the jury at a two-day trial included Cash App account records reflecting payments to her account totaling $56,791 from family and associates of inmates over approximately nine months, and showed that the contraband included suboxone, methamphetamine, K-2-soaked paper, marijuana, tobacco, food, and other items, and that she did not report the income on her federal tax returns. The court ordered her to pay $18,649.00 to the Internal Revenue Service for filing false tax returns. The Department of Justice Office of the Inspector General and IRS Criminal Investigation investigated the case.
+dates:
+  conduct_start: 2021-09
+  conduct_end: 2022-06
+  first_public_action: 2023-11-14
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 56791
+    basis: adjudicated
+    source_ids:
+      - src-usao-sc-20250203-01
+      - src-usao-sc-20250523-01
+    note: Cash App payments from inmates' family and associates, per trial evidence described by the U.S. Attorney's Office. The $18,649.00 tax payment ordered at sentencing is not a bribery figure and is not recorded here.
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-angela-crosland
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Correctional Officer, Federal Correctional Institution Williamsburg
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-11-14
+        source_ids:
+          - src-doj-oig-20231114-01
+        note: "Indictment: one count each of bribery, distribution of methamphetamine, distribution of suboxone, and money laundering"
+      - track: criminal
+        status: convicted
+        date: 2025-01
+        source_ids:
+          - src-doj-oig-20250203-01
+          - src-usao-sc-20250203-01
+        note: "DOJ OIG gives the verdict date as January 28, 2025; the U.S. Attorney's Office release gives no date. Jury verdict after two-day trial: bribery, money laundering, distribution of methamphetamine, distribution of suboxone, and two counts of filing a false tax return"
+      - track: criminal
+        status: sentenced
+        date: 2025-05-23
+        source_ids:
+          - src-usao-sc-20250523-01
+        note: 136 months; three years supervised release; ordered to pay $18,649.00 to the IRS for filing false tax returns
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-doj-oig-20231114-01
+  - src-doj-oig-20250203-01
+  - src-usao-sc-20250203-01
+  - src-usao-sc-20250523-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

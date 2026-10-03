@@ -1,0 +1,121 @@
+id: evt-2024-cuellar-bribery
+title: U.S. representative's bribery and foreign-agent indictment dismissed after pretrial pardon
+categories:
+  - bribery_kickbacks
+agencies:
+  - org-house
+investigating_agencies:
+  - org-fbi
+  - org-state-oig
+prosecuting_office: org-doj-pin
+court_cases:
+  - court: S.D. Tex.
+    docket: 4:24-cr-00224
+    courtlistener_id: 68499933
+    source_ids:
+      - src-doj-opa-20240503-01
+      - src-txsd-20251223-02
+jurisdiction_note: Prosecuted by the Criminal Division's Public Integrity Section with the National Security Division's Counterintelligence and Export Control Section. All money figures are alleged; no verdict or plea was entered before the December 2, 2025 pardons. Whether the indictment was dismissed after the pardons is not on a fetched government page.
+summary: |
+  According to the indictment unsealed on May 3, 2024 in the Southern District of Texas, U.S. Congressman Enrique Roberto "Henry" Cuellar and his wife, Imelda Cuellar, accepted approximately $600,000 in bribes between December 2014 and November 2021 from an oil and gas company owned and controlled by the Government of Azerbaijan and a bank headquartered in Mexico City. The indictment alleges that the payments were laundered under sham consulting contracts through front companies and middlemen into shell companies owned by Imelda Cuellar, who performed little or no legitimate work under the contracts, and that in exchange Congressman Cuellar agreed to use his office to influence U.S. foreign policy in favor of Azerbaijan and to influence legislative activity and pressure Executive Branch officials on measures beneficial to the bank. Each defendant was charged with two counts of conspiracy, two counts of bribery of a federal official, two counts of conspiracy to commit honest services wire fraud, two counts of acting as an agent of a foreign principal, one count of conspiracy to commit money laundering and five counts of money laundering.
+dates:
+  conduct_start: 2014-12
+  conduct_end: 2021-11
+  first_public_action: 2024-05-03
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 600000
+    basis: alleged
+    source_ids:
+      - src-doj-opa-20240503-01
+    note: Approximately $600,000, per the indictment
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-henry-cuellar
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: U.S. Representative (Texas)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2024-05-03
+        source_ids:
+          - src-doj-opa-20240503-01
+        note: Indictment unsealed; initial appearance before U.S. Magistrate Judge Dena Palermo in Houston
+      - track: criminal
+        status: dismissed
+        date: 2025-12-23
+        source_ids:
+          - src-txsd-20251223-01
+          - src-txsd-20251223-02
+        note: Order dismissing the indictment, granting the motion at Doc. 168 (Doc. 169); final judgment dismissing the criminal action with prejudice (Doc. 170), S.D. Tex. No. 4:24-cr-00224.
+    administrative_actions: []
+    clemency:
+      - type: pardon
+        date: 2025-12-02
+        granted_by: President Donald J. Trump
+        source_ids:
+          - src-pardon-attorney-20260909-01
+        note: Listed as Enrique Roberto Cuellar with sentence 'N/A' (granted before trial)
+    status_verified: 2026-10-03
+  - entity_id: per-imelda-cuellar
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2024-05-03
+        source_ids:
+          - src-doj-opa-20240503-01
+      - track: criminal
+        status: dismissed
+        date: 2025-12-23
+        source_ids:
+          - src-txsd-20251223-01
+          - src-txsd-20251223-02
+        note: Order dismissing the indictment, granting the motion at Doc. 168 (Doc. 169); final judgment dismissing the criminal action with prejudice (Doc. 170), S.D. Tex. No. 4:24-cr-00224.
+    administrative_actions: []
+    clemency:
+      - type: pardon
+        date: 2025-12-02
+        granted_by: President Donald J. Trump
+        source_ids:
+          - src-pardon-attorney-20260909-01
+        note: Listed as Imelda Rios Cuellar with sentence 'N/A' (granted before trial)
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships:
+  - from: per-imelda-cuellar
+    to: per-henry-cuellar
+    type: family_of
+    source_ids:
+      - src-doj-opa-20240503-01
+    note: spouse
+government_sources:
+  - src-doj-opa-20240503-01
+  - src-pardon-attorney-20260909-01
+  - src-txsd-20251223-01
+  - src-txsd-20251223-02
+news_sources: []
+tags:
+  - member-of-congress
+  - clemency
+  - foreign-influence
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

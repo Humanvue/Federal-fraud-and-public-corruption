@@ -1,0 +1,66 @@
+id: evt-2018-counselor-to-president-hatch-act
+title: Counselor to the President found to have violated the Hatch Act in two OSC reports; OSC recommended removal from federal service
+categories:
+  - hatch_act
+agencies:
+  - org-executive-office-president
+investigating_agencies:
+  - org-osc
+prosecuting_office: null
+court_cases: []
+jurisdiction_note: null
+summary: |
+  The U.S. Office of Special Counsel (OSC) issued two reports on Hatch Act complaints against Counselor to the President Kellyanne Conway, a commissioned officer in the White House Office who held that position since January 20, 2017. In a report dated March 6, 2018 (OSC File No. HA-18-0966), OSC found that Ms. Conway violated the Hatch Act on two separate occasions, during a November 20, 2017 Fox & Friends interview and a CNN New Day interview, by advocating for and against candidates in the December 2017 Alabama special election for U.S. Senate while appearing in her official capacity, and referred the violations to the President for appropriate discipline. In a second report (OSC File Nos. HA-19-0631 and HA-19-3395) sent to the President on June 13, 2019, OSC concluded that, beginning in February 2019, Ms. Conway engaged in a pattern of partisan attacks on Democratic Party presidential candidates during official media appearances and on her Twitter account, which OSC determined she used to execute official duties; OSC's investigation identified at least 10 such interviews. Citing her prior violation and her public statements about the Act, OSC recommended that the President remove her from federal service.
+dates:
+  conduct_start: 2017-11-20
+  conduct_end: 2019-05-07
+  first_public_action: 2018-03
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-kellyanne-conway
+    actor_type: official
+    roles:
+      - subject_of_finding
+    position: Counselor to the President
+    status_history:
+      - track: administrative
+        status: finding_issued
+        date: 2018-03
+        source_ids:
+          - src-osc-20180306-01
+        note: OSC File No. HA-18-0966; report dated March 6, 2018; two violations referred to the President for appropriate discipline
+      - track: administrative
+        status: finding_issued
+        date: 2019-06-13
+        source_ids:
+          - src-osc-20190613-01
+          - src-osc-20190613-02
+        note: OSC File Nos. HA-19-0631 and HA-19-3395; report dated May 30, 2019, sent to the President June 13, 2019; OSC recommended removal from federal service
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-osc-20180306-01
+  - src-osc-20190613-01
+  - src-osc-20190613-02
+news_sources: []
+tags:
+  - hatch-act
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

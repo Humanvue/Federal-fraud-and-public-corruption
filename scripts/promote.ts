@@ -79,16 +79,27 @@ for (const e of events) {
   }
   const unique = [...new Map(moves.map((m) => [m.from, m])).values()];
 
-  const dirty = unique.filter((m) => badFiles.has(path.resolve(m.from)));
+  // Resolve against the filesystem now: an earlier event in this run may already have moved a shared
+  // record (an agency, a press release) into data/. Decide everything before moving anything.
+  const pending: typeof unique = [];
+  const conflicts: string[] = [];
+  const missing: string[] = [];
+  for (const m of unique) {
+    const src = fs.existsSync(m.from);
+    const dst = fs.existsSync(m.to);
+    if (src && dst) conflicts.push(path.relative(process.cwd(), m.to));
+    else if (src) pending.push(m);
+    else if (!dst) missing.push(path.relative(process.cwd(), m.from));
+  }
+  if (conflicts.length) { console.error(`SKIP ${e.id}: already exists in data/: ${conflicts.join(", ")}`); continue; }
+  if (missing.length) { console.error(`SKIP ${e.id}: missing from both drafts/ and data/: ${missing.join(", ")}`); continue; }
+  const dirty = pending.filter((m) => badFiles.has(path.resolve(m.from)));
   if (dirty.length) {
     console.error(`SKIP ${e.id}: validation problems in ${dirty.map((m) => path.relative(process.cwd(), m.from)).join(", ")}`);
     continue;
   }
-  for (const m of unique) {
+  for (const m of pending) {
     fs.mkdirSync(path.dirname(m.to), { recursive: true });
-    if (fs.existsSync(m.to)) { console.error(`SKIP ${e.id}: ${path.relative(process.cwd(), m.to)} already exists in data/`); continue; }
-  }
-  for (const m of unique) {
     if (m.from.endsWith(`events/${e.id}.yaml`)) {
       const doc = parse(fs.readFileSync(m.from, "utf8")) as Record<string, any>;
       doc.review = { ...(doc.review ?? {}), reviewed_by: reviewer, reviewed_at: today };
@@ -100,6 +111,6 @@ for (const e of events) {
     }
   }
   movedAny = true;
-  console.log(`promoted ${e.id} (${unique.length} files)`);
+  console.log(`promoted ${e.id} (${pending.length} files moved, ${unique.length - pending.length} already in data/)`);
 }
 if (movedAny) console.log(`Now run: npm run check`);

@@ -1,0 +1,181 @@
+id: evt-2024-burke-next-jump-bribery
+title: Retired Navy admiral sentenced for steering a contract in exchange for future employment
+categories:
+  - bribery_kickbacks
+  - conflict_of_interest_ethics
+  - false_statements_obstruction
+agencies:
+  - org-navy
+investigating_agencies:
+  - org-dcis
+  - org-ncis
+  - org-fbi
+prosecuting_office: org-usao-dc
+court_cases:
+  - court: D.D.C.
+    docket: 1:24-cr-00265
+    courtlistener_id: null
+    source_ids:
+      - src-cadc-20260918-01
+      - src-usao-dc-20250519-01
+  - court: D.C. Cir.
+    docket: 25-3104
+    courtlistener_id: null
+    source_ids:
+      - src-cadc-20260918-01
+jurisdiction_note: null
+summary: |
+  Robert P. Burke, a four-star admiral who commanded U.S. Naval Forces Europe and Africa from 2020 to 2022, was indicted in the District of Columbia for conspiracy to commit bribery, bribery, performing acts affecting a personal financial interest and concealing material facts; the indictment was unsealed May 31, 2024. Yongchul "Charlie" Kim and Meghan Messenger, co-CEOs of a company the D.C. Circuit's opinion identifies as Next Jump, Inc., were charged with conspiracy and bribery. According to court documents and trial evidence described by the U.S. Attorney's Office, the company ran a workforce training pilot for a Navy component from August 2018 through July 2019; the Navy ended that contract in late 2019 and told the company not to contact Burke. At a July 2021 meeting in Washington, the defendants agreed that Burke would steer a contract to the company in exchange for future employment. In December 2021 Burke ordered his staff to award the company a $355,000 contract to train personnel under his command in Italy and Spain; in October 2022 he joined the company at a $500,000 starting salary with 100,000 stock options. The court ordered $322,850 in restitution and $86,748.08 in forfeiture. DCIS, NCIS and the FBI investigated.
+dates:
+  conduct_start: 2021-07
+  conduct_end: 2022-10
+  first_public_action: 2024-05-31
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved:
+    amount: 355000
+    basis: adjudicated
+    source_ids:
+      - src-usao-dc-20250519-01
+      - src-usao-dc-20250916-01
+    note: Contract Burke ordered his staff to award to Company A (Next Jump) in December 2021, 'as the evidence proved at trial' per the USAO releases. The bribe itself was future employment (a $500,000 starting salary and 100,000 stock options), which is not recorded as a dollar bribe figure.
+  settlement_amount: null
+  restitution_ordered:
+    amount: 322850
+    basis: adjudicated
+    source_ids:
+      - src-usao-dc-20250916-01
+  fines: null
+  forfeiture:
+    amount: 86748
+    basis: adjudicated
+    source_ids:
+      - src-usao-dc-20250916-01
+    note: $86,748.08, rounded to whole dollars.
+  whistleblower_share: null
+participants:
+  - entity_id: per-robert-burke
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Admiral, U.S. Navy (retired); Commander, U.S. Naval Forces Europe and Africa, 2020-2022
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2024-05-31
+        source_ids:
+          - src-usao-dc-20240531-01
+        note: Five-count indictment unsealed; arrested. Charged with conspiracy to commit bribery (18 U.S.C. § 371), bribery (§ 201(b)(2)), acts affecting a personal financial interest (§ 208(a)) and concealing material facts (§ 1001(a)(1)).
+      - track: criminal
+        status: convicted
+        date: 2025-05-19
+        source_ids:
+          - src-usao-dc-20250519-01
+        note: Jury verdict of guilty on all four counts after a five-day trial before Judge Trevor N. McFadden.
+      - track: criminal
+        status: sentenced
+        date: 2025-09-16
+        source_ids:
+          - src-usao-dc-20250916-01
+          - src-cadc-20260918-01
+        note: 72 months in prison (72 months for bribery; 60 months concurrent on the other counts, per the appellate opinion); three years of supervised release; $322,850 restitution; $86,748.08 forfeiture. Convictions affirmed by the D.C. Circuit on 2026-09-18, United States v. Burke, No. 25-3104 (argued 2026-04-07; opinion by Judge Garcia).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-yongchul-kim
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Co-Chief Executive Officer, Next Jump, Inc. ('Company A')
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2024-05-31
+        source_ids:
+          - src-usao-dc-20240531-01
+        note: Charged with conspiracy to commit bribery and bribery; arrested.
+      - track: criminal
+        status: mistrial
+        date: 2025-09-11
+        source_ids:
+          - src-dcd-20250911-01
+          - src-cadc-20260918-01
+        note: Tried separately from Burke; hung jury on both counts, mistrial declared.
+      - track: criminal
+        status: acquitted
+        date: 2026-05-18
+        source_ids:
+          - src-dcd-20260518-01
+          - src-cadc-20260918-01
+        note: Jury verdict of not guilty on both counts at retrial.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-meghan-messenger
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Co-Chief Executive Officer, Next Jump, Inc. ('Company A')
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2024-05-31
+        source_ids:
+          - src-usao-dc-20240531-01
+        note: Charged with conspiracy to commit bribery and bribery; arrested.
+      - track: criminal
+        status: mistrial
+        date: 2025-09-11
+        source_ids:
+          - src-dcd-20250911-01
+          - src-cadc-20260918-01
+        note: Tried separately from Burke; hung jury on both counts, mistrial declared.
+      - track: criminal
+        status: acquitted
+        date: 2026-05-18
+        source_ids:
+          - src-dcd-20260518-01
+          - src-cadc-20260918-01
+        note: Jury verdict of not guilty on both counts at retrial.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-next-jump
+    actor_type: contractor
+    roles:
+      - briber
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-navy
+    actor_type: official
+    roles:
+      - victim_agency
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-dc-20240531-01
+  - src-usao-dc-20250519-01
+  - src-usao-dc-20250916-01
+  - src-cadc-20260918-01
+  - src-dcd-20250911-01
+  - src-dcd-20260518-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

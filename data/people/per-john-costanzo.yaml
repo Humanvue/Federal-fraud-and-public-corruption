@@ -1,0 +1,8 @@
+id: per-john-costanzo
+name: "John Costanzo Jr."
+aliases: ["John Costanzo"]
+wikidata_qid: null
+positions:
+  - { title: "Special Agent", org_id: org-dea, start: null, end: null, source_ids: [src-doj-oig-20220520-01, src-usao-sdny-20231109-01] }
+  - { title: "Group Supervisor, Miami Field Office", org_id: org-dea, start: null, end: 2019-06, source_ids: [src-doj-oig-20220520-01, src-usao-sdny-20231109-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

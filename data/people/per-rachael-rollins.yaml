@@ -1,0 +1,7 @@
+id: per-rachael-rollins
+name: "Rachael Rollins"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "U.S. Attorney, District of Massachusetts", org_id: org-usao-ma, start: 2022-01-10, end: null, source_ids: [src-doj-oig-20230517-02, src-osc-20230517-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

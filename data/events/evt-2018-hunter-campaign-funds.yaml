@@ -1,0 +1,126 @@
+id: evt-2018-hunter-campaign-funds
+title: U.S. representative sentenced for conspiracy to convert campaign funds to personal use; later pardoned
+categories:
+  - embezzlement_theft
+agencies:
+  - org-house
+investigating_agencies:
+  - org-fbi
+prosecuting_office: org-usao-sdca
+court_cases:
+  - court: S.D. Cal.
+    docket: 18cr3677-W
+    courtlistener_id: null
+    source_ids:
+      - src-usao-sdca-20180821-01
+      - src-usao-sdca-20191203-01
+jurisdiction_note: The converted money was campaign contributions, not federal funds, so no loss_to_government is recorded; the amounts are stated in the summary.
+summary: |
+  According to the indictment returned on August 21, 2018, U.S. Representative Duncan D. Hunter of California's 50th Congressional District and his wife, Margaret E. Hunter, converted more than $250,000 in campaign funds to pay for personal expenses between 2009 and 2016 and filed false campaign finance records with the Federal Election Commission that described the purchases as campaign travel, dinners with volunteers and other campaign activity. The plea agreement states that the Hunters illegally converted more than $150,000 in campaign funds from 2010 through 2016 and engaged in 30 or more illegal transactions using campaign funds for personal use, including $2,448.27 for a Las Vegas trip in August 2011 and more than $14,000 for a family trip to Italy in November 2015. The U.S. Attorney's Office for the Southern District of California stated that the Hunters overdrew their bank account more than 1,100 times over a seven-year period. The FBI's San Diego Division investigated; the U.S. Attorney's Office for the Southern District of California prosecuted with assistance from the Public Integrity Section.
+dates:
+  conduct_start: 2009
+  conduct_end: 2016
+  first_public_action: 2018-08-21
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-duncan-hunter
+    actor_type: official
+    roles:
+      - defendant
+      - co_conspirator
+    position: U.S. Representative, 50th Congressional District of California
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2018-08-21
+        source_ids:
+          - src-usao-sdca-20180821-01
+        note: Indicted with his wife on conspiracy, wire fraud, falsification of records, and prohibited use of campaign contributions
+      - track: criminal
+        status: pleaded_guilty
+        date: 2019-12-03
+        source_ids:
+          - src-usao-sdca-20191203-01
+        note: One count of conspiracy, 18 U.S.C. § 371
+      - track: criminal
+        status: sentenced
+        date: 2020-03-17
+        source_ids:
+          - src-usao-sdca-20200317-01
+          - src-pardon-attorney-20241023-01
+        note: 11 months' imprisonment; three years' supervised release (per the Pardon Attorney table)
+    administrative_actions: []
+    clemency:
+      - type: pardon
+        date: 2020-12-22
+        granted_by: President Donald J. Trump
+        source_ids:
+          - src-pardon-attorney-20241023-01
+        note: Listed under the December 22, 2020 heading
+    status_verified: 2026-10-03
+  - entity_id: per-margaret-hunter
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2018-08-21
+        source_ids:
+          - src-usao-sdca-20180821-01
+      - track: criminal
+        status: pleaded_guilty
+        date: 2019-06
+        source_ids:
+          - src-usao-sdca-20191203-01
+        note: The plea release states she pleaded guilty in June 2019; the day is not on a fetched page
+      - track: criminal
+        status: sentenced
+        date: 2020-08-24
+        source_ids:
+          - src-pardon-attorney-20241023-01
+        note: Three years' probation conditioned upon eight months' home confinement (per the Pardon Attorney table)
+    administrative_actions: []
+    clemency:
+      - type: pardon
+        date: 2020-12-23
+        granted_by: President Donald J. Trump
+        source_ids:
+          - src-pardon-attorney-20241023-01
+        note: Listed under the December 23, 2020 heading on the Pardon Attorney page
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships:
+  - from: per-margaret-hunter
+    to: per-duncan-hunter
+    type: family_of
+    source_ids:
+      - src-usao-sdca-20180821-01
+    note: spouse
+government_sources:
+  - src-usao-sdca-20180821-01
+  - src-usao-sdca-20191203-01
+  - src-usao-sdca-20200317-01
+  - src-pardon-attorney-20241023-01
+news_sources: []
+tags:
+  - member-of-congress
+  - clemency
+  - campaign-funds
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

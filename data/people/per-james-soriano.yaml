@@ -1,0 +1,7 @@
+id: per-james-soriano
+name: "James Soriano"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Engineer, project leader and Contracting Officer Representative, Naval Information Warfare Center", org_id: org-niwc-pacific, start: 2006, end: 2019, source_ids: ["src-usao-sdca-20240307-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

@@ -1,0 +1,260 @@
+id: evt-2023-menendez-bribery
+title: U.S. senator sentenced to 11 years for bribery, foreign-agent, and obstruction offenses; appeal pending
+categories:
+  - bribery_kickbacks
+  - false_statements_obstruction
+agencies:
+  - org-senate
+investigating_agencies:
+  - org-fbi
+prosecuting_office: org-usao-sdny
+court_cases:
+  - court: S.D.N.Y.
+    docket: 1:23-cr-00490
+    courtlistener_id: 67819367
+    source_ids:
+      - src-usao-sdny-20230922-01
+      - src-usao-sdny-20250129-01
+      - src-nysd-20250213-01
+  - court: 2d Cir.
+    docket: 25-296
+    courtlistener_id: 69639296
+    source_ids:
+      - src-ca2-20260924-01
+      - src-ca2-20260930-01
+jurisdiction_note: IRS-Criminal Investigation and the National Security Division's Counterintelligence and Export Control Section are credited with assistance. The bribe total is described only as 'hundreds of thousands of dollars' and is therefore not recorded as a figure. Fines imposed on Hana and Daibes are recorded on their sentencing entries; no fine is stated for Menendez.
+summary: |
+  According to the indictment unsealed on September 22, 2023, Robert Menendez, the senior U.S. Senator from New Jersey and Chairman of the Senate Foreign Relations Committee, and his wife Nadine Menendez accepted hundreds of thousands of dollars' worth of bribes between 2018 and 2022 from three New Jersey businessmen, Wael Hana, Fred Daibes and Jose Uribe, including gold bars, cash, a Mercedes-Benz convertible worth more than $60,000, approximately $23,000 in mortgage payments and three $10,000 checks for a low-or-no-show job. In exchange, the indictment alleged, Menendez pressured a U.S. Department of Agriculture official to protect a halal-certification monopoly that Egypt had granted to Hana's company, sought to influence a New Jersey state prosecution involving Uribe's associates, recommended a U.S. Attorney nominee he believed he could influence in a federal case against Daibes, and provided non-public information to Egyptian officials. The FBI's June 2022 search of the Menendez home found over $480,000 in cash and over one hundred thousand dollars' worth of gold bars. The sentencing release states that the court ordered forfeiture of $922,188.10 from Robert Menendez and fines of $1,250,000 against Hana and $1,750,000 against Daibes.
+dates:
+  conduct_start: 2018
+  conduct_end: 2023-09
+  first_public_action: 2023-09-22
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture:
+    amount: 922188
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdny-20250129-01
+      - src-usao-sdny-20250911-01
+    note: $922,188.10 ordered against Robert Menendez on 2025-01-29; the same amount was ordered against Nadine Menendez on 2025-09-11; $125,000 was ordered against Hana
+  whistleblower_share: null
+participants:
+  - entity_id: per-robert-menendez
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: U.S. Senator, New Jersey; Chairman, Senate Foreign Relations Committee
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-09-22
+        source_ids:
+          - src-usao-sdny-20230922-01
+        note: "Indictment unsealed: conspiracy to commit bribery, conspiracy to commit honest services fraud, conspiracy to commit extortion under color of official right"
+      - track: criminal
+        status: convicted
+        date: 2024-07-16
+        source_ids:
+          - src-usao-sdny-20250129-01
+        note: Jury verdict after a nine-week trial on bribery, honest services wire fraud, extortion, foreign-agent, and obstruction counts
+      - track: criminal
+        status: sentenced
+        date: 2025-01-29
+        source_ids:
+          - src-usao-sdny-20250129-01
+        note: 11 years' imprisonment; $922,188.10 forfeiture. The sentencing release refers to him as a former U.S. Senator; the resignation date is not on a fetched government page.
+      - track: criminal
+        status: appeal_pending
+        date: 2025-02-13
+        source_ids:
+          - src-nysd-20250213-01
+          - src-ca2-20260924-01
+          - src-ca2-20260930-01
+        note: Notice of appeal from the judgment (Doc. 753). Consolidated Second Circuit appeals Nos. 25-296 (lead), 25-302 and 25-333; heard by a panel on 2026-09-24; no decision on the appellate docket as of its 2026-09-30 entry.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-nadine-menendez
+    actor_type: private
+    roles:
+      - defendant
+      - bribe_recipient
+      - co_conspirator
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-09-22
+        source_ids:
+          - src-usao-sdny-20230922-01
+      - track: criminal
+        status: convicted
+        date: 2025-04-21
+        source_ids:
+          - src-usao-sdny-20250911-01
+        note: Jury verdict after a five-week trial
+      - track: criminal
+        status: sentenced
+        date: 2025-09-11
+        source_ids:
+          - src-usao-sdny-20250911-01
+        note: 54 months' imprisonment; three years' supervised release; $922,188.10 forfeiture
+      - track: criminal
+        status: appeal_pending
+        date: 2025-09-23
+        source_ids:
+          - src-nysd-20250923-01
+          - src-nysd-20260915-01
+        note: Notice of appeal from the judgment (Doc. 909); Second Circuit No. 25-2322. A district court order of 2026-09-15 (Doc. 960) states that the appeal remains pending.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-wael-hana
+    actor_type: private
+    roles:
+      - defendant
+      - briber
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-09-22
+        source_ids:
+          - src-usao-sdny-20230922-01
+      - track: criminal
+        status: convicted
+        date: 2024-07-16
+        source_ids:
+          - src-usao-sdny-20250129-01
+      - track: criminal
+        status: sentenced
+        date: 2025-01-29
+        source_ids:
+          - src-usao-sdny-20250129-01
+        note: 97 months' imprisonment; $1,250,000 fine; $125,000 forfeiture
+      - track: criminal
+        status: appeal_pending
+        date: 2025-02-07
+        source_ids:
+          - src-nysd-20250207-01
+          - src-ca2-20260924-01
+          - src-ca2-20260930-01
+        note: Notice of appeal from the judgment (Doc. 742). Consolidated Second Circuit appeals Nos. 25-296 (lead), 25-302 and 25-333; heard by a panel on 2026-09-24; no decision on the appellate docket as of its 2026-09-30 entry.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-fred-daibes
+    actor_type: private
+    roles:
+      - defendant
+      - briber
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-09-22
+        source_ids:
+          - src-usao-sdny-20230922-01
+      - track: criminal
+        status: convicted
+        date: 2024-07-16
+        source_ids:
+          - src-usao-sdny-20250129-01
+      - track: criminal
+        status: sentenced
+        date: 2025-01-29
+        source_ids:
+          - src-usao-sdny-20250129-01
+        note: Seven years' imprisonment; $1,750,000 fine
+      - track: criminal
+        status: appeal_pending
+        date: 2025-02-10
+        source_ids:
+          - src-nysd-20250210-01
+          - src-ca2-20260924-01
+          - src-ca2-20260930-01
+        note: Notice of appeal from the judgment (Doc. 748). Consolidated Second Circuit appeals Nos. 25-296 (lead), 25-302 and 25-333; heard by a panel on 2026-09-24; no decision on the appellate docket as of its 2026-09-30 entry.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-jose-uribe
+    actor_type: private
+    roles:
+      - defendant
+      - briber
+      - cooperating_witness
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-09-22
+        source_ids:
+          - src-usao-sdny-20230922-01
+        note: The SDNY releases of 2025-01-29 and 2025-09-11 state that Uribe pleaded guilty under a cooperation agreement.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-03-01
+        source_ids:
+          - src-nysd-20240301-01
+        note: Withdrew his plea of not guilty and pleaded guilty to counts 1 through 7 of the S3 superseding information; the court accepted the plea.
+      - track: criminal
+        status: sentenced
+        date: 2025-10-09
+        source_ids:
+          - src-nysd-20251009-01
+        note: Time served on each count; three years of supervised release, the first six months in home detention; $866,947 restitution; forfeiture of $292,000; open counts and underlying indictments dismissed on the government's motion (Doc. 914). The docket text gives the judgment's signature date as 1/9/2025; it was entered 10/09/2025.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships:
+  - from: per-nadine-menendez
+    to: per-robert-menendez
+    type: family_of
+    source_ids:
+      - src-usao-sdny-20230922-01
+    note: spouse
+  - from: per-wael-hana
+    to: per-robert-menendez
+    type: paid_bribe_to
+    source_ids:
+      - src-usao-sdny-20250129-01
+  - from: per-fred-daibes
+    to: per-robert-menendez
+    type: paid_bribe_to
+    source_ids:
+      - src-usao-sdny-20250129-01
+  - from: per-jose-uribe
+    to: per-robert-menendez
+    type: paid_bribe_to
+    source_ids:
+      - src-usao-sdny-20230922-01
+government_sources:
+  - src-usao-sdny-20230922-01
+  - src-usao-sdny-20250129-01
+  - src-usao-sdny-20250911-01
+  - src-nysd-20250207-01
+  - src-nysd-20250210-01
+  - src-nysd-20250213-01
+  - src-nysd-20250923-01
+  - src-nysd-20260915-01
+  - src-ca2-20260924-01
+  - src-ca2-20260930-01
+  - src-nysd-20240301-01
+  - src-nysd-20251009-01
+news_sources: []
+tags:
+  - member-of-congress
+  - senate
+  - foreign-influence
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

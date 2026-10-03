@@ -1,0 +1,157 @@
+id: evt-2023-cbp-officer-bribery-drug-vehicles
+title: Customs and Border Protection officer sentenced for accepting bribes to let drug-laden vehicles cross the border
+categories:
+  - bribery_kickbacks
+agencies:
+  - org-cbp
+investigating_agencies:
+  - org-hsi
+  - org-fbi
+  - org-dhs-oig
+  - org-cbp-opr
+  - org-dea
+prosecuting_office: org-usao-sdca
+court_cases:
+  - court: S.D. Cal.
+    docket: 3:23-cr-01291
+    courtlistener_id: 67558606
+    source_ids:
+      - src-usao-sdca-20230703-01
+      - src-usao-sdca-20241025-01
+      - src-casd-20240507-01
+      - src-casd-20240215-01
+jurisdiction_note: null
+summary: |
+  Leonard Darnell George was a U.S. Customs and Border Protection officer. According to an indictment unsealed in the Southern District of California on July 3, 2023, George demanded and accepted items of value in return for permitting vehicles carrying narcotics to enter the United States, and he, Mario Angel Gutierrez, and Esteban Galvan coordinated the smuggling of methamphetamine, fentanyl, cocaine, and heroin from Mexico. According to the U.S. Attorney's Office, witnesses at trial testified that George agreed in late 2021 to let drug-laden vehicles through his inspection lane and would tell a drug trafficking organization when he was at work and which lane he was on. In February 2022, after a law enforcement alert flagged one vehicle, George sent it to secondary inspection, where approximately 222 pounds of methamphetamine was found, and let the vehicle behind it enter with over 200 pounds of drugs. Text messages showed he received approximately $13,000 for that vehicle, agreed to $17,000 per vehicle, and received $68,000 for four vehicles in June 2022. Homeland Security Investigations, the FBI, the DHS Office of Inspector General, and CBP's Office of Professional Responsibility investigated.
+dates:
+  conduct_start: 2021
+  conduct_end: 2022-06
+  first_public_action: 2023-07-03
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-leonard-george
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Customs and Border Protection Officer
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-07-03
+        source_ids:
+          - src-usao-sdca-20230703-01
+        note: "Indictment unsealed: receiving bribe by public official (18 U.S.C. § 201), conspiracy to import controlled substances, conspiracy to distribute controlled substances"
+      - track: criminal
+        status: convicted
+        date: 2024-06-10
+        source_ids:
+          - src-usao-sdca-20240612-01
+        note: "Jury verdict: receiving bribe by public official, conspiracy to import controlled substances, and two counts of bringing in certain aliens for financial gain"
+      - track: criminal
+        status: sentenced
+        date: 2024-10-25
+        source_ids:
+          - src-usao-sdca-20241025-01
+          - src-dhs-hsi-20241106-01
+        note: 23 years in prison
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-mario-gutierrez
+    actor_type: private
+    roles:
+      - defendant
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-07-03
+        source_ids:
+          - src-usao-sdca-20230703-01
+        note: Conspiracy to import and conspiracy to distribute controlled substances; possession of a firearm in furtherance of a drug trafficking crime.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-05-07
+        source_ids:
+          - src-casd-20240507-01
+          - src-casd-20240524-01
+        note: Plea of guilty to counts 3 and 4 of the indictment tendered before a magistrate judge (Doc. 240); accepted by the district judge on 2024-05-24 (Doc. 267).
+      - track: criminal
+        status: partially_dismissed
+        date: 2024-08-26
+        source_ids:
+          - src-casd-20240826-01
+        note: Count 2 dismissed on the government's oral motion at judgment (Doc. 332).
+      - track: criminal
+        status: sentenced
+        date: 2024-08-26
+        source_ids:
+          - src-casd-20240826-01
+        note: 87 months in custody (27 months on count 3 and 60 months on count 4, consecutive); five years of supervised release; no fine (Doc. 332).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-esteban-galvan
+    actor_type: private
+    roles:
+      - defendant
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-07-03
+        source_ids:
+          - src-usao-sdca-20230703-01
+        note: Conspiracy to import and conspiracy to distribute controlled substances.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-02-15
+        source_ids:
+          - src-casd-20240215-01
+          - src-casd-20240305-01
+        note: Plea of guilty to count 3 of the indictment tendered before a magistrate judge (Doc. 184); accepted by the district judge on 2024-03-05 (Doc. 188).
+      - track: criminal
+        status: partially_dismissed
+        date: 2024-09-24
+        source_ids:
+          - src-casd-20240924-01
+        note: Count 2 dismissed on the government's oral motion at judgment (Doc. 351).
+      - track: criminal
+        status: sentenced
+        date: 2024-09-24
+        source_ids:
+          - src-casd-20240924-01
+        note: 70 months in custody; five years of supervised release; no fine (Doc. 351).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-sdca-20230703-01
+  - src-usao-sdca-20240612-01
+  - src-usao-sdca-20241025-01
+  - src-dhs-hsi-20241106-01
+  - src-casd-20240215-01
+  - src-casd-20240305-01
+  - src-casd-20240507-01
+  - src-casd-20240524-01
+  - src-casd-20240826-01
+  - src-casd-20240924-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

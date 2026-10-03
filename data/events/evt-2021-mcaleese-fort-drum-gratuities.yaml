@@ -1,0 +1,133 @@
+id: evt-2021-mcaleese-fort-drum-gratuities
+title: Fort Drum contracting officer enters pretrial diversion after plea to gratuities conspiracy
+categories:
+  - bribery_kickbacks
+  - procurement_fraud
+agencies:
+  - org-army
+  - org-dot
+investigating_agencies:
+  - org-dcis
+  - org-army-cid
+  - org-gsa-oig
+  - org-sba-oig
+  - org-dot-oig
+prosecuting_office: org-usao-ndny
+court_cases:
+  - court: N.D.N.Y.
+    docket: null
+    courtlistener_id: null
+    source_ids:
+      - src-usao-ndny-20211222-01
+      - src-dot-oig-20240116-01
+jurisdiction_note: null
+summary: |
+  Cindy McAleese, a civilian contracting officer for the U.S. Army at Fort Drum, New York, since 2012, was arraigned on December 22, 2021 on a one-count indictment charging conspiracy to commit an offense against the United States by seeking and accepting gratuities. The indictment alleges that she sought and received sports tickets, meals, sexual encounters, and time and attention from local general contractor Sean O'Sullivan in exchange for official action, such as giving his company government contracts and approving payment on them, and that the two kept their relationship secret from other Fort Drum officials. O'Sullivan admitted in his plea that the conduct ran from November 2009 through February 2018. According to court filings described by the Department of Transportation Inspector General, the official acts included recommending that certain Army contracts be 100 percent set aside for Service-Disabled Veteran-Owned Small Businesses, accepting work by O'Sullivan's company, Sierra Delta Contracting LLC, to facilitate payment, and helping it win more contracts. O'Sullivan, Sierra Delta and SOS Inc. agreed to pay $690,542.68 to resolve civil False Claims Act allegations over set-aside contracts Sierra Delta was not eligible for, which earned it more than $3.3 million; the court ordered O'Sullivan to pay $345,271.34 restitution.
+dates:
+  conduct_start: 2009-11
+  conduct_end: 2018-02
+  first_public_action: 2021-12-22
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved:
+    amount: 3300000
+    basis: admitted
+    source_ids:
+      - src-usao-ndny-20240517-01
+    note: Gross revenue Sierra Delta Contracting received from set-aside contracts obtained by fraud, per the O'Sullivan sentencing release ('more than $3.3 million'); the DOT-OIG page gives 'over $3 million' from Army contracts and nearly $308,000 from a St. Lawrence Seaway Development Corporation contract. These are O'Sullivan's SDVOSB-fraud figures, not a value tied to McAleese's official acts.
+  settlement_amount:
+    amount: 690542
+    basis: adjudicated
+    source_ids:
+      - src-usao-ndny-20220331-01
+      - src-dot-oig-20240116-01
+    note: $690,542.68 to be paid by O'Sullivan, Sierra Delta Contracting LLC and SOS Inc. to resolve civil False Claims Act liability; David Rose separately agreed to pay $67,984. The releases do not say whether the settlement included an admission.
+  restitution_ordered:
+    amount: 345271
+    basis: adjudicated
+    source_ids:
+      - src-usao-ndny-20240517-01
+    note: $345,271.34 ordered against O'Sullivan, already paid through the civil settlement.
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-cindy-mcaleese
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Civilian contracting officer, U.S. Army, Fort Drum, New York
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2021-12-22
+        source_ids:
+          - src-usao-ndny-20211222-01
+        note: "Arraigned on a one-count indictment: conspiracy to commit an offense against the United States by seeking and accepting gratuities. The DOT-OIG library lists the indictment itself under 2021-12-08."
+      - track: criminal
+        status: deferred_prosecution
+        date: 2024-01-16
+        source_ids:
+          - src-dot-oig-20240116-01
+        note: Pleaded guilty to conspiracy to commit an offense against the United States pursuant to a pretrial diversion program under which the plea may be withdrawn and the charges dismissed on successful completion of the program's terms (DOT-OIG). The outcome of the diversion is not confirmed on any government page. The May 2024 O'Sullivan sentencing release states she is no longer employed by the Army; the nature of her departure is not stated.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-sean-osullivan
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: General contractor; co-owner of Sierra Delta Contracting LLC and owner of SOS Inc.
+    status_history:
+      - track: criminal
+        status: pleaded_guilty
+        date: 2022-03-31
+        source_ids:
+          - src-usao-ndny-20220331-01
+          - src-usao-ndny-20211222-01
+        note: Conspiracy to commit wire fraud (SDVOSB set-aside fraud) and conspiracy to commit an offense against the United States by offering and giving gratuities to McAleese. Dated to the USAO release announcing the pleas; the December 2021 indictment release already stated he 'has already pled guilty', so the actual plea date is earlier and needs a docket check.
+      - track: criminal
+        status: sentenced
+        date: 2024-05-16
+        source_ids:
+          - src-usao-ndny-20240517-01
+        note: Two years of probation; $345,271.34 restitution (Judge David N. Hurd). Release dated 2024-05-17 says 'yesterday'.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-sierra-delta-contracting
+    actor_type: contractor
+    roles:
+      - co_conspirator
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-army
+    actor_type: official
+    roles:
+      - victim_agency
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-ndny-20211222-01
+  - src-usao-ndny-20220331-01
+  - src-usao-ndny-20240517-01
+  - src-dot-oig-20240116-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

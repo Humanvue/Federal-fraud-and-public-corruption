@@ -1,0 +1,127 @@
+id: evt-2017-dea-agent-perjury-obstruction-conversion
+title: DEA special agent sentenced for perjury, obstruction of justice, and conversion of property; task force officer sentenced
+categories:
+  - false_statements_obstruction
+  - embezzlement_theft
+agencies:
+  - org-dea
+investigating_agencies:
+  - org-louisiana-state-police
+  - org-fbi
+  - org-dea-opr
+  - org-doj-oig
+prosecuting_office: org-doj-criminal-division
+court_cases:
+  - court: E.D. La.
+    docket: 2:17-cr-00181
+    courtlistener_id: 6511234
+    source_ids:
+      - src-doj-oig-20171003-01
+      - src-laed-20211020-01
+      - src-laed-20230705-01
+jurisdiction_note: Co-defendant Rodney Gemar was a Hammond, Louisiana, police officer serving as a DEA task force officer; two other local deputies serving as task force officers pleaded guilty in separate cases. All were prosecuted federally.
+summary: |
+  Chad Allan Scott was a Drug Enforcement Administration special agent in the New Orleans Division; Rodney P. Gemar was a DEA task force officer and Hammond, Louisiana, police officer. An indictment returned in the Eastern District of Louisiana on September 29, 2017, and unsealed on October 2, 2017, charged Scott with obstruction of justice, perjury, falsifying records, seeking and receiving an illegal gratuity, conversion of property, removing property to prevent seizure, and conspiracy, and charged Gemar with conversion, removal of property, and conspiracy. According to the evidence at the first trial, Scott directed a Houston drug trafficker to buy a Ford F-150 truck worth approximately $43,000 and forfeit it to him, falsified the seizure paperwork so the truck became his official vehicle, induced two traffickers to testify falsely at a January 2016 federal trial, and committed perjury. According to the evidence at the second trial, between 2009 and 2016 Scott and Gemar took money and property from arrestees, skimmed cash seizures, destroyed evidence after a co-conspirator's arrest in January 2016, and used approximately $4,800 in stolen money to pay the co-conspirator's attorney. The Louisiana State Police, FBI, DEA Office of Professional Responsibility, and DOJ Office of the Inspector General investigated.
+dates:
+  conduct_start: 2009-02
+  conduct_end: 2016-01
+  first_public_action: 2017-10-02
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-chad-scott
+    actor_type: official
+    roles:
+      - defendant
+    position: Special Agent, DEA New Orleans Division
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-10-02
+        source_ids:
+          - src-doj-oig-20171003-01
+        note: "Indictment returned Sept. 29, 2017, unsealed Oct. 2: three counts of obstruction of justice, two counts of perjury, falsifying records in a federal investigation, seeking and receiving an illegal gratuity, conversion of property by a government officer, removing property to prevent seizure, and conspiracy"
+      - track: criminal
+        status: convicted
+        date: 2019-08-27
+        source_ids:
+          - src-usao-edla-20190830-01
+        note: "First trial (case severed into two trials): two counts of perjury, three counts of obstruction of justice, two counts of falsifying government records"
+      - track: criminal
+        status: convicted
+        date: 2021-06-15
+        source_ids:
+          - src-doj-opa-20210616-01
+          - src-doj-oig-20210812-01
+        note: "Second trial: conspiracy and conversion of property; found not guilty of one count of removal of property to prevent seizure (per DOJ OIG). Disposition of the illegal-gratuity count is not stated in the cited government sources."
+      - track: criminal
+        status: sentenced
+        date: 2021-08-12
+        source_ids:
+          - src-doj-opa-20210812-01
+          - src-doj-oig-20210812-01
+          - src-laed-20230705-01
+        note: 160 months; three years supervised release; nine counts across both trials; not guilty on one count (removal of property to prevent seizure). Judgment affirmed by the Fifth Circuit (mandate issued 2023-07-05, Doc. 753).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-rodney-gemar
+    actor_type: official
+    roles:
+      - defendant
+    position: Task Force Officer, DEA New Orleans Division; police officer, Hammond, La.
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-10-02
+        source_ids:
+          - src-doj-oig-20171003-01
+        note: Two counts of conversion of property by a government officer, two counts of removing property to prevent seizure, two counts of conspiracy
+      - track: criminal
+        status: convicted
+        date: 2021-06-15
+        source_ids:
+          - src-doj-opa-20210616-01
+        note: Conspiracy, conversion of property, and removal of property.
+      - track: criminal
+        status: sentenced
+        date: 2021-10-20
+        source_ids:
+          - src-laed-20211020-01
+          - src-laed-20211027-01
+          - src-laed-20230511-01
+          - src-laed-20230809-01
+        note: "Judgment (Doc. 692, entered 2021-10-25): sentencing held 2021-10-20 on superseding-indictment counts 8s, 9s and 10s; original-indictment counts dismissed. Sentence terms are not stated in the docket text. Gemar appealed (notice 2021-10-27); the Fifth Circuit remanded on 2023-05-11 for an evidentiary hearing into a juror's possible bias; on 2023-08-09 the district court granted Gemar's motion to withdraw his motion for new trial and canceled the hearing."
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-doj-oig-20171003-01
+  - src-usao-edla-20190830-01
+  - src-doj-opa-20210616-01
+  - src-doj-opa-20210812-01
+  - src-doj-oig-20210812-01
+  - src-laed-20211020-01
+  - src-laed-20211027-01
+  - src-laed-20230511-01
+  - src-laed-20230705-01
+  - src-laed-20230809-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

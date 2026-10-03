@@ -1,0 +1,96 @@
+id: evt-2018-collins-insider-trading
+title: U.S. representative sentenced for insider-trading conspiracy and false statements to the FBI; later pardoned
+categories:
+  - false_statements_obstruction
+  - other
+agencies:
+  - org-house
+investigating_agencies:
+  - org-fbi
+prosecuting_office: org-usao-sdny
+court_cases:
+  - court: S.D.N.Y.
+    docket: null
+    courtlistener_id: null
+    source_ids:
+      - src-usao-sdny-20180808-01
+      - src-usao-sdny-20191001-01
+jurisdiction_note: Insider-trading conspiracy and false statements to the FBI; included because the defendant was a sitting member of the House and the false-statements count concerns a federal investigation of his conduct. Co-defendants Cameron Collins and Stephen Zarsky (private persons) are named in the sources but are not recorded as participants.
+summary: |
+  According to the indictment unsealed on August 8, 2018, Christopher Collins, who represented the 27th District of New York in the U.S. House of Representatives and served on the board of directors of Innate Immunotherapeutics, learned on June 22, 2017 that the company's drug MIS416 had failed a clinical trial and, that evening, passed the nonpublic results to his son, Cameron Collins, who sold shares and tipped others, including Stephen Zarsky, before the public announcement on June 26, 2017. The U.S. Attorney's Office for the Southern District of New York stated that the trades allowed the tippees to avoid over $768,000 in losses, including approximately $570,900 avoided by Cameron Collins. The indictment further alleged that on April 25, 2018 Collins made false statements to FBI agents about his conduct. The plea release states that Collins resigned his seat in Congress on September 30, 2019. The sentencing release states that the court ordered one year of supervised release and a fine of $200,000.
+dates:
+  conduct_start: 2017-06-22
+  conduct_end: 2018-04-25
+  first_public_action: 2018-08-08
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines:
+    amount: 200000
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdny-20200117-01
+      - src-pardon-attorney-20241023-01
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-christopher-collins
+    actor_type: official
+    roles:
+      - defendant
+    position: U.S. Representative, 27th District of New York
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2018-08-08
+        source_ids:
+          - src-usao-sdny-20180808-01
+        note: Indictment unsealed; charged with conspiracy, securities fraud, wire fraud, and false statements to the FBI
+      - track: criminal
+        status: pleaded_guilty
+        date: 2019-10-01
+        source_ids:
+          - src-usao-sdny-20191001-01
+        note: Conspiracy to commit securities fraud and false statements to federal law enforcement agents
+      - track: criminal
+        status: sentenced
+        date: 2020-01-17
+        source_ids:
+          - src-usao-sdny-20200117-01
+          - src-pardon-attorney-20241023-01
+        note: 26 months' imprisonment; one year of supervised release; $200,000 fine. The Pardon Attorney table gives the sentence date as January 16, 2020; the press release is dated January 17, 2020.
+    administrative_actions:
+      - type: resignation
+        date: 2019-09-30
+        source_ids:
+          - src-usao-sdny-20191001-01
+    clemency:
+      - type: pardon
+        date: 2020-12-22
+        granted_by: President Donald J. Trump
+        source_ids:
+          - src-pardon-attorney-20241023-01
+        note: Listed as Christopher Carl Collins under the December 22, 2020 heading
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-sdny-20180808-01
+  - src-usao-sdny-20191001-01
+  - src-usao-sdny-20200117-01
+  - src-pardon-attorney-20241023-01
+news_sources: []
+tags:
+  - member-of-congress
+  - clemency
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

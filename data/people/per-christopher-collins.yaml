@@ -1,0 +1,7 @@
+id: per-christopher-collins
+name: "Christopher Collins"
+aliases: ["Christopher Carl Collins"]
+wikidata_qid: null
+positions:
+  - { title: "U.S. Representative, 27th District of New York", org_id: org-house, start: null, end: 2019-09-30, source_ids: [src-usao-sdny-20180808-01, src-usao-sdny-20191001-01] }
+party_affiliation: { value: "Republican", basis: elected, source_ids: [src-govinfo-20180727-01] }

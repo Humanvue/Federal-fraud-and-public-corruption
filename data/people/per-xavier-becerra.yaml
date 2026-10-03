@@ -1,0 +1,7 @@
+id: per-xavier-becerra
+name: "Xavier Becerra"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Secretary of Health and Human Services", org_id: org-hhs, start: 2021-03, end: null, source_ids: [src-osc-20230418-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

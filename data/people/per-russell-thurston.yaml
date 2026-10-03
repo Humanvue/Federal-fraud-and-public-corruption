@@ -1,0 +1,7 @@
+id: per-russell-thurston
+name: "Russell Thurston"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Executive Vice President, Cambridge International Systems, Inc.", org_id: org-cambridge-international-systems, start: null, end: null, source_ids: ["src-usao-sdca-20240611-01", "src-usao-sdca-20251114-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

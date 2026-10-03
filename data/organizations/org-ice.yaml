@@ -1,0 +1,6 @@
+id: org-ice
+name: "U.S. Immigration and Customs Enforcement"
+org_type: agency
+parent_org_id: org-dhs
+uei: null
+wikidata_qid: null

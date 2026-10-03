@@ -1,0 +1,96 @@
+Customs and Border Protection Officer Sentenced for Receiving Bribes to Allow Drug-Laden Vehicles and Unauthorized Immigrants to Enter the U.S.
+
+Source: https://www.justice.gov/usao-sdca/pr/customs-and-border-protection-officer-sentenced-receiving-bribes-allow-drug-laden
+Retrieved: 2026-10-03
+
+Press Release
+
+Customs and Border Protection Officer Sentenced for Receiving Bribes to Allow Drug-Laden Vehicles and Unauthorized Immigrants to Enter the U.S.
+
+Friday, October 25, 2024
+
+Share
+
+-
+Facebook
+
+-
+X
+
+-
+LinkedIn
+
+-
+Email
+
+For Immediate Release
+
+U.S. Attorney's Office, Southern District of California
+
+Kelly.Thornton@usdoj.gov
+
+SAN DIEGO – Former U.S. Customs and Border Protection Officer Leonard Darnell George was sentenced in federal court today to 23 years in prison for accepting bribes to allow unauthorized migrants and vehicles containing methamphetamine and other illicit drugs to pass through the border into the U.S.
+“What’s important to remember about the story of Leonard George is that his corruption was discovered and defeated.” said U.S. Attorney Tara McGrath. “Our commitment to the integrity of the badge brought justice to a corrupt officer in this case who will spend decades behind bars.”
+
+“Public corruption as in this case is the betrayal of trust that erodes the foundation of the very principals of law enforcement and undermines the public’s perception of those held to a higher standard,” said Shawn Gibson, special agent in charge for HSI San Diego. “Today’s sentencing is a result of HSI’s commitment to investigating transnational criminal organizations and holding all individuals that aid these criminals accountable for their actions. The success of this multiagency investigation is due to everyone’s commitment of honor and integrity.”
+“Mr. George should have used his position of authority and trust to protect the United States; however, he used it for his own financial gain,” said FBI San Diego Special Agent in Charge Stacey Moy. “The entire law enforcement profession is tarnished when an officer betrays the oath to protect and serve. The FBI will always vigorously and relentlessly investigate anyone who violates that sacred oath.”
+“CBP does not tolerate misconduct within its ranks,” said Special Agent in Charge Elizabeth Cervantes of CBP’s Office of Professional Responsibility, San Diego Field Office. “OPR’s efforts in this case and this latest court decision are a testament to CBP’s commitment to preserving the honor of its overwhelmingly professional workforce, and to its core values of Vigilance, Integrity, and Service to country.”
+Department of Homeland Security Inspector General Joseph V. Cuffari, Ph.D., said, “Today’s sentencing sends a clear message that federal employees who violate the law will be held accountable. DHS Office of Inspector General is grateful for our continued partnership with our law enforcement partners as we fight corruption along the Southern Border.”
+During the trial, several witnesses testified that George agreed to allow drug-laden vehicles to enter the U.S. through his lane in late 2021. George would notify members of a drug trafficking organization when he was at work, what lane he was on, and that they had one hour to reach his lane. However, in February 2022, after an alert placed by law enforcement agents on a suspected drug smuggling vehicle was flagged entering George’s Lane, George was forced to send the vehicle to secondary inspection, later revealing approximately 222 pounds of methamphetamine.
+Undeterred, George allowed a second drug-laden vehicle affiliated with the drug trafficking organization and traveling directly behind the flagged vehicle to enter the U.S. with over 200 pounds of drugs. Text messages sent by George the following day reveal he received approximately $13,000 for the vehicle he allowed to enter the U.S. On the same day he received his bribe payment, George purchased a 2020 Cadillac CT5 for an associate of the drug trafficking organization as a gift. George delivered the Cadillac CT5 to the associate in Ensenada on Valentine’s Day.
+Over the course of six months, George continued to allow vehicles containing undocumented individuals to enter the U.S. through his lane. George repeatedly omitted passengers and the true names of drivers coming through his lane, instead entering the names of others to conceal his criminal activities. Law enforcement agents and prosecutors identified approximately 19 crossings associated with the criminal organizations during the six-month time period. Text messages confirmed George agreed to allow vehicles through his lane for $17,000 per vehicle, $34,000 for two vehicles, $51,000 for three vehicles, or $65,000 for four vehicles. One text message confirmed that George received $68,000 after he allowed four vehicles from one organization to enter his lane in June 2022.
+Testimony from a witness confirmed that George purchased vehicles, motorcycles, and jewelry with the proceeds of his illicit activities. Additionally, on George’s days off, he travelled to Tijuana to visit Hong Kong Gentlemen’s Club where he spent approximately $5,000 per trip. He would stand on the second level of the club and throw cash over the balcony to the dancers below, “showering” them with money. He would also buy bottles of alcohol, and occasionally gifts, for dancers.
+The extent of George’s relationship with traffickers revealed itself when prosecutors admitted a photograph of one of George’s trafficking associates taking a selfie in George’s CBP uniform jacket.
+The case was tried and prosecuted by Assistant U.S. Attorneys Bianca Calderon-Peñaloza, Brandon J. Kimura and Michael G. Wheat.
+DEFENDANT Case Number 23CR1291
+Leonard Darnell George Age: 42 San Diego
+SUMMARY OF CHARGES
+Receiving Bribe by Public Official – Title 18, U.S.C., Section 201
+Maximum penalty: Fifteen years in prison
+Conspiracy to Import Controlled Substances – Title 21 U.S.C., Sections 952, 960, 963
+Maximum penalty: Life in prison with a 10-year mandatory minimum
+Bringing in Certain Aliens for Financial Gain – Title 18 U.S.C., Section 371, Title 8 U.S.C., Section 1324(a)(2)(B)(ii)
+Maximum Penalty: Ten years in prison
+Bringing in Certain Aliens for Financial Gain – Title 18 U.S.C., Section 371, Title 8 U.S.C., Section 1324(a)(2)(B)(ii)
+Maximum Penalty: Ten years in prison
+INVESTIGATING AGENCIES
+Federal Bureau of Investigation (FBI)
+Department of Homeland Security – Office of Inspector General (DHS OIG)
+Homeland Security Investigations (HSI)
+Customs and Border Protection – Office of Professional Responsibility (CBP OPR)
+
+Contact
+
+Kelly Thornton, Director of Media Relations
+
+Updated October 25, 2024
+
+Topics
+
+Human Smuggling
+
+Public Corruption
+
+Component
+
+USAO - California, Southern
+
+Press Release Number: CAS24-1025-George
+
+Related Content
+
+Press Release
+U.S. Attorney’s Office Filed 112 Border-Related Cases This Week
+SAN DIEGO – Federal prosecutors in the Southern District of California filed 112 border-related cases this week, including charges of bringing in aliens for financial gain, reentering the U.S. after...
+
+October 2, 2026
+
+Press Release
+U.S. Attorney’s Office Filed 114 Border-Related Cases This Week
+September 25, 2026
+
+Press Release
+Former Navy Civilian Employee Sentenced to 72 Months for Bribery and Tax Fraud Schemes
+SAN DIEGO – James Soriano, a former public official at the Naval Information Warfare Center in San Diego, was sentenced in federal court today to 72 months in prison for...
+
+September 9, 2026
