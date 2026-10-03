@@ -48,6 +48,14 @@ describe("currentStatus", () => {
     expect(currentStatus(p)?.status).toBe("acquitted");
   });
 
+  it("ranks an administrative finding above a criminal declination", () => {
+    const p = person([
+      { track: "criminal", status: "declined", date: "2023-01-06", source_ids: SRC },
+      { track: "administrative", status: "finding_issued", date: "2023-05-17", source_ids: SRC },
+    ]);
+    expect(currentStatus(p)?.status).toBe("finding_issued");
+  });
+
   it("is null with no history", () => {
     expect(currentStatus(person([]))).toBeNull();
   });

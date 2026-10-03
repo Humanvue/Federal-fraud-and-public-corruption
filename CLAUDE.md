@@ -36,6 +36,8 @@ Optimize for simplicity, plain-language explanations, and few moving parts.
 | `npm test` | Unit tests (Vitest). |
 | `npm run typecheck` | TypeScript check. |
 | `npm run schema` | Regenerates `schemas/*.json` from the Zod schemas. Commit the result. |
+| `npm run preview:drafts` | Local preview of drafts on top of data (missing archives tolerated, preview only). |
+| `npm run rearchive -- drafts --pause 90` | Retries Wayback archives for sources whose archive failed. |
 | `npm run review` | Writes one review card per draft event to `drafts/review/` plus `INDEX.md` (priority, validation, sources, notes). |
 | `npm run promote -- --reviewer "Name" evt-...` | Moves an approved draft event and every new record it depends on from `drafts/` into `data/`, stamping the reviewer. `--all` promotes every clean draft. |
 | `npm run build` | Builds the static site into `dist/`. Set `DATA_DIR=drafts,data` to preview drafts, or `DATA_DIR=tests/fixtures/valid` to preview the fixture. |

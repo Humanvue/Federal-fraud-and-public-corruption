@@ -29,6 +29,14 @@ export const RESOLVED_FOR_REVIEW: ReadonlySet<Status> = new Set<Status>([
   "convicted",
 ]);
 
+/**
+ * A declination means no criminal case exists, so it ranks below every other entry; otherwise the
+ * track decides (criminal > civil > administrative).
+ */
+function rankOf(s: StatusEntry): number {
+  return s.status === "declined" ? 0 : TRACK_RANK[s.track];
+}
+
 /** Latest entry on the participant's most advanced track (criminal > civil > administrative). */
 export function currentStatus(p: Participant): StatusEntry | null {
   if (p.status_history.length === 0) return null;
@@ -38,7 +46,7 @@ export function currentStatus(p: Participant): StatusEntry | null {
       best = s;
       continue;
     }
-    const rank = TRACK_RANK[s.track] - TRACK_RANK[best.track];
+    const rank = rankOf(s) - rankOf(best);
     if (rank > 0 || (rank === 0 && compareDates(s.date, best.date) >= 0)) best = s;
   }
   return best;

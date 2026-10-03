@@ -15,7 +15,8 @@
     "source": "tsx scripts/add-source.ts",
     "review": "tsx scripts/review-cards.ts",
     "promote": "tsx scripts/promote.ts",
-    "rearchive": "tsx scripts/rearchive.ts"
+    "rearchive": "tsx scripts/rearchive.ts",
+    "preview:drafts": "PREVIEW_DRAFTS=1 DATA_DIR=drafts,data astro dev"
   },
   "keywords": [],
   "author": "",

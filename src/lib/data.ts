@@ -21,7 +21,12 @@ export function dataDirs(): string[] {
 
 export function getData(): Dataset {
   if (cached) return cached;
-  const { dataset, issues } = validateDir(dataDirs());
+  const { dataset, issues: all } = validateDir(dataDirs());
+  // PREVIEW_DRAFTS=1 lets a local preview of drafts build while Wayback archives are still pending.
+  // It never applies to CI or the published site, which build from data/ without this variable.
+  const preview = process.env.PREVIEW_DRAFTS === "1";
+  const issues = preview ? all.filter((i) => !i.message.startsWith("archive_url:")) : all;
+  if (preview && all.length > issues.length) console.warn(`[preview] ignoring ${all.length - issues.length} missing archives`);
   if (issues.length > 0) {
     const lines = issues.map((i) => `${i.file}: ${i.message}`).join("\n");
     throw new Error(`Data validation failed (${issues.length} problems):\n${lines}`);
