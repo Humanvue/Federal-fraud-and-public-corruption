@@ -48,4 +48,11 @@ export const BANNED_STATUS_PHRASES: readonly string[] = [
   "is pending",
   "awaits trial",
   "awaiting trial",
+  "is the defendant",
+  "are the defendants",
+  "is a defendant",
+  "are defendants",
+  "remains charged",
+  "faces up to",
+  "face up to",
 ];
