@@ -9,13 +9,19 @@ import type { Event, Person, Organization, Source, Contract } from "../schemas";
  */
 let cached: Dataset | null = null;
 
+/** Base data directory (last entry of DATA_DIR, which may be a comma-separated overlay list like "drafts,data"). */
 export function dataDir(): string {
-  return process.env.DATA_DIR ?? "data";
+  const dirs = dataDirs();
+  return dirs[dirs.length - 1];
+}
+
+export function dataDirs(): string[] {
+  return (process.env.DATA_DIR ?? "data").split(",").map((s) => s.trim()).filter(Boolean);
 }
 
 export function getData(): Dataset {
   if (cached) return cached;
-  const { dataset, issues } = validateDir(dataDir());
+  const { dataset, issues } = validateDir(dataDirs());
   if (issues.length > 0) {
     const lines = issues.map((i) => `${i.file}: ${i.message}`).join("\n");
     throw new Error(`Data validation failed (${issues.length} problems):\n${lines}`);

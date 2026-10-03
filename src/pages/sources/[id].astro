@@ -4,6 +4,7 @@ import path from "node:path";
 import Base from "../../layouts/Base.astro";
 import { apaCitation } from "../../lib/cite";
 import { dataDir, getData } from "../../lib/data";
+import { originDir } from "../../lib/load";
 import { formatDate } from "../../lib/format";
 import type { Source } from "../../schemas/source";
 
@@ -11,7 +12,7 @@ export function getStaticPaths() {
   return getData().sources.map((s) => ({ params: { id: s.id }, props: { source: s } }));
 }
 const { source } = Astro.props as { source: Source };
-const text = source.text_file ? fs.readFileSync(path.join(dataDir(), source.text_file), "utf8") : null;
+const text = source.text_file ? fs.readFileSync(path.join(originDir(source, dataDir()), source.text_file), "utf8") : null;
 const usedBy = getData().events.filter((e) => e.government_sources.includes(source.id) || e.news_sources.includes(source.id));
 const TYPE = { government: "Government document", court: "Court document", news: "News article" };
 ---

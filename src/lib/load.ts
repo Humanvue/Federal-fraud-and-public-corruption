@@ -33,6 +33,12 @@ export interface LoadResult {
   issues: Issue[];
 }
 
+/** Directory each loaded record came from, so overlays (drafts/ on top of data/) resolve text files and report paths correctly. */
+const origins = new WeakMap<object, string>();
+export function originDir(item: object, fallback: string): string {
+  return origins.get(item) ?? fallback;
+}
+
 function formatZodError(err: z.ZodError): string[] {
   return err.issues.map((i) => {
     const p = i.path.length ? i.path.map(String).join(".") : "(root)";
@@ -74,14 +80,13 @@ function loadCollection<S extends z.ZodType>(dir: string, schema: S, issues: Iss
       issues.push({ file, message: `file name must match id (${item.id})` });
       continue;
     }
+    origins.set(parsed.data as object, path.dirname(dir));
     out.push(parsed.data);
   }
   return out;
 }
 
-export function loadDataset(dir: string): LoadResult {
-  const issues: Issue[] = [];
-  const root = path.resolve(dir);
+function loadOne(root: string, issues: Issue[], wantReference: boolean): Dataset {
   const dataset: Dataset = {
     events: loadCollection(path.join(root, "events"), Event, issues),
     people: loadCollection(path.join(root, "people"), Person, issues),
@@ -91,6 +96,7 @@ export function loadDataset(dir: string): LoadResult {
     cpi: null,
     corrections: [],
   };
+  if (!wantReference) return dataset;
 
   const cpiFile = path.join(root, "reference", "cpi-u.yaml");
   if (fs.existsSync(cpiFile)) {
@@ -115,6 +121,34 @@ export function loadDataset(dir: string): LoadResult {
   } else {
     issues.push({ file: corrFile, message: "missing corrections/corrections.yaml" });
   }
+  return dataset;
+}
 
-  return { dataset, issues };
+/**
+ * Loads one data directory, or several merged in order. With several, the
+ * LAST directory is the base (data/) that supplies reference data and
+ * corrections; earlier ones (drafts/) are overlays. Duplicate ids across
+ * directories are reported.
+ */
+export function loadDataset(dir: string | string[]): LoadResult {
+  const issues: Issue[] = [];
+  const dirs = (Array.isArray(dir) ? dir : [dir]).map((d) => path.resolve(d));
+  const base = dirs[dirs.length - 1];
+  const parts = dirs.map((d) => loadOne(d, issues, d === base));
+  const merged: Dataset = { events: [], people: [], organizations: [], contracts: [], sources: [], cpi: null, corrections: [] };
+  const seen = new Map<string, string>();
+  for (const part of parts) {
+    for (const key of ["events", "people", "organizations", "contracts", "sources"] as const) {
+      for (const item of part[key] as { id: string }[]) {
+        const prev = seen.get(item.id);
+        const from = originDir(item, base);
+        if (prev) issues.push({ file: path.join(from, key, `${item.id}.yaml`), message: `duplicate id ${item.id} (also in ${prev})` });
+        seen.set(item.id, from);
+        (merged[key] as unknown[]).push(item);
+      }
+    }
+    if (part.cpi) merged.cpi = part.cpi;
+    merged.corrections.push(...part.corrections);
+  }
+  return { dataset: merged, issues };
 }

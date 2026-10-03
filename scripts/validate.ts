@@ -1,13 +1,16 @@
 import path from "node:path";
 import { validateDir } from "../src/lib/validate";
 
-const dir = process.argv[2] ?? "data";
-const { issues, dataset } = validateDir(dir);
+// Usage: validate [overlayDir ...] [baseDir]   e.g. `validate drafts data` checks drafts on top of data.
+const dirs = process.argv.slice(2);
+if (dirs.length === 0) dirs.push("data");
+const dir = dirs[dirs.length - 1];
+const { issues, dataset } = validateDir(dirs);
 
 const counts = `${dataset.events.length} events, ${dataset.people.length} people, ${dataset.organizations.length} organizations, ${dataset.contracts.length} contracts, ${dataset.sources.length} sources, ${dataset.corrections.length} corrections`;
 
 if (issues.length === 0) {
-  console.log(`OK: ${counts} in ${path.resolve(dir)}`);
+  console.log(`OK: ${counts} in ${dirs.map((d) => path.resolve(d)).join(" + ")}`);
   process.exit(0);
 }
 

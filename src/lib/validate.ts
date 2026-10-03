@@ -2,11 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { ID_PATTERNS } from "../schemas/common";
 import { MONEY_FIELDS, type Event } from "../schemas/event";
-import { loadDataset, type Dataset, type Issue } from "./load";
+import { loadDataset, originDir, type Dataset, type Issue } from "./load";
 import { BANNED_STATUS_PHRASES, BANNED_WORDS } from "./rules";
 
 export interface ValidateOptions {
-  /** Data directory; used to locate source text files. */
+  /** Base data directory; records from overlays carry their own origin. */
   dir: string;
 }
 
@@ -67,7 +67,8 @@ function* allSourceIdLists(e: Event): Generator<[string, string[]]> {
 export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
   const issues: Issue[] = [];
   const root = path.resolve(opts.dir);
-  const eventFile = (e: Event) => path.join(root, "events", `${e.id}.yaml`);
+  const fileOf = (item: object, kind: string, id: string) => path.join(originDir(item, root), kind, `${id}.yaml`);
+  const eventFile = (e: Event) => fileOf(e, "events", e.id);
 
   const eventIds = new Set(ds.events.map((e) => e.id));
   const personIds = new Set(ds.people.map((p) => p.id));
@@ -82,10 +83,10 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
   // ---- Sources ----
   const sourceTexts = new Map<string, string>();
   for (const s of ds.sources) {
-    const file = path.join(root, "sources", `${s.id}.yaml`);
+    const file = fileOf(s, "sources", s.id);
     need(file, "organization", s.publisher_org_id, orgIds, "publisher_org_id");
     if (s.text_file) {
-      const tf = path.join(root, s.text_file);
+      const tf = path.join(originDir(s, root), s.text_file);
       if (!fs.existsSync(tf)) issues.push({ file, message: `text_file not found: ${s.text_file}` });
       else sourceTexts.set(s.id, fs.readFileSync(tf, "utf8"));
     }
@@ -93,7 +94,7 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
 
   // ---- People, organizations, contracts ----
   for (const p of ds.people) {
-    const file = path.join(root, "people", `${p.id}.yaml`);
+    const file = fileOf(p, "people", p.id);
     for (const pos of p.positions) {
       need(file, "organization", pos.org_id, orgIds, "positions.org_id");
       for (const sid of pos.source_ids) need(file, "source", sid, sourceById, "positions.source_ids");
@@ -101,12 +102,12 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
     for (const sid of p.party_affiliation.source_ids) need(file, "source", sid, sourceById, "party_affiliation.source_ids");
   }
   for (const o of ds.organizations) {
-    const file = path.join(root, "organizations", `${o.id}.yaml`);
+    const file = fileOf(o, "organizations", o.id);
     need(file, "organization", o.parent_org_id, orgIds, "parent_org_id");
     if (o.parent_org_id === o.id) issues.push({ file, message: "an organization cannot be its own parent" });
   }
   for (const c of ds.contracts) {
-    const file = path.join(root, "contracts", `${c.id}.yaml`);
+    const file = fileOf(c, "contracts", c.id);
     need(file, "organization", c.awarding_agency_id, orgIds, "awarding_agency_id");
     need(file, "organization", c.recipient_org_id, orgIds, "recipient_org_id");
     for (const sid of c.source_ids) need(file, "source", sid, sourceById, "source_ids");
@@ -180,7 +181,9 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
   return issues;
 }
 
-export function validateDir(dir: string): { issues: Issue[]; dataset: Dataset } {
-  const { dataset, issues } = loadDataset(dir);
-  return { dataset, issues: [...issues, ...validateDataset(dataset, { dir })] };
+/** Validates one directory, or overlays followed by the base directory (e.g. ["drafts", "data"]). */
+export function validateDir(dir: string | string[]): { issues: Issue[]; dataset: Dataset } {
+  const dirs = Array.isArray(dir) ? dir : [dir];
+  const { dataset, issues } = loadDataset(dirs);
+  return { dataset, issues: [...issues, ...validateDataset(dataset, { dir: dirs[dirs.length - 1] })] };
 }
