@@ -52,14 +52,19 @@ export function currentStatus(p: Participant): StatusEntry | null {
   return best;
 }
 
+/** A pardon ends a prosecution, so a pardoned participant is resolved even before conviction. */
+function pardoned(p: Participant): boolean {
+  return p.clemency.some((c) => c.type === "pardon");
+}
+
 export function isResolved(p: Participant): boolean {
   const s = currentStatus(p);
-  return s !== null && RESOLVED_STATUSES.has(s.status);
+  return s !== null && (RESOLVED_STATUSES.has(s.status) || pardoned(p));
 }
 
 export function isResolvedForReview(p: Participant): boolean {
   const s = currentStatus(p);
-  return s !== null && RESOLVED_FOR_REVIEW.has(s.status);
+  return s !== null && (RESOLVED_FOR_REVIEW.has(s.status) || pardoned(p));
 }
 
 export type EventStatus = "pending" | "partially_resolved" | "resolved";
@@ -84,7 +89,10 @@ export function resolutionDate(e: Event): string | null {
   let latest: string | null = null;
   for (const p of trackedParticipants(e)) {
     const s = currentStatus(p)!;
-    if (!latest || compareDates(s.date, latest) > 0) latest = s.date;
+    // A pre-conviction pardon resolves the participant on the pardon date.
+    const pardon = !RESOLVED_STATUSES.has(s.status) ? p.clemency.find((c) => c.type === "pardon") : undefined;
+    const d = pardon?.date ?? s.date;
+    if (!latest || compareDates(d, latest) > 0) latest = d;
   }
   return latest;
 }

@@ -110,7 +110,7 @@ These are recorded on the participant as separate dated lists and never replace 
 
 ### 3.3 Derived values (computed at build, validated in CI)
 - Participant `current_status` = latest entry on the participant's most advanced track (criminal outranks civil outranks administrative for display; all tracks are shown on the case page). A `declined` entry ranks below every other entry, because a declination means no criminal case exists.
-- Participant `resolved` = true when current_status is any of: `sentenced`, `acquitted`, `dismissed`, `overturned`, `deferred_prosecution`, `declined`, `deceased`, `settled_*`, `judgment_against`, `civil_dismissed`, `finding_issued`, `no_violation_found`. (`pleaded_guilty` and `convicted` count as resolved for review purposes but not for the resolution date.)
+- Participant `resolved` = true when current_status is any of: `sentenced`, `acquitted`, `dismissed`, `overturned`, `deferred_prosecution`, `declined`, `deceased`, `settled_*`, `judgment_against`, `civil_dismissed`, `finding_issued`, `no_violation_found`. (`pleaded_guilty` and `convicted` count as resolved for review purposes but not for the resolution date.) A participant with a `pardon` is resolved, on the pardon date if no other resolving status exists; a `commutation` does not resolve anything, because the conviction stands.
 - Event `event_status` = `pending` (no participant resolved), `partially_resolved`, or `resolved` (all participants resolved).
 - Event `dates.resolution` = date of the last participant resolution, or null.
 

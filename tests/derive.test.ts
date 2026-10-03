@@ -83,6 +83,18 @@ describe("eventStatus and resolutionDate", () => {
   });
 });
 
+describe("pardons", () => {
+  it("a pardon before trial resolves the participant on the pardon date; a commutation does not", () => {
+    const e = fixture();
+    e.participants = [person([{ track: "criminal", status: "charged", date: "2024-05-03", source_ids: SRC }], { clemency: [{ type: "pardon", date: "2025-12-02", granted_by: "President", source_ids: SRC }] })];
+    expect(eventStatus(e)).toBe("resolved");
+    expect(resolutionDate(e)).toBe("2025-12-02");
+    expect(stalenessTasks(e, "2030-01-01")).toEqual([]);
+    e.participants[0].clemency = [{ type: "commutation", date: "2025-12-02", granted_by: "President", source_ids: SRC }];
+    expect(eventStatus(e)).toBe("pending");
+  });
+});
+
 describe("actorMix", () => {
   it("fixture is mixed", () => {
     expect(actorMix(fixture())).toBe("mixed");
