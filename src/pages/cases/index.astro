@@ -1,0 +1,33 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getData, entityName } from "../../lib/data";
+import { eventStatus } from "../../lib/derive";
+import { CATEGORY_LABELS, formatDate } from "../../lib/format";
+import { compareDates } from "../../schemas/common";
+
+const events = [...getData().events].sort((a, b) => compareDates(b.dates.first_public_action, a.dates.first_public_action));
+const EVENT_STATUS_LABEL = { pending: "Pending", partially_resolved: "Partially resolved", resolved: "Resolved" };
+---
+<Base title="Cases">
+  <h1>Cases</h1>
+  <p class="muted">{events.length} cases, newest first by date of first official action.</p>
+  <div class="table-wrap">
+    <table>
+      <caption>All cases</caption>
+      <thead>
+        <tr><th scope="col">First official action</th><th scope="col">Case</th><th scope="col">Category</th><th scope="col">Participants</th><th scope="col">Case status</th></tr>
+      </thead>
+      <tbody>
+        {events.map((e) => (
+          <tr>
+            <td>{formatDate(e.dates.first_public_action)}</td>
+            <td><a href={`/cases/${e.id}/`}>{e.title}</a></td>
+            <td>{e.categories.map((c) => CATEGORY_LABELS[c]).join(", ")}</td>
+            <td>{e.participants.filter((p) => !p.roles.includes("victim_agency")).map((p) => entityName(p.entity_id)).join("; ")}</td>
+            <td>{EVENT_STATUS_LABEL[eventStatus(e)]}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Base>

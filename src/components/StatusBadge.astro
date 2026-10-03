@@ -1,0 +1,11 @@
+---
+import { STATUS_LABELS, STATUS_TONE, formatDate } from "../lib/format";
+import type { Status } from "../schemas/event";
+interface Props { status: Status | null; date?: string | null }
+const { status, date } = Astro.props;
+---
+{status ? (
+  <span class={`badge badge-${STATUS_TONE[status]}`}>{STATUS_LABELS[status]}{date ? ` · as of ${formatDate(date)}` : ""}</span>
+) : (
+  <span class="badge badge-neutral">No status recorded</span>
+)}

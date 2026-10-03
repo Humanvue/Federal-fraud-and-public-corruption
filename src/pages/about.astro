@@ -1,0 +1,54 @@
+---
+import Base from "../layouts/Base.astro";
+import { STATUS_LABELS } from "../lib/format";
+const DEFINITIONS: Record<string, string> = {
+  charged: "An indictment, information, or criminal complaint has been filed. A charge is an accusation, not a finding.",
+  pleaded_guilty: "The person entered a guilty plea that the court accepted.",
+  convicted: "A judge or jury found the person guilty after trial.",
+  sentenced: "The court imposed a sentence after a plea or conviction.",
+  acquitted: "A judge or jury found the person not guilty on all counts.",
+  dismissed: "All charges were dismissed by the court or withdrawn by the government.",
+  partially_dismissed: "Some charges were dismissed; others remain.",
+  mistrial: "The trial ended without a verdict.",
+  appeal_pending: "A conviction is under appeal.",
+  overturned: "An appeals court reversed or vacated the conviction.",
+  deferred_prosecution: "The government agreed to defer or not pursue prosecution under conditions.",
+  declined: "The government formally declined to prosecute.",
+  deceased: "The person died before the case was resolved.",
+  fugitive: "The person has not appeared to answer the charges.",
+  civil_complaint_filed: "The government filed a civil complaint. A complaint is an allegation.",
+  settled_no_admission: "A civil settlement in which the party did not admit liability.",
+  settled_with_admission: "A civil settlement that includes an admission of facts or liability.",
+  judgment_against: "A court entered a civil judgment for the government.",
+  civil_dismissed: "The civil complaint was dismissed.",
+  finding_issued: "An Inspector General, the Office of Special Counsel, the Office of Government Ethics, or a congressional ethics committee issued a finding of misconduct.",
+  no_violation_found: "The investigating body found no violation.",
+};
+---
+<Base title="About and disclaimer">
+  <h1>About this site</h1>
+  <p class="summary">This site records public corruption cases involving federal officials from 2016 to the present. A case is included only when a government body has taken an official action: a criminal charge, plea, or conviction; a civil complaint or resolution; or a finding by an Inspector General, the Office of Special Counsel, the Office of Government Ethics, or a congressional ethics committee.</p>
+
+  <h2>Disclaimer</h2>
+  <p><strong>Inclusion in this database is not a finding of guilt.</strong> Many entries describe charges or allegations. Every person is presumed innocent unless and until a court enters a conviction, and a pardon or commutation is recorded alongside the conviction it affected. Status is tracked for each person separately and shown with the date of the official action it reflects and the date it was last verified. Summaries are written only from government and court documents, use the attribution of those documents, and never state a status; status comes from the structured record so it cannot go stale in prose.</p>
+  <p>Dollar amounts carry a basis. "Alleged" amounts come from charging documents and are not findings. Only admitted, adjudicated, and settlement amounts are used in site totals.</p>
+
+  <h2>Status definitions</h2>
+  <div class="table-wrap">
+    <table>
+      <caption>What each status means</caption>
+      <thead><tr><th scope="col">Status</th><th scope="col">Meaning</th></tr></thead>
+      <tbody>
+        {Object.entries(DEFINITIONS).map(([k, v]) => (
+          <tr><th scope="row">{STATUS_LABELS[k as keyof typeof STATUS_LABELS]}</th><td>{v}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Corrections</h2>
+  <p>If you believe an entry is wrong or out of date, open an issue at <a href="https://github.com/Humanvue/Federal-fraud-and-public-corruption/issues">the project's GitHub repository</a> with a link to the official document that supports the change. Corrections are logged publicly.</p>
+
+  <h2>Data and code</h2>
+  <p>The data and written text are licensed under Creative Commons Attribution 4.0. Government and court documents stored on this site are in the public domain. The site's code is MIT licensed.</p>
+</Base>

@@ -11,7 +11,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "npm run validate && npm test && npm run build"
+    "check": "npm run validate && npm test && npm run build",
+    "source": "tsx scripts/add-source.ts"
   },
   "keywords": [],
   "author": "",

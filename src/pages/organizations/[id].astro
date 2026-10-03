@@ -1,0 +1,56 @@
+---
+import Base from "../../layouts/Base.astro";
+import StatusBadge from "../../components/StatusBadge.astro";
+import { getData, entityName, entityHref, eventsForEntity, subsidiariesOf } from "../../lib/data";
+import { currentStatus } from "../../lib/derive";
+import { formatDate } from "../../lib/format";
+import type { Organization } from "../../schemas/organization";
+
+export function getStaticPaths() {
+  return getData().organizations.map((o) => ({ params: { id: o.id }, props: { org: o } }));
+}
+const { org } = Astro.props as { org: Organization };
+const ORG_TYPE = { company: "Company", agency: "Federal agency or office", nonprofit: "Nonprofit", court: "Court", other: "Organization" };
+const subs = subsidiariesOf(org.id);
+const own = eventsForEntity(org.id);
+const rolled = subs.flatMap((s) => eventsForEntity(s.id)).filter((e) => !own.includes(e));
+const events = [...own, ...rolled];
+---
+<Base title={org.name}>
+  <p class="small muted">{ORG_TYPE[org.org_type]}{org.uei ? ` · UEI ${org.uei}` : ""}</p>
+  <h1>{org.name}</h1>
+  {org.parent_org_id && <p>Part of <a href={entityHref(org.parent_org_id)}>{entityName(org.parent_org_id)}</a>.</p>}
+  {subs.length > 0 && (
+    <section aria-labelledby="subs-h">
+      <h2 id="subs-h">{org.org_type === "agency" ? "Component offices" : "Subsidiaries"}</h2>
+      <ul>{subs.map((s) => <li><a href={entityHref(s.id)}>{s.name}</a></li>)}</ul>
+    </section>
+  )}
+  <section aria-labelledby="cases-h">
+    <h2 id="cases-h">Cases</h2>
+    {events.length === 0 ? <p class="muted">No cases recorded.</p> : (
+      <div class="table-wrap">
+        <table>
+          <caption>Cases involving {org.name}{subs.length > 0 ? " and its components" : ""}</caption>
+          <thead><tr><th scope="col">First official action</th><th scope="col">Case</th><th scope="col">Role</th><th scope="col">Status</th></tr></thead>
+          <tbody>
+            {events.map((e) => {
+              const ids = [org.id, ...subs.map((s) => s.id)];
+              const p = e.participants.find((x) => ids.includes(x.entity_id));
+              const cur = p ? currentStatus(p) : null;
+              const role = p ? "Participant" : e.investigating_agencies.some((id) => ids.includes(id)) ? "Investigating agency" : e.prosecuting_office && ids.includes(e.prosecuting_office) ? "Prosecuting office" : "Agency involved";
+              return (
+                <tr>
+                  <td>{formatDate(e.dates.first_public_action)}</td>
+                  <td><a href={`/cases/${e.id}/`}>{e.title}</a></td>
+                  <td>{role}</td>
+                  <td>{p ? <StatusBadge status={cur?.status ?? null} date={cur?.date} /> : <span class="muted">n/a</span>}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    )}
+  </section>
+</Base>

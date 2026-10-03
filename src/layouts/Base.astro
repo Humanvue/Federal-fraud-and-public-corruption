@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+interface Props { title: string; description?: string }
+const { title, description = "A fact-first record of public corruption cases involving federal officials, built from cited and archived government sources." } = Astro.props;
+const site = "Federal Fraud and Public Corruption Tracker";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title === site ? site : `${title} · ${site}`}</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site">
+      <div class="inner">
+        <a class="brand" href="/">{site}</a>
+        <nav aria-label="Primary">
+          <a href="/cases/">Cases</a>
+          <a href="/about/">About and disclaimer</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="inner">
+        <span>Inclusion in this database is not a finding of guilt. Status is shown per person as recorded in official sources. <a href="/about/">Read the disclaimer and status definitions.</a></span>
+        <span>Data: CC BY 4.0. Code: MIT.</span>
+      </div>
+    </footer>
+  </body>
+</html>

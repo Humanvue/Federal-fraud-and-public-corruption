@@ -1,0 +1,42 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../../layouts/Base.astro";
+import { apaCitation } from "../../lib/cite";
+import { dataDir, getData } from "../../lib/data";
+import { formatDate } from "../../lib/format";
+import type { Source } from "../../schemas/source";
+
+export function getStaticPaths() {
+  return getData().sources.map((s) => ({ params: { id: s.id }, props: { source: s } }));
+}
+const { source } = Astro.props as { source: Source };
+const text = source.text_file ? fs.readFileSync(path.join(dataDir(), source.text_file), "utf8") : null;
+const usedBy = getData().events.filter((e) => e.government_sources.includes(source.id) || e.news_sources.includes(source.id));
+const TYPE = { government: "Government document", court: "Court document", news: "News article" };
+---
+<Base title={source.title}>
+  <p class="small muted">{TYPE[source.source_type]} · {source.publisher}</p>
+  <h1>{source.title}</h1>
+  <dl class="kv">
+    <dt>Citation</dt><dd>{apaCitation(source)}</dd>
+    <dt>Original</dt><dd><a href={source.url}>{source.url}</a>{source.link_status !== "ok" && <span class="muted"> (link {source.link_status})</span>}</dd>
+    {source.archive_url && <><dt>Archived copy</dt><dd><a href={source.archive_url}>{source.archive_url}</a></dd></>}
+    <dt>Published</dt><dd>{formatDate(source.date_published)}</dd>
+    <dt>Accessed</dt><dd>{formatDate(source.accessed)}</dd>
+    {source.report_number && <><dt>Report number</dt><dd>{source.report_number}</dd></>}
+  </dl>
+  {usedBy.length > 0 && (
+    <section aria-labelledby="used-h">
+      <h2 id="used-h">Cited by</h2>
+      <ul>{usedBy.map((e) => <li><a href={`/cases/${e.id}/`}>{e.title}</a></li>)}</ul>
+    </section>
+  )}
+  {text && (
+    <section aria-labelledby="text-h">
+      <h2 id="text-h">Stored text</h2>
+      <p class="small muted">Full text as retrieved on {formatDate(source.accessed)}. Works of the United States Government are in the public domain. Formatting may differ from the original.</p>
+      <pre class="doc">{text}</pre>
+    </section>
+  )}
+</Base>

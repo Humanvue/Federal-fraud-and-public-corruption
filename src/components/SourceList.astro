@@ -1,0 +1,22 @@
+---
+import { apaCitation } from "../lib/cite";
+import { sourceById } from "../lib/data";
+interface Props { ids: string[]; heading?: string }
+const { ids, heading = "Sources" } = Astro.props;
+const sources = ids.map((id) => sourceById(id)).filter((s): s is NonNullable<typeof s> => !!s);
+---
+<section aria-labelledby="sources-h">
+  <h2 id="sources-h">{heading}</h2>
+  <ol>
+    {sources.map((s) => (
+      <li>
+        <span>{apaCitation(s)}</span>
+        <span class="small">
+          {" "}· <a href={`/sources/${s.id}/`}>stored text</a>
+          {s.archive_url && <> · <a href={s.archive_url}>archived copy</a></>}
+          {s.link_status !== "ok" && <span class="muted"> · original link {s.link_status}</span>}
+        </span>
+      </li>
+    ))}
+  </ol>
+</section>

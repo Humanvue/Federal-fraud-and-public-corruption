@@ -1,0 +1,38 @@
+---
+import { getData } from "../lib/data";
+import { adjustForInflation } from "../lib/inflation";
+import { BASIS_LABELS, MONEY_LABELS, formatUSD } from "../lib/format";
+import { MONEY_FIELDS, type Event } from "../schemas/event";
+import { yearOf } from "../schemas/common";
+interface Props { event: Event }
+const { event } = Astro.props;
+const cpi = getData().cpi;
+const moneyYear = event.money_year ?? yearOf(event.dates.first_public_action);
+const rows = MONEY_FIELDS.map((f) => ({ key: f, entry: event.money[f] })).filter((r) => r.entry);
+const canAdjust = !!cpi && String(moneyYear) in cpi.values;
+---
+{rows.length > 0 && (
+  <section aria-labelledby="money-h">
+    <h2 id="money-h">Money</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Dollar amounts as stated in official sources. Nominal dollars are as reported; adjusted dollars use annual CPI-U with {cpi?.base_year} as the base year.</caption>
+        <thead>
+          <tr><th scope="col">Measure</th><th scope="col">Nominal ({moneyYear})</th><th scope="col">Adjusted ({cpi?.base_year})</th><th scope="col">Basis</th></tr>
+        </thead>
+        <tbody>
+          {rows.map(({ key, entry }) => (
+            <tr>
+              <th scope="row">{MONEY_LABELS[key]}{"kind" in entry! && entry!.kind === "intended" ? " (intended)" : ""}</th>
+              <td>{formatUSD(entry!.amount)}</td>
+              <td>{canAdjust ? formatUSD(adjustForInflation(entry!.amount, moneyYear, cpi!)) : "n/a"}</td>
+              <td>{BASIS_LABELS[entry!.basis]}{entry!.note ? ` · ${entry!.note}` : ""}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    {event.money_year_note && <p class="small muted">Money year note: {event.money_year_note}</p>}
+    <p class="small muted">Amounts marked "alleged" come from charging documents and are not findings. Different measures are never added together.</p>
+  </section>
+)}

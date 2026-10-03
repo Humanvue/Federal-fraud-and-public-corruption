@@ -1,0 +1,107 @@
+---
+import Base from "../../layouts/Base.astro";
+import StatusBadge from "../../components/StatusBadge.astro";
+import SourceList from "../../components/SourceList.astro";
+import MoneyTable from "../../components/MoneyTable.astro";
+import { getData, entityName, entityHref, contractById } from "../../lib/data";
+import { currentStatus, eventStatus, resolutionDate, stalenessTasks } from "../../lib/derive";
+import { ACTOR_LABELS, ADMIN_ACTION_LABELS, CATEGORY_LABELS, ROLE_LABELS, STATUS_LABELS, TRACK_LABELS, formatDate } from "../../lib/format";
+import type { Event } from "../../schemas/event";
+
+export function getStaticPaths() {
+  return getData().events.map((e) => ({ params: { id: e.id }, props: { event: e } }));
+}
+const { event } = Astro.props as { event: Event };
+const today = new Date().toISOString().slice(0, 10);
+const stale = stalenessTasks(event, today);
+const staleIds = new Set(stale.map((t) => t.entity_id));
+const EVENT_STATUS_LABEL = { pending: "Pending", partially_resolved: "Partially resolved", resolved: "Resolved" };
+const resolved = resolutionDate(event);
+const allSourceIds = [...new Set([...event.government_sources, ...event.news_sources])];
+---
+<Base title={event.title}>
+  <p class="small muted">{event.categories.map((c) => CATEGORY_LABELS[c]).join(" · ")}{event.jurisdiction_note ? ` · ${event.jurisdiction_note}` : ""}</p>
+  <h1>{event.title}</h1>
+  <p>
+    <strong>Case status:</strong> {EVENT_STATUS_LABEL[eventStatus(event)]}{resolved ? ` (${formatDate(resolved)})` : ""}.
+    <span class="muted">Status is recorded separately for each participant below.</span>
+  </p>
+  {stale.length > 0 && (
+    <p class="notice">The status of {stale.map((t) => entityName(t.entity_id)).join(", ")} has not been verified in more than {Math.min(...stale.map((t) => t.months_since_verified))} months and may be out of date.</p>
+  )}
+
+  <dl class="kv">
+    <dt>Conduct period</dt><dd>{formatDate(event.dates.conduct_start)} to {formatDate(event.dates.conduct_end)}</dd>
+    <dt>First official action</dt><dd>{formatDate(event.dates.first_public_action)}</dd>
+    {event.agencies.length > 0 && <><dt>Agencies involved</dt><dd>{event.agencies.map((id, i) => <>{i > 0 && ", "}<a href={entityHref(id)}>{entityName(id)}</a></>)}</dd></>}
+    {event.investigating_agencies.length > 0 && <><dt>Investigated by</dt><dd>{event.investigating_agencies.map((id, i) => <>{i > 0 && ", "}<a href={entityHref(id)}>{entityName(id)}</a></>)}</dd></>}
+    {event.prosecuting_office && <><dt>Prosecuting office</dt><dd><a href={entityHref(event.prosecuting_office)}>{entityName(event.prosecuting_office)}</a></dd></>}
+    {event.court_cases.length > 0 && <><dt>Court cases</dt><dd>{event.court_cases.map((c) => `${c.court}, No. ${c.docket}`).join("; ")}</dd></>}
+    {event.contracts.length > 0 && <><dt>Contracts</dt><dd>{event.contracts.map((id) => { const c = contractById(id); return c ? (c.usaspending_url ? <a href={c.usaspending_url}>{c.award_id}</a> : c.award_id) : id; })}</dd></>}
+    {event.qui_tam && <><dt>Whistleblower case</dt><dd>Yes (qui tam)</dd></>}
+  </dl>
+
+  <section aria-labelledby="summary-h">
+    <h2 id="summary-h">Summary</h2>
+    <p class="summary">{event.summary}</p>
+    {event.review.summary_stale && <p class="notice">This summary was written before the latest status change and is queued for review.</p>}
+  </section>
+
+  <section aria-labelledby="participants-h">
+    <h2 id="participants-h">Participants and status</h2>
+    {event.participants.map((p) => {
+      const cur = currentStatus(p);
+      return (
+        <article class="card">
+          <h3><a href={entityHref(p.entity_id)}>{entityName(p.entity_id)}</a> <span class="muted small">· {ACTOR_LABELS[p.actor_type]}{p.position ? ` · ${p.position}` : ""}</span></h3>
+          <p class="small muted">{p.roles.map((r) => ROLE_LABELS[r]).join(", ")}</p>
+          <p>
+            <StatusBadge status={cur?.status ?? null} date={cur?.date} />
+            {" "}<span class="small muted">Status last verified {formatDate(p.status_verified)}{staleIds.has(p.entity_id) ? " (may be out of date)" : ""}.</span>
+          </p>
+          {p.status_history.length > 0 && (
+            <div class="table-wrap">
+              <table>
+                <caption>Status history for {entityName(p.entity_id)}</caption>
+                <thead><tr><th scope="col">Date</th><th scope="col">Track</th><th scope="col">Status</th><th scope="col">Sources</th></tr></thead>
+                <tbody>
+                  {p.status_history.map((s) => (
+                    <tr>
+                      <td>{formatDate(s.date)}</td>
+                      <td>{TRACK_LABELS[s.track]}</td>
+                      <td>{STATUS_LABELS[s.status]}{s.note ? ` · ${s.note}` : ""}</td>
+                      <td>{s.source_ids.map((sid, i) => <>{i > 0 && ", "}<a href={`/sources/${sid}/`}>{sid}</a></>)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+          {p.clemency.length > 0 && (
+            <p><strong>Clemency:</strong> {p.clemency.map((c) => `${c.type === "pardon" ? "Pardoned" : "Sentence commuted"} on ${formatDate(c.date)} by ${c.granted_by}`).join("; ")}. <span class="muted small">A pardon or commutation does not erase the record of the conviction.</span></p>
+          )}
+          {p.administrative_actions.length > 0 && (
+            <p><strong>Administrative actions:</strong> {p.administrative_actions.map((a) => `${ADMIN_ACTION_LABELS[a.type] ?? a.type} (${formatDate(a.date)})`).join("; ")}.</p>
+          )}
+        </article>
+      );
+    })}
+  </section>
+
+  <MoneyTable event={event} />
+
+  {event.related_events.length > 0 && (
+    <section aria-labelledby="related-h">
+      <h2 id="related-h">Related cases</h2>
+      <ul>{event.related_events.map((id) => <li><a href={`/cases/${id}/`}>{getData().events.find((x) => x.id === id)?.title ?? id}</a></li>)}</ul>
+    </section>
+  )}
+
+  <SourceList ids={allSourceIds} heading="Government and court sources" />
+
+  <p class="small muted">
+    {event.review.ai_assisted ? "Summary drafted with AI assistance; " : "Summary written by the editor; "}
+    {event.review.reviewed_by ? `reviewed by ${event.review.reviewed_by} on ${formatDate(event.review.reviewed_at)}.` : "not yet reviewed."}
+    {" "}Last updated {formatDate(event.last_updated)}. <a href="/about/">How to request a correction.</a>
+  </p>
+</Base>

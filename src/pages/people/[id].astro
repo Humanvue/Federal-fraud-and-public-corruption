@@ -1,0 +1,55 @@
+---
+import Base from "../../layouts/Base.astro";
+import StatusBadge from "../../components/StatusBadge.astro";
+import { getData, entityName, entityHref, eventsForEntity } from "../../lib/data";
+import { currentStatus } from "../../lib/derive";
+import { formatDate } from "../../lib/format";
+import type { Person } from "../../schemas/person";
+
+export function getStaticPaths() {
+  return getData().people.map((p) => ({ params: { id: p.id }, props: { person: p } }));
+}
+const { person } = Astro.props as { person: Person };
+const events = eventsForEntity(person.id);
+---
+<Base title={person.name}>
+  <h1>{person.name}</h1>
+  {person.aliases.length > 0 && <p class="muted">Also recorded as: {person.aliases.join("; ")}</p>}
+  {person.positions.length > 0 && (
+    <section aria-labelledby="positions-h">
+      <h2 id="positions-h">Positions</h2>
+      <ul>
+        {person.positions.map((pos) => (
+          <li>{pos.title}, <a href={entityHref(pos.org_id)}>{entityName(pos.org_id)}</a> ({formatDate(pos.start)} to {pos.end ? formatDate(pos.end) : "present"})</li>
+        ))}
+      </ul>
+    </section>
+  )}
+  {person.party_affiliation.value && (
+    <p><strong>Party affiliation:</strong> {person.party_affiliation.value} ({person.party_affiliation.basis} official).</p>
+  )}
+  <section aria-labelledby="cases-h">
+    <h2 id="cases-h">Cases</h2>
+    {events.length === 0 ? <p class="muted">No cases recorded.</p> : (
+      <div class="table-wrap">
+        <table>
+          <caption>Cases involving {person.name}</caption>
+          <thead><tr><th scope="col">First official action</th><th scope="col">Case</th><th scope="col">Status of {person.name}</th></tr></thead>
+          <tbody>
+            {events.map((e) => {
+              const p = e.participants.find((x) => x.entity_id === person.id);
+              const cur = p ? currentStatus(p) : null;
+              return (
+                <tr>
+                  <td>{formatDate(e.dates.first_public_action)}</td>
+                  <td><a href={`/cases/${e.id}/`}>{e.title}</a></td>
+                  <td>{p ? <StatusBadge status={cur?.status ?? null} date={cur?.date} /> : <span class="muted">not a participant</span>}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    )}
+  </section>
+</Base>

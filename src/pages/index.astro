@@ -1,41 +1,28 @@
 ---
-import { loadDataset } from "../lib/load";
+import Base from "../layouts/Base.astro";
+import { getData } from "../lib/data";
 import { eventStatus } from "../lib/derive";
 
-const { dataset, issues } = loadDataset("data");
-const counts = {
-  events: dataset.events.length,
-  people: dataset.people.length,
-  organizations: dataset.organizations.length,
-  sources: dataset.sources.length,
-};
+const data = getData();
 const byStatus = { pending: 0, partially_resolved: 0, resolved: 0 };
-for (const e of dataset.events) byStatus[eventStatus(e)] += 1;
+for (const e of data.events) byStatus[eventStatus(e)] += 1;
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Federal Fraud and Public Corruption Tracker</title>
-  </head>
-  <body>
-    <main>
-      <h1>Federal Fraud and Public Corruption Tracker</h1>
-      <p>Phase 0 skeleton. Data loads and validates at build time.</p>
-      <table>
-        <caption>Records in the database</caption>
-        <tbody>
-          <tr><th scope="row">Events</th><td>{counts.events}</td></tr>
-          <tr><th scope="row">People</th><td>{counts.people}</td></tr>
-          <tr><th scope="row">Organizations</th><td>{counts.organizations}</td></tr>
-          <tr><th scope="row">Sources</th><td>{counts.sources}</td></tr>
-          <tr><th scope="row">Events pending</th><td>{byStatus.pending}</td></tr>
-          <tr><th scope="row">Events partially resolved</th><td>{byStatus.partially_resolved}</td></tr>
-          <tr><th scope="row">Events resolved</th><td>{byStatus.resolved}</td></tr>
-        </tbody>
-      </table>
-      {issues.length > 0 && <p role="alert">Data load issues: {issues.length}. Run <code>npm run validate</code>.</p>}
-    </main>
-  </body>
-</html>
+<Base title="Federal Fraud and Public Corruption Tracker">
+  <h1>Federal Fraud and Public Corruption Tracker</h1>
+  <p class="summary">A public, fact-first record of public corruption cases involving federal officials from 2016 to the present. Every case rests on an official government action, every number links to its source, and status is tracked for each person separately.</p>
+  <div class="table-wrap">
+    <table>
+      <caption>Records in the database</caption>
+      <tbody>
+        <tr><th scope="row">Cases</th><td><a href="/cases/">{data.events.length}</a></td></tr>
+        <tr><th scope="row">Cases pending</th><td>{byStatus.pending}</td></tr>
+        <tr><th scope="row">Cases partially resolved</th><td>{byStatus.partially_resolved}</td></tr>
+        <tr><th scope="row">Cases resolved</th><td>{byStatus.resolved}</td></tr>
+        <tr><th scope="row">People</th><td>{data.people.length}</td></tr>
+        <tr><th scope="row">Organizations and agencies</th><td>{data.organizations.length}</td></tr>
+        <tr><th scope="row">Government sources</th><td>{data.sources.length}</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="notice">Counts reflect official actions, not the total amount of corruption. Changes over time can reflect enforcement priorities, staffing, and policy, not only changes in misconduct. Recent years are incomplete: cases are often charged years after the conduct.</p>
+</Base>
