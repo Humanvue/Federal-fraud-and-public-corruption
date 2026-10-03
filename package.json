@@ -14,7 +14,8 @@
     "check": "npm run validate && npm test && npm run build",
     "source": "tsx scripts/add-source.ts",
     "review": "tsx scripts/review-cards.ts",
-    "promote": "tsx scripts/promote.ts"
+    "promote": "tsx scripts/promote.ts",
+    "rearchive": "tsx scripts/rearchive.ts"
   },
   "keywords": [],
   "author": "",
