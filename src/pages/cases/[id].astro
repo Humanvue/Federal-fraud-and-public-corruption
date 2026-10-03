@@ -36,7 +36,7 @@ const allSourceIds = [...new Set([...event.government_sources, ...event.news_sou
     {event.agencies.length > 0 && <><dt>Agencies involved</dt><dd>{event.agencies.map((id, i) => <>{i > 0 && ", "}<a href={entityHref(id)}>{entityName(id)}</a></>)}</dd></>}
     {event.investigating_agencies.length > 0 && <><dt>Investigated by</dt><dd>{event.investigating_agencies.map((id, i) => <>{i > 0 && ", "}<a href={entityHref(id)}>{entityName(id)}</a></>)}</dd></>}
     {event.prosecuting_office && <><dt>Prosecuting office</dt><dd><a href={entityHref(event.prosecuting_office)}>{entityName(event.prosecuting_office)}</a></dd></>}
-    {event.court_cases.length > 0 && <><dt>Court cases</dt><dd>{event.court_cases.map((c) => `${c.court}, No. ${c.docket}`).join("; ")}</dd></>}
+    {event.court_cases.length > 0 && <><dt>Court cases</dt><dd>{event.court_cases.map((c) => (c.docket ? `${c.court}, No. ${c.docket}` : `${c.court} (docket number not yet confirmed)`)).join("; ")}</dd></>}
     {event.contracts.length > 0 && <><dt>Contracts</dt><dd>{event.contracts.map((id) => { const c = contractById(id); return c ? (c.usaspending_url ? <a href={c.usaspending_url}>{c.award_id}</a> : c.award_id) : id; })}</dd></>}
     {event.qui_tam && <><dt>Whistleblower case</dt><dd>Yes (qui tam)</dd></>}
   </dl>

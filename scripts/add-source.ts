@@ -8,6 +8,11 @@
  *
  * Writes <out>/sources/<id>.yaml and <out>/sources/text/<id>.md. Default out is
  * drafts/ (gitignored). Move the files into data/ after review.
+ *
+ * For a PDF, or a page whose text was already extracted, pass --text <file>
+ * to use that file's contents instead of extracting from HTML; --title and
+ * --date override what the page metadata says. The page is still fetched (to
+ * confirm it exists) and archived.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -26,6 +31,9 @@ const type = arg("type", "government") as "government" | "court";
 const orgId = arg("org") ?? null;
 const report = arg("report") ?? null;
 const out = arg("out", "drafts")!;
+const textOverride = arg("text");
+const titleOverride = arg("title");
+const dateOverride = arg("date");
 if (!url || !id || !publisher) {
   console.error("usage: --url <url> --id <src-id> --publisher <name> [--type government|court] [--org <org-id>] [--report <no>] [--out <dir>]");
   process.exit(2);
@@ -35,7 +43,26 @@ if (!ID_PATTERNS.source.test(id)) {
   process.exit(2);
 }
 
-const UA = "corruption-tracker/0.1 (research tool; contact via GitHub Humanvue/Federal-fraud-and-public-corruption)";
+const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 corruption-tracker/0.1";
+
+/**
+ * justice.gov (Akamai) answers the first request with a small interstitial that
+ * sets cookies and meta-refreshes after 5 seconds to the same path plus a
+ * `bm-verify` token. Following that refresh with the cookies yields the page.
+ */
+async function fetchPage(target: string): Promise<{ status: number; html: string; finalUrl: string }> {
+  const first = await fetch(target, { headers: { "user-agent": UA, accept: "text/html" }, redirect: "follow" });
+  let html = await first.text();
+  if (!/bm-verify/.test(html)) return { status: first.status, html, finalUrl: first.url };
+  const refresh = /URL='([^']+)'/.exec(html)?.[1];
+  if (!refresh) return { status: first.status, html, finalUrl: first.url };
+  const cookies = (first.headers.getSetCookie?.() ?? []).map((c) => c.split(";")[0]).join("; ");
+  const next = new URL(refresh, target).toString();
+  await new Promise((r) => setTimeout(r, 5500));
+  const second = await fetch(next, { headers: { "user-agent": UA, accept: "text/html", cookie: cookies }, redirect: "follow" });
+  html = await second.text();
+  return { status: second.status, html, finalUrl: second.url };
+}
 
 function decodeEntities(s: string): string {
   const named: Record<string, string> = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", rsquo: "’", lsquo: "‘", rdquo: "”", ldquo: "“", mdash: "—", ndash: "–", hellip: "…" };
@@ -116,15 +143,20 @@ async function archive(target: string): Promise<{ url: string | null; status: "o
   return { url: null, status: "failed" };
 }
 
-const res = await fetch(url, { headers: { "user-agent": UA, accept: "text/html" } });
-if (!res.ok) {
-  console.error(`fetch failed: ${res.status} ${res.statusText}`);
+const res = await fetchPage(url);
+const isPdf = /\.pdf(\?|$)/i.test(url) || res.html.startsWith("%PDF");
+if (res.status !== 200 || /bm-verify/.test(res.html)) {
+  console.error(`fetch failed: HTTP ${res.status}${/bm-verify/.test(res.html) ? " (bot check not cleared; retry in a minute)" : ""}`);
   process.exit(1);
 }
-const html = await res.text();
-const text = htmlToText(html);
-const title = findTitle(html);
-const published = findDate(html);
+if (isPdf && !textOverride) {
+  console.error("this URL is a PDF; extract its text first and pass --text <file> (plus --title and --date)");
+  process.exit(1);
+}
+const html = isPdf ? "" : res.html;
+const text = textOverride ? fs.readFileSync(textOverride, "utf8").trim() : htmlToText(html);
+const title = titleOverride ?? findTitle(html);
+const published = dateOverride ?? findDate(html);
 const today = new Date().toISOString().slice(0, 10);
 const arch = await archive(url);
 
