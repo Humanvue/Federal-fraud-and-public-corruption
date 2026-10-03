@@ -23,6 +23,7 @@ const TYPE = { government: "Government document", court: "Court document", news:
     <dt>Citation</dt><dd>{apaCitation(source)}</dd>
     <dt>Original</dt><dd><a href={source.url}>{source.url}</a>{source.link_status !== "ok" && <span class="muted"> (link {source.link_status})</span>}</dd>
     {source.archive_url && <><dt>Archived copy</dt><dd><a href={source.archive_url}>{source.archive_url}</a></dd></>}
+    {!source.archive_url && source.archive_status === "blocked" && <><dt>Archived copy</dt><dd>Not available: this docket host cannot be archived. The docket entry text is stored below; the official record is in PACER.</dd></>}
     <dt>Published</dt><dd>{formatDate(source.date_published)}</dd>
     <dt>Accessed</dt><dd>{formatDate(source.accessed)}</dd>
     {source.report_number && <><dt>Report number</dt><dd>{source.report_number}</dd></>}

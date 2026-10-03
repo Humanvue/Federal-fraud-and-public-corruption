@@ -56,6 +56,16 @@ describe("cross-reference checks", () => {
     expect(m).not.toContainEqual(expect.stringContaining("unknown source"));
   });
 
+  it("accepts a court docket entry marked blocked when its text is stored, but not a government page", () => {
+    const ds = clone(loadFixture());
+    ds.sources[0].archive_url = null;
+    ds.sources[0].archive_status = "blocked";
+    ds.sources[0].source_type = "court";
+    expect(messages(ds).filter((x) => x.includes("require a working archive"))).toHaveLength(0);
+    ds.sources[0].source_type = "government";
+    expect(messages(ds).filter((x) => x.includes("require a working archive"))).toHaveLength(1);
+  });
+
   it("reports a missing source text file", () => {
     const ds = clone(loadFixture());
     ds.sources[0].text_file = "sources/text/does-not-exist.md";

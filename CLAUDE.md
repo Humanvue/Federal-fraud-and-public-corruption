@@ -72,7 +72,8 @@ tests/                  Vitest; tests/fixtures/valid is a fictional dataset, nev
 - Event id year = year of `dates.first_public_action`.
 - Dates may be `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`.
 - Source ids: `src-<publisher>-<yyyymmdd>-<nn>`. Government and court sources need
-  `archive_url` and full text at `data/sources/text/<id>.md` (public domain).
+  `archive_url` and full text at `data/sources/text/<id>.md` (public domain). Exception: court docket
+  entries from CourtListener use `archive_status: blocked` with the docket text stored verbatim (SPEC §4.5).
 - Person ids: `per-<given>-<family>`; on collision append `-2`; never renumber.
 - Contract ids: `con-` + award id lowercased, non-alphanumerics → `-`.
 

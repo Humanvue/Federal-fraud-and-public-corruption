@@ -85,7 +85,10 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
   for (const s of ds.sources) {
     const file = fileOf(s, "sources", s.id);
     need(file, "organization", s.publisher_org_id, orgIds, "publisher_org_id");
-    if ((s.source_type === "government" || s.source_type === "court") && (!s.archive_url || s.archive_status !== "ok")) {
+    // Court docket entries whose host blocks the Wayback Machine may be marked "blocked": their docket
+    // text is stored verbatim in text_file and PACER remains the authoritative record (SPEC.md §4.5).
+    const blockedDocket = s.source_type === "court" && s.archive_status === "blocked" && !!s.text_file;
+    if ((s.source_type === "government" || s.source_type === "court") && !blockedDocket && (!s.archive_url || s.archive_status !== "ok")) {
       issues.push({ file, message: "archive_url: government and court sources require a working archive (run npm run rearchive)" });
     }
     if (s.text_file) {
