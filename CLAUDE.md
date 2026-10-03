@@ -80,9 +80,13 @@ tests/                  Vitest; tests/fixtures/valid is a fictional dataset, nev
 1. Research candidates; the owner approves the list in chat.
 2. For each approved case: `npm run source` for every government page, then write the event,
    people, and organization YAML into `drafts/` (same layout as `data/`).
-3. `npm run validate -- drafts data` until clean; `DATA_DIR=drafts,data npm run dev` to preview.
-4. `npm run review`; the owner reads `drafts/review/INDEX.md` and each card and approves, edits, or rejects in chat.
-5. Only after approval: `npm run promote -- --reviewer "<owner name>" <event ids>`, then `npm run check`, commit, open the pull request.
+3. **Check the docket for every named participant** before review. Press releases stop before cases end;
+   the CourtListener RECAP search API (no account; 5 requests/minute) mirrors PACER docket text and is
+   how later pleas, dismissals, acquittals, and appeals are confirmed. Record each docket entry relied on
+   as a `court` source (see an existing `src-dcd-*` source for the format).
+4. `npm run validate -- drafts data` until clean; `npm run preview:drafts` to preview.
+5. `npm run review`; the owner reads `drafts/review/INDEX.md` and each card and approves, edits, or rejects in chat.
+6. Only after approval: `npm run promote -- --reviewer "<owner name>" <event ids>`, then `npm run check`, commit, open the pull request.
 Drafting agents follow `drafts/DRAFTING-GUIDE.md`; their open items are in `drafts/notes/`.
 
 ## Phase status
