@@ -85,6 +85,9 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
   for (const s of ds.sources) {
     const file = fileOf(s, "sources", s.id);
     need(file, "organization", s.publisher_org_id, orgIds, "publisher_org_id");
+    if ((s.source_type === "government" || s.source_type === "court") && (!s.archive_url || s.archive_status !== "ok")) {
+      issues.push({ file, message: "archive_url: government and court sources require a working archive (run npm run rearchive)" });
+    }
     if (s.text_file) {
       const tf = path.join(originDir(s, root), s.text_file);
       if (!fs.existsSync(tf)) issues.push({ file, message: `text_file not found: ${s.text_file}` });

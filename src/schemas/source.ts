@@ -29,10 +29,10 @@ export const Source = z
   })
   .superRefine((s, ctx) => {
     const official = s.source_type === "government" || s.source_type === "court";
+    // The archive requirement is enforced by the validator (src/lib/validate.ts), not here, so a
+    // source still waiting on the Wayback Machine loads and reports one clear problem instead of
+    // making every record that cites it fail with "unknown source".
     if (official) {
-      if (!s.archive_url || s.archive_status !== "ok") {
-        ctx.addIssue({ code: "custom", path: ["archive_url"], message: "government and court sources require a working archive_url" });
-      }
       const expected = `sources/text/${s.id}.md`;
       if (s.text_file !== expected) {
         ctx.addIssue({ code: "custom", path: ["text_file"], message: `government and court sources must store full text at ${expected}` });

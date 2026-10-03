@@ -47,6 +47,15 @@ describe("cross-reference checks", () => {
     expect(messages(ds)).toContainEqual(expect.stringContaining("court_cases is required"));
   });
 
+  it("reports an unarchived government source once, without breaking records that cite it", () => {
+    const ds = clone(loadFixture());
+    ds.sources[0].archive_url = null;
+    ds.sources[0].archive_status = "failed";
+    const m = messages(ds);
+    expect(m.filter((x) => x.includes("require a working archive"))).toHaveLength(1);
+    expect(m).not.toContainEqual(expect.stringContaining("unknown source"));
+  });
+
   it("reports a missing source text file", () => {
     const ds = clone(loadFixture());
     ds.sources[0].text_file = "sources/text/does-not-exist.md";
