@@ -82,3 +82,15 @@ describe("missingNumbers", () => {
     expect(missingNumbers("12 counts", ["eleven counts"])).toEqual(["12"]);
   });
 });
+
+describe("court_cases rule and declinations", () => {
+  it("does not require a court case when the only criminal entry is a declination", () => {
+    const ds = clone(loadFixture());
+    const e = ds.events[0];
+    e.court_cases = [];
+    e.participants = [
+      { ...e.participants[0], status_history: [{ track: "criminal", status: "declined", date: "2021", source_ids: ["src-fixture-20190211-01"] }], status_verified: "2026-10-02" },
+    ];
+    expect(messages(ds)).not.toContainEqual(expect.stringContaining("court_cases is required"));
+  });
+});

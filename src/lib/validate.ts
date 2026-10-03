@@ -151,7 +151,8 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
       for (const sid of ids) need(file, "source", sid, sourceById, where);
     }
 
-    const hasCourtTrack = e.participants.some((p) => p.status_history.some((s) => s.track !== "administrative"));
+    // A declination means no case was filed, so it does not by itself require a court case.
+    const hasCourtTrack = e.participants.some((p) => p.status_history.some((s) => s.track !== "administrative" && s.status !== "declined"));
     if (hasCourtTrack && e.court_cases.length === 0) {
       issues.push({ file, message: "court_cases is required when any participant has a criminal or civil track" });
     }
