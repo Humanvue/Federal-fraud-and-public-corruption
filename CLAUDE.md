@@ -33,6 +33,8 @@ Optimize for simplicity, plain-language explanations, and few moving parts.
 | `npm test` | Unit tests (Vitest). |
 | `npm run typecheck` | TypeScript check. |
 | `npm run schema` | Regenerates `schemas/*.json` from the Zod schemas. Commit the result. |
+| `npm run review` | Writes one review card per draft event to `drafts/review/` plus `INDEX.md` (priority, validation, sources, notes). |
+| `npm run promote -- --reviewer "Name" evt-...` | Moves an approved draft event and every new record it depends on from `drafts/` into `data/`, stamping the reviewer. `--all` promotes every clean draft. |
 | `npm run build` | Builds the static site into `dist/`. Set `DATA_DIR=drafts,data` to preview drafts, or `DATA_DIR=tests/fixtures/valid` to preview the fixture. |
 | `npm run check` | validate + test + build, same as CI. |
 
@@ -55,7 +57,7 @@ src/lib/format.ts       display labels for statuses, categories, money, dates
 src/lib/data.ts         build-time data access for pages (fails the build on invalid data)
 src/pages/              Astro pages: cases, people, organizations, sources, about
 src/components/         StatusBadge, SourceList, MoneyTable
-scripts/                validate.ts, gen-json-schema.ts, add-source.ts
+scripts/                validate.ts, gen-json-schema.ts, add-source.ts, review-cards.ts, promote.ts
 schemas/                GENERATED JSON Schema for editor validation; do not hand-edit
 tests/                  Vitest; tests/fixtures/valid is a fictional dataset, never copy it into data/
 .github/workflows/      CI: validate, test, typecheck, schema freshness, build
@@ -74,8 +76,9 @@ tests/                  Vitest; tests/fixtures/valid is a fictional dataset, nev
 2. For each approved case: `npm run source` for every government page, then write the event,
    people, and organization YAML into `drafts/` (same layout as `data/`).
 3. `npm run validate -- drafts data` until clean; `DATA_DIR=drafts,data npm run dev` to preview.
-4. Show the owner a review card per case. Only after approval, move the files into `data/`.
-5. `npm run check`, commit, open the pull request.
+4. `npm run review`; the owner reads `drafts/review/INDEX.md` and each card and approves, edits, or rejects in chat.
+5. Only after approval: `npm run promote -- --reviewer "<owner name>" <event ids>`, then `npm run check`, commit, open the pull request.
+Drafting agents follow `drafts/DRAFTING-GUIDE.md`; their open items are in `drafts/notes/`.
 
 ## Phase status
 - Phase 0 (foundation): complete.
