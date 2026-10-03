@@ -122,23 +122,41 @@ function findDate(html: string): string | null {
   return null;
 }
 
-async function archive(target: string): Promise<{ url: string | null; status: "ok" | "failed" }> {
+async function latestSnapshot(target: string, notBefore: number): Promise<string | null> {
   try {
-    const avail = await fetch(`https://archive.org/wayback/available?url=${encodeURIComponent(target)}`, { headers: { "user-agent": UA } });
+    const avail = await fetch(`https://archive.org/wayback/available?url=${encodeURIComponent(target)}&timestamp=${new Date().toISOString().replace(/\D/g, "").slice(0, 14)}`, { headers: { "user-agent": UA } });
     const j = (await avail.json()) as { archived_snapshots?: { closest?: { url?: string; timestamp?: string } } };
-    const closest = j.archived_snapshots?.closest;
-    const recent = closest?.timestamp && Date.now() - Date.parse(closest.timestamp.replace(/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/, "$1-$2-$3T$4:$5:$6Z")) < 90 * 86400e3;
-    if (closest?.url && recent) return { url: closest.url.replace(/^http:/, "https:"), status: "ok" };
+    const c = j.archived_snapshots?.closest;
+    if (!c?.url || !c.timestamp) return null;
+    const when = Date.parse(c.timestamp.replace(/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/, "$1-$2-$3T$4:$5:$6Z"));
+    return when >= notBefore ? c.url.replace(/^http:/, "https:") : null;
   } catch {
-    /* fall through to save */
+    return null;
   }
+}
+
+/**
+ * Archive on the Wayback Machine. Reuses a snapshot from the last 90 days;
+ * otherwise asks Save Page Now, then confirms through the availability API,
+ * because the save endpoint often answers without a usable location header
+ * even when the snapshot was created.
+ */
+async function archive(target: string): Promise<{ url: string | null; status: "ok" | "failed" }> {
+  const recent = await latestSnapshot(target, Date.now() - 90 * 86400e3);
+  if (recent) return { url: recent, status: "ok" };
+  const started = Date.now() - 60e3;
   try {
     const res = await fetch(`https://web.archive.org/save/${target}`, { headers: { "user-agent": UA }, redirect: "follow" });
     const loc = res.headers.get("content-location") ?? res.headers.get("location");
     if (loc) return { url: loc.startsWith("http") ? loc : `https://web.archive.org${loc}`, status: "ok" };
     if (res.ok && /\/web\/\d{14}\//.test(res.url)) return { url: res.url, status: "ok" };
   } catch {
-    /* reported below */
+    /* confirmed below */
+  }
+  for (let i = 0; i < 3; i++) {
+    await new Promise((r) => setTimeout(r, 10_000));
+    const made = await latestSnapshot(target, started);
+    if (made) return { url: made, status: "ok" };
   }
   return { url: null, status: "failed" };
 }
