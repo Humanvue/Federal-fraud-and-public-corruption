@@ -1,0 +1,7 @@
+# Public corrections log (SPEC.md §10.6). One entry per correction, newest last.
+# - date: 2026-01-01
+#   event_id: evt-2019-example
+#   description: "Corrected restitution amount from X to Y per sentencing judgment."
+#   source_ids: [src-doj-20200930-01]
+#   reported_via: "GitHub issue #12"
+[]

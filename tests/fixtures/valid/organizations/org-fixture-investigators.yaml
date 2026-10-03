@@ -1,0 +1,6 @@
+id: org-fixture-investigators
+name: "Fixture Investigative Service"
+org_type: agency
+parent_org_id: org-fixture-agency
+uei: null
+wikidata_qid: null

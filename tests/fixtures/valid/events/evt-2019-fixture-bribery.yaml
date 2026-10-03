@@ -1,0 +1,63 @@
+# TEST FIXTURE. Entirely fictional. Never copy into /data.
+id: evt-2019-fixture-bribery
+title: "FIXTURE: Contracting officer charged in bribery scheme"
+categories: [bribery_kickbacks, procurement_fraud]
+agencies: [org-fixture-agency]
+investigating_agencies: [org-fixture-investigators]
+prosecuting_office: org-fixture-usao
+court_cases:
+  - { court: "D. Fict.", docket: "1:19-cr-00045", courtlistener_id: null, source_ids: [src-fixture-20190211-01] }
+jurisdiction_note: null
+summary: >
+  According to the indictment, a contracting officer at the Fixture Agency accepted
+  $250,000 from Fixture Defense LLC between March 2016 and July 2018 in exchange for
+  steering a $12 million contract. The plea agreement states the loss to the government
+  was $3.1 million. The court ordered restitution of 3,100,000 dollars and forfeiture
+  of 250,000 dollars.
+dates:
+  conduct_start: 2016-03
+  conduct_end: 2018-07-15
+  first_public_action: 2019-02-11
+money:
+  loss_to_government: { amount: 3100000, basis: adjudicated, kind: actual, source_ids: [src-fixture-20200930-01] }
+  bribe_or_kickback: { amount: 250000, basis: admitted, source_ids: [src-fixture-20191004-01] }
+  contract_value_involved: { amount: 12000000, basis: alleged, source_ids: [src-fixture-20190211-01] }
+  settlement_amount: null
+  restitution_ordered: { amount: 3100000, basis: adjudicated, source_ids: [src-fixture-20200930-01] }
+  fines: null
+  forfeiture: { amount: 250000, basis: adjudicated, source_ids: [src-fixture-20200930-01] }
+  whistleblower_share: null
+participants:
+  - entity_id: per-fixture-person
+    actor_type: official
+    roles: [defendant, bribe_recipient]
+    position: "Contracting Officer, GS-13"
+    status_history:
+      - { track: criminal, status: charged, date: 2019-02-11, source_ids: [src-fixture-20190211-01] }
+      - { track: criminal, status: pleaded_guilty, date: 2019-10-04, source_ids: [src-fixture-20191004-01] }
+      - { track: criminal, status: sentenced, date: 2020-09-30, source_ids: [src-fixture-20200930-01] }
+    administrative_actions:
+      - { type: resignation, date: 2019-03-01, source_ids: [src-fixture-20191004-01] }
+    clemency: []
+    status_verified: 2026-10-02
+  - entity_id: org-fixture-defense
+    actor_type: contractor
+    roles: [defendant, briber]
+    status_history:
+      - { track: criminal, status: charged, date: 2019-02-11, source_ids: [src-fixture-20190211-01] }
+    administrative_actions:
+      - { type: debarment, date: 2019-06-01, source_ids: [src-fixture-20190211-01] }
+    status_verified: 2026-10-02
+contracts: [con-w912xx-17-c-0001]
+qui_tam: false
+related_events: []
+relationships: []
+government_sources: [src-fixture-20190211-01, src-fixture-20191004-01, src-fixture-20200930-01]
+news_sources: []
+tags: [fixture]
+review:
+  reviewed_by: "fixture"
+  reviewed_at: 2026-10-02
+  ai_assisted: false
+  summary_stale: false
+last_updated: 2026-10-02

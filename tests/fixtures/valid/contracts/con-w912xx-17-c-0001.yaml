@@ -1,0 +1,8 @@
+id: con-w912xx-17-c-0001
+award_id: "W912XX-17-C-0001"
+usaspending_url: null
+awarding_agency_id: org-fixture-agency
+recipient_org_id: org-fixture-defense
+total_obligated: 12000000
+start_date: 2017-01-15
+source_ids: [src-fixture-20190211-01]

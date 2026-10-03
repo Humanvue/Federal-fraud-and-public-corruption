@@ -1,0 +1,15 @@
+id: src-fixture-20190211-01
+source_type: government
+publisher: "Fixture Department of Justice"
+publisher_org_id: org-fixture-usao
+outlet_id: null
+authors: []
+title: "FIXTURE: Contracting officer indicted"
+date_published: 2019-02-11
+url: https://example.invalid/fixture/src-fixture-20190211-01
+archive_url: https://web.archive.org/web/2026/https://example.invalid/fixture/src-fixture-20190211-01
+archive_status: ok
+text_file: sources/text/src-fixture-20190211-01.md
+accessed: 2026-10-02
+report_number: null
+link_status: ok

@@ -1,0 +1,4 @@
+# Daily queue written by the ingest Action (Phase 3).
+# Contains ONLY links, titles, dates, and rule tags for already-public government pages.
+# Never contains drafts or summaries. See SPEC.md §7.
+candidates: []

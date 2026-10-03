@@ -1,0 +1,7 @@
+id: per-fixture-person
+name: "Fixture Person"
+aliases: ["F. Person"]
+wikidata_qid: null
+positions:
+  - { title: "Contracting Officer", org_id: org-fixture-agency, start: 2012, end: 2019, source_ids: [src-fixture-20190211-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

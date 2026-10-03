@@ -1,0 +1,11 @@
+{
+  "yaml.schemas": {
+    "./schemas/event.schema.json": "data/events/*.yaml",
+    "./schemas/person.schema.json": "data/people/*.yaml",
+    "./schemas/organization.schema.json": "data/organizations/*.yaml",
+    "./schemas/contract.schema.json": "data/contracts/*.yaml",
+    "./schemas/source.schema.json": "data/sources/*.yaml",
+    "./schemas/cpi-u.schema.json": "data/reference/cpi-u.yaml",
+    "./schemas/corrections.schema.json": "data/corrections/corrections.yaml"
+  }
+}

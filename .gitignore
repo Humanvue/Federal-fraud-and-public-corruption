@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+drafts/*
+!drafts/.gitkeep
+.DS_Store
+*.log
