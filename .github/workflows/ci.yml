@@ -23,5 +23,7 @@ jobs:
         run: npm run typecheck
       - name: Generated JSON Schema is up to date
         run: npm run schema && git diff --exit-code -- schemas
-      - name: Build site
+      - name: Build site and search index
         run: npm run build
+      - name: Check downloads
+        run: npm run check:downloads

@@ -40,8 +40,10 @@ Optimize for simplicity, plain-language explanations, and few moving parts.
 | `npm run rearchive -- drafts --pause 90` | Retries Wayback archives for sources whose archive failed. |
 | `npm run review` | Writes one review card per draft event to `drafts/review/` plus `INDEX.md` (priority, validation, sources, notes). |
 | `npm run promote -- --reviewer "Name" evt-...` | Moves an approved draft event and every new record it depends on from `drafts/` into `data/`, stamping the reviewer. `--all` promotes every clean draft. |
-| `npm run build` | Builds the static site into `dist/`. Set `DATA_DIR=drafts,data` to preview drafts, or `DATA_DIR=tests/fixtures/valid` to preview the fixture. |
-| `npm run check` | validate + test + build, same as CI. |
+| `npm run check:downloads` | After a build, verifies every file in `dist/downloads/` (schemas, columns, row counts, round trip). |
+| `npm run build` | Builds the static site into `dist/` and the Pagefind search index into `dist/pagefind/`. Set `DATA_DIR=drafts,data` to preview drafts, or `DATA_DIR=tests/fixtures/valid` to preview the fixture. |
+| `npm run check` | validate + test + build + download check, same as CI. |
+| `npm run preview` | Serves the built site (search only works here, not in `npm run dev`). |
 
 ## Layout
 ```
@@ -60,9 +62,16 @@ src/lib/inflation.ts    CPI-U adjustment
 src/lib/cite.ts         APA citation generator
 src/lib/format.ts       display labels for statuses, categories, money, dates
 src/lib/data.ts         build-time data access for pages (fails the build on invalid data)
-src/pages/              Astro pages: cases, people, organizations, sources, about
+src/lib/rows.ts         build-time projection of events into Explore rows (derived status, adjusted money)
+src/lib/explore.ts      PURE filter/sort/query-string logic shared by the browser and tests; no runtime imports
+src/lib/explore-render.ts  table-row HTML used by both the server render and the browser
+src/lib/export.ts       CSV tables and dataset.json for /downloads; csv-parse.ts verifies round trips
+src/lib/archive.ts      Wayback archiving and justice.gov bot-check-aware fetching
+src/pages/              Astro pages: explore, search, downloads (+ CSV/JSON endpoints), cases, people,
+                        organizations, sources, about
 src/components/         StatusBadge, SourceList, MoneyTable
-scripts/                validate.ts, gen-json-schema.ts, add-source.ts, review-cards.ts, promote.ts
+scripts/                validate.ts, gen-json-schema.ts, add-source.ts, rearchive.ts, review-cards.ts,
+                        promote.ts, check-downloads.ts
 schemas/                GENERATED JSON Schema for editor validation; do not hand-edit
 tests/                  Vitest; tests/fixtures/valid is a fictional dataset, never copy it into data/
 .github/workflows/      CI: validate, test, typecheck, schema freshness, build
@@ -94,4 +103,6 @@ Drafting agents follow `drafts/DRAFTING-GUIDE.md`; their open items are in `draf
 - Phase 0 (foundation): complete.
 - Phase 1 (seed data and core pages): complete 2026-10-03. All 29 owner-approved cases in `data/`,
   reviewed by Humanvue; statuses checked against court dockets.
-- Next: Phase 2 (Explore table, filters, shareable URLs, Pagefind search, downloads).
+- Phase 2 (Explore, search, downloads): built on branch `phase-2-explore`, 2026-10-03.
+- Next: Phase 3 (daily queue Action, weekly session command with review cards, docket/SAM.gov/Pardon
+  Attorney status updates, staleness tasks).

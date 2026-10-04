@@ -25,7 +25,11 @@ npm run dev
 ```
 
 starts a local preview of the site at the address it prints (usually http://localhost:4321).
-Press Ctrl+C to stop it.
+Press Ctrl+C to stop it. Search only works on the built site; to try it:
+
+```bash
+npm run build && npm run preview
+```
 
 ## Editing data
 Data lives in `data/` as YAML files, one record per file. If you use VS Code with the

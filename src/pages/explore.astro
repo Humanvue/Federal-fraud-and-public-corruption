@@ -1,0 +1,219 @@
+---
+import Base from "../layouts/Base.astro";
+import CoverageNote from "../components/CoverageNote.astro";
+import { getData } from "../lib/data";
+import { buildRows } from "../lib/rows";
+import { DEFAULT_STATE, applyState } from "../lib/explore";
+import { rowHtml, ACTOR_MIX_LABELS, EVENT_STATUS_LABELS, DATE_BASIS_LABELS } from "../lib/explore-render";
+import { CATEGORY_LABELS, MONEY_LABELS, STATUS_LABELS } from "../lib/format";
+
+const rows = buildRows(getData());
+const initial = applyState(rows, DEFAULT_STATE);
+const categories = [...new Set(rows.flatMap((r) => r.categories))].sort((a, b) => CATEGORY_LABELS[a].localeCompare(CATEGORY_LABELS[b]));
+const actorMixes = [...new Set(rows.map((r) => r.actorMix))];
+const agencies = [...new Map(rows.flatMap((r) => r.agencies).map((a) => [a.id, a])).values()].sort((a, b) => a.name.localeCompare(b.name));
+const pstatuses = [...new Set(rows.flatMap((r) => r.participants.map((p) => p.status)).filter((s): s is NonNullable<typeof s> => !!s))].sort((a, b) => STATUS_LABELS[a].localeCompare(STATUS_LABELS[b]));
+const measures = Object.keys(MONEY_LABELS);
+const years = rows.flatMap((r) => Object.values(r.dates)).filter((d): d is string => !!d).map((d) => Number(d.slice(0, 4)));
+const minYear = Math.min(...years);
+const maxYear = Math.max(...years);
+const sortable = [
+  { key: "date", label: DATE_BASIS_LABELS[DEFAULT_STATE.basis] },
+  { key: "title", label: "Case" },
+  { key: null, label: "People and organizations" },
+  { key: "status", label: "Case status" },
+  { key: "money", label: "Money" },
+];
+---
+<Base title="Explore cases" description="Filter and sort every case by year, category, agency, status, and dollar amount. Every view can be shared as a link.">
+  <h1>Explore cases</h1>
+  <CoverageNote />
+
+  <details id="filter-panel" class="filters" open>
+  <summary>Filters</summary>
+  <form id="filters" aria-label="Filter cases">
+    <div class="filter-grid">
+      <label class="field wide">Name or keyword
+        <input type="search" name="q" autocomplete="off" placeholder="e.g. Navy, bribery, Menendez" />
+      </label>
+
+      <fieldset class="field">
+        <legend>Years</legend>
+        <label>Date basis
+          <select name="basis">
+            {Object.entries(DATE_BASIS_LABELS).map(([k, v]) => <option value={k}>{v}</option>)}
+          </select>
+        </label>
+        <div class="inline">
+          <label>From <input type="number" name="from" inputmode="numeric" min={minYear} max={maxYear} placeholder={String(minYear)} /></label>
+          <label>To <input type="number" name="to" inputmode="numeric" min={minYear} max={maxYear} placeholder={String(maxYear)} /></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Status</legend>
+        <label>Case status
+          <select name="status">
+            <option value="">Any</option>
+            {Object.entries(EVENT_STATUS_LABELS).map(([k, v]) => <option value={k}>{v}</option>)}
+          </select>
+        </label>
+        <label>Anyone in the case whose status is
+          <select name="pstatus">
+            <option value="">Any</option>
+            {pstatuses.map((s) => <option value={s}>{STATUS_LABELS[s]}</option>)}
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Who and where</legend>
+        <label>Agency involved
+          <select name="agency">
+            <option value="">Any</option>
+            {agencies.map((a) => <option value={a.id}>{a.name}</option>)}
+          </select>
+        </label>
+        <div class="checks" role="group" aria-label="Actor mix">
+          {actorMixes.map((m) => <label><input type="checkbox" name="actor" value={m} /> {ACTOR_MIX_LABELS[m]}</label>)}
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Category</legend>
+        <div class="checks">
+          {categories.map((c) => <label><input type="checkbox" name="cat" value={c} /> {CATEGORY_LABELS[c]}</label>)}
+        </div>
+        <div class="checks toggles">
+          <label><input type="checkbox" name="hatch" checked={DEFAULT_STATE.hatch} /> Include Hatch Act cases</label>
+          <label><input type="checkbox" name="healthcare" checked={DEFAULT_STATE.healthcare} /> Include health care fraud</label>
+          <label><input type="checkbox" name="pandemic" checked={DEFAULT_STATE.pandemic} /> Include pandemic relief fraud</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Money</legend>
+        <label>Measure
+          <select name="measure">
+            {measures.map((m) => <option value={m}>{MONEY_LABELS[m]}</option>)}
+          </select>
+        </label>
+        <div class="inline">
+          <label>Min $ <input type="number" name="min" inputmode="numeric" min="0" step="1000" /></label>
+          <label>Max $ <input type="number" name="max" inputmode="numeric" min="0" step="1000" /></label>
+        </div>
+        <label><input type="checkbox" name="alleged" /> Include alleged amounts in money filtering and sorting</label>
+        <p class="small muted">Amounts are in {getData().cpi?.base_year} dollars, adjusted with CPI-U, when an adjustment is available.</p>
+      </fieldset>
+    </div>
+    <p class="actions">
+      <button type="reset" id="reset">Clear filters</button>
+    </p>
+  </form>
+  </details>
+  <p id="count" class="count" role="status" aria-live="polite">{initial.length} of {rows.length} cases</p>
+
+  <div class="table-wrap">
+    <table id="explore" class="explore">
+      <caption class="visually-hidden">Cases matching the filters</caption>
+      <thead>
+        <tr>
+          {sortable.map((c) => c.key
+            ? <th scope="col" data-sort={c.key} aria-sort={c.key === DEFAULT_STATE.sort ? (DEFAULT_STATE.dir === "asc" ? "ascending" : "descending") : "none"}><button type="button" data-sort={c.key}>{c.label}</button></th>
+            : <th scope="col">{c.label}</th>)}
+        </tr>
+      </thead>
+      <tbody set:html={initial.map((r) => rowHtml(r, DEFAULT_STATE)).join("")} />
+    </table>
+  </div>
+  <p id="empty" class="muted" hidden>No cases match these filters.</p>
+
+  <script type="application/json" id="explore-data" set:html={JSON.stringify(rows).replace(/</g, "\\u003c")} />
+  <script>
+    import { DEFAULT_STATE, applyState, parseQuery, toQuery, type ExploreRow, type FilterState, type SortKey } from "../lib/explore";
+    import { rowHtml, DATE_BASIS_LABELS } from "../lib/explore-render";
+
+    const rows: ExploreRow[] = JSON.parse(document.getElementById("explore-data")!.textContent!);
+    const form = document.getElementById("filters") as HTMLFormElement;
+    const tbody = document.querySelector("#explore tbody")!;
+    const count = document.getElementById("count")!;
+    const empty = document.getElementById("empty")!;
+    let state: FilterState = parseQuery(location.search);
+
+    function writeForm(s: FilterState) {
+      const el = (n: string) => form.elements.namedItem(n) as HTMLInputElement | HTMLSelectElement | null;
+      (el("q") as HTMLInputElement).value = s.q;
+      (el("basis") as HTMLSelectElement).value = s.basis;
+      (el("from") as HTMLInputElement).value = s.from === null ? "" : String(s.from);
+      (el("to") as HTMLInputElement).value = s.to === null ? "" : String(s.to);
+      (el("status") as HTMLSelectElement).value = s.status;
+      (el("pstatus") as HTMLSelectElement).value = s.pstatus;
+      (el("agency") as HTMLSelectElement).value = s.agency;
+      (el("measure") as HTMLSelectElement).value = s.measure;
+      (el("min") as HTMLInputElement).value = s.min === null ? "" : String(s.min);
+      (el("max") as HTMLInputElement).value = s.max === null ? "" : String(s.max);
+      for (const name of ["hatch", "healthcare", "pandemic", "alleged"] as const) (el(name) as HTMLInputElement).checked = s[name];
+      form.querySelectorAll<HTMLInputElement>('input[name="actor"]').forEach((i) => (i.checked = s.actor.includes(i.value as never)));
+      form.querySelectorAll<HTMLInputElement>('input[name="cat"]').forEach((i) => (i.checked = s.cat.includes(i.value as never)));
+    }
+
+    function readForm(): FilterState {
+      const fd = new FormData(form);
+      const num = (k: string) => {
+        const v = String(fd.get(k) ?? "").trim();
+        return v === "" || !Number.isFinite(Number(v)) ? null : Math.round(Number(v));
+      };
+      return {
+        ...state,
+        q: String(fd.get("q") ?? ""),
+        basis: fd.get("basis") as FilterState["basis"],
+        from: num("from"),
+        to: num("to"),
+        status: fd.get("status") as FilterState["status"],
+        pstatus: fd.get("pstatus") as FilterState["pstatus"],
+        agency: String(fd.get("agency") ?? ""),
+        measure: fd.get("measure") as FilterState["measure"],
+        min: num("min"),
+        max: num("max"),
+        hatch: fd.has("hatch"),
+        healthcare: fd.has("healthcare"),
+        pandemic: fd.has("pandemic"),
+        alleged: fd.has("alleged"),
+        actor: fd.getAll("actor").map(String) as FilterState["actor"],
+        cat: fd.getAll("cat").map(String) as FilterState["cat"],
+      };
+    }
+
+    function render() {
+      const shown = applyState(rows, state);
+      tbody.innerHTML = shown.map((r) => rowHtml(r, state)).join("");
+      count.textContent = `${shown.length} of ${rows.length} cases`;
+      empty.hidden = shown.length > 0;
+      document.querySelectorAll<HTMLElement>("#explore th[data-sort]").forEach((th) => {
+        th.setAttribute("aria-sort", th.dataset.sort === state.sort ? (state.dir === "asc" ? "ascending" : "descending") : "none");
+      });
+      const dateBtn = document.querySelector<HTMLButtonElement>('#explore button[data-sort="date"]');
+      if (dateBtn) dateBtn.textContent = DATE_BASIS_LABELS[state.basis];
+      const q = toQuery(state);
+      history.replaceState(null, "", location.pathname + q);
+    }
+
+    form.addEventListener("input", () => { state = readForm(); render(); });
+    form.addEventListener("submit", (e) => e.preventDefault());
+    form.addEventListener("reset", (e) => { e.preventDefault(); state = { ...DEFAULT_STATE }; writeForm(state); render(); });
+    document.querySelectorAll<HTMLButtonElement>("#explore button[data-sort]").forEach((b) => {
+      b.addEventListener("click", () => {
+        const key = b.dataset.sort as SortKey;
+        state = { ...state, dir: state.sort === key && state.dir === "desc" ? "asc" : state.sort === key ? "desc" : key === "title" ? "asc" : "desc", sort: key };
+        render();
+      });
+    });
+
+    writeForm(state);
+    render();
+    // On narrow screens start with the filters folded unless a shared link set some.
+    if (window.matchMedia("(max-width: 40rem)").matches && location.search === "") {
+      (document.getElementById("filter-panel") as HTMLDetailsElement).open = false;
+    }
+  </script>
+</Base>

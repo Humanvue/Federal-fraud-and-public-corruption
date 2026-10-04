@@ -12,7 +12,7 @@ export function getStaticPaths() {
 const { person } = Astro.props as { person: Person };
 const events = eventsForEntity(person.id);
 ---
-<Base title={person.name}>
+<Base title={person.name} searchType="Person">
   <h1>{person.name}</h1>
   {person.aliases.length > 0 && <p class="muted">Also recorded as: {person.aliases.join("; ")}</p>}
   {person.positions.length > 0 && (
