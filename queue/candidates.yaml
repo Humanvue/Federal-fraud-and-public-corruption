@@ -286,6 +286,23 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-216d3f9948
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ndga/pr/former-sba-and-irs-employee-sentenced-federal-prison-taking-bribes-35-million-covid
+    title: Former SBA and IRS Employee Sentenced to Federal Prison for Taking Bribes in $3.5 Million COVID Fraud Scheme
+    date: 2026-09-03
+    feed: usao-ndga
+    tags:
+      - bribery
+      - fraud
+      - agency_named
+      - excluded:pandemic
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
   - id: q-a3bb70c878
     kind: new_case
     source: doj
@@ -313,6 +330,22 @@ candidates:
       - bribery
       - fraud
       - agency_named
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-d55675ddae
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ndga/pr/former-mail-carrier-sentenced-federal-prison-stealing-more-1-million-checks-mail
+    title: Former Mail Carrier Sentenced to Federal Prison for Stealing More than $1 Million of Checks from Mail
+    date: 2026-08-25
+    feed: usao-ndga
+    tags:
+      - embezzlement
+      - postal
+      - official_is_subject
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
