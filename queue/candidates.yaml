@@ -45,7 +45,7 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
+    state: drafted
     note: null
   - id: q-94b77919f1
     kind: new_case
@@ -61,7 +61,7 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
+    state: drafted
     note: null
   - id: q-b72cb429a8
     kind: new_case
@@ -126,7 +126,7 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
+    state: drafted
     note: null
   - id: q-431a8b01cb
     kind: new_case
@@ -174,7 +174,7 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
+    state: drafted
     note: null
   - id: q-d1c22c6311
     kind: new_case
@@ -222,7 +222,7 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
+    state: drafted
     note: null
   - id: q-160f4642b3
     kind: new_case
@@ -332,7 +332,7 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
+    state: drafted
     note: null
   - id: q-d2697cccd8
     kind: new_case
