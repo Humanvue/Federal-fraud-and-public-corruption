@@ -1,0 +1,144 @@
+id: evt-2025-cherfilus-mccormick-fema-funds
+title: U.S. representative charged with theft of FEMA funds and illegal campaign contributions
+categories:
+  - embezzlement_theft
+  - grant_fraud
+agencies:
+  - org-house
+  - org-fema
+investigating_agencies:
+  - org-fbi
+  - org-irs-ci
+prosecuting_office: org-usao-sdfl
+court_cases:
+  - court: S.D. Fla.
+    docket: 1:25-cr-20500
+    courtlistener_id: 71940898
+    source_ids:
+      - src-doj-opa-20251119-01
+      - src-flsd-20260414-01
+jurisdiction_note: The release states the case number is forthcoming. All figures are alleged. Later proceedings (arraignment, plea, trial date) are not on a fetched government page.
+summary: |
+  According to the indictment returned by a federal grand jury in Miami on November 19, 2025, U.S. Representative Sheila Cherfilus-McCormick and her brother, Edwin Cherfilus, worked through their family health-care company on a FEMA-funded COVID-19 vaccination staffing contract in 2021, and in July 2021 the company received an overpayment of $5 million in FEMA funds. The indictment alleges that the defendants conspired to steal the $5 million, routed it through multiple accounts to disguise its source, and used a substantial portion as candidate contributions to Cherfilus-McCormick's 2021 congressional campaign and for the defendants' personal benefit. It further alleges that Cherfilus-McCormick and Nadege Leblanc arranged additional contributions through straw donors, and that Cherfilus-McCormick and her tax preparer, David K. Spencer, conspired to file a false federal tax return that claimed political spending and personal expenses as business deductions and inflated charitable contributions. FBI Miami and IRS Criminal Investigation are investigating; the U.S. Attorney's Office for the Southern District of Florida and the Criminal Division are prosecuting.
+dates:
+  conduct_start: 2021-07
+  conduct_end: null
+  first_public_action: 2025-11-19
+money:
+  loss_to_government:
+    amount: 5000000
+    basis: alleged
+    kind: actual
+    source_ids:
+      - src-doj-opa-20251119-01
+    note: $5 million FEMA overpayment allegedly stolen
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-sheila-cherfilus-mccormick
+    actor_type: official
+    roles:
+      - defendant
+    position: U.S. Representative (Florida)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-11-19
+        source_ids:
+          - src-doj-opa-20251119-01
+          - src-flsd-20260414-01
+          - src-flsd-20260901-01
+        note: Indicted on theft of federal disaster funds, money laundering, illegal campaign contribution, and false tax return conspiracy charges (S.D. Fla. No. 1:25-cr-20500). Trial for all four defendants set for 2027-02-08 on a joint motion to continue (Doc. 70); the government's speedy trial report of 2026-09-01 lists all four as defendants (Doc. 84). No plea agreement or disposition appears on the RECAP docket.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-edwin-cherfilus
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-11-19
+        source_ids:
+          - src-doj-opa-20251119-01
+          - src-flsd-20260414-01
+          - src-flsd-20260901-01
+        note: S.D. Fla. No. 1:25-cr-20500. Trial for all four defendants set for 2027-02-08 on a joint motion to continue (Doc. 70); the government's speedy trial report of 2026-09-01 lists all four as defendants (Doc. 84). No plea agreement or disposition appears on the RECAP docket.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-nadege-leblanc
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-11-19
+        source_ids:
+          - src-doj-opa-20251119-01
+          - src-flsd-20260414-01
+          - src-flsd-20260901-01
+        note: S.D. Fla. No. 1:25-cr-20500. Trial for all four defendants set for 2027-02-08 on a joint motion to continue (Doc. 70); the government's speedy trial report of 2026-09-01 lists all four as defendants (Doc. 84). No plea agreement or disposition appears on the RECAP docket.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-david-spencer
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    position: Tax preparer
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-11-19
+        source_ids:
+          - src-doj-opa-20251119-01
+          - src-flsd-20260414-01
+          - src-flsd-20260901-01
+        note: S.D. Fla. No. 1:25-cr-20500. Trial for all four defendants set for 2027-02-08 on a joint motion to continue (Doc. 70); the government's speedy trial report of 2026-09-01 lists all four as defendants (Doc. 84). No plea agreement or disposition appears on the RECAP docket.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-fema
+    actor_type: official
+    roles:
+      - victim_agency
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships:
+  - from: per-edwin-cherfilus
+    to: per-sheila-cherfilus-mccormick
+    type: family_of
+    source_ids:
+      - src-doj-opa-20251119-01
+    note: brother
+government_sources:
+  - src-doj-opa-20251119-01
+  - src-flsd-20260414-01
+  - src-flsd-20260901-01
+news_sources: []
+tags:
+  - member-of-congress
+  - disaster-funds
+  - campaign-funds
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

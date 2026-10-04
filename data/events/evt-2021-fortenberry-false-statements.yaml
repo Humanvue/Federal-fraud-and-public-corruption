@@ -1,0 +1,121 @@
+id: evt-2021-fortenberry-false-statements
+title: Former U.S. representative's false-statements case dismissed with prejudice after the Ninth Circuit reversed his conviction for improper venue
+categories:
+  - false_statements_obstruction
+agencies:
+  - org-house
+investigating_agencies:
+  - org-fbi
+  - org-irs-ci
+prosecuting_office: org-usao-cdca
+court_cases:
+  - court: C.D. Cal.
+    docket: 2:21-cr-00491-SB-1
+    courtlistener_id: null
+    source_ids:
+      - src-ca9-20231226-01
+      - src-usao-cdca-20211019-01
+  - court: 9th Cir.
+    docket: 22-50144
+    courtlistener_id: null
+    source_ids:
+      - src-ca9-20231226-01
+  - court: D.D.C.
+    docket: 1:24-cr-00221
+    courtlistener_id: 68515225
+    source_ids:
+      - src-house-judiciary-20241205-01
+      - src-dcd-20250129-01
+jurisdiction_note: The 2024 District of Columbia indictment is known only from a House Judiciary Committee letter; its prosecuting office and docket are not on a fetched government page. The January 2025 dismissal reported in news is not on any government page read and is omitted. The $30,000 in conduit contributions is not a bribe or a government loss, so no money field is filled.
+summary: |
+  According to the indictment returned on October 19, 2021, Jeff Fortenberry, who represented Nebraska's 1st Congressional District in the U.S. House of Representatives, concealed material facts and made false statements to federal investigators examining illegal contributions to his 2016 re-election campaign. The indictment states that Gilbert Chagoury, a foreign national, arranged for $30,000 to be contributed through conduit donors at a 2016 Los Angeles fundraiser; Chagoury admitted in a 2019 deferred prosecution agreement to providing approximately $180,000 for illegal contributions to four candidates and paid a $1.8 million fine. In a June 2018 call, the fundraiser's co-host told Fortenberry that the money probably came from Chagoury; Fortenberry did not file an amended FEC report and, in interviews on March 23, 2019 and July 18, 2019, denied knowledge of the contributions. The Ninth Circuit held in December 2023 that venue for the false-statement counts did not lie in the Central District of California because the statements were made in Nebraska and Washington, D.C. The House Committee on Ethics established an investigative subcommittee on November 17, 2021, deferred action at the Department of Justice's request, and closed the matter on April 1, 2022 after Fortenberry resigned effective March 31, 2022.
+dates:
+  conduct_start: 2018-06
+  conduct_end: 2019-07-18
+  first_public_action: 2021-10-19
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-jeff-fortenberry
+    actor_type: official
+    roles:
+      - defendant
+    position: U.S. Representative, 1st Congressional District of Nebraska
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2021-10-19
+        source_ids:
+          - src-usao-cdca-20211019-01
+          - src-house-ethics-20220401-01
+        note: "Indicted in the Central District of California: one count of scheming to falsify and conceal material facts and two counts of false statements"
+      - track: criminal
+        status: convicted
+        date: 2022-03-24
+        source_ids:
+          - src-usao-cdca-20220324-01
+          - src-house-ethics-20220401-01
+        note: Jury verdict on all three counts
+      - track: criminal
+        status: sentenced
+        date: 2022-06-28
+        source_ids:
+          - src-ca9-20231226-01
+          - src-house-judiciary-20241205-01
+          - src-usao-cdca-20220324-01
+        note: Two years of probation, 320 hours of community service, and a $25,000 fine (per the Ninth Circuit opinion). The date is the sentencing hearing date scheduled in the conviction release; no fetched government page states the date the sentence was imposed.
+      - track: criminal
+        status: overturned
+        date: 2023-12-26
+        source_ids:
+          - src-ca9-20231226-01
+        note: Ninth Circuit reversed the conviction for improper venue, without prejudice to retrial in a proper venue, and remanded
+      - track: criminal
+        status: charged
+        date: 2024-05-08
+        source_ids:
+          - src-house-judiciary-20241205-01
+        note: Indicted again in Washington, D.C. for much of the same alleged conduct, per the House Judiciary Committee letter of December 5, 2024.
+      - track: criminal
+        status: dismissed
+        date: 2025-01-29
+        source_ids:
+          - src-dcd-20250129-01
+        note: Court granted the government's unopposed motion to dismiss the D.C. indictment with prejudice (Fed. R. Crim. P. 48(a)).
+    administrative_actions:
+      - type: resignation
+        date: 2022-03-31
+        source_ids:
+          - src-house-ethics-20220401-01
+          - src-ca9-20231226-01
+        note: Notice of resignation received by the House on March 26, 2022, effective at the close of business on March 31, 2022
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-cdca-20211019-01
+  - src-usao-cdca-20220324-01
+  - src-house-ethics-20220401-01
+  - src-ca9-20231226-01
+  - src-house-judiciary-20241205-01
+  - src-dcd-20250129-01
+news_sources: []
+tags:
+  - member-of-congress
+  - overturned-on-appeal
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

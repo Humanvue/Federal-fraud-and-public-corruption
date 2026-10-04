@@ -1,0 +1,8 @@
+id: per-robert-burke
+name: "Robert P. Burke"
+aliases: ["Robert Burke"]
+wikidata_qid: null
+positions:
+  - { title: "Admiral, U.S. Navy; Commander, U.S. Naval Forces Europe and Africa", org_id: org-navy, start: 2020-07, end: 2022, source_ids: ["src-usao-dc-20240531-01", "src-cadc-20260918-01"] }
+  - { title: "Chief of Naval Personnel", org_id: org-navy, start: null, end: null, source_ids: ["src-cadc-20260918-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

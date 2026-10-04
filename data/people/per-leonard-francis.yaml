@@ -1,0 +1,7 @@
+id: per-leonard-francis
+name: "Leonard Glenn Francis"
+aliases: ["Leonard Francis"]
+wikidata_qid: null
+positions:
+  - { title: "Owner and Chief Executive Officer, Glenn Defense Marine Asia", org_id: org-glenn-defense-marine-asia, start: null, end: null, source_ids: ["src-usao-sdca-20220202-01", "src-usao-sdca-20241105-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

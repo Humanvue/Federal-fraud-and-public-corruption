@@ -29,6 +29,14 @@ export const RESOLVED_FOR_REVIEW: ReadonlySet<Status> = new Set<Status>([
   "convicted",
 ]);
 
+/**
+ * A declination means no criminal case exists, so it ranks below every other entry; otherwise the
+ * track decides (criminal > civil > administrative).
+ */
+function rankOf(s: StatusEntry): number {
+  return s.status === "declined" ? 0 : TRACK_RANK[s.track];
+}
+
 /** Latest entry on the participant's most advanced track (criminal > civil > administrative). */
 export function currentStatus(p: Participant): StatusEntry | null {
   if (p.status_history.length === 0) return null;
@@ -38,20 +46,25 @@ export function currentStatus(p: Participant): StatusEntry | null {
       best = s;
       continue;
     }
-    const rank = TRACK_RANK[s.track] - TRACK_RANK[best.track];
+    const rank = rankOf(s) - rankOf(best);
     if (rank > 0 || (rank === 0 && compareDates(s.date, best.date) >= 0)) best = s;
   }
   return best;
 }
 
+/** A pardon ends a prosecution, so a pardoned participant is resolved even before conviction. */
+function pardoned(p: Participant): boolean {
+  return p.clemency.some((c) => c.type === "pardon");
+}
+
 export function isResolved(p: Participant): boolean {
   const s = currentStatus(p);
-  return s !== null && RESOLVED_STATUSES.has(s.status);
+  return s !== null && (RESOLVED_STATUSES.has(s.status) || pardoned(p));
 }
 
 export function isResolvedForReview(p: Participant): boolean {
   const s = currentStatus(p);
-  return s !== null && RESOLVED_FOR_REVIEW.has(s.status);
+  return s !== null && (RESOLVED_FOR_REVIEW.has(s.status) || pardoned(p));
 }
 
 export type EventStatus = "pending" | "partially_resolved" | "resolved";
@@ -76,7 +89,10 @@ export function resolutionDate(e: Event): string | null {
   let latest: string | null = null;
   for (const p of trackedParticipants(e)) {
     const s = currentStatus(p)!;
-    if (!latest || compareDates(s.date, latest) > 0) latest = s.date;
+    // A pre-conviction pardon resolves the participant on the pardon date.
+    const pardon = !RESOLVED_STATUSES.has(s.status) ? p.clemency.find((c) => c.type === "pardon") : undefined;
+    const d = pardon?.date ?? s.date;
+    if (!latest || compareDates(d, latest) > 0) latest = d;
   }
   return latest;
 }

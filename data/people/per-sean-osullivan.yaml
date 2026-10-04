@@ -1,0 +1,7 @@
+id: per-sean-osullivan
+name: "Sean O'Sullivan"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Co-owner, Sierra Delta Contracting LLC; owner, SOS Inc.", org_id: org-sierra-delta-contracting, start: null, end: null, source_ids: ["src-usao-ndny-20220331-01", "src-usao-ndny-20240517-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

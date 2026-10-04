@@ -1,0 +1,7 @@
+id: per-meghan-messenger
+name: "Meghan Messenger"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Co-Chief Executive Officer, Next Jump, Inc.", org_id: org-next-jump, start: null, end: null, source_ids: ["src-usao-dc-20240531-01", "src-cadc-20260918-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

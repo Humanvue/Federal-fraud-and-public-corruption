@@ -1,0 +1,7 @@
+id: per-david-shulkin
+name: "David Shulkin"
+aliases: ["David J. Shulkin"]
+wikidata_qid: null
+positions:
+  - { title: "Secretary of Veterans Affairs", org_id: org-va, start: null, end: null, source_ids: [src-va-oig-20180214-01, src-va-oig-20180214-02] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

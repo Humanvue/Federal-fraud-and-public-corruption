@@ -1,0 +1,7 @@
+id: per-james-comey
+name: "James B. Comey Jr."
+aliases: ["James Comey", "James B. Comey, Jr."]
+wikidata_qid: null
+positions:
+  - { title: "Director, Federal Bureau of Investigation", org_id: org-fbi, start: null, end: 2017, source_ids: [src-nysd-20260428-01, src-usao-edva-20250925-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

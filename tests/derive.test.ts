@@ -48,6 +48,14 @@ describe("currentStatus", () => {
     expect(currentStatus(p)?.status).toBe("acquitted");
   });
 
+  it("ranks an administrative finding above a criminal declination", () => {
+    const p = person([
+      { track: "criminal", status: "declined", date: "2023-01-06", source_ids: SRC },
+      { track: "administrative", status: "finding_issued", date: "2023-05-17", source_ids: SRC },
+    ]);
+    expect(currentStatus(p)?.status).toBe("finding_issued");
+  });
+
   it("is null with no history", () => {
     expect(currentStatus(person([]))).toBeNull();
   });
@@ -71,6 +79,18 @@ describe("eventStatus and resolutionDate", () => {
     const e = fixture();
     e.participants[0].status_history = [{ track: "criminal", status: "charged", date: "2019-02-11", source_ids: SRC }];
     e.participants.push(person([], { entity_id: "org-fixture-agency", actor_type: "official", roles: ["victim_agency"] }));
+    expect(eventStatus(e)).toBe("pending");
+  });
+});
+
+describe("pardons", () => {
+  it("a pardon before trial resolves the participant on the pardon date; a commutation does not", () => {
+    const e = fixture();
+    e.participants = [person([{ track: "criminal", status: "charged", date: "2024-05-03", source_ids: SRC }], { clemency: [{ type: "pardon", date: "2025-12-02", granted_by: "President", source_ids: SRC }] })];
+    expect(eventStatus(e)).toBe("resolved");
+    expect(resolutionDate(e)).toBe("2025-12-02");
+    expect(stalenessTasks(e, "2030-01-01")).toEqual([]);
+    e.participants[0].clemency = [{ type: "commutation", date: "2025-12-02", granted_by: "President", source_ids: SRC }];
     expect(eventStatus(e)).toBe("pending");
   });
 });

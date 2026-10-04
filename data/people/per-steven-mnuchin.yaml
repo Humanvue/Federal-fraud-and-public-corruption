@@ -1,0 +1,7 @@
+id: per-steven-mnuchin
+name: "Steven T. Mnuchin"
+aliases: ["Steven Terner Mnuchin", "Steven Mnuchin"]
+wikidata_qid: null
+positions:
+  - { title: "Secretary of the Treasury", org_id: org-treasury, start: 2017-02-13, end: 2021, source_ids: [src-treasury-20170213-01, src-treasury-oig-20171004-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

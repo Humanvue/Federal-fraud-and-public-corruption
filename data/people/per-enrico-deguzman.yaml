@@ -1,0 +1,9 @@
+id: per-enrico-deguzman
+name: "Enrico DeGuzman"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Colonel, U.S. Marine Corps; Fleet Marine Officer, Seventh Fleet staff", org_id: org-seventh-fleet, start: 2004-07, end: 2007-07, source_ids: ["src-usao-sdca-20210903-01"] }
+  - { title: "Assistant Chief of Staff of Operations, U.S. Marine Corps Forces, Pacific", org_id: org-marine-corps, start: 2007-07, end: 2011-01-01, source_ids: ["src-usao-sdca-20210903-01"] }
+  - { title: "Deputy Chief of Staff of Operations (civilian), U.S. Marine Corps Forces, Pacific", org_id: org-marine-corps, start: 2011-01, end: null, source_ids: ["src-usao-sdca-20210903-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

@@ -1,0 +1,80 @@
+id: evt-2026-windom-undisclosed-gifts
+title: VA senior executive's indictment for concealing gifts from contractors dismissed
+categories:
+  - false_statements_obstruction
+  - conflict_of_interest_ethics
+agencies:
+  - org-va
+  - org-oge
+investigating_agencies:
+  - org-usao-dc
+  - org-fbi
+  - org-va-oig
+prosecuting_office: org-usao-dc
+court_cases:
+  - court: D.D.C.
+    docket: 1:26-cr-00064
+    courtlistener_id: 72996768
+    source_ids:
+      - src-dcd-20260325-01
+      - src-dcd-20260709-01
+jurisdiction_note: null
+summary: |
+  John H. Windom, 64, a member of the Senior Executive Service who served as Executive Director of the Department of Veterans Affairs' Office of Electronic Health Record Modernization, was named in a three-count indictment returned in the U.S. District Court for the District of Columbia on March 25, 2026. According to the indictment, between August 2017 and June 2021, while leading the VA's electronic health record program (a $10 billion contract awarded in May 2018, with total implementation cost estimated by VA officials at approximately $16 billion), Windom accepted, and in some instances demanded, gifts, meals, entertainment, and other benefits from a group of owners and employees of VA contractors and subcontractors that he referred to as the "Power Group." The indictment alleges that in 2020 he received approximately $8,200 in Louis Vuitton gift cards, $2,000 in cash, a $631 air filter, $1,800 in casino chips, a $1,000 gift card, and $2,000 in cash or casino chips from these individuals; that on March 31, 2021 he filed a public financial disclosure form reporting no reportable gifts; and that he made false statements to federal investigators in 2021 and 2024. The indictment charges concealment of material facts, false statements, and falsification of a record or document. The U.S. Attorney's Office states that the FBI Washington Field Office and the VA Office of Inspector General investigated.
+dates:
+  conduct_start: 2017-08
+  conduct_end: 2024-03-21
+  first_public_action: 2026-03-25
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved:
+    amount: 10000000000
+    basis: alleged
+    source_ids:
+      - src-dcd-20260325-01
+    note: Per the indictment, the VA awarded Cerner a $10 billion electronic health record contract in May 2018 under Windom's management and supervision; VA officials estimated total implementation cost at approximately $16 billion (the USAO release describes a $16 billion acquisition and deployment). This is the program he oversaw, not a bribe figure; the gifts are not charged as bribes.
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-john-windom
+    actor_type: official
+    roles:
+      - defendant
+    position: Executive Director, Office of Electronic Health Record Modernization, Department of Veterans Affairs (Senior Executive Service)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2026-03-25
+        source_ids:
+          - src-usao-dc-20260325-01
+          - src-dcd-20260325-01
+        note: "Three-count indictment, D.D.C. No. 1:26-cr-00064: concealment of material facts (18 U.S.C. 1001(a)(1)), false statements (18 U.S.C. 1001(a)(2)), falsification of a record or document (18 U.S.C. 1519)."
+      - track: criminal
+        status: dismissed
+        date: 2026-07-09
+        source_ids:
+          - src-dcd-20260709-01
+        note: The court granted the government's motion to dismiss the indictment under Federal Rule of Criminal Procedure 48(a) and vacated the status hearing set for July 13, 2026 (Doc. 82). Whether the dismissal is with or without prejudice is not stated in the docket text.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-dc-20260325-01
+  - src-dcd-20260325-01
+  - src-dcd-20260709-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

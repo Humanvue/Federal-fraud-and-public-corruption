@@ -1,0 +1,111 @@
+id: evt-2022-dea-agent-bribery-nonpublic-information
+title: DEA special agent and retired DEA supervisor sentenced in bribery scheme involving nonpublic investigative information
+categories:
+  - bribery_kickbacks
+agencies:
+  - org-dea
+investigating_agencies:
+  - org-fbi
+  - org-doj-oig
+prosecuting_office: org-usao-sdny
+court_cases:
+  - court: S.D.N.Y.
+    docket: null
+    courtlistener_id: null
+    source_ids:
+      - src-doj-oig-20220520-01
+jurisdiction_note: null
+summary: |
+  John Costanzo Jr. was a Drug Enforcement Administration special agent assigned to DEA Headquarters and, until June 2019, a group supervisor in the Miami Field Office. Manuel Recio retired from the DEA as Assistant Special Agent in Charge of the Miami Field Office in November 2018 and then ran a business providing private investigative services to criminal defense attorneys and helping them recruit clients. According to an indictment unsealed in the Southern District of New York on May 20, 2022, and the trial evidence as described by prosecutors, from about October 2018 through about November 2019 Recio provided benefits to Costanzo in exchange for nonpublic DEA information, including the identities of individuals charged in sealed indictments, the anticipated timing of arrests, and intelligence from the NADDIS database. The benefits included a $2,500 payment in November 2018 routed through a company owned by a Costanzo family member, tens of thousands of dollars routed through a company created by a DEA task force officer, and $50,000 paid through a family member toward Costanzo's condominium purchase in January and February 2019. The court ordered Costanzo to forfeit $98,250. The FBI and the DOJ Office of the Inspector General investigated.
+dates:
+  conduct_start: 2018-10
+  conduct_end: 2019-11
+  first_public_action: 2022-05-20
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture:
+    amount: 98250
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdny-20240424-01
+    note: Ordered against Costanzo at sentencing.
+  whistleblower_share: null
+participants:
+  - entity_id: per-john-costanzo
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Special Agent (Group Supervisor, Miami Field Office, until June 2019)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2022-05-20
+        source_ids:
+          - src-doj-oig-20220520-01
+        note: "Indictment unsealed and arrested: conspiracy to bribe a public official, receiving a bribe, conspiracy to commit honest services wire fraud, honest services wire fraud"
+      - track: criminal
+        status: convicted
+        date: 2023-11-08
+        source_ids:
+          - src-usao-sdny-20231109-01
+        note: Jury verdict on all four counts after a 12-day trial (verdict 'yesterday' relative to the Nov. 9, 2023 release)
+      - track: criminal
+        status: sentenced
+        date: 2024-04-24
+        source_ids:
+          - src-usao-sdny-20240424-01
+        note: Four years; three years supervised release; forfeiture of $98,250
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-manuel-recio
+    actor_type: official
+    roles:
+      - defendant
+      - briber
+    position: Retired Assistant Special Agent in Charge, Miami Field Office (retired November 2018)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2022-05-20
+        source_ids:
+          - src-doj-oig-20220520-01
+        note: "Indictment unsealed and arrested: conspiracy to bribe a public official, paying a bribe, conspiracy to commit honest services wire fraud, honest services wire fraud"
+      - track: criminal
+        status: convicted
+        date: 2023-11-08
+        source_ids:
+          - src-usao-sdny-20231109-01
+        note: Jury verdict on all four counts
+      - track: criminal
+        status: sentenced
+        date: 2024-05-14
+        source_ids:
+          - src-doj-oig-20240514-01
+        note: Three years; three years supervised release; $400 special assessment
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-doj-oig-20220520-01
+  - src-usao-sdny-20231109-01
+  - src-usao-sdny-20240424-01
+  - src-doj-oig-20240514-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

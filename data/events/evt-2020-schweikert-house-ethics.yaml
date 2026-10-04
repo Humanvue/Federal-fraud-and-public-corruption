@@ -1,0 +1,71 @@
+id: evt-2020-schweikert-house-ethics
+title: U.S. representative reprimanded by the House and fined $50,000 after Ethics Committee findings
+categories:
+  - conflict_of_interest_ethics
+agencies:
+  - org-house
+investigating_agencies:
+  - org-house-ethics
+prosecuting_office: null
+court_cases: []
+jurisdiction_note: House Committee on Ethics matter only; no criminal or civil case. The dates of the Office of Congressional Ethics referrals and the period of the underlying conduct are not on a fetched government page.
+summary: |
+  On July 30, 2020, the Chairman and Ranking Member of the House Committee on Ethics submitted a report to the House in the Matter of Allegations Relating to Representative David Schweikert. The Committee's statement says its Investigative Subcommittee unanimously concluded that there was substantial reason to believe that Representative Schweikert violated House Rules, the Code of Ethics for Government Service, federal laws and other applicable standards in connection with campaign finance violations and reporting errors by his authorized campaign committees, the misuse of his Members' Representational Allowance for unofficial purposes, pressuring official staff to perform campaign work, and his lack of candor and due diligence during the investigation. As part of a negotiated resolution, Schweikert agreed to admit to all eleven counts in the Statement of Alleged Violations adopted by the subcommittee, to accept a sanction of reprimand and a $50,000 fine, and to waive further procedural rights. On July 29, 2020, the full Committee unanimously accepted the subcommittee's recommendations. The govinfo bill status record shows that H.Res. 1074, adopting the Committee report, was agreed to by the House by voice vote on July 31, 2020.
+dates:
+  conduct_start: null
+  conduct_end: null
+  first_public_action: 2020-07-30
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines:
+    amount: 50000
+    basis: admitted
+    source_ids:
+      - src-house-ethics-20200730-01
+      - src-govinfo-20200731-01
+    note: Fine accepted by Schweikert in the negotiated resolution and imposed by the House through H.Res. 1074
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-david-schweikert
+    actor_type: official
+    roles:
+      - subject_of_finding
+    position: U.S. Representative
+    status_history:
+      - track: administrative
+        status: finding_issued
+        date: 2020-07-30
+        source_ids:
+          - src-house-ethics-20200730-01
+        note: Committee on Ethics report submitted to the House; the full Committee had unanimously accepted the Investigative Subcommittee's recommendations on July 29, 2020; Schweikert admitted all eleven counts of the Statement of Alleged Violations
+      - track: administrative
+        status: finding_issued
+        date: 2020-07-31
+        source_ids:
+          - src-govinfo-20200731-01
+        note: H.Res. 1074 adopting the Committee report (reprimand and $50,000 fine) agreed to by the House by voice vote
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-house-ethics-20200730-01
+  - src-govinfo-20200731-01
+news_sources: []
+tags:
+  - member-of-congress
+  - house-ethics
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

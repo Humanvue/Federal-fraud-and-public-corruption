@@ -1,0 +1,6 @@
+id: org-army
+name: "U.S. Army"
+org_type: agency
+parent_org_id: org-dod
+uei: null
+wikidata_qid: null

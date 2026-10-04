@@ -1,0 +1,6 @@
+id: org-state-dss
+name: "U.S. Department of State, Diplomatic Security Service"
+org_type: agency
+parent_org_id: org-state
+uei: null
+wikidata_qid: null

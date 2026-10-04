@@ -1,0 +1,7 @@
+id: per-keith-seguin
+name: "Keith Alan Seguin"
+aliases: ["Keith Seguin"]
+wikidata_qid: null
+positions:
+  - { title: "Civilian employee, 502 Trainer Development Squadron, Randolph Air Force Base", org_id: org-air-force, start: null, end: null, source_ids: ["src-usao-wdtx-20200915-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

@@ -81,8 +81,8 @@ describe("Source schema", () => {
     expect(Source.safeParse(base).success).toBe(true);
   });
 
-  it("requires archive_url and text_file for government sources", () => {
-    expect(Source.safeParse({ ...base, archive_url: null }).success).toBe(false);
+  it("requires a text_file for government sources (archive is checked by the validator)", () => {
+    expect(Source.safeParse({ ...base, archive_url: null }).success).toBe(true);
     expect(Source.safeParse({ ...base, text_file: null }).success).toBe(false);
     expect(Source.safeParse({ ...base, text_file: "elsewhere.md" }).success).toBe(false);
   });

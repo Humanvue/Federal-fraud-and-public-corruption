@@ -1,0 +1,6 @@
+id: org-irs-ci
+name: "IRS Criminal Investigation"
+org_type: agency
+parent_org_id: org-irs
+uei: null
+wikidata_qid: null

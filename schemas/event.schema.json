@@ -69,8 +69,16 @@
             "minLength": 1
           },
           "docket": {
-            "type": "string",
-            "minLength": 1
+            "default": null,
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "courtlistener_id": {
             "default": null,
@@ -103,7 +111,6 @@
         },
         "required": [
           "court",
-          "docket",
           "source_ids"
         ],
         "additionalProperties": false

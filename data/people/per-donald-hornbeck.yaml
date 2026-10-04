@@ -1,0 +1,7 @@
+id: per-donald-hornbeck
+name: "Donald Hornbeck"
+aliases: ["Donald Gayle Hornbeck"]
+wikidata_qid: null
+positions:
+  - { title: "Captain, U.S. Navy; directed the operations of all combatant ships in the Seventh Fleet", org_id: org-seventh-fleet, start: null, end: null, source_ids: ["src-usao-sdca-20220202-01", "src-govinfo-20240530-03"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

@@ -1,0 +1,77 @@
+id: evt-2025-comey-false-statements-congress
+title: Former FBI Director's indictment for false statements to Congress dismissed
+categories:
+  - false_statements_obstruction
+agencies:
+  - org-fbi
+  - org-senate
+investigating_agencies: []
+prosecuting_office: org-usao-edva
+court_cases:
+  - court: E.D. Va.
+    docket: 1:25-cr-272
+    courtlistener_id: null
+    source_ids:
+      - src-usao-edva-20250925-01
+      - src-nysd-20260428-01
+  - court: 4th Cir.
+    docket: 25-4674
+    courtlistener_id: 72065969
+    source_ids:
+      - src-ca4-20260915-01
+jurisdiction_note: null
+summary: |
+  James B. Comey Jr., the former Director of the Federal Bureau of Investigation, was named in a two-count indictment returned by a federal grand jury in the Eastern District of Virginia on September 25, 2025. According to the announcement by the U.S. Attorney's Office for the Eastern District of Virginia, the indictment charges him with making a false statement and with obstruction relating to his oral testimony before the U.S. Senate Judiciary Committee on September 30, 2020. An opinion of the U.S. District Court for the Southern District of New York, issued in a separate civil case brought by his daughter, recites the docket history: the grand jury indicted him on one count of making false statements to Congress and one count of obstructing a congressional proceeding, and the opinion records the Eastern District of Virginia's November 24, 2025 ruling on the indictment, its stated ground concerning the authority of the person who appeared before the grand jury for the government, and the government's appeal docketed in the Fourth Circuit on December 22, 2025 (No. 25-4674). The same opinion states that President Trump fired Comey as FBI Director in 2017. No dollar figures appear in the government sources.
+dates:
+  conduct_start: 2020-09-30
+  conduct_end: 2020-09-30
+  first_public_action: 2025-09-25
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-james-comey
+    actor_type: official
+    roles:
+      - defendant
+    position: Former Director, Federal Bureau of Investigation
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-09-25
+        source_ids:
+          - src-usao-edva-20250925-01
+          - src-nysd-20260428-01
+        note: "Indictment returned by a federal grand jury, E.D. Va. No. 1:25-cr-272: one count of making false statements to Congress and one count of obstructing a congressional proceeding, relating to testimony before the Senate Judiciary Committee on September 30, 2020."
+      - track: criminal
+        status: dismissed
+        date: 2025-11-24
+        source_ids:
+          - src-nysd-20260428-01
+          - src-ca4-20260915-01
+        note: The E.D. Va. dismissed the indictment on the ground that the person who had appeared in the grand jury on behalf of the government was not lawfully exercising the authority of the U.S. Attorney for the Eastern District of Virginia (810 F. Supp. 3d 768). Government appeal docketed December 22, 2025, 4th Cir. No. 25-4674 (argued together with No. 25-4673); oral argument heard 2026-09-15; no decision appears on the appellate docket, whose latest entry is the 2026-09-15 argument (retrieved 2026-10-03).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-edva-20250925-01
+  - src-nysd-20260428-01
+  - src-ca4-20260915-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

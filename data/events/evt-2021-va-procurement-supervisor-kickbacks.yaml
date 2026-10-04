@@ -1,0 +1,132 @@
+id: evt-2021-va-procurement-supervisor-kickbacks
+title: Veterans Affairs procurement supervisor sentenced for taking kickbacks from a medical supply company
+categories:
+  - bribery_kickbacks
+  - procurement_fraud
+agencies:
+  - org-va
+investigating_agencies:
+  - org-va-oig
+prosecuting_office: org-usao-ndil
+court_cases:
+  - court: N.D. Ill.
+    docket: 1:21-cr-00086
+    courtlistener_id: 59300316
+    source_ids:
+      - src-usao-ndil-20210205-01
+      - src-ilnd-20230516-01
+jurisdiction_note: null
+summary: |
+  Thomas E. Duncan was a procurement supervisor in the Central Supply department of the Jesse Brown Veterans Affairs Medical Center in Chicago. According to an indictment returned in the Northern District of Illinois on February 4, 2021, Duncan received approximately $36,250 in kickbacks paid by checks, plus an additional amount in cash, from Daniel Dingle, president of a medical supply company in Dolton, Illinois, and in exchange used his position to initiate and approve purchases from Dingle's company totaling at least $1.7 million, many of which were never delivered to the VA. The checks were made payable to Helping Hands Properties LLC, an entity managed by Duncan, with false memo entries to disguise their purpose. The scheme ran from 2012 until 2019. In late 2018, while the VA Office of Inspector General was investigating, Duncan created fake invoices from Helping Hands and told Dingle to tell investigators that the payments were for work performed by Helping Hands. The U.S. Attorney's Office stated the government's position that the defendants owed restitution of approximately $1,719,219 to the Department of Veterans Affairs; the court ordered Duncan to pay $1,709,344 in restitution. The VA Office of Inspector General investigated the case.
+dates:
+  conduct_start: 2012
+  conduct_end: 2019
+  first_public_action: 2021-02-04
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 36250
+    basis: alleged
+    source_ids:
+      - src-usao-ndil-20210205-01
+    note: Kickbacks paid by check per the indictment; an additional unstated amount was paid in cash. The plea and sentencing releases say only 'thousands of dollars'.
+  contract_value_involved:
+    amount: 1700000
+    basis: alleged
+    source_ids:
+      - src-usao-ndil-20210205-01
+    note: "'At least $1.7 million in product orders' steered to Dingle's company, per the indictment; no contract award is named."
+  settlement_amount: null
+  restitution_ordered:
+    amount: 1709344
+    basis: adjudicated
+    source_ids:
+      - src-usao-ndil-20240415-01
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-thomas-duncan
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Procurement Supervisor, Central Supply, Jesse Brown VA Medical Center
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2021-02-04
+        source_ids:
+          - src-usao-ndil-20210205-01
+        note: "Indictment returned Thursday (release dated Friday, Feb. 5, 2021): five counts of wire fraud, one count of witness tampering, one count of falsifying records"
+      - track: criminal
+        status: pleaded_guilty
+        date: 2023-05-16
+        source_ids:
+          - src-usao-ndil-20230518-01
+        note: One count of wire fraud; plea entered Tuesday (release dated Thursday, May 18, 2023)
+      - track: criminal
+        status: sentenced
+        date: 2024-04-12
+        source_ids:
+          - src-usao-ndil-20240415-01
+        note: Seven years; restitution of $1,709,344; sentence imposed Friday (release dated Monday, April 15, 2024)
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-daniel-dingle
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: President of a medical supply company in Dolton, Ill. (company not named in the cited government sources)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2021-02-04
+        source_ids:
+          - src-usao-ndil-20210205-01
+        note: Four counts of wire fraud
+      - track: criminal
+        status: pleaded_guilty
+        date: 2023-05-16
+        source_ids:
+          - src-usao-ndil-20230518-01
+          - src-usao-ndil-20240415-01
+          - src-ilnd-20230516-01
+        note: One count of wire fraud (count 1 of the indictment; Doc. 58). Described as awaiting sentencing as of April 15, 2024; sentencing not shown in the cited government sources.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-va
+    actor_type: official
+    roles:
+      - victim_agency
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships:
+  - from: per-thomas-duncan
+    to: org-helping-hands-properties
+    type: associate_of
+    source_ids:
+      - src-usao-ndil-20210205-01
+      - src-usao-ndil-20230518-01
+    note: Entity managed by Duncan; kickback checks were made payable to it. Not charged.
+government_sources:
+  - src-usao-ndil-20210205-01
+  - src-usao-ndil-20230518-01
+  - src-usao-ndil-20240415-01
+  - src-ilnd-20230516-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

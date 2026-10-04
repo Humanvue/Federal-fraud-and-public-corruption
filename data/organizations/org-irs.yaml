@@ -1,0 +1,6 @@
+id: org-irs
+name: "Internal Revenue Service"
+org_type: agency
+parent_org_id: org-treasury
+uei: null
+wikidata_qid: null

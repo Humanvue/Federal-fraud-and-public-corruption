@@ -47,6 +47,25 @@ describe("cross-reference checks", () => {
     expect(messages(ds)).toContainEqual(expect.stringContaining("court_cases is required"));
   });
 
+  it("reports an unarchived government source once, without breaking records that cite it", () => {
+    const ds = clone(loadFixture());
+    ds.sources[0].archive_url = null;
+    ds.sources[0].archive_status = "failed";
+    const m = messages(ds);
+    expect(m.filter((x) => x.includes("require a working archive"))).toHaveLength(1);
+    expect(m).not.toContainEqual(expect.stringContaining("unknown source"));
+  });
+
+  it("accepts a court docket entry marked blocked when its text is stored, but not a government page", () => {
+    const ds = clone(loadFixture());
+    ds.sources[0].archive_url = null;
+    ds.sources[0].archive_status = "blocked";
+    ds.sources[0].source_type = "court";
+    expect(messages(ds).filter((x) => x.includes("require a working archive"))).toHaveLength(0);
+    ds.sources[0].source_type = "government";
+    expect(messages(ds).filter((x) => x.includes("require a working archive"))).toHaveLength(1);
+  });
+
   it("reports a missing source text file", () => {
     const ds = clone(loadFixture());
     ds.sources[0].text_file = "sources/text/does-not-exist.md";
@@ -80,5 +99,17 @@ describe("missingNumbers", () => {
     expect(missingNumbers("a loss of $3,100,000", ["loss of $3.1 million"])).toEqual(["$3,100,000"]);
     expect(missingNumbers("in 2016 and 2017", ["from 2016 through 2017"])).toEqual([]);
     expect(missingNumbers("12 counts", ["eleven counts"])).toEqual(["12"]);
+  });
+});
+
+describe("court_cases rule and declinations", () => {
+  it("does not require a court case when the only criminal entry is a declination", () => {
+    const ds = clone(loadFixture());
+    const e = ds.events[0];
+    e.court_cases = [];
+    e.participants = [
+      { ...e.participants[0], status_history: [{ track: "criminal", status: "declined", date: "2021", source_ids: ["src-fixture-20190211-01"] }], status_verified: "2026-10-02" },
+    ];
+    expect(messages(ds)).not.toContainEqual(expect.stringContaining("court_cases is required"));
   });
 });

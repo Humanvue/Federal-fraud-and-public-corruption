@@ -109,8 +109,8 @@ These are recorded on the participant as separate dated lists and never replace 
 **Display rule:** a pardoned conviction reads "Convicted · later pardoned (DATE)," never "Pardoned" alone.
 
 ### 3.3 Derived values (computed at build, validated in CI)
-- Participant `current_status` = latest entry on the participant's most advanced track (criminal outranks civil outranks administrative for display; all tracks are shown on the case page).
-- Participant `resolved` = true when current_status is any of: `sentenced`, `acquitted`, `dismissed`, `overturned`, `deferred_prosecution`, `declined`, `deceased`, `settled_*`, `judgment_against`, `civil_dismissed`, `finding_issued`, `no_violation_found`. (`pleaded_guilty` and `convicted` count as resolved for review purposes but not for the resolution date.)
+- Participant `current_status` = latest entry on the participant's most advanced track (criminal outranks civil outranks administrative for display; all tracks are shown on the case page). A `declined` entry ranks below every other entry, because a declination means no criminal case exists.
+- Participant `resolved` = true when current_status is any of: `sentenced`, `acquitted`, `dismissed`, `overturned`, `deferred_prosecution`, `declined`, `deceased`, `settled_*`, `judgment_against`, `civil_dismissed`, `finding_issued`, `no_violation_found`. (`pleaded_guilty` and `convicted` count as resolved for review purposes but not for the resolution date.) A participant with a `pardon` is resolved, on the pardon date if no other resolving status exists; a `commutation` does not resolve anything, because the conviction stands.
 - Event `event_status` = `pending` (no participant resolved), `partially_resolved`, or `resolved` (all participants resolved).
 - Event `dates.resolution` = date of the last participant resolution, or null.
 
@@ -266,6 +266,8 @@ report_number: null              # for IG/GAO reports
 link_status: ok                  # ok | broken | redirected; set by link checker
 ```
 APA citations are **generated from these fields at build time**. Never store a hand-typed citation string. Government and court documents are public domain; their full text is stored in the repo so that automated checks and readers do not depend on the original URL surviving.
+
+**Archive exception for court docket entries.** Docket entries retrieved through CourtListener (which mirrors PACER docket text) cannot be captured by the Wayback Machine. Such a `court` source may carry `archive_status: blocked` instead of an archive URL, provided its docket text is stored verbatim in `text_file` with the court, docket number, and entry date. PACER remains the authoritative record. This exception applies only to court docket entries, never to government web pages or reports. (Owner decision, 2026-10-03.)
 
 ### 4.6 Outlet (v2)
 Unchanged from v0.1; bias-rating source and license remain open questions. Not built in v1.

@@ -1,0 +1,9 @@
+id: per-john-windom
+name: "John H. Windom"
+aliases: ["John Windom"]
+wikidata_qid: null
+positions:
+  - { title: "Captain, U.S. Navy", org_id: org-navy, start: null, end: 2017-09-01, source_ids: [src-dcd-20260325-01] }
+  - { title: "Executive Director, Office of Electronic Health Record Modernization (Senior Executive Service)", org_id: org-va, start: 2017-08, end: 2022-04, source_ids: [src-usao-dc-20260325-01, src-dcd-20260325-01] }
+  - { title: "Deputy Director, Federal Electronic Health Modernization Office (joint DoD-VA)", org_id: org-va, start: 2022-04, end: null, source_ids: [src-dcd-20260325-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

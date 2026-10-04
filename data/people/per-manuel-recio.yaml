@@ -1,0 +1,7 @@
+id: per-manuel-recio
+name: "Manuel Recio"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Assistant Special Agent in Charge, Miami Field Office", org_id: org-dea, start: null, end: 2018-11, source_ids: [src-doj-oig-20220520-01, src-usao-sdny-20231109-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

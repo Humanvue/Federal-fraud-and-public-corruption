@@ -1,0 +1,75 @@
+id: evt-2026-cordero-visa-bribery
+title: DEA supervisory special agent charged in visa bribery conspiracy
+categories:
+  - bribery_kickbacks
+agencies:
+  - org-dea
+  - org-state
+investigating_agencies:
+  - org-hsi
+  - org-state-dss
+  - org-doj-oig
+  - org-dea
+prosecuting_office: org-usao-dc
+court_cases:
+  - court: D.D.C.
+    docket: 1:26-mj-00032
+    courtlistener_id: 72292165
+    source_ids:
+      - src-usao-dc-20260213-01
+jurisdiction_note: null
+summary: |
+  Meliton Cordero, 47, a Supervisory Special Agent with the Drug Enforcement Administration who had been assigned for six years to the U.S. Embassy in the Dominican Republic, was arrested in Washington, D.C., on February 12, 2026, on a criminal complaint in the U.S. District Court for the District of Columbia. The complaint charges conspiracy to commit bribery and visa fraud. According to the charging documents as described by the U.S. Attorney's Office, Cordero accepted thousands of dollars in exchange for assisting foreign nationals in securing nonimmigrant visas for temporary visits to the United States, and in one instance he met a foreign national and provided a passport and visa in exchange for cash. The office states that during his embassy assignment he expedited at least 119 visa applications, at least one of which is alleged to have been fraudulent, and often coached applicants before their interviews with consular officers. The Department of Justice Office of the Inspector General states that from in or around December 2025 and January 2026 he accepted bribes totaling $7,000 in exchange for facilitating the issuance of U.S. visas. The investigation was conducted by Homeland Security Investigations, the State Department's Diplomatic Security Service, the DOJ Office of the Inspector General, and the DEA.
+dates:
+  conduct_start: 2025-12
+  conduct_end: 2026-01
+  first_public_action: 2026-02-12
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 7000
+    basis: alleged
+    source_ids:
+      - src-doj-oig-20260212-01
+    note: "DOJ OIG notice: bribes totaling $7,000 between about December 2025 and January 2026. The USAO release says only thousands of dollars."
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-meliton-cordero
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Supervisory Special Agent, Drug Enforcement Administration, assigned to the U.S. Embassy in the Dominican Republic
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2026-02-12
+        source_ids:
+          - src-doj-oig-20260212-01
+          - src-usao-dc-20260213-01
+          - src-dcd-20260609-01
+        note: Arrested February 12, 2026 on an arrest warrant following a criminal complaint charging conspiracy to commit bribery and visa fraud; complaint unsealed February 13, 2026 in D.D.C. (magistrate case 26mj32). No indictment located on a government page as of 2026-10-03. On 2026-06-09 the court continued the preliminary hearing to 2026-10-28 and excluded time under the Speedy Trial Act on a joint motion (Doc. 18); no indictment appears on the RECAP docket.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-dc-20260213-01
+  - src-doj-oig-20260212-01
+  - src-dcd-20260609-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

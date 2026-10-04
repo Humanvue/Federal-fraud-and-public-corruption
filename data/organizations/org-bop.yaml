@@ -1,0 +1,6 @@
+id: org-bop
+name: "Federal Bureau of Prisons"
+org_type: agency
+parent_org_id: org-doj
+uei: null
+wikidata_qid: null

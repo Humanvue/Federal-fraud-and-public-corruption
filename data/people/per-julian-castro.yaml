@@ -1,0 +1,7 @@
+id: per-julian-castro
+name: "Julián Castro"
+aliases: ["Julian Castro"]
+wikidata_qid: null
+positions:
+  - { title: "Secretary of Housing and Urban Development", org_id: org-hud, start: 2014-07-28, end: null, source_ids: [src-osc-20160718-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

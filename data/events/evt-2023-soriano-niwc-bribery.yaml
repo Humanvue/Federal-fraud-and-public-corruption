@@ -1,0 +1,224 @@
+id: evt-2023-soriano-niwc-bribery
+title: Navy contracting officer's representative sentenced for accepting bribes from defense contractors
+categories:
+  - bribery_kickbacks
+  - conflict_of_interest_ethics
+  - procurement_fraud
+agencies:
+  - org-navy
+  - org-niwc-pacific
+  - org-sba
+investigating_agencies:
+  - org-dcis
+  - org-ncis
+  - org-sba-oig
+  - org-irs-ci
+  - org-hhs-oig
+prosecuting_office: org-usao-sdca
+court_cases:
+  - court: S.D. Cal.
+    docket: 23-cr-2282-TWR
+    courtlistener_id: 70634166
+    source_ids:
+      - src-usao-sdca-20231114-01
+      - src-usao-sdca-20240611-01
+      - src-casd-20260116-01
+  - court: S.D. Cal.
+    docket: 24-cr-341-TWR
+    courtlistener_id: null
+    source_ids:
+      - src-usao-sdca-20240307-01
+      - src-usao-sdca-20240611-01
+  - court: S.D. Cal.
+    docket: 24-cr-759-TWR
+    courtlistener_id: null
+    source_ids:
+      - src-usao-sdca-20240924-01
+jurisdiction_note: null
+summary: |
+  James Soriano worked for the Naval Information Warfare Center in San Diego from 2006 to 2019 as an engineer, project leader and certified Contracting Officer Representative. A grand jury indicted him with Philip Flores and Intellipeak Solutions, Inc. in November 2023, and with Russell Thurston of Cambridge International Systems, Inc. in an indictment unsealed March 7, 2024. According to Soriano's plea agreement as described by the U.S. Attorney's Office, from approximately June 2014 through at least October 2019 the contractors gave him meals, tickets to the 2018 MLB All-Star Game, the 2018 World Series and the 2019 Super Bowl, and jobs for family and friends, including a friend who gave Soriano $2,000 a month from her salary. In return Soriano let the contractors draft procurement documents, submitted them in competitive and non-competitive procurements, and advocated for their selection. Cambridge's plea agreement states the government obligated more than $32 million on one task order and over $100 million on the other; Flores's plea agreement states the government paid Intellipeak more than $16 million on approximately 26 contracts and task orders. The court ordered Soriano to forfeit $209,527.51 and pay $18,722.40 in restitution to the IRS for a false 2018 tax return.
+dates:
+  conduct_start: 2014-06
+  conduct_end: 2019-10
+  first_public_action: 2023-11-14
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved:
+    amount: 132000000
+    basis: admitted
+    source_ids:
+      - src-usao-sdca-20240924-01
+      - src-usao-sdca-20251114-01
+    note: Per Cambridge's plea agreement, the government obligated more than $32 million on one task order and more than $100 million on the other ($132 million obligated; $1,672,102.23 paid out when the scheme was uncovered). Separately, per Flores's plea agreement, the government paid Intellipeak more than $16 million on approximately 26 contracts and task orders. The indictment alleged a task order with a more than $300 million ceiling.
+  settlement_amount: null
+  restitution_ordered:
+    amount: 18722
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdca-20260909-01
+    note: $18,722.40 ordered against Soriano, payable to the IRS. Flores was separately ordered to pay $80,500 in restitution to three victims.
+  fines:
+    amount: 2250000
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdca-20240924-01
+    note: Criminal fine imposed on Cambridge International Systems, Inc.
+  forfeiture:
+    amount: 209527
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdca-20260909-01
+    note: $209,527.51 ordered against Soriano. Cambridge was separately ordered to forfeit $1,672,102.23.
+  whistleblower_share: null
+participants:
+  - entity_id: per-james-soriano
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Engineer, project leader and Contracting Officer Representative, Naval Information Warfare Center, San Diego
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-11-14
+        source_ids:
+          - src-usao-sdca-20231114-01
+        note: "Indicted by a federal grand jury with Philip Flores and Intellipeak Solutions, Inc. (23-cr-2282-TWR): conspiracy to commit bribery (18 U.S.C. § 371) and bribery (§ 201)."
+      - track: criminal
+        status: charged
+        date: 2024-03-07
+        source_ids:
+          - src-usao-sdca-20240307-01
+        note: "Second indictment, unsealed this date, with Russell Thurston (24-cr-341-TWR): conspiracy to commit bribery, bribery and three counts of filing false tax returns (26 U.S.C. § 7206(1))."
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-06-10
+        source_ids:
+          - src-usao-sdca-20240611-01
+        note: Multiple bribery conspiracies and filing a false 2018 tax return (release dated 2024-06-11 says 'yesterday').
+      - track: criminal
+        status: sentenced
+        date: 2026-09-09
+        source_ids:
+          - src-usao-sdca-20260909-01
+        note: 72 months in prison; forfeiture of $209,527.51; $18,722.40 restitution to the IRS (Judge Todd W. Robinson).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-russell-thurston
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Executive Vice President, Cambridge International Systems, Inc.
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2024-03-07
+        source_ids:
+          - src-usao-sdca-20240307-01
+        note: "Indictment unsealed (24-cr-341-TWR): conspiracy to commit bribery and bribery."
+      - track: criminal
+        status: sentenced
+        date: 2025-11-14
+        source_ids:
+          - src-usao-sdca-20251114-01
+        note: 18 months custody followed by 12 months home confinement, on conspiracy to commit bribery (18 U.S.C. § 371), after a guilty plea whose date is not on the fetched pages. His plea agreement states he received bonuses totaling between $150,000 and $250,000 tied to profits from the conspiracy.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-philip-flores
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Owner, President and Chief Executive Officer, Intellipeak Solutions, Inc.
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-11-14
+        source_ids:
+          - src-usao-sdca-20231114-01
+        note: "Indicted by a federal grand jury (23-cr-2282-TWR): conspiracy to commit bribery and bribery."
+      - track: criminal
+        status: sentenced
+        date: 2026-01-16
+        source_ids:
+          - src-usao-sdca-20260116-01
+        note: 48 months custody on conspiracy to commit bribery; $80,500 restitution to three victims (Judge Todd W. Robinson), after a guilty plea whose date is not on the fetched pages. The release also describes a separate 2022 Northern District of Georgia fraud conviction, which is not part of this event.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-cambridge-international-systems
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    status_history:
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-04
+        source_ids:
+          - src-usao-sdca-20240924-01
+          - src-usao-sdca-20251114-01
+        note: Conspiracy to commit bribery (18 U.S.C. § 371) in 24-cr-759-TWR; the release refers to the company's 'April 2024 plea agreement'. The date the charge was filed is not on the fetched pages.
+      - track: criminal
+        status: sentenced
+        date: 2024-09-24
+        source_ids:
+          - src-usao-sdca-20240924-01
+        note: $2,250,000 criminal fine; two years of probation; previously ordered to forfeit $1,672,102.23.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-intellipeak-solutions
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-11-14
+        source_ids:
+          - src-usao-sdca-20231114-01
+        note: "Indicted with Soriano and Flores (23-cr-2282-TWR): conspiracy to commit bribery and bribery."
+      - track: criminal
+        status: dismissed
+        date: 2026-01-16
+        source_ids:
+          - src-casd-20260116-01
+        note: "Judgment of dismissal: count 1 dismissed on the government's oral motion (Doc. 127, S.D. Cal. No. 3:23-cr-02282)."
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-navy
+    actor_type: official
+    roles:
+      - victim_agency
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-sdca-20231114-01
+  - src-usao-sdca-20240307-01
+  - src-usao-sdca-20240611-01
+  - src-usao-sdca-20240924-01
+  - src-usao-sdca-20251114-01
+  - src-usao-sdca-20260116-01
+  - src-usao-sdca-20260909-01
+  - src-casd-20260116-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

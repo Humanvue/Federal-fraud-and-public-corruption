@@ -1,0 +1,7 @@
+id: per-kellyanne-conway
+name: "Kellyanne Conway"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Counselor to the President", org_id: org-executive-office-president, start: 2017-01-20, end: null, source_ids: [src-osc-20180306-01, src-osc-20190613-02] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

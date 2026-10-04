@@ -1,0 +1,7 @@
+id: per-vivieca-wright-simpson
+name: "Vivieca Wright Simpson"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Chief of Staff, Department of Veterans Affairs", org_id: org-va, start: null, end: null, source_ids: [src-va-oig-20180214-02] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

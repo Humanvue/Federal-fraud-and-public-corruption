@@ -1,0 +1,76 @@
+id: evt-2023-us-attorney-massachusetts-hatch-act-ethics
+title: U.S. Attorney found to have violated the Hatch Act and ethics rules and to have made a false statement to the Inspector General
+categories:
+  - hatch_act
+  - conflict_of_interest_ethics
+  - false_statements_obstruction
+agencies:
+  - org-doj
+  - org-usao-ma
+investigating_agencies:
+  - org-doj-oig
+  - org-osc
+prosecuting_office: null
+court_cases: []
+jurisdiction_note: null
+summary: |
+  The Department of Justice Office of the Inspector General (OIG) and the U.S. Office of Special Counsel (OSC) each issued reports on May 17, 2023 concerning Rachael Rollins, sworn in as U.S. Attorney for the District of Massachusetts on January 10, 2022. OIG (Report 23-071) concluded that Rollins used her position and non-public DOJ information to influence the outcome of the 2022 Democratic primary for Suffolk County District Attorney, in violation of Sections 2635.702 and 2635.703; knowingly and willfully made a false statement of material fact during her OIG interview, in violation of 18 U.S.C. § 1001; lacked candor during that interview; actively participated in a partisan political campaign; and attended a July 14, 2022 Democratic Party fundraiser without approval from the Deputy Attorney General. OIG referred the false-statement allegation to the Department on December 16, 2022; on January 6, 2023 the Department informed OIG that it declined prosecution. OSC (File No. HA-22-000173) concluded that Rollins violated the Hatch Act by leaking non-public DOJ information so that news outlets would report that a candidate she opposed faced a potential DOJ investigation, and by attending the fundraiser while on duty, in her official capacity, and using a government-owned vehicle.
+dates:
+  conduct_start: 2022-07-14
+  conduct_end: 2022-09
+  first_public_action: 2023-05-17
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-rachael-rollins
+    actor_type: official
+    roles:
+      - subject_of_finding
+    position: U.S. Attorney, District of Massachusetts
+    status_history:
+      - track: criminal
+        status: declined
+        date: 2023-01-06
+        source_ids:
+          - src-doj-oig-20230517-02
+        note: DOJ declined prosecution of the false-statement allegation that OIG referred on December 16, 2022 (OIG Report 23-071, note 58)
+      - track: administrative
+        status: finding_issued
+        date: 2023-05-17
+        source_ids:
+          - src-doj-oig-20230517-01
+          - src-doj-oig-20230517-02
+        note: "DOJ OIG Report 23-071: misuse of position and non-public information to influence an election, false statement under 18 U.S.C. § 1001, lack of candor, partisan political activity, unapproved fundraiser attendance"
+      - track: administrative
+        status: finding_issued
+        date: 2023-05-17
+        source_ids:
+          - src-osc-20230517-01
+        note: "OSC File No. HA-22-000173: Hatch Act violations (leaking non-public DOJ information to affect an election; attending a partisan fundraiser on duty, in official capacity, using a government vehicle); report sent to the President"
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-doj-oig-20230517-01
+  - src-doj-oig-20230517-02
+  - src-osc-20230517-01
+news_sources: []
+tags:
+  - hatch-act
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-03
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-03

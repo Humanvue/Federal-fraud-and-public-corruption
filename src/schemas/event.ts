@@ -123,7 +123,7 @@ export type Participant = z.infer<typeof Participant>;
 
 export const CourtCase = z.strictObject({
   court: z.string().min(1),
-  docket: z.string().min(1),
+  docket: z.string().min(1).nullable().default(null), // null until confirmed on the docket; the review card flags it
   courtlistener_id: z.union([z.string(), z.number().int()]).nullable().default(null),
   source_ids: SourceIds,
 });

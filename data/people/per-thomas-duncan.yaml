@@ -1,0 +1,7 @@
+id: per-thomas-duncan
+name: "Thomas E. Duncan"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Procurement Supervisor, Central Supply, Jesse Brown VA Medical Center", org_id: org-va, start: null, end: null, source_ids: [src-usao-ndil-20210205-01, src-usao-ndil-20230518-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

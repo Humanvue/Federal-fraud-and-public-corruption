@@ -1,0 +1,7 @@
+id: per-george-santos
+name: "George Santos"
+aliases: ["George Anthony Devolder Santos"]
+wikidata_qid: null
+positions:
+  - { title: "U.S. Representative, Third Congressional District of New York", org_id: org-house, start: 2023-01-07, end: null, source_ids: [src-usao-edny-20230510-01] }
+party_affiliation: { value: "Republican", basis: elected, source_ids: [src-house-clerk-20230228-01] }
