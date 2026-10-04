@@ -460,7 +460,7 @@ Story charts render only once backfill coverage passes the threshold in §13 for
 | **1. Seed + core pages** | ~25 hand-verified public-corruption events across categories; case pages, entity pages, APA generator, archive links, stored source text | Every seed event renders correctly; owner reviewed each |
 | **2. Explore** | Explore table, filters, shareable URLs, Pagefind search, download files, coverage statement | Filter → case page works; downloads validate |
 | **3. Queue + weekly session** | Daily queue Action; weekly session command with review cards; status-update candidates from CourtListener, SAM.gov, Pardon Attorney; staleness tasks | Two consecutive weekly sessions produce correct PRs with no manual fixes |
-| **4. Backfill** | Public Integrity Section reports 2016–present worked through in weekly sessions; coverage statement live | Coverage threshold (§13) met for every full year |
+| **4. Backfill** | National coverage counts and coverage page; completeness tiers enumerated and worked through in weekly sessions | Every tier in `data/reference/tiers.yaml` is complete: each listed matter is published or set aside with a reason (owner decision 2026-10-04) |
 | **5. Story charts** | Home charts, caveats, provisional-year marking | Click a bar → filtered table → case page |
 | **6. Network** | Edge derivation, network explorer, mini graphs, edge-list tables | Graph renders; every edge links to a source |
 | **7. Trust & launch** | Methodology, corrections, link checker Action, accessibility pass | Pre-launch checklist (§12) complete |
@@ -486,7 +486,7 @@ Story charts render only once backfill coverage passes the threshold in §13 for
 1. Site name and domain. ("Federal Fraud and Public Corruption Tracker" is the working description.)
 2. Exact start date: Jan 1, 2016 by first public action, or a rolling 10-year window?
 3. Staleness thresholds: 12 months to re-verify, 18 months to hide from charts?
-4. Story chart coverage threshold: 90% of Public Integrity Section–listed cases per full year?
+4. ~~Story chart coverage threshold: 90% of Public Integrity Section–listed cases per full year?~~ Resolved 2026-10-04: the reports list only selected cases, and 90% of the national count (about 2,200 federal officials charged 2016–2023) is not reachable through weekly review. The site is complete going forward (daily queue from October 2026) and complete for defined historical tiers: members of Congress, senior executive-branch officials, Hatch Act findings, and the Public Integrity Section report cases. The /coverage/ page reports national share and tier completeness. Phase 5 charts must present counts as "cases in this database" with the national counts as context, not as national trends.
 5. Legal review: who, and when?
 6. Should FEC-only campaign-finance cases be added in v2?
 7. v2 bias-rating source and license (deferred with the news layer).

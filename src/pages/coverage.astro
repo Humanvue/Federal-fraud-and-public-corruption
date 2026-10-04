@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import { getData, sourceById } from "../lib/data";
 import { coverageRows } from "../lib/coverage";
 import { apaCitation } from "../lib/cite";
+import { loadTierRows } from "../lib/tiers";
 const data = getData();
 const rows = coverageRows(data);
 const withNational = rows.filter((r) => r.national !== null);
@@ -10,6 +11,7 @@ const totalOurs = withNational.reduce((n, r) => n + r.ours, 0);
 const totalNational = withNational.reduce((n, r) => n + (r.national ?? 0), 0);
 const firstYear = withNational[0]?.year;
 const lastYear = withNational[withNational.length - 1]?.year;
+const tierRows = loadTierRows();
 const src = data.pin?.source_ids.map((id) => sourceById(id)).filter((s): s is NonNullable<typeof s> => !!s) ?? [];
 ---
 <Base title="Coverage" description="How many of the federal officials charged with public corruption each year are in this database, compared with the Justice Department's own nationwide counts.">
@@ -37,7 +39,36 @@ const src = data.pin?.source_ids.map((id) => sourceById(id)).filter((s): s is No
     </table>
   </div>
 
-  <h2>How to read this table</h2>
+  {tierRows.length > 0 && (
+    <section aria-labelledby="tiers-h">
+      <h2 id="tiers-h">Completeness by group</h2>
+      <p>The site does not try to hold every case from past years. It aims to be complete going forward, for every case announced from October 2026 on, and complete for the groups below. For each group, every matter in the official record has been listed, and each is either published here or set aside with a recorded reason.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Progress toward completeness, by group</caption>
+          <thead><tr><th scope="col">Group</th><th scope="col">Matters listed</th><th scope="col">Published</th><th scope="col">Set aside</th><th scope="col">Still to review</th><th scope="col">Complete</th></tr></thead>
+          <tbody>
+            {tierRows.map((r) => (
+              <tr>
+                <th scope="row">{r.tier.name}</th>
+                <td>{r.total || <span class="muted">being listed</span>}</td>
+                <td>{r.published}</td>
+                <td>{r.excluded}</td>
+                <td>{r.open + r.inProgress}</td>
+                <td>{r.complete ? "Yes" : "Not yet"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <dl class="kv small">
+        {tierRows.map((r) => <><dt>{r.tier.name}</dt><dd>{r.tier.definition} Listed from: {r.tier.enumerated_from}{r.tier.enumerated_on ? ` (as of ${r.tier.enumerated_on})` : ""}</dd></>)}
+      </dl>
+      <p class="small muted">Matters set aside are those outside this site's scope, for example cases about state or local officials. Names of matters not yet reviewed are not shown.</p>
+    </section>
+  )}
+
+  <h2>How to read the national comparison</h2>
   <ul>
     <li><strong>The two columns measure similar but not identical things.</strong> The Justice Department counts defendants its prosecutors classify as public corruption cases, which includes conduct this site leaves out, such as routine theft of mail by postal employees. This site counts federal officials named in its cases, by the year they were first charged.</li>
     <li><strong>Only criminal charges are compared.</strong> Findings by Inspectors General, the Office of Special Counsel, and congressional ethics committees appear on this site but have no national count to compare against.</li>

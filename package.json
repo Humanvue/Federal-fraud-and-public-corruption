@@ -24,7 +24,8 @@
     "queue:set": "tsx scripts/queue/set.ts",
     "queue:peek": "tsx scripts/queue/peek.ts",
     "queue:resolve": "tsx scripts/queue/resolve.ts",
-    "backfill:pin": "tsx scripts/backfill/pin-report.ts"
+    "backfill:pin": "tsx scripts/backfill/pin-report.ts",
+    "backfill:tier": "tsx scripts/backfill/tier.ts"
   },
   "keywords": [],
   "author": "",

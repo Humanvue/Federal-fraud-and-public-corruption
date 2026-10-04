@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ID_PATTERNS } from "../schemas/common";
+import { Tiers } from "../schemas/reference";
+import { parse as parseYaml } from "yaml";
 import { MONEY_FIELDS, type Event } from "../schemas/event";
 import { loadDataset, originDir, type Dataset, type Issue } from "./load";
 import { BANNED_STATUS_PHRASES, BANNED_WORDS } from "./rules";
@@ -176,6 +178,13 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
         issues.push({ file, message: `number "${n}" in summary does not appear in any cited government source text` });
       }
     }
+  }
+
+  // ---- Tier definitions (names never belong in this file) ----
+  const tierFile = path.join(root, "reference", "tiers.yaml");
+  if (fs.existsSync(tierFile)) {
+    const parsed = Tiers.safeParse(parseYaml(fs.readFileSync(tierFile, "utf8")));
+    if (!parsed.success) issues.push({ file: tierFile, message: `invalid tiers file: ${parsed.error.issues[0]?.message}` });
   }
 
   // ---- Reference data ----

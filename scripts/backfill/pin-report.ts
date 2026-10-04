@@ -38,7 +38,7 @@ for (const { caption, section } of captions) {
     title: `${caption} (Public Integrity Section report for ${year}, ${section === "UNKNOWN" ? "section not detected" : section.toLowerCase()})`,
     date: `${year}`,
     feed: null,
-    tags: ["pin_report", "backfill", section === "UNKNOWN" ? "section_unknown" : section.toLowerCase().replace(/ /g, "_")],
+    tags: ["tier:pin_report", "pin_report", "backfill", section === "UNKNOWN" ? "section_unknown" : section.toLowerCase().replace(/ /g, "_")],
     event_id: null,
     entity_id: null,
     first_seen: today,

@@ -32,3 +32,18 @@ export const PinStatistics = z.strictObject({
   federal_officials: z.record(z.string().regex(/^\d{4}$/), PinYear),
 });
 export type PinStatistics = z.infer<typeof PinStatistics>;
+
+/**
+ * Completeness tiers (owner decision 2026-10-04, SPEC.md §11 Phase 4). Each tier's items live in the
+ * queue tagged `tier:<id>`; a tier is complete when none of its items are open. This file holds only
+ * definitions, never names.
+ */
+export const Tier = z.strictObject({
+  id: z.string().regex(/^[a-z_]+$/),
+  name: z.string().min(1),
+  definition: z.string().min(1),
+  enumerated_from: z.string().min(1),
+  enumerated_on: z.string().nullable(),
+});
+export const Tiers = z.strictObject({ tiers: z.array(Tier).min(1) });
+export type Tier = z.infer<typeof Tier>;
