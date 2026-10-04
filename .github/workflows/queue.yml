@@ -5,11 +5,7 @@ name: Daily queue
 on:
   schedule:
     - cron: "0 11 * * *"   # 11:00 UTC daily (7 a.m. Eastern in summer)
-  workflow_dispatch:
-  # TEMPORARY: lets the first run be tested from the phase-3 branch. Remove before merging.
-  push:
-    branches: [phase-3-queue]
-    paths: [".github/workflows/queue.yml"]
+  workflow_dispatch:   # "Run workflow" button on the Actions tab
 
 permissions:
   contents: write
