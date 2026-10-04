@@ -43,6 +43,8 @@ Optimize for simplicity, plain-language explanations, and few moving parts.
 | `npm run queue` | Daily job: gathers candidates from DOJ feeds, dockets, clemency lists, and the staleness rule into `queue/`. `--only doj,courtlistener,pardon,staleness`, `--dry`. |
 | `npm run queue:list` | Open queue items grouped by kind (`-- --all` for everything). |
 | `npm run queue:set -- <ids> <open\|drafted\|rejected\|done> ["note"]` | Changes queue item state. |
+| `npm run queue:resolve` | After merging main, resolves a `queue/candidates.yaml` conflict: main's items plus this branch's states. |
+| `npm run queue:peek` | Prints the opening of each open new-case release, for weekly triage. |
 | `npm run queue:discover` | Rebuilds `queue/feeds.yaml` (the 94 DOJ press release feeds); `-- usao-xx` for specific offices. |
 | `npm run check:downloads` | After a build, verifies every file in `dist/downloads/` (schemas, columns, row counts, round trip). |
 | `npm run build` | Builds the static site into `dist/` and the Pagefind search index into `dist/pagefind/`. Set `DATA_DIR=drafts,data` to preview drafts, or `DATA_DIR=tests/fixtures/valid` to preview the fixture. |

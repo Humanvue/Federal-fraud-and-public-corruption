@@ -36,14 +36,11 @@ describe("title rules", () => {
   it.each([
     "Former Immigration Officer Sentenced to a Year and a Day in Prison for Accepting $6,000 Bribe",
     "Two Former Bureau of Prisons Correctional Officers Accused of Smuggling Contraband Each Sentenced to More Than Two Years in Federal Prison",
-    "Former Federal Employee Sentenced for Time-and-Attendance Scheme",
     "Former Government Official Sentenced in Bribery Conspiracy",
     "U.S. to Collect over $1.3 Million after Judgment Ordered in Bribery Case Involving Millions in DOW Contracts in Alaska",
-    "Former Postal Employee Sentenced For Obstruction of U.S. Mail",
     "Former IRS Employee Indicted for Filing False Tax Returns for Drug Dealers",
-    "USPS employee pleads guilty to stealing gift cards from mail",
+    "Former Federal Employee Sentenced for Time-and-Attendance Scheme",
     "Federal grand jury returns indictment against ex USCIS official and associate for scheme involving unlawful approval and expedited processing of immigration applications",
-    "U.S. Assistant Special Agent in Charge Accused of Stealing Thousands in Fraudulent Disability Payments",
   ])("live run: keeps %s", (t) => {
     expect(classifyTitle(t)).not.toBeNull();
   });
@@ -72,6 +69,14 @@ describe("title rules", () => {
     "Federal Judge Sentences Former City Councilwoman and Daughters for COVID-19 Loan Fraud",
     "FORMER LOUISIANA DEPARTMENT OF EDUCATION EMPLOYEE AND CO-DEFENDANT SENTENCED TO FEDERAL PRISON FOR CONSPIRACY TO COMMIT WIRE FRAUD",
     "Government contractor pleads guilty to embezzling travel reimbursement funds",
+    // Owner policy 2026-10-04: routine postal mail theft and workers' compensation fraud are out of v1.
+    "Two Former USPS Employees Charged In Connection With Scheme To Steal More Than 200 Gift Cards Out Of The Mail",
+    "USPS employee pleads guilty to stealing gift cards from mail",
+    "Former Placerville postal employee sentenced to a year in prison for stealing and tampering with the narcotic prescriptions of United States military veterans",
+    "Former Postal Employee Sentenced For Obstruction of U.S. Mail",
+    "Three Postal Employees Plead Guilty in Federal Mail Theft Case",
+    "U.S. Assistant Special Agent in Charge Accused of Stealing Thousands in Fraudulent Disability Payments",
+    "Former Postal Worker Convicted of Stealing Nearly $1 Million in Tax-Free Federal Disability Benefits",
   ])("live run: ignores %s", (t) => {
     expect(classifyTitle(t)).toBeNull();
   });

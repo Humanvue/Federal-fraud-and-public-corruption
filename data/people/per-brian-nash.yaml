@@ -1,0 +1,7 @@
+id: per-brian-nash
+name: "Brian Lowell Nash II"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Contract Specialist (enlisted), U.S. Air Force, Joint Base Elmendorf-Richardson", org_id: org-air-force, start: null, end: null, source_ids: [src-usao-ak-20210323-01, src-usao-ak-20221109-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

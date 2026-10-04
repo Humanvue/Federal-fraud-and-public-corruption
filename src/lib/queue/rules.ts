@@ -53,6 +53,9 @@ const EXCLUDE: [string, RegExp][] = [
   ["foreign_bribery", R("foreign (bribery|officials?)|\\bfcpa\\b|international bribery|regime|foreign government")],
   ["state_prison", R("\\b(state|county|alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming) (department of )?(correctional|corrections|prison|jail|detention)")],
   ["state_agency", R("\\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming) (department|office|agency|division|board|commission)")],
+  // Owner policy 2026-10-04: outside v1 even when the employee is federal (SPEC §2).
+  ["postal_mail_theft", R("(steal\\w*|stole|theft|tamper\\w*|destr\\w*|delay\\w*|obstruct\\w*|dump\\w*|keeping|failing to deliver).{0,60}\\bmail\\b|\\bmail theft|stolen mail|gift cards? (from|out of) (the )?mail")],
+  ["workers_comp", R("workers'? comp\\w*|disability (payments?|benefits?|pay|compensation)")],
   ["labor_union", R("\\bunion (employee|official|officer|president|treasurer)|workers union")],
   ["state_local", R("\\b(sheriff|mayor|alderman|city council|county (commissioner|official|employee|clerk|judge)|state (senator|representative|trooper|employee|official|legislator|judge)|police (department|officer|chief|sergeant|lieutenant)|school (board|district)|deputy sheriff|municipal|constituent services|city of|township|tribal)\\b")],
   ["territorial", R("virgin islands|puerto rico|hacienda|guam (customs|police|government|official)|commissioner of")],
@@ -98,6 +101,9 @@ export function classifyTitle(title: string): RuleHit | null {
   if (officialIsSubject && misconduct.length) {
     // A state, local, territorial, or union setting means the "official" is probably not federal,
     // unless the subject says so outright.
+    if (excluded.some((x) => ["postal_mail_theft", "workers_comp"].includes(x))) return null;
+    // A postal employee's theft, tampering, or obstruction is routine mail theft under the same policy.
+    if (subjectOfficials.includes("postal") && misconduct.some((m) => ["embezzlement", "obstruction", "smuggling"].includes(m))) return null;
     const jurisdiction = excluded.some((x) => ["state_local", "territorial", "state_prison", "state_agency", "labor_union"].includes(x));
     const plainlyFederal = /\b(federal|u\.s\.|united states|bureau of prisons)\b/i.test(subject) || subjectOfficials.some((o) => ["member_of_congress", "federal_employee", "ethics_body"].includes(o));
     if (jurisdiction && !plainlyFederal) return null;

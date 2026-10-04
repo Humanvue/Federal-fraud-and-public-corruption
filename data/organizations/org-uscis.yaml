@@ -1,0 +1,6 @@
+id: org-uscis
+name: "U.S. Citizenship and Immigration Services"
+org_type: agency
+parent_org_id: org-dhs
+uei: null
+wikidata_qid: null

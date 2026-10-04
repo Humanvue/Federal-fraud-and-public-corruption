@@ -1,0 +1,106 @@
+id: evt-2025-uscis-officer-bribe-immigration-file
+title: Citizenship and Immigration Services officer sentenced for accepting bribe in exchange for promised help with immigration file
+categories:
+  - bribery_kickbacks
+agencies:
+  - org-uscis
+investigating_agencies:
+  - org-dhs-oig
+  - org-hsi
+  - org-fbi
+prosecuting_office: org-usao-edpa
+court_cases:
+  - court: E.D. Pa.
+    docket: 2:25-cr-00318
+    courtlistener_id: 70905793
+    source_ids:
+      - src-usao-edpa-20250626-01
+      - src-usao-edpa-20260325-01
+      - src-usao-edpa-20261001-01
+      - src-paed-20250626-01
+      - src-paed-20250724-01
+      - src-paed-20260325-01
+      - src-paed-20261001-01
+jurisdiction_note: null
+summary: |
+  Amara Dukuly was an immigration officer with U.S. Citizenship and Immigration Services (USCIS). According to a criminal complaint announced by the U.S. Attorney's Office for the Eastern District of Pennsylvania on June 26, 2025, from approximately 2015 Dukuly used his status as a USCIS employee to obtain payments from individuals in exchange for promises to help them obtain adjustments to their immigration status, such as a green card, work authorization documents, or visas, although the scope of his job duties did not give him authority to do those things. According to the U.S. Attorney's Office, court filings state that on April 4, 2025, Dukuly received a $6,000 bribe from an individual to help with the removal of "terrorist" references from that individual's immigration file, and promised the individual that the file would then be "clean." The court filings describe the conduct as continuing until his arrest in June 2025. U.S. District Judge John Milton Younge ordered 12 months and one day in prison, three years of supervised release, a $6,000 fine, and $6,000 in restitution. The Department of Homeland Security Office of Inspector General, Homeland Security Investigations, and the FBI investigated.
+dates:
+  conduct_start: 2015
+  conduct_end: 2025-06
+  first_public_action: 2025-06-26
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered:
+    amount: 6000
+    basis: adjudicated
+    source_ids:
+      - src-usao-edpa-20261001-01
+  fines:
+    amount: 6000
+    basis: adjudicated
+    source_ids:
+      - src-usao-edpa-20261001-01
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-amara-dukuly
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Immigration Officer, U.S. Citizenship and Immigration Services
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-06-25
+        source_ids:
+          - src-usao-edpa-20250626-01
+          - src-paed-20250626-01
+        note: Arrested and charged by criminal complaint with bribery of a public official. The complaint was filed under seal on June 25, 2025 (No. 2:25-mj-01339) and unsealed by an order entered June 26, 2025 (Doc. 3).
+      - track: criminal
+        status: charged
+        date: 2025-07-24
+        source_ids:
+          - src-paed-20250724-01
+          - src-usao-edpa-20261001-01
+        note: One-count indictment (No. 2:25-cr-00318, Doc. 13).
+      - track: criminal
+        status: pleaded_guilty
+        date: 2026-03-25
+        source_ids:
+          - src-usao-edpa-20260325-01
+          - src-paed-20260325-01
+        note: Aiding and abetting the bribery of a public official in exchange for an official act; plea of guilty to Count 1 before U.S. District Judge John M. Younge (Doc. 58).
+      - track: criminal
+        status: sentenced
+        date: 2026-10-01
+        source_ids:
+          - src-usao-edpa-20261001-01
+          - src-paed-20261001-01
+        note: 12 months and one day in prison; three years of supervised release; $6,000 fine; $6,000 restitution. The sentencing minute entry (Doc. 71) confirms the date, Count 1, the prison term, the $6,000 fine and a $100 special assessment; supervised release and restitution are from the release (the written judgment was not yet in the RECAP archive).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-edpa-20250626-01
+  - src-usao-edpa-20260325-01
+  - src-usao-edpa-20261001-01
+  - src-paed-20250626-01
+  - src-paed-20250724-01
+  - src-paed-20260325-01
+  - src-paed-20261001-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

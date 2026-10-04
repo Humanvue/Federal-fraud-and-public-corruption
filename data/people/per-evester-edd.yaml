@@ -1,0 +1,7 @@
+id: per-evester-edd
+name: "Evester Edd"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Senior Human Resources Employee", org_id: org-peace-corps, start: null, end: 2024-12, source_ids: [src-usao-md-20250702-01, src-usao-md-20260928-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

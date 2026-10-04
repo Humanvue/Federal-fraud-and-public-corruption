@@ -15,8 +15,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope: Foreign Agents Registration Act offense committed after leaving Congress; not misuse of office."
   - id: q-0c9f8604f6
     kind: new_case
     source: doj
@@ -30,8 +30,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope: commercial bribery at a private restaurant cooperative; no federal official."
   - id: q-ab77ae9883
     kind: new_case
     source: doj
@@ -45,8 +45,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: done
+    note: Published 2026-10-04 (weekly session)
   - id: q-94b77919f1
     kind: new_case
     source: doj
@@ -61,8 +61,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: done
+    note: Published 2026-10-04 (weekly session)
   - id: q-b72cb429a8
     kind: new_case
     source: doj
@@ -78,8 +78,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: workers' compensation or disability-benefit fraud by a federal employee."
   - id: q-24ce61eef8
     kind: new_case
     source: doj
@@ -94,8 +94,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
   - id: q-a51fbe60ea
     kind: new_case
     source: doj
@@ -110,8 +110,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope: hacking and extortion by a soldier; not corruption."
   - id: q-ae06723a13
     kind: new_case
     source: doj
@@ -126,8 +126,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: done
+    note: Published 2026-10-04 (weekly session)
   - id: q-431a8b01cb
     kind: new_case
     source: doj
@@ -142,8 +142,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
   - id: q-2673ae94b4
     kind: new_case
     source: doj
@@ -159,8 +159,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope: false returns prepared in a private tax business after leaving the IRS; tax-only, not conduct in office."
   - id: q-2bff33528a
     kind: new_case
     source: doj
@@ -174,8 +174,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: done
+    note: Published 2026-10-04 (weekly session)
   - id: q-d1c22c6311
     kind: new_case
     source: doj
@@ -190,8 +190,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope: city correctional officer (local), civil-rights case."
   - id: q-a0a74b6dd1
     kind: new_case
     source: doj
@@ -206,8 +206,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
   - id: q-73da2352d3
     kind: new_case
     source: doj
@@ -222,8 +222,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: done
+    note: Published 2026-10-04 (weekly session)
   - id: q-160f4642b3
     kind: new_case
     source: doj
@@ -238,8 +238,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1: contractor-only theft; contractor layer is v2 (SPEC §1)."
   - id: q-a1c6caf5b8
     kind: new_case
     source: doj
@@ -254,8 +254,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: workers' compensation or disability-benefit fraud by a federal employee."
   - id: q-88b225da36
     kind: new_case
     source: doj
@@ -268,8 +268,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope: commercial bribery of retail employees; no federal official."
   - id: q-3f49600cee
     kind: new_case
     source: doj
@@ -284,8 +284,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
   - id: q-216d3f9948
     kind: new_case
     source: doj
@@ -317,8 +317,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1: contract mail carrier (not a USPS employee); delay of mail."
   - id: q-d2b3ec0703
     kind: new_case
     source: doj
@@ -333,8 +333,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope: bribes to Newark city employees (local); no federal official."
   - id: q-d55675ddae
     kind: new_case
     source: doj
@@ -349,8 +349,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
   - id: q-2ba8bc613c
     kind: new_case
     source: doj
@@ -365,8 +365,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: done
+    note: Published 2026-10-04 (weekly session)
   - id: q-d2697cccd8
     kind: new_case
     source: doj
@@ -381,8 +381,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
   - id: q-7a1153952a
     kind: new_case
     source: doj
@@ -398,5 +398,5 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope: acting as a foreign agent and security-clearance false statements by a contractor lab employee; not corruption by a federal official."

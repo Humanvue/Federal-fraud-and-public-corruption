@@ -110,6 +110,9 @@ tags: []                                  # e.g. [fat-leonard, hatch-act]
 review: { reviewed_by: null, reviewed_at: null, ai_assisted: true, summary_stale: false }
 last_updated: 2026-10-03
 ```
+Dates: a status entry carries the date the court acted (the filing date of a complaint, indictment, or
+information, even if sealed); `first_public_action` is the date the action became public (unsealing or
+announcement). Note both when they differ ("filed under seal 2025-06-25; unsealed 2025-06-26").
 Status mapping: indictment, information or complaint unsealed → `charged` · guilty plea → `pleaded_guilty` · jury or
 bench verdict → `convicted` · sentence → `sentenced` · hung jury → `mistrial` · all counts dismissed → `dismissed`
 · some counts dismissed → `partially_dismissed` (note which) · appellate reversal or vacatur → `overturned` ·

@@ -53,9 +53,15 @@ event (after approval, as above) and mark the item done. If something changed, h
 1. `npm run promote -- --reviewer "<owner's reviewer name; Humanvue unless told otherwise>" <approved event ids>`.
 2. `npm run check` must pass (validate, tests, build, download check).
 3. Mark queue items done (`npm run queue:set -- <ids> done`). Commit `data/` and `queue/` together with a
-   message listing each case added or changed. Push the branch and give the owner the pull request link:
+   message listing each case added or changed.
+4. The daily job commits to `queue/` on main every morning, so merge main in before pushing:
+   `git fetch origin && git merge origin/main`. If `queue/candidates.yaml` conflicts, run
+   `npm run queue:resolve` (keeps main's new items and applies this branch's states and notes), then
+   `git add queue/ && git commit --no-edit`, triage any new items main added that the owner's policies
+   already decide, and run `npm run check` again.
+5. Push the branch and give the owner the pull request link:
    `https://github.com/Humanvue/Federal-fraud-and-public-corruption/pull/new/<branch>`.
-4. Recap for the owner: what was added, what changed status, what was rejected and why, what is still
+6. Recap for the owner: what was added, what changed status, what was rejected and why, what is still
    open, and anything they must do (merge the pull request, save pages by hand, legal questions).
 
 ## Never

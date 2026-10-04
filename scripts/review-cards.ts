@@ -115,6 +115,8 @@ function card(ds: Dataset, e: Event): string {
 }
 
 fs.mkdirSync(out, { recursive: true });
+// Start from an empty folder so cards for events promoted or deleted since the last run do not linger.
+for (const f of fs.readdirSync(out)) if (f.endsWith(".md")) fs.unlinkSync(path.join(out, f));
 const drafts = dataset.events.filter((e) => originDir(e, base) === overlay);
 const index: string[] = ["# Review index", "", `${drafts.length} draft events · generated ${new Date().toISOString().slice(0, 10)}`, "", "| Priority | Event | Case status | Participants | Validation | Card |", "|---|---|---|---|---|---|"];
 for (const e of drafts) {

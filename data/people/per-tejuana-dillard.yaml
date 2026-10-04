@@ -1,0 +1,7 @@
+id: per-tejuana-dillard
+name: "Tejuana Dillard"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Correctional Officer, Federal Correctional Complex Forrest City", org_id: org-bop, start: 2008, end: 2021-07, source_ids: [src-usao-edar-20260821-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }
