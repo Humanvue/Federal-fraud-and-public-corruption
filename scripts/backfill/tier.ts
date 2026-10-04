@@ -43,7 +43,7 @@ const linked: string[] = [];
 for (const it of doc.items) {
   const year = Number(it.date.slice(0, 4));
   const person = dataset.people.find((p) => [p.name, ...p.aliases].some((n) => nameAppears(n, it.person) || nameAppears(it.person, n)));
-  const event = person && !it.separate_matter && dataset.events.find((e) => e.participants.some((p) => p.entity_id === person.id) && Math.abs(yearOf(e.dates.first_public_action) - year) <= 1);
+  const event = !person || it.separate_matter ? undefined : dataset.events.find((e) => e.participants.some((p) => p.entity_id === person.id) && Math.abs(yearOf(e.dates.first_public_action) - year) <= 1);
   if (event) linked.push(`${it.key} -> ${event.id}`);
   fresh.push({
     id: candidateId(`tier:${doc.tier}#${it.key}`),
