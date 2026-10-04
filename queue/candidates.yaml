@@ -18,6 +18,156 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-952918c162
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/in-the-matter-of-allegations-relating-to-representative-alexandria-ocasio-cortez/
+    title: In the Matter of Allegations Relating to Representative Alexandria Ocasio-Cortez
+    date: 2025-07-25
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report (H. Rept. 119-219): she did not fully comply with the Gift Rule for the 2021 Met Gala (free admission for her partner, and less than fair market value paid for some items). Directed to pay the remaining fair market value."
+  - id: q-c5d75df11c
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/in-the-matter-of-allegations-relating-to-representative-mike-kelly/
+    title: In the Matter of Allegations Relating to Representative Mike Kelly
+    date: 2025-07-25
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report served as a reproval (H. Rept. 119-218): his conduct during the investigation of his wife's Cleveland-Cliffs stock trades violated clause 1. No insider-trading or conflict-of-interest violation was found, and he was directed to divest before further related official action."
+  - id: q-79ed79ada5
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/250516-report-of-prohibited-political-activity-omalley.pdf
+    title: OSC Report of Prohibited Political Activity, Martin O'Malley (OSC File No. HA-25-000080)
+    date: 2025-05-16
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report dated 2025-04-25, transmitted 2025-05-16; no response from O'Malley. Same PDF also at /~assets/docs/report-of-prohibited-political-activity-omalley.pdf.
+  - id: q-3fe75b3a04
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2025-02-11/osc-files-hatch-act-complaint-seeking-discipline-against-fema-employee-for-political-discrimination-in-aftermath-of-hurricane-milton/
+    title: "OSC press release: OSC Files Hatch Act Complaint Seeking Discipline Against FEMA Employee for Political Discrimination in Aftermath of Hurricane Milton (Marn'i Washington)"
+    date: 2025-02-11
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: MSPB complaint; OSC states it determined she violated the Act. Outcome not found on osc.gov.
+  - id: q-2752ad33fd
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/in-the-matter-of-allegations-relating-to-representative-matt-gaetz/
+    title: In the Matter of Allegations Relating to Representative Matt Gaetz
+    date: 2024-12-23
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report released after he resigned (H. Rept. 118-943): substantial evidence of violations including accepting impermissible gifts, giving special favors and privileges, and obstructing the Committee's investigation. JUDGMENT CALL: the report also covers sexual-misconduct and drug findings, which are excluded; listed only for the gift, favors, and obstruction findings."
+  - id: q-2165374d9d
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2024-11-07/osc-files-hatch-act-complaint-against-senior-white-house-official-for-soliciting-political-contributions/
+    title: "OSC press release: OSC Files Hatch Act Complaint Against Senior White House Official for Soliciting Political Contributions (Neera Tanden)"
+    date: 2024-11-07
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: MSPB complaint (allegation, not an adjudicated finding). Outcome not found on osc.gov.
+  - id: q-6ab24f4d34
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/report-of-prohibited-political-activity-carlos-del-toro-ha-24-000104.pdf
+    title: OSC Report of Prohibited Political Activity, Carlos Del Toro (OSC File No. HA-24-000104)
+    date: 2024-09-05
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Release: https://www.osc.gov/news/2024-09-05/osc-announces-hatch-act-enforcement-decisions/ (same release closed Cardona and Barr matters without findings; those are excluded)."
+  - id: q-35a79a26bd
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-bill-huizenga/
+    title: In the Matter of Allegations Relating to Representative Bill Huizenga
+    date: 2024-06-05
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report (H. Rept. 118-541): the campaign's inadequate recordkeeping led to a violation of clause 6 of the Code of Official Conduct (campaign funds). Otherwise found to have generally acted within the law. JUDGMENT CALL: a violation was found, but no sanction or repayment."
+  - id: q-b966c0ecae
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2023-12-08/va-nurse-who-ran-for-governor-of-illinois-removed-from-her-position-debarred-from-federal-service-for-two-years-for-hatch-act-violations/
+    title: "OSC press release: VA Nurse Who Ran for Governor of Illinois Removed from her Position, Debarred from Federal Service for Two Years (Beverly Miles)"
+    date: 2023-12-08
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "MSPB ALJ initial decision: removal and two-year debarment."
+  - id: q-a66bc2b191
+    kind: new_case
+    source: tier_list
+    url: https://www.ethics.senate.gov/public/index.cfm/letterstomembers?ID=1B6D3EA2-078D-446E-A983-405C87E32DDF
+    title: Senator Lindsey Graham - Public Letter of Admonition
+    date: 2023-03-23
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Public Letter of Admonition: the committee found that soliciting campaign contributions during a 2022-11-30 media interview in the Russell Senate Office Building was contrary to Senate standards of conduct."
   - id: q-1848f07910
     kind: new_case
     source: pin_report
@@ -120,6 +270,51 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-ee0d0e2291
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-madison-cawthorn/
+    title: In the Matter of Allegations Relating to Representative Madison Cawthorn
+    date: 2022-12-06
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report served as an admonishment (H. Rept. 117-591): he promoted a cryptocurrency he held, in conflict with House rules, and bought it on terms that amounted to an improper gift. Ordered to repay $14,237.49 to charity and to pay late-filing fees."
+  - id: q-869abee9b0
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-delegate-michael-fq-san-nicolas/
+    title: In the Matter of Allegations Relating to Delegate Michael F.Q. San Nicolas
+    date: 2022-06-24
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Committee report (H. Rept. 117-387) includes the subcommittee's finding of substantial evidence that he accepted excessive campaign contributions, conspired to hide them, failed to disclose, and interfered with witnesses. JUDGMENT CALL: a Delegate is a non-voting House member."
+  - id: q-bfc15abce0
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2022-04-14/osc-statement-regarding-the-mspb-decision-in-special-counsel-v-cowan/
+    title: OSC statement regarding the MSPB decision in Special Counsel v. Cowan (Rodney Cowan)
+    date: 2022-04-14
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "OSC page names only the caption 'Cowan'; full name and role from MSPB decision 2022 MSPB 2 (https://www.mspb.gov/decisions/precedential/COWAN_RODNEY_CB_1216_16_0018_T_1_OPINION_AND_ORDER_1911389.pdf). Settlement: 180-day suspension."
   - id: q-6d1241fe8d
     kind: new_case
     source: pin_report
@@ -188,6 +383,231 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-4afac9a0e0
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Brian Morgenstern"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-4e6d876a0f
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Marc Short"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-5b8bc8e442
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Kellyanne Conway"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: per-kellyanne-conway
+    first_seen: 2026-10-04
+    state: open
+    note: Person already in data (per-kellyanne-conway); check whether this is a different matter.
+  - id: q-66cbaf1724
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Stephen Miller"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-7c8507a461
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Robert O'Brien"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-804e7f6cc5
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Kayleigh McEnany"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-9c2343e187
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Mark Meadows"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-a06f6c5387
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Alyssa Farah"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-a47132262c
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Dan Brouillette"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Official interview/media appearance violation (Part III.4.A). Release: https://www.osc.gov/news/2021-11-09/osc-issues-hatch-act-report-documenting-violations-by-13-senior-trump-administration-officials-including-at-the-2020-republican-national-convention/"
+  - id: q-a81bc69738
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Chad Wolf"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Naturalization ceremony produced for RNC content (Part III.4.B).
+  - id: q-bf21caf68d
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: David Friedman"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-d52b388a3d
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Jared Kushner"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Media appearance violation.
+  - id: q-fb02437945
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/investigation-of-political-activities-by-senior-trump-administratio-136ab295.pdf
+    title: "OSC report, Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election: Michael Pompeo"
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Republican National Convention speech from Jerusalem (Part III.4.B).
+  - id: q-38146d5253
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2021-04-06/former-high-ranking-hud-official-disciplined-for-hatch-act-violation/
+    title: "OSC press release: Former High-Ranking HUD Official Disciplined for Hatch Act Violation (Lynne Patton settlement)"
+    date: 2021-04-06
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Settlement: admitted violation; 48-month debarment and $1,000 civil fine."
+  - id: q-fc8d54f14a
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/report-of-prohibited-political-activity-carla-sands-ha-20-000091.pdf
+    title: OSC Report of Prohibited Political Activity, Carla Sands (OSC File No. HA-20-000091)
+    date: 2021-02-12
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Release not migrated to the new osc.gov; confirmed on archived osc.gov/News/Pages/21-10-OSC-Hatch-Act-Report-Denmark-Ambassador.aspx (dated 2/12/2021). Use of official Twitter account, including soliciting contributions.
   - id: q-47f02a3c49
     kind: new_case
     source: pin_report
@@ -239,6 +659,66 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-582d59f206
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/~assets/docs/report-of-prohibited-political-activity-dr-peter-navarro-ha-20-000279.pdf
+    title: OSC Report of Prohibited Political Activity, Dr. Peter Navarro (OSC File No. HA-20-000279)
+    date: 2020-12-07
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report dated 2020-11-18, transmitted 2020-12-07; Navarro did not respond. Release: https://www.osc.gov/news/2020-12-07/osc-issues-report-to-the-president-finding-hatch-act-violations-by-dr-peter-navarro/"
+  - id: q-371f93bebc
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-matt-gaetz/
+    title: In the Matter of Allegations Relating to Representative Matt Gaetz
+    date: 2020-08-21
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Admonishment (H. Rept. 116-479): a 2019 tweet aimed at witness Michael Cohen violated Rule XXIII clause 1 (did not reflect creditably on the House). The committee found it did not violate witness-tampering or obstruction laws. JUDGMENT CALL: a rule violation, but not about money or corruption."
+  - id: q-be879a02bd
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-rashida-tlaib/
+    title: In the Matter of Allegations Relating to Representative Rashida Tlaib
+    date: 2020-08-07
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report (H. Rept. 116-473): post-election campaign salary payments were inconsistent with FECA personal-use rules. Directed to reimburse her campaign $10,800; no other action."
+  - id: q-757736e28c
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2020-04-29/judge-imposes-maximum-penalty-for-va-physician-who-violated-the-hatch-act-during-2014-senate-campaign/
+    title: "OSC press release: Judge Imposes Maximum Penalty for VA Physician who Violated the Hatch Act During 2014 Senate Campaign (Dr. Choudhury Salekin)"
+    date: 2020-04-29
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "ALJ initial decision: $1,000 fine and 5-year debarment. The 2017-11-22 complaint release did not name him."
   - id: q-5d94d80b8e
     kind: new_case
     source: pin_report
@@ -307,6 +787,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-6be4c8fff9
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-cathy-mcmorris-rodgers/
+    title: In the Matter of Allegations Relating to Representative Cathy McMorris Rodgers
+    date: 2019-12-19
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report served as a reproval (H. Rept. 116-359): official resources were used for campaign and leadership-race activity, and a consultant was paid improperly. Ordered to reimburse the Treasury $7,575.95."
   - id: q-13fcba9632
     kind: new_case
     source: pin_report
@@ -409,6 +904,81 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-0d24184b95
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-mark-meadows/
+    title: In the Matter of Allegations Relating to Representative Mark Meadows
+    date: 2018-11-16
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report served as a reproval (H. Rept. 115-1042): official salary paid to his former chief of staff was not commensurate with work done (clause 8). Ordered to reimburse the Treasury $40,625.02. JUDGMENT CALL: the background is a staffer's alleged harassment, but the finding is about misuse of official funds."
+  - id: q-ee9a15f8d9
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2018-06-27/osc-files-hatch-act-complaint-against-immigration-judge/
+    title: "OSC press release: OSC Files Hatch Act Complaint Against Immigration Judge (Carmene DePaolo)"
+    date: 2018-06-27
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "MSPB complaint (allegation). Outcome in osc-news-20190917-depaolo. Outcome: OSC press release: Immigration Judge Who Violated the Hatch Act Fined $1K with 30-Month Debarment from Federal Service (Carmene DePaolo) (2019-09-17) https://www.osc.gov/news/2019-09-17/immigration-judge-who-violated-the-hatch-act-fined-1k-with-30-month-debarment-from-federal-service/"
+  - id: q-6817ec4da2
+    kind: new_case
+    source: tier_list
+    url: https://www.ethics.senate.gov/public/index.cfm/letterstomembers?ID=20DB5282-FE26-4207-8D84-21D1704B74F0
+    title: Senator Robert Menendez - Public Letter of Admonition
+    date: 2018-04-26
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: per-robert-menendez
+    first_seen: 2026-10-04
+    state: open
+    note: Person already in data (per-robert-menendez); check whether this is a different matter.
+  - id: q-207c966889
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-luis-v-guti-rrez/
+    title: In the Matter of Allegations Relating to Representative Luis V. Gutiérrez
+    date: 2018-03-30
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report served as a reproval (H. Rept. 115-617): a contractor paid with official (MRA) funds did work beyond the permitted scope. Ordered to reimburse $9,700. The press release is dated 2018-03-22 and the reports page 2018-03-30; the date given is the reports page."
+  - id: q-6e239ad2ce
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-bobby-l-rush/
+    title: In the Matter of Allegations Relating to Representative Bobby L. Rush
+    date: 2018-03-22
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report served as a reproval (H. Rept. 115-618): rent-free office space was an impermissible gift that violated House rules and federal law. He was ordered to repay its value and amend his disclosures."
   - id: q-c7f8259bda
     kind: new_case
     source: pin_report
@@ -477,6 +1047,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-80eba81a5a
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2017-12-31/judge-orders-removal-of-noaa-employee-for-hatch-act-violations/
+    title: "OSC press release: Judge Orders Removal of NOAA Employee for Hatch Act Violations (Keith L. Arnold)"
+    date: 2017-12-31
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Date as displayed by OSC, but likely wrong: old release number 17-04 and OSC's 2023-01-24 release say the ALJ initial decision was January 2017. Verify before use. Outcome: OSC press release: NOAA Employee who Violated the Hatch Act by Running for Partisan Office Numerous Times Removed from Federal Employment (Keith Arnold) (2023-01-24) https://www.osc.gov/news/2023-01-24/noaa-employee-who-violated-the-hatch-act-by-running-for-partisan-office-numerous-times-removed-from-federal-employment/"
+  - id: q-9ab498bf50
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/usao-sdtx/pr/former-texas-congressman-and-associate-indicted-multi-year-fraud-scheme
+    title: Former Texas Congressman and Associate Indicted for Multi-Year Fraud Scheme
+    date: 2017-03-28
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "28-count superseding indictment: mail and wire fraud using charitable donations, false statements to the FEC, excessive campaign contributions, money laundering, false tax return. The scheme ran 2010-2014 and partly overlapped his 2013-2015 term. The page describes a superseding indictment, so an earlier charging document may exist; the date given is this page's date."
   - id: q-bc26d6f2ef
     kind: new_case
     source: pin_report
@@ -511,6 +1111,51 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-de7a5a9fdc
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/usao-cdil/pr/former-us-representative-aaron-schock-indicted-fraud-theft-government-funds-false
+    title: Former U.S. Representative Aaron Schock Indicted for Fraud, Theft of Government Funds, False Statements and Filing False Income Tax Returns
+    date: 2016-11-10
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: 24-count indictment for fraud against the House and his campaign committees (mileage and expense reimbursements), theft of government funds, false statements, and false tax returns; conduct alleged from 2008, mostly while a member (resigned March 2015).
+  - id: q-010e7a968a
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-david-mckinley/
+    title: In the Matter of Allegations Relating to Representative David McKinley
+    date: 2016-09-28
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report and Letter of Reproval (H. Rept. 114-795): the committee found that selling his firm with his name still on it violated the Ethics in Government Act and House rules on fiduciary firms."
+  - id: q-77f41a9ca8
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-ed-whitfield/
+    title: In the Matter of Allegations Relating to Representative Ed Whitfield
+    date: 2016-07-14
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: "Report served as a reproval (H. Rept. 114-687): he did not stop lobbying contacts between his staff and his lobbyist wife, and he gave her special privileges."
   - id: q-0037d53387
     kind: new_case
     source: pin_report
@@ -1012,3 +1657,213 @@ candidates:
     first_seen: 2026-10-04
     state: rejected
     note: "Out of scope: acting as a foreign agent and security-clearance false statements by a contractor lab employee; not corruption by a federal official."
+  - id: q-f7cde8ba80
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/opa/pr/south-florida-congresswoman-charged-stealing-5-million-fema-funds-and-making-illegal
+    title: South Florida Congresswoman Charged with Stealing $5 Million in FEMA Funds and Making Illegal Campaign Contributions
+    date: 2025-11-19
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2025-cherfilus-mccormick-fema-funds
+    entity_id: per-sheila-cherfilus-mccormick
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-0ce6c3dda5
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/archives/opa/pr/us-congressman-henry-cuellar-and-his-wife-charged-bribery-unlawful-foreign-influence-and
+    title: U.S. Congressman Henry Cuellar Charged with Bribery and Acting as a Foreign Agent
+    date: 2024-05-03
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2024-cuellar-bribery
+    entity_id: per-henry-cuellar
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-67b442a24c
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/usao-sdny/pr/us-senator-robert-menendez-his-wife-and-three-new-jersey-businessmen-charged-bribery
+    title: U.S. Senator Robert Menendez, His Wife, And Three New Jersey Businessmen Charged With Bribery Offenses
+    date: 2023-09-22
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2023-menendez-bribery
+    entity_id: per-robert-menendez
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-5d16226087
+    kind: new_case
+    source: tier_list
+    url: https://osc.gov/~assets/docs/report-of-prohibited-political-activity-rachael-rollins-ha-22-000173.pdf
+    title: OSC Report of Prohibited Political Activity, Rachael Rollins (OSC File No. HA-22-000173)
+    date: 2023-05-17
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: evt-2023-us-attorney-massachusetts-hatch-act-ethics
+    entity_id: per-rachael-rollins
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-87c2246c89
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/usao-edny/pr/congressman-george-santos-charged-fraud-money-laundering-theft-public-funds-and-false
+    title: Congressman George Santos Charged with Fraud, Money Laundering, Theft of Public Funds, and False Statements
+    date: 2023-05-10
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2023-santos-campaign-fraud
+    entity_id: per-george-santos
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-db7a458bf7
+    kind: new_case
+    source: tier_list
+    url: https://osc.gov/~assets/docs/report-of-prohibited-political-activity-xavier-becerra-ha-22-000223.pdf
+    title: OSC Report of Prohibited Political Activity, Xavier Becerra (OSC File No. HA-22-000223)
+    date: 2023-04-18
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: evt-2023-hhs-secretary-hatch-act
+    entity_id: per-xavier-becerra
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-dbdaa9661d
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/usao-cdca/pr/us-rep-jeff-fortenberry-charged-scheme-deceive-federal-investigators-probing-illegal
+    title: U.S. Rep. Jeff Fortenberry Charged with Scheme to Deceive Federal Investigators Probing Illegal Campaign Contributions in 2016
+    date: 2021-10-19
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2021-fortenberry-false-statements
+    entity_id: per-jeff-fortenberry
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-2194eeb483
+    kind: new_case
+    source: tier_list
+    url: https://ethics.house.gov/committee-reports/matter-allegations-relating-representative-david-schweikert/
+    title: In the Matter of Allegations Relating to Representative David Schweikert
+    date: 2020-07-30
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2020-schweikert-house-ethics
+    entity_id: per-david-schweikert
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-390bc7db08
+    kind: new_case
+    source: tier_list
+    url: https://osc.gov/~assets/docs/report-of-prohibited-political-activity-kellyanne-conway-ha-19-06-a8748ac5.pdf
+    title: OSC Report of Prohibited Political Activity, Kellyanne Conway (OSC File Nos. HA-19-0631 and HA-19-3395)
+    date: 2019-06-13
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: evt-2018-counselor-to-president-hatch-act
+    entity_id: per-kellyanne-conway
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-12a9d8081e
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/usao-sdca/pr/rep-duncan-d-hunter-and-wife-indicted-converting-hundreds-thousands-dollars-campaign
+    title: Rep. Duncan D. Hunter and Wife Indicted for Converting Hundreds of Thousands of Dollars in Campaign Funds and Falsifying Campaign Finance Records
+    date: 2018-08-21
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2018-hunter-campaign-funds
+    entity_id: per-duncan-hunter
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-f41f211a2d
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/usao-sdny/pr/congressman-christopher-collins-and-others-charged-manhattan-federal-court-insider
+    title: Congressman Christopher Collins And Others Charged In Manhattan Federal Court With Insider Trading And Lying To Federal Law Enforcement Agents
+    date: 2018-08-08
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2018-collins-insider-trading
+    entity_id: per-christopher-collins
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-12952e1478
+    kind: new_case
+    source: tier_list
+    url: https://osc.gov/~assets/docs/report-of-prohibited-political-activity-kellyanne-conway-ha-18-0966.pdf
+    title: OSC Report of Prohibited Political Activity, Kellyanne Conway (OSC File No. HA-18-0966)
+    date: 2018-03-06
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: evt-2018-counselor-to-president-hatch-act
+    entity_id: per-kellyanne-conway
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-fe3fd1bca9
+    kind: new_case
+    source: tier_list
+    url: https://osc.gov/~assets/docs/report-of-prohibited-political-activity-julian-castro-ha-16-3113.pdf
+    title: OSC Report of Prohibited Political Activity, Julián Castro (OSC File No. HA-16-3113)
+    date: 2016-07-18
+    feed: null
+    tags:
+      - tier:hatch_act
+      - backfill
+    event_id: evt-2016-hud-secretary-hatch-act
+    entity_id: per-julian-castro
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-b42e2af1a6
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/archives/opa/pr/congresswoman-corrine-brown-and-chief-staff-charged-fraud-scheme-involving-bogus-non-profit
+    title: Congresswoman Corrine Brown and Chief of Staff Charged with Fraud Scheme Involving Bogus Non-Profit Scholarship Entity
+    date: 2016-07-08
+    feed: null
+    tags:
+      - tier:congress
+      - backfill
+    event_id: evt-2016-brown-one-door-charity
+    entity_id: per-corrine-brown
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.

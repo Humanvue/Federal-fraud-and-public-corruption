@@ -8,7 +8,7 @@ tiers:
     name: "Members of Congress"
     definition: "Every member of the House or Senate charged with a federal crime related to public corruption, campaign or official funds, false statements, or obstruction, or found in violation by the House or Senate Ethics Committee, with the first public action in 2016 or later. Sexual misconduct matters and conduct after leaving Congress are excluded."
     enumerated_from: "House and Senate Ethics Committee reports, public letters, and press releases; Justice Department press releases; congress.gov resolutions."
-    enumerated_on: null
+    enumerated_on: "2026-10-04"
   - id: senior_official
     name: "Senior executive-branch officials"
     definition: "Every cabinet secretary, agency head, other Senate-confirmed appointee, U.S. Attorney, or senior White House official named in a federal criminal charge, an Inspector General finding about their conduct (including findings of no violation), or an Office of Government Ethics finding, with the first public action in 2016 or later."
@@ -18,7 +18,7 @@ tiers:
     name: "Hatch Act findings"
     definition: "Every Hatch Act violation finding the Office of Special Counsel made public about a named federal official, in a report to the President or an announcement of discipline or settlement, in 2016 or later."
     enumerated_from: "Office of Special Counsel Hatch Act resources and news pages."
-    enumerated_on: null
+    enumerated_on: "2026-10-04"
   - id: pin_report
     name: "Public Integrity Section report cases"
     definition: "Every federal judicial, legislative, or executive branch case described in the Public Integrity Section's annual Reports to Congress for 2016 onward."

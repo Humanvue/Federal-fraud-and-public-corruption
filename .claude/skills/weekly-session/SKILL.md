@@ -34,6 +34,11 @@ Check the docket for the named person. If nothing changed, update `status_verifi
 event (after approval, as above) and mark the item done. If something changed, handle it as in step 1.
 
 ## 3. Possible new cases (`new_case`)
+Items tagged `tier:<id>` are historical backfill toward a completeness tier (`data/reference/tiers.yaml`);
+treat them like any new case, but always record a reason when rejecting one, because each rejection is
+shown as "set aside" on the Coverage page. Work open tier items alongside fresh daily items, oldest
+tier items first, at whatever pace the owner sets.
+
 1. Read each flagged release. Reject quickly, with a short reason, anything outside SPEC.md §2: state or
    local officials with no federal official or federal prosecution, health care, pandemic relief, tax-only,
    benefits fraud with no official, or no official trigger. `npm run queue:set -- <ids> rejected "<reason>"`.
@@ -52,7 +57,10 @@ event (after approval, as above) and mark the item done. If something changed, h
 ## 5. Publish
 1. `npm run promote -- --reviewer "<owner's reviewer name; Humanvue unless told otherwise>" <approved event ids>`.
 2. `npm run check` must pass (validate, tests, build, download check).
-3. Mark queue items done (`npm run queue:set -- <ids> done`). Commit `data/` and `queue/` together with a
+3. Mark queue items done (`npm run queue:set -- <ids> done`). A historical matter can appear in more than
+   one completeness tier (for example a member of Congress also named in a Public Integrity Section report):
+   search the queue for each published person's surname (`npm run queue:list -- --all | grep -i <surname>`)
+   and mark every item for the SAME matter done too. Items about a different matter stay open. Commit `data/` and `queue/` together with a
    message listing each case added or changed.
 4. The daily job commits to `queue/` on main every morning, so merge main in before pushing:
    `git fetch origin && git merge origin/main`. If `queue/candidates.yaml` conflicts, run
