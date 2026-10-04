@@ -17,7 +17,11 @@
     "promote": "tsx scripts/promote.ts",
     "rearchive": "tsx scripts/rearchive.ts",
     "preview:drafts": "PREVIEW_DRAFTS=1 DATA_DIR=drafts,data astro dev",
-    "check:downloads": "tsx scripts/check-downloads.ts"
+    "check:downloads": "tsx scripts/check-downloads.ts",
+    "queue:discover": "tsx scripts/queue/discover-feeds.ts",
+    "queue": "tsx scripts/queue/run.ts",
+    "queue:list": "tsx scripts/queue/list.ts",
+    "queue:set": "tsx scripts/queue/set.ts"
   },
   "keywords": [],
   "author": "",

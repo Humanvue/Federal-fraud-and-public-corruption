@@ -1,0 +1,49 @@
+name: Daily queue
+
+# Gathers new candidates (press releases, docket entries on moving cases, clemency, staleness)
+# into queue/. Links, public titles, dates, and rule tags only. See SPEC.md §7.1.
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 11:00 UTC daily (7 a.m. Eastern in summer)
+  workflow_dispatch:
+  # TEMPORARY: lets the first run be tested from the phase-3 branch. Remove before merging.
+  push:
+    branches: [phase-3-queue]
+    paths: [".github/workflows/queue.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-queue
+  cancel-in-progress: false
+
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Gather candidates
+        env:
+          # Optional. A free CourtListener account token raises the docket rate limit.
+          COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
+        run: npm run queue
+      - name: Show open items
+        run: npm run queue:list
+      - name: Commit queue changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add queue/
+          if git diff --cached --quiet; then
+            echo "No queue changes."
+          else
+            git commit -m "Queue: daily update $(date -u +%Y-%m-%d)"
+            git push
+          fi
