@@ -18,7 +18,7 @@ export type CandidateState = z.infer<typeof CandidateState>;
 export const Candidate = z.strictObject({
   id: z.string().regex(/^q-[a-z0-9]{10}$/),
   kind: CandidateKind,
-  source: z.enum(["doj", "courtlistener", "pardon_attorney", "staleness"]),
+  source: z.enum(["doj", "courtlistener", "pardon_attorney", "staleness", "pin_report"]),
   url: z.url().nullable(),
   title: z.string().min(1),
   date: DateString.nullable(),

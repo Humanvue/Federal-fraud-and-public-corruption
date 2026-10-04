@@ -6,6 +6,7 @@ import { eventStatus } from "../lib/derive";
 const data = getData();
 const byStatus = { pending: 0, partially_resolved: 0, resolved: 0 };
 for (const e of data.events) byStatus[eventStatus(e)] += 1;
+import CoverageNote from "../components/CoverageNote.astro";
 ---
 <Base title="Federal Fraud and Public Corruption Tracker">
   <h1>Federal Fraud and Public Corruption Tracker</h1>
@@ -25,5 +26,5 @@ for (const e of data.events) byStatus[eventStatus(e)] += 1;
     </table>
   </div>
   <p><a href="/explore/">Explore all cases</a> · <a href="/explore/?cat=hatch_act">Hatch Act findings</a> · <a href="/search/">Search</a> · <a href="/downloads/">Download the data</a></p>
-  <p class="notice">Counts reflect official actions, not the total amount of corruption. Changes over time can reflect enforcement priorities, staffing, and policy, not only changes in misconduct. Recent years are incomplete: cases are often charged years after the conduct.</p>
+  <CoverageNote />
 </Base>

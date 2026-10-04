@@ -371,7 +371,7 @@ One public repository. Drafts never enter Git; the queue contains only links to 
 | Source | Use | Notes |
 |---|---|---|
 | DOJ press releases (justice.gov, incl. U.S. Attorney offices) | Primary feed of charges, pleas, convictions | Filter by topic tag (verify "Public Corruption" tag exists in feed/API) before keyword rules |
-| DOJ Public Integrity Section annual reports to Congress | **Primary backfill source**: lists public-corruption prosecutions with outcomes by year | PDFs; verify coverage 2016–present |
+| DOJ Public Integrity Section annual reports to Congress | **Coverage denominator and backfill seed**: nationwide counts of federal officials charged, convicted, and awaiting trial each year (Table II), plus selected examples of the Section's own cases (Part II, about 3–8 federal cases a year). Not a complete list of prosecutions (verified 2026-10-04). | PDFs for 2016–2023 published as of 2026-10-04; the 2019 report is a scan (OCR needed) |
 | DOJ Office of the Pardon Attorney clemency lists | Pardons and commutations (status updates) | Match by name + district + docket |
 | CourtListener / RECAP | Dockets, case status updates | Free API token; key on docket from `court_cases` |
 | Oversight.gov | Federal IG investigative reports | Filter to investigations, not audits |

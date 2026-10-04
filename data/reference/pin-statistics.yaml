@@ -1,0 +1,19 @@
+# Nationwide federal prosecutions of corrupt FEDERAL officials by U.S. Attorneys' Offices, per year.
+# Source: Public Integrity Section, Report to Congress for 2023, Table II ("Progress over the past two
+# decades"). The same figures appear in the 2016, 2018, 2020 and 2022 reports (checked 2026-10-04).
+# Counts are defendants, not cases, and follow the Justice Department's definition of public corruption,
+# which is broader than this site's scope (it includes, for example, mail theft by postal employees).
+# Add each new year when the Section publishes its next report.
+description: "Federal officials charged, convicted, and awaiting trial at year end, nationwide (PIN Table II)"
+source_ids: [src-doj-pin-20240910-01]
+federal_officials:
+  "2014": { charged: 364, convicted: 364, awaiting_trial: 111 }
+  "2015": { charged: 458, convicted: 402, awaiting_trial: 153 }
+  "2016": { charged: 354, convicted: 326, awaiting_trial: 170 }
+  "2017": { charged: 383, convicted: 334, awaiting_trial: 169 }
+  "2018": { charged: 275, convicted: 250, awaiting_trial: 165 }
+  "2019": { charged: 300, convicted: 307, awaiting_trial: 131 }
+  "2020": { charged: 242, convicted: 207, awaiting_trial: 154 }
+  "2021": { charged: 246, convicted: 228, awaiting_trial: 153 }
+  "2022": { charged: 183, convicted: 205, awaiting_trial: 128 }
+  "2023": { charged: 208, convicted: 229, awaiting_trial: 104 }

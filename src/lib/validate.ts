@@ -178,6 +178,12 @@ export function validateDataset(ds: Dataset, opts: ValidateOptions): Issue[] {
     }
   }
 
+  // ---- Reference data ----
+  if (ds.pin) {
+    const pinFile = path.join(root, "reference", "pin-statistics.yaml");
+    for (const sid of ds.pin.source_ids) need(pinFile, "source", sid, sourceById, "source_ids");
+  }
+
   // ---- Corrections ----
   const corrFile = path.join(root, "corrections", "corrections.yaml");
   for (const c of ds.corrections) {

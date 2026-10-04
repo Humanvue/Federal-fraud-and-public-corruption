@@ -1,6 +1,599 @@
 # Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
 # Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
 candidates:
+  - id: q-216d3f9948
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ndga/pr/former-sba-and-irs-employee-sentenced-federal-prison-taking-bribes-35-million-covid
+    title: Former SBA and IRS Employee Sentenced to Federal Prison for Taking Bribes in $3.5 Million COVID Fraud Scheme
+    date: 2026-09-03
+    feed: usao-ndga
+    tags:
+      - bribery
+      - fraud
+      - agency_named
+      - excluded:pandemic
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-1848f07910
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1384436/dl?inline=
+    title: US v. Ian Diaz, Central District of California (Public Integrity Section report for 2023, federal executive branch)
+    date: "2023"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-53695d5477
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1384436/dl?inline=
+    title: US v. Samuel Miele, Eastern District of New York (Public Integrity Section report for 2023, federal legislative branch)
+    date: "2023"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_legislative_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-60cbbaf5e3
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1384436/dl?inline=
+    title: US v. Kathryn Drey, Northern District of Florida (Public Integrity Section report for 2023, federal executive branch)
+    date: "2023"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-9b5e6bd2dc
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1384436/dl?inline=
+    title: US v. Charles Littlejohn, District of Columbia (Public Integrity Section report for 2023, federal executive branch)
+    date: "2023"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-b1f75a9fd9
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1384436/dl?inline=
+    title: US v. Prakazrel, Michel, District of Columbia (Public Integrity Section report for 2023, federal executive branch)
+    date: "2023"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-d55a55c1e5
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1384436/dl?inline=
+    title: US v. Adrian Pena, Western District of Texas (Public Integrity Section report for 2023, federal executive branch)
+    date: "2023"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-6d1241fe8d
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1337561/dl?inline=
+    title: US v. Edwards et al, District of Columbia (Public Integrity Section report for 2022, federal executive branch)
+    date: "2022"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-8aefb3d1f8
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1337561/dl?inline=
+    title: US v. Diane Sturgis and William Snow, Eastern District of Virginia (Public Integrity Section report for 2022, federal executive branch)
+    date: "2022"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-cb9a1650f2
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1337561/dl?inline=
+    title: US v. Keim et al, Eastern District of Virginia (Public Integrity Section report for 2022, federal executive branch)
+    date: "2022"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-f864dbd447
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1337561/dl?inline=
+    title: US v. Eghbal Saffarinia, District of Columbia (Public Integrity Section report for 2022, federal executive branch)
+    date: "2022"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-47f02a3c49
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1256431/dl?inline=
+    title: US v. Andrew Maffey, Southern District of New York (Public Integrity Section report for 2021, federal executive branch)
+    date: "2021"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-591b06ec2a
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1256431/dl?inline=
+    title: US v. James McDonald, District of New Hampshire (Public Integrity Section report for 2021, federal executive branch)
+    date: "2021"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-c72530cd5f
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1256431/dl?inline=
+    title: US v. Anthony Barry, District of Arizona (Public Integrity Section report for 2021, federal legislative branch)
+    date: "2021"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_legislative_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-5d94d80b8e
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1210331/dl?inline=
+    title: US v. John Nettleton, Middle District of Florida (Public Integrity Section report for 2020, federal executive branch)
+    date: "2020"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-6a09e44e8f
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1210331/dl?inline=
+    title: US v. Joseph Bongiovanni, Western District of New York (Public Integrity Section report for 2020, federal executive branch)
+    date: "2020"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-7f385ee10d
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1210331/dl?inline=
+    title: US v. Garrison Courtney, Eastern District of Virginia (Public Integrity Section report for 2020, federal executive branch)
+    date: "2020"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-dae1cc2312
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1210331/dl?inline=
+    title: US v. Elliott Broidy, District of Columbia (Public Integrity Section report for 2020, federal executive branch)
+    date: "2020"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-13fcba9632
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1110631/dl?inline=
+    title: United States v. Jeremy Hutchinson, Eastern District of Arkansas, Western (Public Integrity Section report for 2019, section not detected)
+    date: "2019"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - section_unknown
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-327da0fff0
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1110631/dl?inline=
+    title: United States v. Daniel Hernandez, Southern District of Texas (Public Integrity Section report for 2019, section not detected)
+    date: "2019"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - section_unknown
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-3875d1236e
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1110631/dl?inline=
+    title: United States v. Maddox et al, Northern District of Florida (Public Integrity Section report for 2019, section not detected)
+    date: "2019"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - section_unknown
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-53509005f3
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1110631/dl?inline=
+    title: United States v. Zaldy Sabino, Eastern District of Virginia (Public Integrity Section report for 2019, section not detected)
+    date: "2019"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - section_unknown
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-cafe84f5ab
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1110631/dl?inline=
+    title: United States v. Ramon Torry, Middle District of Florida (Public Integrity Section report for 2019, section not detected)
+    date: "2019"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - section_unknown
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-fa499cbb67
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1110631/dl?inline=
+    title: United States v. Tong, Northern District of California (Public Integrity Section report for 2019, section not detected)
+    date: "2019"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - section_unknown
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-c7f8259bda
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1032326/dl?inline=
+    title: United States v. Kemal Oksuz, District of Columbia (Public Integrity Section report for 2018, federal legislative branch)
+    date: "2018"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_legislative_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-ce22bf9f89
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1032326/dl?inline=
+    title: United States v. Lynn M. Morris, Southern District of California (Public Integrity Section report for 2018, federal executive branch)
+    date: "2018"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-d37e47fc75
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1032326/dl?inline=
+    title: United States v. Stephen E. Stockman, Southern District of Texas (Public Integrity Section report for 2018, federal legislative branch)
+    date: "2018"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_legislative_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-fc9e23a139
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/1032326/dl?inline=
+    title: United States v. Raphael Sanchez, Western District of Washington (Public Integrity Section report for 2018, federal executive branch)
+    date: "2018"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-bc26d6f2ef
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/969751/dl?inline=
+    title: United States v. Christopher Ciccione, et al., Southern District of Florida (Public Integrity Section report for 2017, federal executive branch)
+    date: "2017"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-f8c5f629e8
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/969751/dl?inline=
+    title: United States v. Carla Sena, District of New Mexico (Public Integrity Section report for 2017, federal executive branch)
+    date: "2017"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-0037d53387
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/924066/dl?inline=
+    title: United States v. Deenvaughn Rowe, Kendra Brantley, and Alicia Norman, District of Columbia (Public Integrity Section report for 2016, federal executive branch)
+    date: "2016"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-0da8c4e8fb
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/924066/dl?inline=
+    title: United States v. Michael Francis Clapper, District of Colorado (Public Integrity Section report for 2016, federal judicial branch)
+    date: "2016"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_judicial_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-10e2d3ed0a
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/924066/dl?inline=
+    title: United States v. Chaka Fattah, et al., Eastern District of Pennsylvania (Public Integrity Section report for 2016, federal legislative branch)
+    date: "2016"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_legislative_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-8b6b917da7
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/924066/dl?inline=
+    title: United States v. Scott M. Bowman, Central District of California (Public Integrity Section report for 2016, federal executive branch)
+    date: "2016"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-bdf2f4419c
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/924066/dl?inline=
+    title: United States v. Stephen M. Barton, Eastern District of Virginia (Public Integrity Section report for 2016, federal executive branch)
+    date: "2016"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-e7e2796f1e
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/924066/dl?inline=
+    title: United States v. David G. Bowser, District of Columbia (Public Integrity Section report for 2016, federal legislative branch)
+    date: "2016"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_legislative_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-eb4dd36314
+    kind: new_case
+    source: pin_report
+    url: https://www.justice.gov/criminal/media/924066/dl?inline=
+    title: United States v. Koo Hyung Jung, Eastern District of Virginia (Public Integrity Section report for 2016, federal executive branch)
+    date: "2016"
+    feed: null
+    tags:
+      - pin_report
+      - backfill
+      - federal_executive_branch
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
   - id: q-f54deb651c
     kind: new_case
     source: doj
@@ -286,23 +879,6 @@ candidates:
     first_seen: 2026-10-04
     state: rejected
     note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
-  - id: q-216d3f9948
-    kind: new_case
-    source: doj
-    url: https://www.justice.gov/usao-ndga/pr/former-sba-and-irs-employee-sentenced-federal-prison-taking-bribes-35-million-covid
-    title: Former SBA and IRS Employee Sentenced to Federal Prison for Taking Bribes in $3.5 Million COVID Fraud Scheme
-    date: 2026-09-03
-    feed: usao-ndga
-    tags:
-      - bribery
-      - fraud
-      - agency_named
-      - excluded:pandemic
-    event_id: null
-    entity_id: null
-    first_seen: 2026-10-04
-    state: open
-    note: null
   - id: q-a3bb70c878
     kind: new_case
     source: doj

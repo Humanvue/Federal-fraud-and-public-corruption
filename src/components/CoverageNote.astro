@@ -1,9 +1,15 @@
 ---
 import { getData } from "../lib/data";
-const n = getData().events.length;
+import { coverageRows } from "../lib/coverage";
+const data = getData();
+const n = data.events.length;
+const rows = coverageRows(data).filter((r) => r.national !== null);
+const ours = rows.reduce((a, r) => a + r.ours, 0);
+const national = rows.reduce((a, r) => a + (r.national ?? 0), 0);
+const span = rows.length ? `${rows[0].year} through ${rows[rows.length - 1].year}` : "";
 ---
 <p class="notice">
-  This database currently holds {n} cases. They are a hand-verified starting set, not a complete record of federal public corruption cases.
+  This database holds {n} cases. It is not a complete record of federal public corruption cases.
+  {national > 0 && <>From {span}, the Justice Department reports {national.toLocaleString("en-US")} federal officials charged with public corruption nationwide; this database includes {ours} of them. <a href="/coverage/">See coverage by year.</a> </>}
   Counts reflect official actions, not the total amount of corruption, and recent years are incomplete because cases are often charged years after the conduct.
-  A comparison with the Justice Department's Public Integrity Section reports will be added as older cases are entered.
 </p>

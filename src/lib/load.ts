@@ -7,6 +7,7 @@ import {
   Corrections,
   CpiU,
   Event,
+  PinStatistics,
   Organization,
   Person,
   Source,
@@ -20,6 +21,7 @@ export interface Dataset {
   contracts: Contract[];
   sources: Source[];
   cpi: CpiU | null;
+  pin: PinStatistics | null;
   corrections: Correction[];
 }
 
@@ -94,9 +96,20 @@ function loadOne(root: string, issues: Issue[], wantReference: boolean): Dataset
     contracts: loadCollection(path.join(root, "contracts"), Contract, issues),
     sources: loadCollection(path.join(root, "sources"), Source, issues),
     cpi: null,
+    pin: null,
     corrections: [],
   };
   if (!wantReference) return dataset;
+
+  const pinFile = path.join(root, "reference", "pin-statistics.yaml");
+  if (fs.existsSync(pinFile)) {
+    const raw = readYaml(pinFile, issues);
+    if (raw !== undefined) {
+      const parsed = PinStatistics.safeParse(raw);
+      if (parsed.success) dataset.pin = parsed.data;
+      else for (const m of formatZodError(parsed.error)) issues.push({ file: pinFile, message: m });
+    }
+  }
 
   const cpiFile = path.join(root, "reference", "cpi-u.yaml");
   if (fs.existsSync(cpiFile)) {
@@ -135,7 +148,7 @@ export function loadDataset(dir: string | string[]): LoadResult {
   const dirs = (Array.isArray(dir) ? dir : [dir]).map((d) => path.resolve(d));
   const base = dirs[dirs.length - 1];
   const parts = dirs.map((d) => loadOne(d, issues, d === base));
-  const merged: Dataset = { events: [], people: [], organizations: [], contracts: [], sources: [], cpi: null, corrections: [] };
+  const merged: Dataset = { events: [], people: [], organizations: [], contracts: [], sources: [], cpi: null, pin: null, corrections: [] };
   const seen = new Map<string, string>();
   for (const part of parts) {
     for (const key of ["events", "people", "organizations", "contracts", "sources"] as const) {
@@ -148,6 +161,7 @@ export function loadDataset(dir: string | string[]): LoadResult {
       }
     }
     if (part.cpi) merged.cpi = part.cpi;
+    if (part.pin) merged.pin = part.pin;
     merged.corrections.push(...part.corrections);
   }
   return { dataset: merged, issues };

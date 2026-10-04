@@ -46,6 +46,7 @@ Optimize for simplicity, plain-language explanations, and few moving parts.
 | `npm run queue:resolve` | After merging main, resolves a `queue/candidates.yaml` conflict: main's items plus this branch's states. |
 | `npm run queue:peek` | Prints the opening of each open new-case release, for weekly triage. |
 | `npm run queue:discover` | Rebuilds `queue/feeds.yaml` (the 94 DOJ press release feeds); `-- usao-xx` for specific offices. |
+| `npm run backfill:pin -- --year YYYY --url <report url> --text <text file>` | Adds the federal-branch case captions from a Public Integrity Section report to the queue (`--dry` to preview). Extract PDF text first (OCR for scanned reports). |
 | `npm run check:downloads` | After a build, verifies every file in `dist/downloads/` (schemas, columns, row counts, round trip). |
 | `npm run build` | Builds the static site into `dist/` and the Pagefind search index into `dist/pagefind/`. Set `DATA_DIR=drafts,data` to preview drafts, or `DATA_DIR=tests/fixtures/valid` to preview the fixture. |
 | `npm run check` | validate + test + build + download check, same as CI. |
@@ -76,6 +77,8 @@ src/lib/rows.ts         build-time projection of events into Explore rows (deriv
 src/lib/explore.ts      PURE filter/sort/query-string logic shared by the browser and tests; no runtime imports
 src/lib/explore-render.ts  table-row HTML used by both the server render and the browser
 src/lib/export.ts       CSV tables and dataset.json for /downloads; csv-parse.ts verifies round trips
+src/lib/coverage.ts     coverage by year vs. the Justice Department's national counts (data/reference/pin-statistics.yaml)
+src/lib/backfill/pin.ts parses Public Integrity Section report captions for backfill
 src/lib/archive.ts      Wayback archiving and justice.gov bot-check-aware fetching
 src/lib/queue/          queue sources: doj.ts (RSS + title rules in rules.ts), courtlistener.ts, pardon.ts,
                         staleness.ts, merge.ts; src/schemas/queue.ts is the queue schema
@@ -117,7 +120,9 @@ as the weekly session: `.claude/skills/weekly-session/SKILL.md`.
 - Phase 1 (seed data and core pages): complete 2026-10-03. All 29 owner-approved cases in `data/`,
   reviewed by Humanvue; statuses checked against court dockets.
 - Phase 2 (Explore, search, downloads): built on branch `phase-2-explore`, 2026-10-03.
-- Phase 3 (queue + weekly session): built on branch `phase-3-queue`. Done when two consecutive weekly
-  sessions produce correct pull requests with no manual fixes. SAM.gov exclusions are not built yet: they
-  need the owner's free SAM.gov API key (a repository secret).
+- Phase 3 (queue + weekly session): merged. First weekly session 2026-10-04 published 7 events.
+- Phase 4 (backfill + coverage): built on branch `phase-4-backfill`. National counts in
+  `data/reference/pin-statistics.yaml` (2014-2023); /coverage/ page; 36 report cases queued. Coverage
+  is 0-3% per year of federal officials charged nationwide (~2,200 in 2016-2023). The SPEC §13 threshold
+  (90%) is not reachable through weekly sessions; the owner is deciding the coverage target.
 - Note: the project folder is iCloud-synced; branch switches can leave "name 2.ext" duplicate files.

@@ -1,0 +1,50 @@
+---
+import Base from "../layouts/Base.astro";
+import { getData, sourceById } from "../lib/data";
+import { coverageRows } from "../lib/coverage";
+import { apaCitation } from "../lib/cite";
+const data = getData();
+const rows = coverageRows(data);
+const withNational = rows.filter((r) => r.national !== null);
+const totalOurs = withNational.reduce((n, r) => n + r.ours, 0);
+const totalNational = withNational.reduce((n, r) => n + (r.national ?? 0), 0);
+const firstYear = withNational[0]?.year;
+const lastYear = withNational[withNational.length - 1]?.year;
+const src = data.pin?.source_ids.map((id) => sourceById(id)).filter((s): s is NonNullable<typeof s> => !!s) ?? [];
+---
+<Base title="Coverage" description="How many of the federal officials charged with public corruption each year are in this database, compared with the Justice Department's own nationwide counts.">
+  <h1>Coverage</h1>
+  <p class="summary">This page compares the database with the Justice Department's own count of federal officials charged with public corruption each year. It shows how much of the national picture the site currently covers, so that no chart or count on this site is read as a complete record.</p>
+
+  {withNational.length > 0 && (
+    <p class="notice">From {firstYear} through {lastYear}, U.S. Attorneys' Offices charged {totalNational.toLocaleString("en-US")} federal officials with public corruption, according to the Justice Department. This database includes {totalOurs} of them ({(Math.round((1000 * totalOurs) / totalNational) / 10).toFixed(1)}%).</p>
+  )}
+
+  <div class="table-wrap">
+    <table>
+      <caption>Federal officials charged with public corruption, by year of first charge</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">Charged nationwide (Justice Department)</th><th scope="col">In this database</th><th scope="col">Share</th></tr></thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr>
+            <th scope="row">{r.year}</th>
+            <td>{r.national === null ? <span class="muted">not yet reported</span> : r.national.toLocaleString("en-US")}</td>
+            <td><a href={`/explore/?basis=first_public_action&from=${r.year}&to=${r.year}`}>{r.ours}</a></td>
+            <td>{r.percent === null ? <span class="muted">n/a</span> : `${r.percent.toFixed(1)}%`}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>How to read this table</h2>
+  <ul>
+    <li><strong>The two columns measure similar but not identical things.</strong> The Justice Department counts defendants its prosecutors classify as public corruption cases, which includes conduct this site leaves out, such as routine theft of mail by postal employees. This site counts federal officials named in its cases, by the year they were first charged.</li>
+    <li><strong>Only criminal charges are compared.</strong> Findings by Inspectors General, the Office of Special Counsel, and congressional ethics committees appear on this site but have no national count to compare against.</li>
+    <li><strong>Recent years are incomplete in both columns.</strong> The Justice Department publishes each year's figures well after the year ends, and new cases are charged years after the conduct.</li>
+    <li><strong>The site adds cases every week.</strong> New cases are found daily from Justice Department press releases and reviewed weekly; older cases are added from the Public Integrity Section's reports and other official records.</li>
+  </ul>
+
+  <h2>Source</h2>
+  <ul>{src.map((s) => <li>{apaCitation(s)} <a href={`/sources/${s.id}/`}>Stored text</a></li>)}</ul>
+</Base>
