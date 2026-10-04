@@ -1,4 +1,369 @@
-# Daily queue written by the ingest Action (Phase 3).
-# Contains ONLY links, titles, dates, and rule tags for already-public government pages.
-# Never contains drafts or summaries. See SPEC.md §7.
-candidates: []
+# Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
+# Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
+candidates:
+  - id: q-f54deb651c
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-sdfl/pr/former-us-congressman-sentenced-10-years-federal-prison-secretly-acting-agent
+    title: Former US Congressman Sentenced to 10 Years in Federal Prison for Secretly Acting as Agent of Venezuelan Government
+    date: 2026-10-02
+    feed: usao-sdfl
+    tags:
+      - foreign_agent
+      - member_of_congress
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-0c9f8604f6
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-sdfl/pr/former-restaurant-chain-cooperatives-ceo-and-brother-charged-80-million-bribery-and-0
+    title: Former Restaurant Chain Cooperative’s CEO and Brother Charged in $80 Million Bribery and Money-Laundering Scheme Affecting Thousands of Restaurant Franchisees
+    date: 2026-10-01
+    feed: usao-sdfl
+    tags:
+      - bribery
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-ab77ae9883
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edpa/pr/former-immigration-officer-sentenced-year-and-day-prison-accepting-6000-bribe
+    title: Former Immigration Officer Sentenced to a Year and a Day in Prison for Accepting $6,000 Bribe
+    date: 2026-10-01
+    feed: usao-edpa
+    tags:
+      - bribery
+      - law_enforcement
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-94b77919f1
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-md/pr/former-federal-employee-sentenced-time-and-attendance-scheme
+    title: Former Federal Employee Sentenced for Time-and-Attendance Scheme
+    date: 2026-09-28
+    feed: usao-md
+    tags:
+      - fraud
+      - federal_employee
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-b72cb429a8
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ut/pr/us-assistant-special-agent-charge-accused-stealing-thousands-fraudulent-disability
+    title: U.S. Assistant Special Agent in Charge Accused of Stealing Thousands in Fraudulent Disability Payments
+    date: 2026-09-28
+    feed: usao-ut
+    tags:
+      - embezzlement
+      - fraud
+      - law_enforcement
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-24ce61eef8
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-sdny/pr/two-former-usps-employees-charged-connection-scheme-steal-more-200-gift-cards-out-mail
+    title: Two Former USPS Employees Charged In Connection With Scheme To Steal More Than 200 Gift Cards Out Of The Mail
+    date: 2026-09-25
+    feed: usao-sdny
+    tags:
+      - fraud
+      - postal
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-a51fbe60ea
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-wdwa/pr/former-us-soldier-sentenced-hacking-and-extortion-scheme-exposed-sensitive-data-us
+    title: Former U.S. Soldier Sentenced for Hacking and Extortion Scheme That Exposed Sensitive Data of U.S. Government Official
+    date: 2026-09-25
+    feed: usao-wdwa
+    tags:
+      - fraud
+      - military
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-ae06723a13
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ndtx/pr/federal-grand-jury-returns-indictment-against-ex-uscis-official-and-associate-scheme
+    title: Federal grand jury returns indictment against ex USCIS official and associate for scheme involving unlawful approval and expedited processing of immigration applications
+    date: 2026-09-25
+    feed: usao-ndtx
+    tags:
+      - fraud
+      - law_enforcement
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-431a8b01cb
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ks/pr/usps-employee-pleads-guilty-stealing-gift-cards-mail
+    title: USPS employee pleads guilty to stealing gift cards from mail
+    date: 2026-09-23
+    feed: usao-ks
+    tags:
+      - embezzlement
+      - postal
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-2673ae94b4
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-co/pr/former-irs-employee-indicted-filing-false-tax-returns-drug-dealers
+    title: Former IRS Employee Indicted for Filing False Tax Returns for Drug Dealers
+    date: 2026-09-22
+    feed: usao-co
+    tags:
+      - false_records
+      - agency_named
+      - official_is_subject
+      - excluded:tax
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-2bff33528a
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-md/pr/former-government-official-sentenced-bribery-conspiracy
+    title: Former Government Official Sentenced in Bribery Conspiracy
+    date: 2026-09-22
+    feed: usao-md
+    tags:
+      - bribery
+      - federal_employee
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-d1c22c6311
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edpa/pr/former-city-correctional-sergeant-sentenced-42-months-prison-violating-inmates-civil
+    title: Former City Correctional Sergeant Sentenced to 42 Months in Prison for Violating Inmates’ Civil Rights, Falsifying Use-of-Force Reports
+    date: 2026-09-22
+    feed: usao-edpa
+    tags:
+      - false_records
+      - military
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-a0a74b6dd1
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edca/pr/former-placerville-postal-employee-sentenced-year-prison-stealing-and-tampering
+    title: Former Placerville postal employee sentenced to a year in prison for stealing and tampering with the narcotic prescriptions of United States military veterans
+    date: 2026-09-21
+    feed: usao-edca
+    tags:
+      - embezzlement
+      - postal
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-73da2352d3
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ak/pr/us-collect-over-13-million-after-judgment-ordered-bribery-case-involving-millions-dow
+    title: U.S. to Collect over $1.3 Million after Judgment Ordered in Bribery Case Involving Millions in DOW Contracts in Alaska
+    date: 2026-09-18
+    feed: usao-ak
+    tags:
+      - bribery
+      - procurement
+      - military
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-160f4642b3
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-md/pr/former-uscis-contractor-faces-charge-theft-government-property
+    title: Former USCIS Contractor Faces Charge for Theft of Government Property
+    date: 2026-09-17
+    feed: usao-md
+    tags:
+      - embezzlement
+      - law_enforcement
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-a1c6caf5b8
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edny/pr/former-postal-worker-convicted-stealing-nearly-1-million-tax-free-federal-disability
+    title: Former Postal Worker Convicted of Stealing Nearly $1 Million in Tax-Free Federal Disability Benefits
+    date: 2026-09-11
+    feed: usao-edny
+    tags:
+      - embezzlement
+      - postal
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-88b225da36
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ndca/pr/nationwide-alcohol-distributor-agrees-pay-over-12-million-resolve-federal
+    title: Nationwide Alcohol Distributor Agrees To Pay Over $12 Million To Resolve Federal Investigation Into Bribery And False Invoicing Practices
+    date: 2026-09-10
+    feed: usao-ndca
+    tags:
+      - bribery
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-3f49600cee
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edla/pr/former-postal-employee-sentenced-obstruction-us-mail
+    title: Former Postal Employee Sentenced For Obstruction of U.S. Mail
+    date: 2026-09-09
+    feed: usao-edla
+    tags:
+      - obstruction
+      - postal
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-a3bb70c878
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-sdal/pr/contract-mail-carrier-sentenced-delay-and-destruction-mail
+    title: Contract Mail Carrier Sentenced for Delay and Destruction of Mail
+    date: 2026-09-01
+    feed: usao-sdal
+    tags:
+      - procurement
+      - postal
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-d2b3ec0703
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-nj/pr/newark-real-estate-developer-admits-participating-bribery-scheme-and-unauthorized-sale
+    title: Newark Real Estate Developer Admits to Participating in Bribery Scheme and to the Unauthorized Sale of I.D. Cards with Department of Homeland Security Insignia
+    date: 2026-09-01
+    feed: usao-nj
+    tags:
+      - bribery
+      - fraud
+      - agency_named
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-2ba8bc613c
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edar/pr/two-former-bureau-prisons-correctional-officers-accused-smuggling-contraband-each
+    title: Two Former Bureau of Prisons Correctional Officers Accused of Smuggling Contraband Each Sentenced to More Than Two Years in Federal Prison
+    date: 2026-08-21
+    feed: usao-edar
+    tags:
+      - smuggling
+      - prison
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-d2697cccd8
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ri/pr/three-postal-employees-plead-guilty-federal-mail-theft-case
+    title: Three Postal Employees Plead Guilty in Federal Mail Theft Case
+    date: 2026-07-24
+    feed: usao-ri
+    tags:
+      - embezzlement
+      - postal
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
+  - id: q-7a1153952a
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edtn/pr/former-oak-ridge-national-laboratory-employee-sentenced-federal-prison-acting-foreign
+    title: Former Oak Ridge National Laboratory Employee Sentenced To Federal Prison For Acting As A Foreign Agent And Making False Statements
+    date: 2026-06-18
+    feed: usao-edtn
+    tags:
+      - false_statements
+      - foreign_agent
+      - agency_named
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null

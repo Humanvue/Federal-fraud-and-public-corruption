@@ -40,6 +40,10 @@ Optimize for simplicity, plain-language explanations, and few moving parts.
 | `npm run rearchive -- drafts --pause 90` | Retries Wayback archives for sources whose archive failed. |
 | `npm run review` | Writes one review card per draft event to `drafts/review/` plus `INDEX.md` (priority, validation, sources, notes). |
 | `npm run promote -- --reviewer "Name" evt-...` | Moves an approved draft event and every new record it depends on from `drafts/` into `data/`, stamping the reviewer. `--all` promotes every clean draft. |
+| `npm run queue` | Daily job: gathers candidates from DOJ feeds, dockets, clemency lists, and the staleness rule into `queue/`. `--only doj,courtlistener,pardon,staleness`, `--dry`. |
+| `npm run queue:list` | Open queue items grouped by kind (`-- --all` for everything). |
+| `npm run queue:set -- <ids> <open\|drafted\|rejected\|done> ["note"]` | Changes queue item state. |
+| `npm run queue:discover` | Rebuilds `queue/feeds.yaml` (the 94 DOJ press release feeds); `-- usao-xx` for specific offices. |
 | `npm run check:downloads` | After a build, verifies every file in `dist/downloads/` (schemas, columns, row counts, round trip). |
 | `npm run build` | Builds the static site into `dist/` and the Pagefind search index into `dist/pagefind/`. Set `DATA_DIR=drafts,data` to preview drafts, or `DATA_DIR=tests/fixtures/valid` to preview the fixture. |
 | `npm run check` | validate + test + build + download check, same as CI. |
@@ -51,7 +55,11 @@ SPEC.md                 the spec (authoritative)
 data/                   YAML database (real data only; see SPEC §4)
   events/ people/ organizations/ contracts/ sources/ sources/text/
   reference/cpi-u.yaml  corrections/corrections.yaml
-queue/candidates.yaml   links only, written by the ingest Action (Phase 3)
+queue/candidates.yaml   links, public titles, dates, rule tags only; written daily by .github/workflows/queue.yml
+queue/state.yaml        last docket entry seen per watched docket
+queue/feeds.yaml        DOJ press release feeds (headquarters + every U.S. Attorney's office)
+docs/DRAFTING.md        how to draft a case (sources, people, event, docket check, lessons)
+.claude/skills/weekly-session/  the owner's weekly session (run /weekly-session)
 drafts/                 gitignored; unreviewed drafts live here
 src/schemas/            Zod schemas = single source of truth for the data model
 src/lib/load.ts         reads YAML into typed collections
@@ -67,6 +75,8 @@ src/lib/explore.ts      PURE filter/sort/query-string logic shared by the browse
 src/lib/explore-render.ts  table-row HTML used by both the server render and the browser
 src/lib/export.ts       CSV tables and dataset.json for /downloads; csv-parse.ts verifies round trips
 src/lib/archive.ts      Wayback archiving and justice.gov bot-check-aware fetching
+src/lib/queue/          queue sources: doj.ts (RSS + title rules in rules.ts), courtlistener.ts, pardon.ts,
+                        staleness.ts, merge.ts; src/schemas/queue.ts is the queue schema
 src/pages/              Astro pages: explore, search, downloads (+ CSV/JSON endpoints), cases, people,
                         organizations, sources, about
 src/components/         StatusBadge, SourceList, MoneyTable
@@ -97,12 +107,15 @@ tests/                  Vitest; tests/fixtures/valid is a fictional dataset, nev
 4. `npm run validate -- drafts data` until clean; `npm run preview:drafts` to preview.
 5. `npm run review`; the owner reads `drafts/review/INDEX.md` and each card and approves, edits, or rejects in chat.
 6. Only after approval: `npm run promote -- --reviewer "<owner name>" <event ids>`, then `npm run check`, commit, open the pull request.
-Drafting agents follow `drafts/DRAFTING-GUIDE.md`; their open items are in `drafts/notes/`.
+Drafting follows `docs/DRAFTING.md`; open items go in `drafts/notes/`. From Phase 3 on, this loop runs
+as the weekly session: `.claude/skills/weekly-session/SKILL.md`.
 
 ## Phase status
 - Phase 0 (foundation): complete.
 - Phase 1 (seed data and core pages): complete 2026-10-03. All 29 owner-approved cases in `data/`,
   reviewed by Humanvue; statuses checked against court dockets.
 - Phase 2 (Explore, search, downloads): built on branch `phase-2-explore`, 2026-10-03.
-- Next: Phase 3 (daily queue Action, weekly session command with review cards, docket/SAM.gov/Pardon
-  Attorney status updates, staleness tasks).
+- Phase 3 (queue + weekly session): built on branch `phase-3-queue`. Done when two consecutive weekly
+  sessions produce correct pull requests with no manual fixes. SAM.gov exclusions are not built yet: they
+  need the owner's free SAM.gov API key (a repository secret).
+- Note: the project folder is iCloud-synced; branch switches can leave "name 2.ext" duplicate files.

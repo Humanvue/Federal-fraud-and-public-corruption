@@ -1,0 +1,285 @@
+# DOJ press release feeds polled by the daily queue job. Regenerate with npm run queue:discover.
+generated: 2026-10-04
+feeds:
+  - id: doj-opa
+    name: U.S. Department of Justice, Office of Public Affairs
+    url: https://www.justice.gov/news/rss?type=press_release&m=1
+  - id: usao-ak
+    name: U.S. Attorney's Office, District of Alaska
+    url: https://www.justice.gov/news/rss?type%5B0%5D=press_release&type%5B1%5D=speech&field_component=1686&search_api_language=en&require_all=0
+  - id: usao-az
+    name: U.S. Attorney's Office, District of Arizona
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=186&field_component=1716&search_api_language=en&require_all=0
+  - id: usao-cdca
+    name: U.S. Attorney's Office, Central District of California
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=201&field_component=1721&search_api_language=en&require_all=0
+  - id: usao-cdil
+    name: U.S. Attorney's Office, Central District of Illinois
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=286&field_component=1816&search_api_language=en&require_all=0
+  - id: usao-co
+    name: U.S. Attorney's Office, District of Colorado
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=221&field_component=1741&search_api_language=en&require_all=0
+  - id: usao-ct
+    name: U.S. Attorney's Office, District of Connecticut
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=226&field_component=1746&search_api_language=en&require_all=0
+  - id: usao-dc
+    name: U.S. Attorney's Office, District of Columbia
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=236&field_component=1751&search_api_language=en&require_all=0
+  - id: usao-de
+    name: U.S. Attorney's Office, District of Delaware
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=231&field_component=1756&search_api_language=en&require_all=0
+  - id: usao-edar
+    name: U.S. Attorney's Office, Eastern District of Arkansas
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=191&field_component=1706&search_api_language=en&require_all=0
+  - id: usao-edca
+    name: U.S. Attorney's Office, Eastern District of California
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=206&field_component=1726&search_api_language=en&require_all=0
+  - id: usao-edky
+    name: U.S. Attorney's Office, Eastern District of Kentucky
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=326&field_component=1846&search_api_language=en&require_all=0
+  - id: usao-edla
+    name: U.S. Attorney's Office, Eastern District of Louisiana
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=336&field_component=1856&search_api_language=en&require_all=0
+  - id: usao-edmi
+    name: U.S. Attorney's Office, Eastern District of Michigan
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=366&field_component=1886&search_api_language=en&require_all=0
+  - id: usao-edmo
+    name: U.S. Attorney's Office, Eastern District of Missouri
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=391&field_component=1901&search_api_language=en&require_all=0
+  - id: usao-ednc
+    name: U.S. Attorney's Office, Eastern District of North Carolina
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=451&field_component=1926&search_api_language=en&require_all=0
+  - id: usao-edny
+    name: U.S. Attorney's Office, Eastern District of New York
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=431&field_component=1971&search_api_language=en&require_all=0
+  - id: usao-edok
+    name: U.S. Attorney's Office, Eastern District of Oklahoma
+    url: https://www.justice.gov/news/rss?type=press_release&field_component=2001&search_api_language=en&show_public_archived=0&require_all=0
+  - id: usao-edpa
+    name: U.S. Attorney's Office, Eastern District of Pennsylvania
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=501&field_component=2021&search_api_language=en&require_all=0
+  - id: usao-edtn
+    name: U.S. Attorney's Office, Eastern District of Tennessee
+    url: https://www.justice.gov/news/rss?type%5B0%5D=press_release&type%5B1%5D=speech&field_component=2061&search_api_language=en&require_all=0
+  - id: usao-edtx
+    name: U.S. Attorney's Office, Eastern District of Texas
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=551&field_component=2076&search_api_language=en&require_all=0
+  - id: usao-edva
+    name: U.S. Attorney's Office, Eastern District of Virginia
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=586&field_component=2106&search_api_language=en&require_all=0
+  - id: usao-edwa
+    name: U.S. Attorney's Office, Eastern District of Washington
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=596&field_component=2126&search_api_language=en&require_all=0
+  - id: usao-edwi
+    name: U.S. Attorney's Office, Eastern District of Wisconsin
+    url: https://www.justice.gov/news/rss?type%5B0%5D=press_release&type%5B1%5D=speech&field_component=2136&search_api_language=en&require_all=0
+  - id: usao-gu
+    name: U.S. Attorney's Office, Districts of Guam &amp; the Northern Mariana Islands
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=271&field_component=1791&search_api_language=en&require_all=0
+  - id: usao-hi
+    name: U.S. Attorney's Office, District of Hawaii
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=276&field_component=1796&search_api_language=en&show_public_archived=0&require_all=0
+  - id: usao-id
+    name: U.S. Attorney's Office, District of Idaho
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=281&field_component=1811&search_api_language=en&require_all=0
+  - id: usao-ks
+    name: U.S. Attorney's Office, District of Kansas
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=321&field_component=1841&search_api_language=en&require_all=0
+  - id: usao-ma
+    name: U.S. Attorney's Office, District of Massachusetts
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=361&field_component=1871&search_api_language=en&require_all=0
+  - id: usao-md
+    name: U.S. Attorney's Office, District of Maryland
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=356&field_component=1876&search_api_language=en&require_all=0
+  - id: usao-mdal
+    name: U.S. Attorney's Office, Middle District of Alabama
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=166&field_component=1691&search_api_language=en&require_all=0
+  - id: usao-mdfl
+    name: U.S. Attorney's Office, Middle District of Florida
+    url: https://www.justice.gov/news/rss?type%5B0%5D=press_release&type%5B1%5D=speech&field_component=1761&search_api_language=en&require_all=0
+  - id: usao-mdga
+    name: U.S. Attorney's Office, Middle District of Georgia
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=256&field_component=1776&search_api_language=en&require_all=0
+  - id: usao-mdla
+    name: U.S. Attorney's Office, Middle District of Louisiana
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=341&field_component=1861&search_api_language=en&require_all=0
+  - id: usao-mdnc
+    name: U.S. Attorney's Office, Middle District of North Carolina
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=456&field_component=1931&search_api_language=en&require_all=0
+  - id: usao-mdpa
+    name: U.S. Attorney's Office, Middle District of Pennsylvania
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=506&field_component=2031&search_api_language=en&require_all=0
+  - id: usao-mdtn
+    name: U.S. Attorney's Office, Middle District of Tennessee
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=541&field_component=2066&search_api_language=en&require_all=0
+  - id: usao-me
+    name: U.S. Attorney's Office, District of Maine
+    url: https://www.justice.gov/news/rss?type=press_release&field_component=1881&search_api_language=en&show_public_archived=0&require_all=0
+  - id: usao-mn
+    name: U.S. Attorney's Office, District of Minnesota
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=376&field_component=1896&search_api_language=en&require_all=0
+  - id: usao-mt
+    name: U.S. Attorney's Office, District of Montana
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=401&field_component=1921&search_api_language=en&require_all=0
+  - id: usao-nd
+    name: U.S. Attorney's Office, District of North Dakota
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=466&field_component=1941&search_api_language=en&require_all=0
+  - id: usao-ndal
+    name: U.S. Attorney's Office, Northern District of Alabama
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=171&field_component=1696&search_api_language=en&require_all=0
+  - id: usao-ndca
+    name: U.S. Attorney's Office, Northern District of California
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=211&field_component=1731&search_api_language=en&show_public_archived=0&require_all=0
+  - id: usao-ndfl
+    name: U.S. Attorney's Office, Northern District of Florida
+    url: https://www.justice.gov/news/rss?type=press_release&field_component=1766&search_api_language=en&show_public_archived=0&require_all=0
+  - id: usao-ndga
+    name: U.S. Attorney's Office, Northern District of Georgia
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=261&field_component=1781&search_api_language=en&require_all=0
+  - id: usao-ndia
+    name: U.S. Attorney's Office, Northern District of Iowa
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=311&field_component=1801&search_api_language=en&require_all=0
+  - id: usao-ndil
+    name: U.S. Attorney's Office, Northern District of Illinois
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=291&field_component=1821&search_api_language=en&require_all=0
+  - id: usao-ndin
+    name: U.S. Attorney's Office, Northern District of Indiana
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=301&field_component=1831&search_api_language=en&require_all=0
+  - id: usao-ndms
+    name: U.S. Attorney's Office, Northern District of Mississippi
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=381&field_component=1911&search_api_language=en&require_all=0
+  - id: usao-ndny
+    name: U.S. Attorney's Office, Northern District of New York
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=436&field_component=1976&search_api_language=en&require_all=0
+  - id: usao-ndoh
+    name: U.S. Attorney's Office, Northern District of Ohio
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=471&field_component=1991&search_api_language=en&require_all=0
+  - id: usao-ndok
+    name: U.S. Attorney's Office, Northern District of Oklahoma
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=486&field_component=2006&search_api_language=en&require_all=0
+  - id: usao-ndtx
+    name: U.S. Attorney's Office, Northern District of Texas
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=556&field_component=2081&search_api_language=en&require_all=0
+  - id: usao-ndwv
+    name: U.S. Attorney's Office, Northern District of West Virginia
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=606&field_component=2146&search_api_language=en&require_all=0
+  - id: usao-ne
+    name: U.S. Attorney's Office, District of Nebraska
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=406&field_component=1946&search_api_language=en&require_all=0
+  - id: usao-nh
+    name: U.S. Attorney's Office, District of New Hampshire
+    url: https://www.justice.gov/news/rss?type%5B0%5D=press_release&type%5B1%5D=speech&field_component=1951&search_api_language=en&require_all=0
+  - id: usao-nj
+    name: U.S. Attorney's Office, District of New Jersey
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=421&field_component=1956&search_api_language=en&show_public_archived=0&require_all=0
+  - id: usao-nm
+    name: U.S. Attorney's Office, District of New Mexico
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=426&field_component=1961&search_api_language=en&require_all=0
+  - id: usao-nv
+    name: U.S. Attorney's Office, District of Nevada
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=411&field_component=1966&search_api_language=en&require_all=0
+  - id: usao-or
+    name: U.S. Attorney's Office, District of Oregon
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=496&field_component=2016&search_api_language=en&require_all=0
+  - id: usao-pr
+    name: U.S. Attorney's Office, District of Puerto Rico
+    url: https://www.justice.gov/news/rss?type%5B0%5D=press_release&type%5B1%5D=speech&field_component=2041&search_api_language=en&require_all=0
+  - id: usao-ri
+    name: U.S. Attorney's Office, District of Rhode Island
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=521&field_component=2046&search_api_language=en&require_all=0
+  - id: usao-sc
+    name: U.S. Attorney's Office, District of South Carolina
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=526&field_component=2051&search_api_language=en&require_all=0
+  - id: usao-sd
+    name: U.S. Attorney's Office, District of South Dakota
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=531&field_component=2056&search_api_language=en&show_public_archived=0&require_all=0
+  - id: usao-sdal
+    name: U.S. Attorney's Office, Southern District of Alabama
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=176&field_component=1701&search_api_language=en&require_all=0
+  - id: usao-sdca
+    name: U.S. Attorney's Office, Southern District of California
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=216&field_component=1736&search_api_language=en&require_all=0
+  - id: usao-sdfl
+    name: U.S. Attorney's Office, Southern District of Florida
+    url: https://www.justice.gov/news/rss?type=press_release&field_component=1771&search_api_language=en&show_public_archived=0&require_all=0
+  - id: usao-sdga
+    name: U.S. Attorney's Office, Southern District of Georgia
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=266&field_component=1786&search_api_language=en&require_all=0
+  - id: usao-sdia
+    name: U.S. Attorney's Office, Southern District of Iowa
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=316&field_component=1806&search_api_language=en&require_all=0
+  - id: usao-sdil
+    name: U.S. Attorney's Office, Southern District of Illinois
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=296&field_component=1826&search_api_language=en&require_all=0
+  - id: usao-sdin
+    name: U.S. Attorney's Office, Southern District of Indiana
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=306&field_component=1836&search_api_language=en&require_all=0
+  - id: usao-sdms
+    name: U.S. Attorney's Office, Southern District of Mississippi
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=386&field_component=1916&search_api_language=en&require_all=0
+  - id: usao-sdny
+    name: U.S. Attorney's Office, Southern District of New York
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=441&field_component=1981&search_api_language=en&require_all=0
+  - id: usao-sdoh
+    name: U.S. Attorney's Office, Southern District of Ohio
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=476&field_component=1996&search_api_language=en&require_all=0
+  - id: usao-sdtx
+    name: U.S. Attorney's Office, Southern District of Texas
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=561&field_component=2091&search_api_language=en&require_all=0
+  - id: usao-sdwv
+    name: U.S. Attorney's Office, Southern District of West Virginia
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=611&field_component=2151&search_api_language=en&require_all=0
+  - id: usao-ut
+    name: U.S. Attorney's Office, District of Utah
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=571&field_component=2101&search_api_language=en&require_all=0
+  - id: usao-vi
+    name: U.S. Attorney's Office, District of Virgin Islands
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=581&field_component=2116&search_api_language=en&require_all=0
+  - id: usao-vt
+    name: U.S. Attorney's Office, District of Vermont
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=576&field_component=2121&search_api_language=en&require_all=0
+  - id: usao-wdar
+    name: U.S. Attorney's Office, Western District of Arkansas
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=196&field_component=1711&search_api_language=en&require_all=0
+  - id: usao-wdky
+    name: U.S. Attorney's Office, Western District of Kentucky
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=331&field_component=1851&search_api_language=en&require_all=0
+  - id: usao-wdla
+    name: U.S. Attorney's Office, Western District of Louisiana
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=346&field_component=1866&search_api_language=en&require_all=0
+  - id: usao-wdmi
+    name: U.S. Attorney's Office, Western District of Michigan
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=371&field_component=1891&search_api_language=en&require_all=0
+  - id: usao-wdmo
+    name: U.S. Attorney's Office, Western District of Missouri
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=396&field_component=1906&search_api_language=en&require_all=0
+  - id: usao-wdnc
+    name: U.S. Attorney's Office, Western District of North Carolina
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=461&field_component=1936&search_api_language=en&require_all=0
+  - id: usao-wdny
+    name: U.S. Attorney's Office, Western District of New York
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=446&field_component=1986&search_api_language=en&require_all=0
+  - id: usao-wdok
+    name: U.S. Attorney's Office, Western District of Oklahoma
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=491&field_component=2011&search_api_language=en&require_all=0
+  - id: usao-wdpa
+    name: U.S. Attorney's Office, Western District of Pennsylvania
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=511&field_component=2036&search_api_language=en&require_all=0
+  - id: usao-wdtn
+    name: U.S. Attorney's Office, Western District of Tennessee
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=546&field_component=2071&search_api_language=en&require_all=0
+  - id: usao-wdtx
+    name: U.S. Attorney's Office, Western District of Texas
+    url: https://www.justice.gov/news/rss?type%5B0%5D=press_release&type%5B1%5D=speech&field_component=2096&field_date=2013-01-01&search_api_language=en&require_all=0
+  - id: usao-wdva
+    name: U.S. Attorney's Office, Western District of Virginia
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=591&field_component=2111&search_api_language=en&require_all=0
+  - id: usao-wdwa
+    name: U.S. Attorney's Office, Western District of Washington
+    url: https://www.justice.gov/news/rss?type%5B0%5D=press_release&type%5B1%5D=speech&groupname=601&field_component=2131&search_api_language=en&require_all=0
+  - id: usao-wdwi
+    name: U.S. Attorney's Office, Western District of Wisconsin
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=621&field_component=2141&search_api_language=en&require_all=0
+  - id: usao-wy
+    name: U.S. Attorney's Office, District of Wyoming
+    url: https://www.justice.gov/news/rss?type=press_release&groupname=626&field_component=2156&search_api_language=en&require_all=0
