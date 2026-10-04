@@ -1,0 +1,118 @@
+id: evt-2025-peace-corps-hr-employee-timecard-theft
+title: Former Peace Corps human resources employee sentenced for theft of government property in timecard scheme
+categories:
+  - embezzlement_theft
+agencies:
+  - org-peace-corps
+investigating_agencies:
+  - org-peace-corps-oig
+  - org-fhfa-oig
+  - org-nrc-oig
+prosecuting_office: org-usao-md
+court_cases:
+  - court: D. Md.
+    docket: 8:25-cr-00217
+    courtlistener_id: 70834581
+    source_ids:
+      - src-usao-md-20250702-01
+      - src-usao-md-20260928-01
+      - src-mdd-20250630-01
+      - src-mdd-20250630-02
+      - src-mdd-20250717-01
+      - src-mdd-20250717-02
+      - src-mdd-20260424-01
+      - src-mdd-20260527-01
+      - src-mdd-20260928-01
+jurisdiction_note: null
+summary: |
+  Evester Edd was a senior human resources employee at the Peace Corps. A criminal complaint announced by the U.S. Attorney's Office for the District of Maryland on July 2, 2025, charged Edd with wire fraud, theft of government funds, and making false statements to federal agents; the supporting affidavit alleged that he worked simultaneously as a federal employee and a federal contractor and falsified timecards submitted to multiple federal agencies. According to court documents described by the U.S. Attorney's Office, from September 2024 through November 2024 Edd recorded work hours in the Peace Corps time-and-attendance system that he did not work, and the Peace Corps paid him for those hours. Investigators found that on a nearly daily basis he signed on from his residence to work for the Nuclear Regulatory Commission during his Peace Corps work hours. Edd retired from federal service in December 2024. Chief Magistrate Judge Timothy J. Sullivan ordered two years of supervised probation, including three months of home confinement, $20,758.50 in restitution, and 250 hours of community service. The Peace Corps Office of Inspector General led the investigation with the Federal Housing Finance Agency and Nuclear Regulatory Commission inspectors general.
+dates:
+  conduct_start: 2024-09
+  conduct_end: 2024-11
+  first_public_action: 2025-06-30
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered:
+    amount: 20758
+    basis: adjudicated
+    source_ids:
+      - src-usao-md-20260928-01
+    note: $20,758.50 as ordered; stored in whole dollars (cents dropped).
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-evester-edd
+    actor_type: official
+    roles:
+      - defendant
+    position: Senior Human Resources Employee, Peace Corps (retired December 2024)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-06-30
+        source_ids:
+          - src-usao-md-20250702-01
+          - src-mdd-20250630-01
+          - src-mdd-20250630-02
+        note: Arrested; criminal complaint charging wire fraud, theft of government funds, and making false statements to federal agents (No. 8:25-mj-01670, Doc. 1). Initial appearance June 30, 2025 (Doc. 6); the release announcing the complaint is dated July 2, 2025.
+      - track: criminal
+        status: partially_dismissed
+        date: 2025-07-17
+        source_ids:
+          - src-mdd-20250717-01
+        note: On the government's motion, the court dismissed without prejudice the 18 U.S.C. 641 and 18 U.S.C. 1001(a) violations alleged in the complaint (Doc. 18).
+      - track: criminal
+        status: charged
+        date: 2025-07-17
+        source_ids:
+          - src-mdd-20250717-02
+        note: One-count indictment (No. 8:25-cr-00217, Doc. 16). The docket entry does not name the statute.
+      - track: criminal
+        status: charged
+        date: 2026-04-24
+        source_ids:
+          - src-mdd-20260424-01
+        note: One-count superseding information (Count 1s, Doc. 35); the RECAP archive lists it as a misdemeanor information.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2026-05-27
+        source_ids:
+          - src-mdd-20260527-01
+          - src-usao-md-20260928-01
+        note: Plea of guilty to Count 1s of the superseding information before Magistrate Judge Timothy J. Sullivan (Doc. 40). The release describes the offense as theft of government property.
+      - track: criminal
+        status: sentenced
+        date: 2026-09-28
+        source_ids:
+          - src-usao-md-20260928-01
+          - src-mdd-20260928-01
+        note: Theft of government property. Two years of supervised probation including three months of home confinement on electronic monitoring; $20,758.50 restitution; 250 hours of community service (Chief Magistrate Judge Timothy J. Sullivan). Judgment entered Sept. 28, 2026 (Doc. 51); the RECAP archive shows only its short description, so the terms are from the release and the disposition of the indictment count is not confirmed.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-md-20250702-01
+  - src-usao-md-20260928-01
+  - src-mdd-20250630-01
+  - src-mdd-20250630-02
+  - src-mdd-20250717-01
+  - src-mdd-20250717-02
+  - src-mdd-20260424-01
+  - src-mdd-20260527-01
+  - src-mdd-20260928-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

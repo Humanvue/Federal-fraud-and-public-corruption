@@ -1,0 +1,106 @@
+id: evt-2026-uscis-officer-gratuities-immigration-approvals
+title: Former Citizenship and Immigration Services officer and associate charged with conspiracy to receive illegal gratuities for immigration approvals
+categories:
+  - bribery_kickbacks
+agencies:
+  - org-uscis
+investigating_agencies:
+  - org-uscis-oi
+  - org-dhs-oig
+  - org-fbi
+prosecuting_office: org-usao-ndtx
+court_cases:
+  - court: N.D. Tex.
+    docket: 3:26-cr-00661
+    courtlistener_id: null
+    source_ids:
+      - src-usao-ndtx-20260904-01
+      - src-usao-ndtx-20260925-01
+      - src-txnd-20260831-01
+      - src-txnd-20260902-01
+      - src-txnd-20260924-01
+jurisdiction_note: null
+summary: |
+  Lukman Owolabi Ganiyu was a Senior Immigration Services Officer with U.S. Citizenship and Immigration Services (USCIS). The U.S. Attorney's Office for the Northern District of Texas describes Adeniyi Akeem Somoye as his associate. According to a criminal complaint filed Aug. 31, 2026, the two conspired to receive illegal gratuities by a public official. According to the complaint, from December 2019 through March 2026, Ganiyu used his official position to approve immigration applications, including Forms I-130, I-485, I-751, and N-400, in exchange for money. Investigators allege that he bypassed required interviews, supervisory review, jurisdictional limitations, background checks, and standard USCIS processing protocols to expedite approvals for applicants, many of whom were not eligible under federal law. The complaint alleges that Ganiyu and Somoye together collected hundreds of thousands of dollars in payments from applicants, several of which correspond to approvals issued by Ganiyu. Investigators also identified thousands of WhatsApp messages and hundreds of calls between the two and applicants. Federal agents arrested both men on Sept. 2, 2026, and a federal grand jury returned an indictment on Sept. 23, 2026. The USCIS Office of Investigations, the DHS Office of Inspector General, and the FBI Dallas Field Office investigated.
+dates:
+  conduct_start: 2019-12
+  conduct_end: 2026-03
+  first_public_action: 2026-09-02
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-lukman-ganiyu
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Senior Immigration Services Officer, U.S. Citizenship and Immigration Services (former)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2026-08-31
+        source_ids:
+          - src-usao-ndtx-20260904-01
+          - src-txnd-20260831-01
+          - src-txnd-20260902-01
+        note: "Criminal complaint filed under seal Aug. 31 (No. 3:26-mj-01149, Doc. 1): conspiracy to receive illegal gratuities by a public official. Complaint unsealed Sept. 2 (Doc. 4). Arrested and initial appearance Sept. 2."
+      - track: criminal
+        status: charged
+        date: 2026-09-23
+        source_ids:
+          - src-usao-ndtx-20260925-01
+          - src-txnd-20260924-01
+        note: Indicted by a federal grand jury (No. 3:26-cr-00661; the docket gives Sept. 23 as the case filing date and dates the indictment entry, Doc. 8, Sept. 24). The counts are not shown in the RECAP archive.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+  - entity_id: per-adeniyi-somoye
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    position: Associate of Ganiyu (as described by the U.S. Attorney's Office)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2026-08-31
+        source_ids:
+          - src-usao-ndtx-20260904-01
+          - src-txnd-20260831-01
+          - src-txnd-20260902-01
+        note: "Criminal complaint filed under seal Aug. 31 (No. 3:26-mj-01149, Doc. 1): conspiracy to receive illegal gratuities by a public official. Complaint unsealed Sept. 2 (Doc. 4). Arrested and initial appearance Sept. 2."
+      - track: criminal
+        status: charged
+        date: 2026-09-23
+        source_ids:
+          - src-usao-ndtx-20260925-01
+          - src-txnd-20260924-01
+        note: Indicted by a federal grand jury (No. 3:26-cr-00661; the docket gives Sept. 23 as the case filing date and dates the indictment entry, Doc. 8, Sept. 24). The counts are not shown in the RECAP archive.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-ndtx-20260904-01
+  - src-usao-ndtx-20260925-01
+  - src-txnd-20260831-01
+  - src-txnd-20260902-01
+  - src-txnd-20260924-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

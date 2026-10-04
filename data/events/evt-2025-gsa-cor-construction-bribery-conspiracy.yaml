@@ -1,0 +1,155 @@
+id: evt-2025-gsa-cor-construction-bribery-conspiracy
+title: General Services Administration contracting officer's representative sentenced for bribery conspiracy involving federal construction work
+categories:
+  - bribery_kickbacks
+  - procurement_fraud
+agencies:
+  - org-gsa
+investigating_agencies:
+  - org-gsa-oig
+  - org-fbi
+  - org-dcis
+  - org-dhs-oig
+prosecuting_office: org-usao-md
+court_cases:
+  - court: D. Md.
+    docket: 8:25-cr-00397
+    courtlistener_id: 72093001
+    source_ids:
+      - src-usao-md-20260129-01
+      - src-usao-md-20260922-01
+      - src-mdd-20251230-01
+      - src-mdd-20260129-01
+  - court: D. Md.
+    docket: 8:24-cr-00370
+    courtlistener_id: 70838011
+    source_ids:
+      - src-usao-md-20250227-01
+      - src-mdd-20241220-01
+      - src-mdd-20250227-01
+      - src-mdd-20250227-02
+  - court: D. Md.
+    docket: 8:25-cr-00094
+    courtlistener_id: 70863192
+    source_ids:
+      - src-usao-md-20250421-01
+      - src-mdd-20250404-01
+      - src-mdd-20250418-01
+jurisdiction_note: null
+summary: |
+  Lennie Lamont Miller was a contracting officer's representative at the General Services Administration (GSA). According to court documents described by the U.S. Attorney's Office for the District of Maryland, between 2018 and 2021 Miller used his authority over the GSA contracting process to direct federal project work to Company A, a general construction company owned by Christopher Brackins, in exchange for cash, checks, vehicle repairs and repairs at a residence owned by a relative. The office states that Brackins provided Miller approximately $50,000 in money and other things of value, including $8,000 in cash in late 2018 routed through an inflated employee bonus and $25,000 in early 2021 paid through an intermediary's air-conditioning repair business. From early 2020 until at least mid-2021, according to the same documents, Miller funneled work to Company D, owned by James Tillman, in exchange for cash, a sports car and moving expenses for his romantic partner; court documents in Tillman's case put the value of what Tillman provided at approximately $59,800. The GSA Office of Inspector General, the FBI, the Defense Criminal Investigative Service and the Department of Homeland Security Office of Inspector General investigated the case.
+dates:
+  conduct_start: 2018
+  conduct_end: 2021
+  first_public_action: 2025-02-27
+money:
+  loss_to_government: null
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-lennie-miller
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Contracting Officer's Representative, General Services Administration
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-12-30
+        source_ids:
+          - src-mdd-20251230-01
+        note: Two-count information (No. 8:25-cr-00397, Doc. 1), filed Dec. 30, 2025 and entered Dec. 31.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2026-01-29
+        source_ids:
+          - src-usao-md-20260129-01
+          - src-mdd-20260129-01
+        note: Two counts of conspiracy to commit bribery of a federal official (conspiracies with Brackins and with Tillman); plea of guilty to Counts 1 and 2 of the information (Doc. 5).
+      - track: criminal
+        status: sentenced
+        date: 2026-09-22
+        source_ids:
+          - src-usao-md-20260922-01
+        note: Three years in prison on two counts of conspiracy to commit bribery of a federal official (U.S. District Judge Deborah L. Boardman). Supervised release, restitution, fine and forfeiture are not stated in the release. The RECAP archive has no docket entry after Sept. 21, 2026, so the sentencing is not yet confirmed on the docket.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+  - entity_id: per-christopher-brackins
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Owner, Company A (general construction company performing subcontract work on GSA projects)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2025-04-04
+        source_ids:
+          - src-mdd-20250404-01
+        note: Three-count information (No. 8:25-cr-00094, Doc. 1).
+      - track: criminal
+        status: pleaded_guilty
+        date: 2025-04-18
+        source_ids:
+          - src-usao-md-20250421-01
+          - src-usao-md-20260922-01
+          - src-mdd-20250418-01
+        note: Conspiracy to commit bribery of a federal public official, wire fraud in connection with an Economic Injury Disaster Loan, and possession of a machine gun with an obliterated serial number; plea of guilty to Counts 1, 2 and 3 of the information on April 18, 2025 (Doc. 4). Admitted providing approximately $50,000 in money and things of value; the release puts his and his company's profits at an estimated $133,413. Sentencing scheduled for 2026-10-22 per the 2026-09-22 release.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+  - entity_id: per-james-tillman
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Sole owner, Company D (general construction company performing subcontract work on GSA projects)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2024-12-20
+        source_ids:
+          - src-mdd-20241220-01
+          - src-mdd-20250227-01
+        note: Two-count information filed under seal (No. 8:24-cr-00370, Doc. 1); unsealed by marginal order on Feb. 27, 2025 (Doc. 19).
+      - track: criminal
+        status: pleaded_guilty
+        date: 2025-02-27
+        source_ids:
+          - src-usao-md-20250227-01
+          - src-mdd-20250227-02
+        note: Conspiracy to commit bribery of a federal public official and bribery of a federal public official (the 2026 releases mention only the conspiracy count). The docket records a plea to Counts 1 and 2 of the information on Feb. 27, 2025 (Doc. 14). Per court documents, provided approximately $59,800 in money and items of value in 2020 and 2021, including about $8,000 cash and a sports car; he and his company grossed more than $100,000 in profits. Sentencing scheduled for 2026-10-20 per the 2026-09-22 release.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-md-20250227-01
+  - src-usao-md-20250421-01
+  - src-usao-md-20260129-01
+  - src-usao-md-20260922-01
+  - src-mdd-20241220-01
+  - src-mdd-20250227-01
+  - src-mdd-20250227-02
+  - src-mdd-20250404-01
+  - src-mdd-20250418-01
+  - src-mdd-20251230-01
+  - src-mdd-20260129-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

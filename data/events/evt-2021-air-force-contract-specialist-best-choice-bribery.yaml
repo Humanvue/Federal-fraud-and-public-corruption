@@ -1,0 +1,266 @@
+id: evt-2021-air-force-contract-specialist-best-choice-bribery
+title: Air Force contract specialist sentenced for accepting bribes for confidential bidding information on military construction contracts in Alaska
+categories:
+  - bribery_kickbacks
+  - procurement_fraud
+agencies:
+  - org-air-force
+investigating_agencies:
+  - org-fbi
+  - org-air-force-osi
+  - org-dcis
+prosecuting_office: org-usao-ak
+court_cases:
+  - court: D. Alaska
+    docket: 4:21-cr-00011
+    courtlistener_id: 59757668
+    source_ids:
+      - src-usao-ak-20210323-01
+      - src-usao-ak-20221109-01
+      - src-usao-ak-20221208-01
+      - src-akd-20210318-01
+      - src-akd-20210323-01
+      - src-akd-20220902-01
+      - src-akd-20220902-02
+      - src-akd-20221115-01
+      - src-akd-20221208-01
+      - src-akd-20221221-01
+      - src-akd-20230411-01
+  - court: D. Alaska
+    docket: 3:20-cv-00063
+    courtlistener_id: 65664097
+    source_ids:
+      - src-usao-ak-20260918-01
+      - src-akd-20230201-01
+      - src-akd-20230420-01
+jurisdiction_note: null
+summary: |
+  Brian Lowell Nash II was an enlisted contract specialist in the U.S. Air Force assigned to Joint Base Elmendorf-Richardson (JBER) in Alaska. According to a 26-count indictment announced in March 2021 by the U.S. Attorney's Office for the District of Alaska, Ryan Dalbec and his wife, Raihana Nadem, owned and managed Best Choice Construction, LLC, a federal contractor. According to court documents, Nash agreed in 2019 to accept more than $460,000 in bribes from Dalbec and in exchange supplied confidential bidding information on over $8,250,000 in Department of Defense contracts at Eielson Air Force Base and JBER, which helped Best Choice win contracts including a $6,850,000 construction contract related to the F-35 program at Eielson. Nash had received approximately $47,000 when the scheme was discovered, and the proceeds were laundered through family members and third-party bank accounts. The court ordered Dalbec to pay $16,296.80 in restitution to Eielson Air Force Base. In a separate False Claims Act case, the office reports more than $1.3 million in civil damages and penalties, including treble damages, against Nash, Dalbec, Nadem and Best Choice. The FBI, the Air Force Office of Special Investigations and the Defense Criminal Investigative Service investigated.
+dates:
+  conduct_start: 2019-03
+  conduct_end: 2019-11
+  first_public_action: 2021-03-23
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 460000
+    basis: admitted
+    source_ids:
+      - src-usao-ak-20221109-01
+      - src-usao-ak-20221208-01
+    note: Agreed bribe amount ('more than $460,000') per court documents described in the 2022 sentencing releases, after Nash's and Dalbec's guilty pleas. Approximately $47,000 had been received when the scheme was discovered (forfeited by Nash). The indictment release (2021) alleged 'over $460,000' paid and promised; the 2026 civil release says 'more than $400,000'.
+  contract_value_involved:
+    amount: 8250000
+    basis: alleged
+    source_ids:
+      - src-usao-ak-20221109-01
+      - src-usao-ak-20221208-01
+      - src-usao-ak-20260918-01
+    note: "'Over $8,250,000' in Department of Defense (Department of War) contracts at Eielson AFB and JBER on which Nash provided confidential bidding information; Best Choice won some of them, including a $6,850,000 F-35-related construction contract at Eielson. Recorded as alleged because no fetched page states that a plea or judgment adopted the figure."
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-brian-nash
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Contract Specialist (enlisted), U.S. Air Force, Joint Base Elmendorf-Richardson
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2021-03-18
+        source_ids:
+          - src-usao-ak-20210323-01
+          - src-akd-20210318-01
+          - src-akd-20210323-01
+        note: 26-count indictment of Nash, Dalbec and Nadem charging conspiracy, bribery and money laundering (No. 4:21-cr-00011), returned and sealed Mar. 18, 2021 (Doc. 2); the government moved to unseal on Mar. 23, 2021 (Doc. 5), the date of the announcement.
+      - track: criminal
+        status: sentenced
+        date: 2022-11
+        source_ids:
+          - src-usao-ak-20221109-01
+          - src-usao-ak-20221208-01
+          - src-akd-20221115-01
+        note: 30 months in prison, three years of supervised release, forfeiture of $47,000 (Senior U.S. District Judge Ralph R. Beistline), for conspiracy and acceptance of bribes by a public official. Release dated 2022-11-09; the 2022-12-08 release says he was sentenced in November. The judgment was entered Nov. 15, 2022 (Doc. 170, short description only), so the hearing day is not confirmed. The plea date is not in the RECAP archive.
+      - track: civil
+        status: civil_complaint_filed
+        date: 2022-11-15
+        source_ids:
+          - src-akd-20221115-02
+        note: False Claims Act complaint filed by the United States after it intervened in a qui tam case brought by a relator in March 2020 (No. 3:20-cv-00063, Doc. 33).
+      - track: civil
+        status: judgment_against
+        date: 2026-03-27
+        source_ids:
+          - src-akd-20240513-01
+          - src-akd-20260327-01
+          - src-usao-ak-20260918-01
+        note: Summary judgment on liability granted 2024-05-13 (Doc. 97); summary judgment on damages granted in part 2026-03-27 (Doc. 127). The judgment amount and its allocation are not shown in the docket text; the 2026-09-18 release reports more than $1.3 million in damages and penalties in total.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+  - entity_id: per-ryan-dalbec
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Owner, Best Choice Construction, LLC
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2021-03-18
+        source_ids:
+          - src-usao-ak-20210323-01
+          - src-akd-20210318-01
+          - src-akd-20210323-01
+        note: Named in the 26-count indictment returned and sealed Mar. 18, 2021 (Doc. 2) and announced Mar. 23, 2021.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2022-09-02
+        source_ids:
+          - src-usao-ak-20221208-01
+          - src-akd-20220902-01
+        note: Release says he 'previously pleaded guilty to the charges' on September 2, 2022, and was sentenced for conspiracy and bribery of a public official. Plea agreement filed Sept. 1, 2022 and refiled Sept. 2 (Doc. 144); the change-of-plea entry is not in the RECAP archive.
+      - track: criminal
+        status: sentenced
+        date: 2022-12-08
+        source_ids:
+          - src-usao-ak-20221208-01
+          - src-akd-20221208-01
+        note: 42 months in prison, two years of supervised release, $172,500 criminal fine and $16,296.80 restitution to Eielson Air Force Base (Senior U.S. District Judge Ralph R. Beistline). Date is the judgment entry (Doc. 185, short description only), the same day as the release; amended judgments followed on Dec. 9, 2022 and Apr. 5, 2023 (Docs. 187, 223).
+      - track: civil
+        status: civil_complaint_filed
+        date: 2022-11-15
+        source_ids:
+          - src-akd-20221115-02
+        note: False Claims Act complaint filed by the United States after it intervened in a qui tam case brought by a relator in March 2020 (No. 3:20-cv-00063, Doc. 33).
+      - track: civil
+        status: judgment_against
+        date: 2026-03-27
+        source_ids:
+          - src-akd-20240513-01
+          - src-akd-20260327-01
+          - src-usao-ak-20260918-01
+        note: Summary judgment on liability granted 2024-05-13 (Doc. 97); summary judgment on damages granted in part 2026-03-27 (Doc. 127). The judgment amount and its allocation are not shown in the docket text; the 2026-09-18 release reports more than $1.3 million in damages and penalties in total.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+  - entity_id: per-raihana-nadem
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Owner, Best Choice Construction, LLC
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2021-03-18
+        source_ids:
+          - src-usao-ak-20210323-01
+          - src-akd-20210318-01
+          - src-akd-20210323-01
+        note: Named in the 26-count indictment returned and sealed Mar. 18, 2021 (Doc. 2) and announced Mar. 23, 2021 (as Raihana Nadem, a/k/a Raihana Dalbec).
+      - track: criminal
+        status: charged
+        date: 2022-09-02
+        source_ids:
+          - src-akd-20220902-02
+        note: One-count felony information (Count 1s, Doc. 149), filed with a plea agreement and a waiver of indictment. The 2022 releases say she pleaded guilty to a felony for related misconduct; the change-of-plea entry is not in the RECAP archive, so no plea date is recorded.
+      - track: criminal
+        status: partially_dismissed
+        date: 2022-12-21
+        source_ids:
+          - src-akd-20221221-01
+        note: Indictment counts 1, 2-5 and 26 dismissed at judgment (Doc. 206).
+      - track: criminal
+        status: sentenced
+        date: 2022-12-21
+        source_ids:
+          - src-akd-20221221-01
+          - src-akd-20230411-01
+        note: "Count 1s: 363 days of home detention, three years of supervised release, $100 special assessment (judgment, Doc. 206, signed by Judge Ralph R. Beistline; sentencing had been set for Dec. 16, 2022). An amended judgment on Apr. 11, 2023 added a $172,500 fine and recorded criminal forfeiture as dismissed (Doc. 225)."
+      - track: civil
+        status: civil_complaint_filed
+        date: 2023-02-01
+        source_ids:
+          - src-akd-20230201-01
+        note: Added as a defendant in the United States' amended False Claims Act complaint (No. 3:20-cv-00063, Doc. 41).
+      - track: civil
+        status: judgment_against
+        date: 2026-08-24
+        source_ids:
+          - src-akd-20230420-01
+          - src-akd-20260824-01
+          - src-usao-ak-20260918-01
+        note: Default judgment granted 2026-08-24 (Doc. 145) after the clerk's entry of default on 2023-04-20 (Doc. 54). The amount is not shown in the docket text; the 2026-09-18 release reports more than $1.3 million in damages and penalties in total.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+  - entity_id: org-best-choice-construction
+    actor_type: contractor
+    roles:
+      - defendant
+    status_history:
+      - track: civil
+        status: civil_complaint_filed
+        date: 2022-11-15
+        source_ids:
+          - src-akd-20221115-02
+        note: False Claims Act complaint filed by the United States after it intervened in a qui tam case brought by a relator in March 2020 (No. 3:20-cv-00063, Doc. 33).
+      - track: civil
+        status: judgment_against
+        date: 2026-08-24
+        source_ids:
+          - src-akd-20230420-01
+          - src-akd-20260824-01
+          - src-usao-ak-20260918-01
+        note: Default judgment granted 2026-08-24 (Doc. 145) after the clerk's entry of default on 2023-04-20 (Doc. 54). The amount is not shown in the docket text; the 2026-09-18 release reports more than $1.3 million in damages and penalties in total.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+  - entity_id: org-air-force
+    actor_type: official
+    roles:
+      - victim_agency
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+contracts: []
+qui_tam: true
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-ak-20210323-01
+  - src-usao-ak-20221109-01
+  - src-usao-ak-20221208-01
+  - src-usao-ak-20260918-01
+  - src-akd-20210318-01
+  - src-akd-20210323-01
+  - src-akd-20220902-01
+  - src-akd-20220902-02
+  - src-akd-20221115-01
+  - src-akd-20221208-01
+  - src-akd-20221221-01
+  - src-akd-20230411-01
+  - src-akd-20230201-01
+  - src-akd-20230420-01
+  - src-akd-20200313-01
+  - src-akd-20221031-01
+  - src-akd-20221115-02
+  - src-akd-20240513-01
+  - src-akd-20260327-01
+  - src-akd-20260729-01
+  - src-akd-20260824-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

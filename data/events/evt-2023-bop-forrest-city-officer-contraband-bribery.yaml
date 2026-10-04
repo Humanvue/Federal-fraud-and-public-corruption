@@ -1,0 +1,93 @@
+id: evt-2023-bop-forrest-city-officer-contraband-bribery
+title: Bureau of Prisons correctional officer sentenced for bribery to smuggle contraband into federal prison in Arkansas
+categories:
+  - bribery_kickbacks
+agencies:
+  - org-bop
+investigating_agencies:
+  - org-doj-oig
+  - org-bop
+prosecuting_office: org-usao-edar
+court_cases:
+  - court: E.D. Ark.
+    docket: 2:23-cr-00048
+    courtlistener_id: 68067123
+    source_ids:
+      - src-doj-oig-20231205-01
+      - src-usao-edar-20260821-01
+      - src-ared-20231206-01
+      - src-ared-20260311-01
+      - src-ared-20260820-01
+jurisdiction_note: null
+summary: |
+  Robert Cochran worked as a correctional officer at the Federal Correctional Complex Forrest City in Arkansas, a Federal Bureau of Prisons facility. According to a one-count indictment returned in the Eastern District of Arkansas on December 5, 2023, from on or about October 1, 2022, through on or about February 27, 2023, Cochran corruptly agreed to receive and accept money in exchange for smuggling contraband into the prison. According to the U.S. Attorney's Office for the Eastern District of Arkansas, an investigation found that he received approximately $58,775 from friends and family of inmates to bring contraband into the facility, including rolling papers, tobacco, sunglasses and over-the-counter drugs. The office states that video footage from February 2023 showed him leaving bags containing contraband in an office while on duty, after which an inmate would enter to retrieve the items, and that Cochran later admitted he was paid to bring items into the prison for inmates. The Department of Justice Office of the Inspector General and the Federal Bureau of Prisons investigated the case.
+dates:
+  conduct_start: 2022-10-01
+  conduct_end: 2023-02-27
+  first_public_action: 2023-12-05
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 58775
+    basis: alleged
+    source_ids:
+      - src-usao-edar-20260821-01
+    note: Approximately $58,775 from friends and family of inmates, attributed by the 2026-08-21 release to 'an investigation'. Cochran pleaded guilty to the one-count bribery indictment, but the release does not say the plea admitted this amount; upgrade to admitted or adjudicated only if the plea agreement or judgment states it.
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-robert-cochran
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Correctional Officer, Federal Correctional Complex Forrest City
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-12-05
+        source_ids:
+          - src-doj-oig-20231205-01
+          - src-usao-edar-20260821-01
+          - src-ared-20231206-01
+        note: "One-count indictment: bribery of a public official (No. 2:23-cr-00048; the docket gives Dec. 5, 2023 as the case filing date and dates the indictment entry, Doc. 1, Dec. 6)."
+      - track: criminal
+        status: pleaded_guilty
+        date: 2026-03-11
+        source_ids:
+          - src-usao-edar-20260821-01
+          - src-ared-20260311-01
+        note: Pleaded guilty to the bribery count in the indictment; plea agreement docketed Mar. 11, 2026 (Doc. 37).
+      - track: criminal
+        status: sentenced
+        date: 2026-08-19
+        source_ids:
+          - src-usao-edar-20260821-01
+          - src-ared-20260820-01
+        note: 30 months' imprisonment on Count 1, no supervised release to follow, $100 special assessment (U.S. District Judge Brian S. Miller). The release gives Aug. 19, 2026 as the sentencing date; the judgment was signed and entered Aug. 20, 2026 (Doc. 42). The judgment entry lists no fine, restitution or forfeiture. An amended judgment on Sept. 17, 2026 changed only the BOP facility recommendation (Doc. 44).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+contracts: []
+qui_tam: false
+related_events:
+  - evt-2024-bop-forrest-city-officer-false-statements-contraband
+relationships: []
+government_sources:
+  - src-doj-oig-20231205-01
+  - src-usao-edar-20260821-01
+  - src-ared-20231206-01
+  - src-ared-20260311-01
+  - src-ared-20260820-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

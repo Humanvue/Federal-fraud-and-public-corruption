@@ -1,0 +1,7 @@
+id: per-amara-dukuly
+name: "Amara Dukuly"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Immigration Officer", org_id: org-uscis, start: null, end: null, source_ids: [src-usao-edpa-20250626-01, src-usao-edpa-20260325-01, src-usao-edpa-20261001-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

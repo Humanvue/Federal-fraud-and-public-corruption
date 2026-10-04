@@ -1,0 +1,7 @@
+id: per-ryan-dalbec
+name: "Ryan Dalbec"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Owner, Best Choice Construction, LLC", org_id: org-best-choice-construction, start: null, end: null, source_ids: [src-usao-ak-20210323-01, src-usao-ak-20221208-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

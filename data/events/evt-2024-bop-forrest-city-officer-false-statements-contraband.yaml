@@ -1,0 +1,102 @@
+id: evt-2024-bop-forrest-city-officer-false-statements-contraband
+title: Bureau of Prisons correctional officer sentenced for false statements to agents investigating contraband smuggling into federal prison in Arkansas; appeal pending
+categories:
+  - false_statements_obstruction
+  - bribery_kickbacks
+agencies:
+  - org-bop
+investigating_agencies:
+  - org-doj-oig
+  - org-bop
+prosecuting_office: org-usao-edar
+court_cases:
+  - court: E.D. Ark.
+    docket: 2:24-cr-00015
+    courtlistener_id: 68841216
+    source_ids:
+      - src-doj-oig-20240607-01
+      - src-usao-edar-20260821-01
+      - src-ared-20240610-01
+      - src-ared-20260311-02
+      - src-ared-20260820-02
+      - src-ared-20260821-01
+jurisdiction_note: null
+summary: |
+  Tejuana Dillard was employed for 13 years, between 2008 and July 2021, as a correctional officer at the Federal Correctional Complex Forrest City in Arkansas, a Federal Bureau of Prisons facility. According to a two-count indictment returned in the Eastern District of Arkansas in June 2024, on or about June 8, 2020, Dillard accepted U.S. currency in return for providing tobacco to an inmate of a federal prison, and on or about August 4, 2021, she made false statements in connection with the investigation by stating she did not know why an individual had sent her money. According to the U.S. Attorney's Office for the Eastern District of Arkansas, an investigation determined that she smuggled contraband cigarettes into the prison throughout 2020 and received a total of $91,788 to provide the cigarettes to two inmates, who sold them to other inmates. The office states that in an interview with federal agents she admitted smuggling cigarettes but said she had done so only "a couple of times," and that she knew those statements were false when she made them. The Department of Justice Office of the Inspector General and the Federal Bureau of Prisons investigated the case.
+dates:
+  conduct_start: 2020
+  conduct_end: 2021-08-04
+  first_public_action: 2024-06-06
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 91788
+    basis: alleged
+    source_ids:
+      - src-usao-edar-20260821-01
+    note: Total received to provide cigarettes to two inmates, per the 2026-08-21 release ('it was determined'). Dillard pleaded guilty only to making false statements; the release does not say she admitted this amount.
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered: null
+  fines: null
+  forfeiture: null
+  whistleblower_share: null
+participants:
+  - entity_id: per-tejuana-dillard
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Correctional Officer, Federal Correctional Complex Forrest City
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2024-06-06
+        source_ids:
+          - src-doj-oig-20240607-01
+          - src-usao-edar-20260821-01
+          - src-ared-20240610-01
+        note: "Two-count indictment: bribery of a public official and making a false statement to federal agents (No. 2:24-cr-00015). The U.S. Attorney's Office and the docket's case filing date give June 6, 2024; the DOJ OIG notice gives June 7, 2024, and the RECAP archive dates the indictment entry (Doc. 1) June 10, 2024."
+      - track: criminal
+        status: pleaded_guilty
+        date: 2026-03-11
+        source_ids:
+          - src-usao-edar-20260821-01
+          - src-ared-20260311-02
+        note: Pleaded guilty to making false statements; plea agreement docketed Mar. 11, 2026 (Doc. 28). Neither the release nor the judgment entry states the disposition of the bribery count.
+      - track: criminal
+        status: sentenced
+        date: 2026-08-19
+        source_ids:
+          - src-usao-edar-20260821-01
+          - src-ared-20260820-02
+        note: 30 months' imprisonment on Count 2, no supervised release to follow, $100 special assessment (U.S. District Judge Brian S. Miller). The release gives Aug. 19, 2026 as the sentencing date; the judgment was signed and entered Aug. 20, 2026 (Doc. 33). The judgment entry does not mention Count 1.
+      - track: criminal
+        status: appeal_pending
+        date: 2026-08-21
+        source_ids:
+          - src-ared-20260821-01
+        note: Notice of appeal from the final judgment docketed (Doc. 34); a court of appeals docket letter followed on Aug. 24, 2026. The RECAP archive shows only short descriptions and does not say which party appealed.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-04
+contracts: []
+qui_tam: false
+related_events:
+  - evt-2023-bop-forrest-city-officer-contraband-bribery
+relationships: []
+government_sources:
+  - src-doj-oig-20240607-01
+  - src-usao-edar-20260821-01
+  - src-ared-20240610-01
+  - src-ared-20260311-02
+  - src-ared-20260820-02
+  - src-ared-20260821-01
+news_sources: []
+tags: []
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

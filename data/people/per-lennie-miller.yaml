@@ -1,0 +1,7 @@
+id: per-lennie-miller
+name: "Lennie Lamont Miller"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Contracting Officer's Representative, General Services Administration", org_id: org-gsa, start: null, end: null, source_ids: [src-usao-md-20260129-01, src-usao-md-20260922-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }
