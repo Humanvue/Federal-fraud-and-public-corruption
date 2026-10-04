@@ -32,6 +32,50 @@ describe("title rules", () => {
     expect(classifyTitle(t)).toBeNull();
   });
 
+  // Regression set from the first live run (2026-10-04): real headlines and the expected decision.
+  it.each([
+    "Former Immigration Officer Sentenced to a Year and a Day in Prison for Accepting $6,000 Bribe",
+    "Two Former Bureau of Prisons Correctional Officers Accused of Smuggling Contraband Each Sentenced to More Than Two Years in Federal Prison",
+    "Former Federal Employee Sentenced for Time-and-Attendance Scheme",
+    "Former Government Official Sentenced in Bribery Conspiracy",
+    "U.S. to Collect over $1.3 Million after Judgment Ordered in Bribery Case Involving Millions in DOW Contracts in Alaska",
+    "Former Postal Employee Sentenced For Obstruction of U.S. Mail",
+    "Former IRS Employee Indicted for Filing False Tax Returns for Drug Dealers",
+    "USPS employee pleads guilty to stealing gift cards from mail",
+    "Federal grand jury returns indictment against ex USCIS official and associate for scheme involving unlawful approval and expedited processing of immigration applications",
+    "U.S. Assistant Special Agent in Charge Accused of Stealing Thousands in Fraudulent Disability Payments",
+  ])("live run: keeps %s", (t) => {
+    expect(classifyTitle(t)).not.toBeNull();
+  });
+
+  it.each([
+    "Illegal Alien from Venezuela Charged with Assaulting and Resisting a Federal Officer in Austin",
+    "Melvindale Man Charged with Threatening to Kill ICE Agents",
+    "Annandale man pleads guilty to impersonating an FBI agent at a voting site",
+    "Pennsylvania Man Indicted on Federal Drug Charges and Apprehended in U.S. Marshals Fugitive Task Force Operation",
+    "Manager of Long Island Company Sentenced to 30 Months in Prison for Embezzling from Customer Credit Accounts",
+    "Former Goldman Sachs Investment Banker Convicted of Foreign Bribery and Money Laundering",
+    "Maui Police Department Lieutenant Charged with Taking Bribes from Criminals to Protect Chicken Fighting and Drug Operations on Maui",
+    "Atlantic City Director of Constituent Services Charged for Accepting Bribes Related to a Cannabis Business",
+    "Former Commissioner Of Virgin Islands Department Of Sports, Parks, And Recreation Sentenced For Bribery Scheme",
+    "Maduro Regime Ally Alex Saab Pleads Guilty to Money Laundering Scheme Involving Bribery and Public Contracts for Food and Medicine",
+    "Former Georgia Correctional Officer Cadet Sentenced for Meth Smuggling",
+    "Former Altoona Postal Workers Union Employee Pleads Guilty to Embezzlement and Falsification of Union Report",
+    "Guam Man Sentenced for Theft of Government Property After Stealing Deceased Wife’s Social Security Benefits",
+    "Former Army soldier pleads guilty to child exploitation crimes committed in Alaska and Texas",
+    "Drug-Dealing Marine Sentenced to 7-Years in Federal Prison",
+    "Department of Energy Employee Arrested in Washington State on Charges of Attempted Material Support to Houthis",
+    "Guam Bingo Operators Receive Federal Prison Sentences for $34 Million Fraud Scheme",
+    "Defendant Sought More than $4.6M in Fraudulent Refunds from IRS",
+    "Defense contractor’s former chief executive to pay $4.9M to resolve False Claims Act allegations",
+    "Chinese National Who Applied to U.S. Air Force Indicted in St. Louis",
+    "Federal Judge Sentences Former City Councilwoman and Daughters for COVID-19 Loan Fraud",
+    "FORMER LOUISIANA DEPARTMENT OF EDUCATION EMPLOYEE AND CO-DEFENDANT SENTENCED TO FEDERAL PRISON FOR CONSPIRACY TO COMMIT WIRE FRAUD",
+    "Government contractor pleads guilty to embezzling travel reimbursement funds",
+  ])("live run: ignores %s", (t) => {
+    expect(classifyTitle(t)).toBeNull();
+  });
+
   it("keeps an out-of-scope topic when a federal official is involved, tagged as excluded", () => {
     const hit = classifyTitle("Federal Employee Charged in Medicare Bribery Scheme");
     expect(hit?.excluded).toContain("healthcare");

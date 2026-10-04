@@ -1,4 +1,7 @@
 /** Wayback Machine archiving and bot-check-aware fetching shared by the source scripts. */
+/** Every request gets a deadline so one stalled connection cannot hang a run. */
+export const TIMEOUT_MS = 30_000;
+
 export const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 corruption-tracker/0.1";
 
 /**
@@ -7,7 +10,7 @@ export const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/5
  * `bm-verify` token. Following that refresh with the cookies yields the page.
  */
 export async function fetchPage(target: string): Promise<{ status: number; html: string; finalUrl: string }> {
-  const first = await fetch(target, { headers: { "user-agent": UA, accept: "text/html" }, redirect: "follow" });
+  const first = await fetch(target, { headers: { "user-agent": UA, accept: "text/html" }, redirect: "follow", signal: AbortSignal.timeout(TIMEOUT_MS) });
   let html = await first.text();
   if (!/bm-verify/.test(html)) return { status: first.status, html, finalUrl: first.url };
   const refresh = /URL='([^']+)'/.exec(html)?.[1];
@@ -15,7 +18,7 @@ export async function fetchPage(target: string): Promise<{ status: number; html:
   const cookies = (first.headers.getSetCookie?.() ?? []).map((c) => c.split(";")[0]).join("; ");
   const next = new URL(refresh, target).toString();
   await new Promise((r) => setTimeout(r, 5500));
-  const second = await fetch(next, { headers: { "user-agent": UA, accept: "text/html", cookie: cookies }, redirect: "follow" });
+  const second = await fetch(next, { headers: { "user-agent": UA, accept: "text/html", cookie: cookies }, redirect: "follow", signal: AbortSignal.timeout(TIMEOUT_MS) });
   html = await second.text();
   return { status: second.status, html, finalUrl: second.url };
 }
@@ -82,7 +85,7 @@ export function findDate(html: string): string | null {
 async function availability(target: string): Promise<Response | null> {
   const url = `https://archive.org/wayback/available?url=${encodeURIComponent(target)}&timestamp=${new Date().toISOString().replace(/\D/g, "").slice(0, 14)}`;
   for (let attempt = 0; attempt < 4; attempt++) {
-    const res = await fetch(url, { headers: { "user-agent": UA } });
+    const res = await fetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(TIMEOUT_MS) });
     if (res.status !== 429) return res;
     await new Promise((r) => setTimeout(r, 30_000 * (attempt + 1)));
   }
@@ -115,7 +118,7 @@ export async function archive(target: string): Promise<{ url: string | null; sta
   if (recent) return { url: recent, status: "ok" };
   const started = Date.now() - 60e3;
   try {
-    const res = await fetch(`https://web.archive.org/save/${target}`, { headers: { "user-agent": UA }, redirect: "follow" });
+    const res = await fetch(`https://web.archive.org/save/${target}`, { headers: { "user-agent": UA }, redirect: "follow", signal: AbortSignal.timeout(120_000) });
     const loc = res.headers.get("content-location") ?? res.headers.get("location");
     if (loc) return { url: loc.startsWith("http") ? loc : `https://web.archive.org${loc}`, status: "ok" };
     if (res.ok && /\/web\/\d{14}\//.test(res.url)) return { url: res.url, status: "ok" };

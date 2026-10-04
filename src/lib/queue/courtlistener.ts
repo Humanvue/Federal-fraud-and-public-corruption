@@ -92,15 +92,27 @@ export function docketCandidates(w: WatchedDocket, fresh: DocketEntry[], today: 
   }));
 }
 
+export class RateLimited extends Error {
+  constructor(public retryAfterSeconds: number) {
+    super(`CourtListener rate limit: retry after ${retryAfterSeconds} s`);
+  }
+}
+
+/**
+ * Fetches a docket's entries, newest first. A short rate-limit pause (up to 2 minutes) is waited out
+ * once; a longer one throws RateLimited so the caller can stop checking dockets for this run instead
+ * of sleeping for half an hour.
+ */
 export async function fetchDocketEntries(w: WatchedDocket): Promise<{ status: number; entries: DocketEntry[] }> {
   const headers: Record<string, string> = { "user-agent": "corruption-tracker/0.1 (GitHub Humanvue/Federal-fraud-and-public-corruption)" };
   if (process.env.COURTLISTENER_TOKEN) headers.authorization = `Token ${process.env.COURTLISTENER_TOKEN}`;
   const url = `https://www.courtlistener.com/api/rest/v4/search/?type=rd&q=*&court=${w.court}&docket_number=${encodeURIComponent(w.docket)}&order_by=entry_date_filed+desc`;
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const r = await fetch(url, { headers });
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const r = await fetch(url, { headers, signal: AbortSignal.timeout(30_000) });
     if (r.status === 429) {
       const wait = Number(r.headers.get("retry-after") ?? "60");
-      await new Promise((res) => setTimeout(res, Math.min(wait, 300) * 1000));
+      if (wait > 120 || attempt === 1) throw new RateLimited(wait);
+      await new Promise((res) => setTimeout(res, wait * 1000));
       continue;
     }
     if (!r.ok) return { status: r.status, entries: [] };
