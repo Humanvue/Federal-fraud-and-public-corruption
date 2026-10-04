@@ -18,6 +18,51 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-6bdab56ae4
+    kind: new_case
+    source: tier_list
+    url: https://www.oig.dol.gov/public/oifindings/50-26-004-01-001.pdf
+    title: "Report of Investigation: Lori Chavez-DeRemer, Former Secretary, U.S. Department of Labor"
+    date: 2026-09-03
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 50-26-004-01-001; conduct inconsistent with standards in six areas, including personal tasks by staff, combined personal and official travel, and unreported gifts (also harassment-policy and relationship findings).
+  - id: q-53c2a85039
+    kind: new_case
+    source: tier_list
+    url: https://www.oversight.gov/reports/evaluation-secretary-defenses-reported-use-commercially-available-messaging-application
+    title: Evaluation of the Secretary of Defense's Reported Use of a Commercially Available Messaging Application for Official Business
+    date: 2025-12-02
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: DODIG-2026-021; sending nonpublic operational information via Signal on a personal phone did not comply with DoD Instruction 8170.01.
+  - id: q-bd937331d1
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/opa/pr/justice-department-statements-regarding-indictment-former-national-security-advisor-john
+    title: Justice Department Statements Regarding Indictment of Former National Security Advisor John Bolton
+    date: 2025-10-16
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Indicted on 8 transmission and 10 retention counts of national defense information; pleaded guilty June 26, 2026 to one retention count (justice.gov OPA).
   - id: q-952918c162
     kind: new_case
     source: tier_list
@@ -108,6 +153,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: MSPB complaint (allegation, not an adjudicated finding). Outcome not found on osc.gov.
+  - id: q-5fb56f10f1
+    kind: new_case
+    source: tier_list
+    url: https://oversightdemocrats.house.gov/news/press-releases/ranking-members-raskin-and-thompson-call-removal-inspector-general-cuffari
+    title: CIGIE Integrity Committee letter to the President with report, case IC 20-059 (Inspector General Joseph V. Cuffari)
+    date: 2024-10-02
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Integrity Committee found misleading responses to Congress during confirmation, abuse of authority, and waste; recommended action up to removal. Confirmed via House committee release linking the letter.
+  - id: q-dc9def5651
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/former-doi-deputy-secretary-violated-ethics-laws
+    title: Former DOI Deputy Secretary Violated Ethics Laws
+    date: 2024-10-01
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 23-0713; held prohibited ExxonMobil and Chevron stock about one year and violated 18 U.S.C. 208 by participating in a meeting; self-disclosed; OIG noted mitigating factors.
   - id: q-6ab24f4d34
     kind: new_case
     source: tier_list
@@ -168,6 +243,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Public Letter of Admonition: the committee found that soliciting campaign contributions during a 2022-11-30 media interview in the Russell Senate Office Building was contrary to Senate standards of conduct."
+  - id: q-9564dc4a68
+    kind: new_case
+    source: tier_list
+    url: https://www.oversight.gov/reports/allegations-ethics-violations-former-doi-secretary-were-not-substantiated
+    title: Allegations of Ethics Violations by Former DOI Secretary Were Not Substantiated
+    date: 2023-01-19
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 19-0313 on Central Valley Project and Westlands Water District; ethics pledge and conflict-of-interest allegations not substantiated (no violation found).
   - id: q-1848f07910
     kind: new_case
     source: pin_report
@@ -270,6 +360,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-86ecb9c2bd
+    kind: new_case
+    source: tier_list
+    url: https://www.oig.dol.gov/public/oifindings/Results%20of%20Review%20of%20Allegations%20of%20Ethics%20Violations%20by%20the%20Secretary%20of%20Labor.pdf
+    title: Results of Review of Allegations of Ethics Violations by the Secretary of Labor
+    date: 2022-12-20
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Picket-line visit and personal-capacity mediation; no evidence he exceeded authority or violated ethics regulations (no violation found).
   - id: q-ee0d0e2291
     kind: new_case
     source: tier_list
@@ -285,6 +390,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Report served as an admonishment (H. Rept. 117-591): he promoted a cryptocurrency he held, in conflict with House rules, and bought it on terms that amounted to an improper gift. Ordered to repay $14,237.49 to charity and to pay late-filing fees."
+  - id: q-2931d4f28e
+    kind: new_case
+    source: tier_list
+    url: https://oig.federalreserve.gov/releases/board-closing-trading-activity-jul2022.pdf
+    title: OIG Closing of 22-0028-I Board Trading Activity
+    date: 2022-07-11
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Trading activity did not violate laws, rules, or policies investigated (no violation found); failed to report several trades on 2019 and 2020 OGE Forms 278.
+  - id: q-4100002483
+    kind: new_case
+    source: tier_list
+    url: https://oig.federalreserve.gov/releases/board-closing-trading-activity-jul2022.pdf
+    title: OIG Closing of 22-0028-I Board Trading Activity
+    date: 2022-07-11
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Trading activity did not violate laws, rules, or policies investigated (no violation found); a family-trust advisor made five trades in a blackout period.
   - id: q-869abee9b0
     kind: new_case
     source: tier_list
@@ -300,6 +435,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Committee report (H. Rept. 117-387) includes the subcommittee's finding of substantial evidence that he accepted excessive campaign contributions, conspired to hide them, failed to disclose, and interfered with witnesses. JUDGMENT CALL: a Delegate is a non-voting House member."
+  - id: q-421ce8eb37
+    kind: new_case
+    source: tier_list
+    url: https://media.cadc.uscourts.gov/opinions/docs/2026/07/24-3006-2184223.pdf
+    title: United States v. Navarro, No. 24-3006 (D.C. Cir. decided July 21, 2026), appeal from D.D.C. No. 1:22-cr-00200
+    date: 2022-06
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Indicted on two counts of contempt of Congress for defying a January 6th Select Committee subpoena about his time in office; convicted; affirmed July 21, 2026.
+  - id: q-3367f4df7c
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/former-secretarys-alleged-lobbying-disclosure-act-violation-joining-us
+    title: Former Secretary's Alleged Lobbying Disclosure Act Violation Before Joining the U.S. Department of the Interior as Deputy Secretary
+    date: 2022-05-19
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 20-0393 on pre-appointment lobbying; conduct identified did not show he acted as a lobbyist under the LDA (no violation found).
   - id: q-bfc15abce0
     kind: new_case
     source: tier_list
@@ -383,6 +548,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-19083465a6
+    kind: new_case
+    source: tier_list
+    url: https://www.govinfo.gov/content/pkg/GOVPUB-Y3_C83_3-PURL-gpo171665/pdf/GOVPUB-Y3_C83_3-PURL-gpo171665.pdf
+    title: Investigation of Political Activities by Senior Trump Administration Officials During the 2020 Presidential Election
+    date: 2021-11-09
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: OSC concluded two Hatch Act violations (policy change to promote reelection; RNC speech).
   - id: q-4afac9a0e0
     kind: new_case
     source: tier_list
@@ -593,6 +773,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Settlement: admitted violation; 48-month debarment and $1,000 civil fine."
+  - id: q-84624d6efd
+    kind: new_case
+    source: tier_list
+    url: https://www.oversight.gov/sites/default/files/documents/reports/2021-04/ESP-21-02-Review-Allegations-Misuse-Department-State-Resources.pdf
+    title: Review of Allegations of Misuse of Department of State Resources
+    date: 2021-04
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: ESP-21-02; Secretary and spouse requested staff perform personal tasks, inconsistent with ethics standards. Report dated April 2021; exact release day not confirmed on a government page.
+  - id: q-2a46598873
+    kind: new_case
+    source: tier_list
+    url: https://www.oig.dot.gov/sites/default/files/DOT%20OIG%20Letter%20to%20Chairman%20Peter%20DeFazio_2021-03-02.pdf
+    title: DOT OIG Letter to Chairman Peter DeFazio (CC2021005) with Report of Investigation
+    date: 2021-03-02
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Investigation of potential misuse of position referred to USAO-DC and DOJ Public Integrity Section, both declined; report states no conclusion on ethics compliance.
   - id: q-fc8d54f14a
     kind: new_case
     source: tier_list
@@ -659,6 +869,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: null
+  - id: q-729c4bf377
+    kind: new_case
+    source: tier_list
+    url: https://www.oversight.gov/reports/senior-va-officials-response-veterans-sexual-assault-allegations
+    title: Senior VA Officials' Response to a Veteran's Sexual Assault Allegations
+    date: 2020-12-10
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 20-01766-36 on senior leaders' response to a veteran's complaint; tone set by the Secretary found at minimum unprofessional; he privately disparaged the veteran.
   - id: q-582d59f206
     kind: new_case
     source: tier_list
@@ -674,6 +899,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Report dated 2020-11-18, transmitted 2020-12-07; Navarro did not respond. Release: https://www.osc.gov/news/2020-12-07/osc-issues-report-to-the-president-finding-hatch-act-violations-by-dr-peter-navarro/"
+  - id: q-ab32f1ebbe
+    kind: new_case
+    source: tier_list
+    url: https://www.osc.gov/news/2020-12-07/osc-issues-report-to-the-president-finding-hatch-act-violations-by-dr-peter-navarro/
+    title: OSC Issues Report to the President Finding Hatch Act Violations by Dr. Peter Navarro
+    date: 2020-12-07
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: OSC File HA-20-000279; Hatch Act violations through official media appearances and social media.
+  - id: q-5128e75705
+    kind: new_case
+    source: tier_list
+    url: https://www.oig.doc.gov/wp-content/OIGPublications/OI_Report_18-0286_redacted.pdf
+    title: Investigation into Multiple Allegations That Secretary of Commerce Wilbur L. Ross, Jr., Failed to Comply with His Ethics Agreement and Violated Conflict of Interest Laws
+    date: 2020-12-03
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 18-0286; violated 5 C.F.R. 2635.101 appearance standard; missed divestiture deadline causing false certifications; no knowing falsification or 18 U.S.C. 208 violation found.
   - id: q-371f93bebc
     kind: new_case
     source: tier_list
@@ -704,6 +959,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Report (H. Rept. 116-473): post-election campaign salary payments were inconsistent with FECA personal-use rules. Directed to reimburse her campaign $10,800; no other action."
+  - id: q-4439840504
+    kind: new_case
+    source: tier_list
+    url: https://oig.hhs.gov/reports/all/2020/cms-did-not-administer-and-manage-strategic-communications-services-contracts-in-accordance-with-federal-requirements
+    title: CMS Did Not Administer and Manage Strategic Communications Services Contracts in Accordance With Federal Requirements
+    date: 2020-07-15
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Audit A-12-19-20003; CMS, including the CMS Administrator and other senior leaders, did not manage $6.4 million in communications contracts per federal requirements.
+  - id: q-16217e35a3
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/investigation-alleged-ethics-misconduct-assistant-secretary-insular-and-0
+    title: Investigation Into Alleged Ethics Misconduct by the Assistant Secretary for Insular and International Affairs
+    date: 2020-05-28
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 19-0497; misuse of office (5 C.F.R. 2635.702) advocating a family member's EPA application; appearance violation for promoting another family member's business.
   - id: q-757736e28c
     kind: new_case
     source: tier_list
@@ -802,6 +1087,96 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Report served as a reproval (H. Rept. 116-359): official resources were used for campaign and leadership-race activity, and a consultant was paid improperly. Ordered to reimburse the Treasury $7,575.95."
+  - id: q-c3dd4f572d
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/investigative-report-alleged-ethics-violations-assistant-secretary-insular
+    title: Investigative Report of Alleged Ethics Violations by the Assistant Secretary for Insular and International Affairs
+    date: 2019-12-10
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 19-0723; no ethics-pledge violation, but violated 1-year impartiality rule by meeting former employer; conduct occurred April 2017 while he was a special government employee.
+  - id: q-dd58b2c21a
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/investigative-report-alleged-improper-influence-secretary-interior-fws
+    title: Investigative Report of Alleged Improper Influence by the Secretary of the Interior in the FWS' Scientific Process
+    date: 2019-12-10
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 19-0434; no evidence he exceeded or abused authority or violated ethics pledge or regulations (no violation found).
+  - id: q-c5f73fc904
+    kind: new_case
+    source: tier_list
+    url: https://hudoig.gov/sites/default/files/2019-09/HUD%20OIG%20Report%20of%20Investigation%20into%20Alleged%20Violation%20of%20Federal%20Appropriations%20Law%20by%20OSEC%20(Sept.%2011,%202019).pdf
+    title: Investigation into Alleged Violation of Federal Appropriations Law by the Office of the Secretary
+    date: 2019-09-11
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 2018SI006075I on dining-room furniture purchase; insufficient evidence of misconduct by the Secretary (no violation found as to him); Department violated appropriations notice law.
+  - id: q-0302697e6d
+    kind: new_case
+    source: tier_list
+    url: https://oig.justice.gov/reports/report-investigation-former-fbi-director-james-comeys-disclosure-sensitive-investigative
+    title: Report of Investigation of Former FBI Director James Comey's Disclosure of Sensitive Investigative Information and Handling of Certain Memoranda
+    date: 2019-08-29
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: per-james-comey
+    first_seen: 2026-10-04
+    state: open
+    note: Person already in data (per-james-comey); check whether this is a different matter.
+  - id: q-9e0b044c7e
+    kind: new_case
+    source: tier_list
+    url: https://www.epa.gov/sites/default/files/2019-05/documents/_epaoig_20190516-19-p-0155.pdf
+    title: Actions Needed to Strengthen Controls over the EPA Administrator's and Associated Staff's Travel
+    date: 2019-05-16
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Audit 19-P-0155 of the former Administrator's travel; estimated $123,942 in excessive first/business-class costs approved without sufficient justification.
+  - id: q-7f8762267b
+    kind: new_case
+    source: tier_list
+    url: https://www.oversight.gov/reports/report-investigation-mr-patrick-m-shanahan-acting-secretary-defense
+    title: "Report of Investigation: Mr. Patrick M. Shanahan, Acting Secretary of Defense"
+    date: 2019-04-25
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: DODIG-2019-082; allegations of promoting Boeing not substantiated; fully complied with ethics agreements (no violation found).
   - id: q-13fcba9632
     kind: new_case
     source: pin_report
@@ -919,6 +1294,96 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Report served as a reproval (H. Rept. 115-1042): official salary paid to his former chief of staff was not commensurate with work done (clause 8). Ordered to reimburse the Treasury $40,625.02. JUDGMENT CALL: the background is a staffer's alleged harassment, but the finding is about misuse of official funds."
+  - id: q-51f84b8d7c
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/alleged-abuse-position-secretary-zinke-0
+    title: Alleged Abuse of Position by Secretary Zinke
+    date: 2018-10-21
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: per-ryan-zinke
+    first_seen: 2026-10-04
+    state: open
+    note: Person already in data (per-ryan-zinke); check whether this is a different matter.
+  - id: q-8308acbeb0
+    kind: new_case
+    source: tier_list
+    url: https://oversightdemocrats.house.gov/news/press-releases/cummings-releases-ig-report-on-fema-administrator-s-improper-use-of-government
+    title: DHS OIG Report of Investigation, FEMA Administrator William "Brock" Long, case I18-FEMA-SID-06980 (released by House Oversight ranking member)
+    date: 2018-09-26
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: OIG found unauthorized home-to-work use of government vehicles and staff; approximately $151,000 in costs. ROI PDF not readable (403); confirmed via House committee release quoting the report.
+  - id: q-76f85fe810
+    kind: new_case
+    source: tier_list
+    url: https://www.gsaig.gov/sites/default/files/audit-reports/Review%20of%20GSA's%20Revised%20Plan%20for%20the%20FBI%20HQ%20Consolidation%20Project%20REDACTED%20-%20508%20compliant.pdf
+    title: Review of GSA's Revised Plan for the Federal Bureau of Investigation Headquarters Consolidation Project
+    date: 2018-08-27
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Found her congressional testimony incomplete and that it may have left a misleading impression about White House discussions.
+  - id: q-0567324248
+    kind: new_case
+    source: tier_list
+    url: https://transition.fcc.gov/oig/2018.08.23_Sinclair%20Final%20ROI%20_Redacted.pdf
+    title: "Report of Investigation, Case OIG-I-18-0006: Allegations of improprieties related to the Commission's review of the merger between Sinclair Broadcast Group, Inc. and Tribune Media Company"
+    date: 2018-08-24
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: No evidence of impropriety, favoritism toward Sinclair, or lack of impartiality (no violation found).
+  - id: q-42e5291109
+    kind: new_case
+    source: tier_list
+    url: https://oge.gov/web/OGE.nsf/0/F8A904F56D6DB8A2852585B9006C48F3/$FILE/Letter%20to%20Secretary%20of%20Commerce.pdf
+    title: OGE letter to the Honorable Wilbur Ross, Secretary of Commerce
+    date: 2018-07-12
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Acting Director's letter citing omissions and inaccurate statements in disclosures and short positions opened contrary to his ethics agreement.
+  - id: q-ee97a42e89
+    kind: new_case
+    source: tier_list
+    url: https://oig.hhs.gov/reports/all/2018/the-office-of-the-secretary-of-health-and-human-services-did-not-comply-with-federal-regulations-for-chartered-aircraft-and-other-government-travel-related-to-former-secretary-price
+    title: The Office of the Secretary of Health and Human Services Did Not Comply With Federal Regulations for Chartered Aircraft and Other Government Travel Related to Former Secretary Price
+    date: 2018-07-11
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Audit A-12-17-00002; 20 of 21 trips did not comply with federal travel requirements; at least $341,000 in waste; finding framed against the Office of the Secretary.
   - id: q-ee9a15f8d9
     kind: new_case
     source: tier_list
@@ -934,6 +1399,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "MSPB complaint (allegation). Outcome in osc-news-20190917-depaolo. Outcome: OSC press release: Immigration Judge Who Violated the Hatch Act Fined $1K with 30-Month Debarment from Federal Service (Carmene DePaolo) (2019-09-17) https://www.osc.gov/news/2019-09-17/immigration-judge-who-violated-the-hatch-act-fined-1k-with-30-month-debarment-from-federal-service/"
+  - id: q-3274f3b8b8
+    kind: new_case
+    source: tier_list
+    url: https://oig.justice.gov/sites/default/files/reports/18-04.pdf
+    title: A Review of Various Actions by the Federal Bureau of Investigation and Department of Justice in Advance of the 2016 Election
+    date: 2018-06-14
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: per-james-comey
+    first_seen: 2026-10-04
+    state: open
+    note: Person already in data (per-james-comey); check whether this is a different matter.
+  - id: q-9bac0914fe
+    kind: new_case
+    source: tier_list
+    url: https://oig.justice.gov/sites/default/files/reports/18-04.pdf
+    title: A Review of Various Actions by the Federal Bureau of Investigation and Department of Justice in Advance of the 2016 Election
+    date: 2018-06-14
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Report 18-04; no evidence of inappropriate discussion at tarmac meeting; failure to recognize the appearance problem found to be an error in judgment.
   - id: q-6817ec4da2
     kind: new_case
     source: tier_list
@@ -949,6 +1444,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: Person already in data (per-robert-menendez); check whether this is a different matter.
+  - id: q-e250622a2b
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/investigative-report-secretary-zinkes-use-chartered-and-military-aircraft
+    title: Investigative Report on Secretary Zinke's Use of Chartered and Military Aircraft Between March and September 2017
+    date: 2018-04-15
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: per-ryan-zinke
+    first_seen: 2026-10-04
+    state: open
+    note: Person already in data (per-ryan-zinke); check whether this is a different matter.
   - id: q-207c966889
     kind: new_case
     source: tier_list
@@ -979,6 +1489,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Report served as a reproval (H. Rept. 115-618): rent-free office space was an impermissible gift that violated House rules and federal law. He was ordered to repay its value and amend his disclosures."
+  - id: q-d9923d6ca0
+    kind: new_case
+    source: tier_list
+    url: https://www.nlrb.gov/sites/default/files/attachments/basic-page/node-1535/OIG%20Report%20Regarding%20Hy_Brand%20Deliberations.pdf
+    title: Notification of a Serious and Flagrant Problem and/or Deficiency in the Board's Administration of its Deliberative Process and the National Labor Relations Act with Respect to the Deliberation of a Particular Matter
+    date: 2018-02-09
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: OIG memo found he should have been recused from Hy-Brand because his former law firm represented a party in Browning-Ferris.
   - id: q-c7f8259bda
     kind: new_case
     source: pin_report
@@ -1062,6 +1587,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Date as displayed by OSC, but likely wrong: old release number 17-04 and OSC's 2023-01-24 release say the ALJ initial decision was January 2017. Verify before use. Outcome: OSC press release: NOAA Employee who Violated the Hatch Act by Running for Partisan Office Numerous Times Removed from Federal Employment (Keith Arnold) (2023-01-24) https://www.osc.gov/news/2023-01-24/noaa-employee-who-violated-the-hatch-act-by-running-for-partisan-office-numerous-times-removed-from-federal-employment/"
+  - id: q-8c0ed92803
+    kind: new_case
+    source: tier_list
+    url: https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_17-cr-00232/pdf/USCOURTS-dcd-1_17-cr-00232-0.pdf
+    title: United States v. Michael T. Flynn, Crim. No. 17-232 (D.D.C.) (Information and guilty plea; memorandum opinion of Dec. 16, 2019)
+    date: 2017-12-01
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: Pleaded guilty to false statements to the FBI (18 U.S.C. 1001) in a January 24, 2017 White House interview; Information filed November 30, 2017.
   - id: q-9ab498bf50
     kind: new_case
     source: tier_list
@@ -1077,6 +1617,21 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "28-count superseding indictment: mail and wire fraud using charitable donations, false statements to the FEC, excessive campaign contributions, money laundering, false tax return. The scheme ran 2010-2014 and partly overlapped his 2013-2015 term. The page describes a superseding indictment, so an earlier charging document may exist; the date given is this page's date."
+  - id: q-56ae0b342f
+    kind: new_case
+    source: tier_list
+    url: https://www2.oge.gov/web/OGE.nsf/Congressional%20Correspondence/B8A936C4661191ED852585B6005A19DB/$FILE/Rep%20Mark%20Pocan%202-16-17.pdf?open=
+    title: OGE letter of February 16, 2017 to Rep. Mark Pocan, enclosing OGE's February 13, 2017 letter to the White House Designated Agency Ethics Official regarding Kellyanne E. Conway
+    date: 2017-02-13
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: per-kellyanne-conway
+    first_seen: 2026-10-04
+    state: open
+    note: Person already in data (per-kellyanne-conway); check whether this is a different matter.
   - id: q-bc26d6f2ef
     kind: new_case
     source: pin_report
@@ -1156,6 +1711,36 @@ candidates:
     first_seen: 2026-10-04
     state: open
     note: "Report served as a reproval (H. Rept. 114-687): he did not stop lobbying contacts between his staff and his lobbyist wife, and he gave her special privileges."
+  - id: q-12f6246d60
+    kind: new_case
+    source: tier_list
+    url: https://www.oversight.gov/reports/office-secretary-evaluation-email-records-management-and-cybersecurity-requirements
+    title: "Office of the Secretary: Evaluation of Email Records Management and Cybersecurity Requirements"
+    date: 2016-05-26
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: ESP-16-03; did not comply with Department records policies by not surrendering business emails before leaving service.
+  - id: q-31a030a2b3
+    kind: new_case
+    source: tier_list
+    url: https://www.oversight.gov/reports/office-secretary-evaluation-email-records-management-and-cybersecurity-requirements
+    title: "Office of the Secretary: Evaluation of Email Records Management and Cybersecurity Requirements"
+    date: 2016-05-26
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: ESP-16-03; did not comply with Department records policies regarding personal-account emails (conduct 2001-2005).
   - id: q-0037d53387
     kind: new_case
     source: pin_report
@@ -1672,6 +2257,21 @@ candidates:
     first_seen: 2026-10-04
     state: done
     note: Already published when the tier was enumerated.
+  - id: q-37e6a8b781
+    kind: new_case
+    source: tier_list
+    url: https://www.justice.gov/usao-edva/pr/federal-grand-jury-indicts-former-fbi-director-false-statements-and-obstruction
+    title: Federal grand jury indicts former FBI director for false statements and obstruction in congressional testimony
+    date: 2025-09-25
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: evt-2025-comey-false-statements-congress
+    entity_id: per-james-comey
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
   - id: q-0ce6c3dda5
     kind: new_case
     source: tier_list
@@ -1717,6 +2317,36 @@ candidates:
     first_seen: 2026-10-04
     state: done
     note: Already published when the tier was enumerated.
+  - id: q-789e63c478
+    kind: new_case
+    source: tier_list
+    url: https://osc.gov/~assets/docs/report-of-prohibited-political-activity-rachael-rollins-ha-22-000173.pdf
+    title: Report of Prohibited Political Activity Under the Hatch Act, OSC File No. HA-22-000173
+    date: 2023-05-17
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: evt-2023-us-attorney-massachusetts-hatch-act-ethics
+    entity_id: per-rachael-rollins
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-e24ad008f1
+    kind: new_case
+    source: tier_list
+    url: https://oig.justice.gov/reports/investigation-alleged-misconduct-united-states-attorney-rachael-rollins
+    title: An Investigation of Alleged Misconduct by United States Attorney Rachael Rollins
+    date: 2023-05-17
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: evt-2023-us-attorney-massachusetts-hatch-act-ethics
+    entity_id: per-rachael-rollins
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
   - id: q-87c2246c89
     kind: new_case
     source: tier_list
@@ -1744,6 +2374,36 @@ candidates:
       - backfill
     event_id: evt-2023-hhs-secretary-hatch-act
     entity_id: per-xavier-becerra
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-5d8766ff96
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/former-secretary-and-chief-staff-did-not-comply-their-duty-candor
+    title: Former Secretary and Chief of Staff Did Not Comply With Their Duty of Candor
+    date: 2022-08-24
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: evt-2022-interior-secretary-ethics-candor
+    entity_id: per-ryan-zinke
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-48535e9cb5
+    kind: new_case
+    source: tier_list
+    url: https://www.doioig.gov/reports/investigation/former-secretary-did-not-comply-ethical-obligations-and-duty-candor
+    title: Former Secretary Did Not Comply With Ethical Obligations and Duty of Candor
+    date: 2022-02-16
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: evt-2022-interior-secretary-ethics-candor
+    entity_id: per-ryan-zinke
     first_seen: 2026-10-04
     state: done
     note: Already published when the tier was enumerated.
@@ -1834,6 +2494,36 @@ candidates:
       - backfill
     event_id: evt-2018-counselor-to-president-hatch-act
     entity_id: per-kellyanne-conway
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-94eca039c5
+    kind: new_case
+    source: tier_list
+    url: https://www.vaoig.gov/reports/administrative-investigation/administrative-investigation-va-secretary-and-delegation
+    title: Administrative Investigation – VA Secretary and Delegation Travel to Europe
+    date: 2018-02-14
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: evt-2018-va-secretary-europe-travel
+    entity_id: per-david-shulkin
+    first_seen: 2026-10-04
+    state: done
+    note: Already published when the tier was enumerated.
+  - id: q-ee9780a986
+    kind: new_case
+    source: tier_list
+    url: https://oig.treasury.gov/system/files/Audit_Reports_and_Testimonies/Treasury-OIG-Travel-Inquiry-To-Inspector-General-Thorson.pdf
+    title: Inquiry Re Use of Government Aircraft by Secretary Mnuchin
+    date: 2017-10-04
+    feed: null
+    tags:
+      - tier:senior_official
+      - backfill
+    event_id: evt-2017-treasury-secretary-aircraft-inquiry
+    entity_id: per-steven-mnuchin
     first_seen: 2026-10-04
     state: done
     note: Already published when the tier was enumerated.

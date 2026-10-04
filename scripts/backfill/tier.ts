@@ -2,7 +2,7 @@
  * Loads a tier enumeration (drafts/tiers/<tier>.yaml, written by research) into the queue as
  * new-case candidates tagged tier:<id>. An item whose person already appears as a participant in a
  * published event within a year of the item's date is marked done and linked to that event; other
- * items stay open for the weekly session. Also refreshes `enumerated_on` in data/reference/tiers.yaml.
+ * items stay open for the weekly session. Mark an item `separate_matter: true` to stop a wrong auto-link. Also refreshes `enumerated_on` in data/reference/tiers.yaml.
  *
  *   npm run backfill:tier -- drafts/tiers/hatch-act.yaml [--dry]
  */
@@ -24,6 +24,8 @@ const Item = z.object({
   person: z.string().min(1),
   role: z.string().optional(),
   note: z.string().nullable().optional(),
+  /** Set when the person is already published for a DIFFERENT matter, so the item is never auto-linked. */
+  separate_matter: z.boolean().optional(),
 });
 const File = z.object({ tier: z.string(), definition: z.string(), enumerated_from: z.string(), enumerated_on: z.union([z.string(), z.date()]).transform(String), items: z.array(Item), unconfirmed: z.array(z.string()).optional() });
 
@@ -41,7 +43,7 @@ const linked: string[] = [];
 for (const it of doc.items) {
   const year = Number(it.date.slice(0, 4));
   const person = dataset.people.find((p) => [p.name, ...p.aliases].some((n) => nameAppears(n, it.person) || nameAppears(it.person, n)));
-  const event = person && dataset.events.find((e) => e.participants.some((p) => p.entity_id === person.id) && Math.abs(yearOf(e.dates.first_public_action) - year) <= 1);
+  const event = person && !it.separate_matter && dataset.events.find((e) => e.participants.some((p) => p.entity_id === person.id) && Math.abs(yearOf(e.dates.first_public_action) - year) <= 1);
   if (event) linked.push(`${it.key} -> ${event.id}`);
   fresh.push({
     id: candidateId(`tier:${doc.tier}#${it.key}`),
