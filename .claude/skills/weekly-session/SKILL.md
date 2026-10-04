@@ -55,9 +55,10 @@ event (after approval, as above) and mark the item done. If something changed, h
 3. Mark queue items done (`npm run queue:set -- <ids> done`). Commit `data/` and `queue/` together with a
    message listing each case added or changed.
 4. The daily job commits to `queue/` on main every morning, so merge main in before pushing:
-   `git fetch origin && git merge origin/main`. If `queue/candidates.yaml` conflicts, take main's copy
-   (`git checkout --theirs queue/candidates.yaml`), replay this session's `npm run queue:set` commands
-   (keep them listed in `drafts/notes/weekly-<date>.md` as you go), then `npm run check` again.
+   `git fetch origin && git merge origin/main`. If `queue/candidates.yaml` conflicts, run
+   `npm run queue:resolve` (keeps main's new items and applies this branch's states and notes), then
+   `git add queue/ && git commit --no-edit`, triage any new items main added that the owner's policies
+   already decide, and run `npm run check` again.
 5. Push the branch and give the owner the pull request link:
    `https://github.com/Humanvue/Federal-fraud-and-public-corruption/pull/new/<branch>`.
 6. Recap for the owner: what was added, what changed status, what was rejected and why, what is still
