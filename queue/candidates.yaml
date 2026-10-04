@@ -349,8 +349,8 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-04
-    state: open
-    note: null
+    state: rejected
+    note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
   - id: q-2ba8bc613c
     kind: new_case
     source: doj
