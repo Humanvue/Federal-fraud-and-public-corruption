@@ -81,9 +81,9 @@ export function findDate(html: string): string | null {
 async function latestSnapshot(target: string, notBefore: number): Promise<string | null> {
   try {
     const avail = await fetch(`https://archive.org/wayback/available?url=${encodeURIComponent(target)}&timestamp=${new Date().toISOString().replace(/\D/g, "").slice(0, 14)}`, { headers: { "user-agent": UA } });
-    const j = (await avail.json()) as { archived_snapshots?: { closest?: { url?: string; timestamp?: string } } };
+    const j = (await avail.json()) as { archived_snapshots?: { closest?: { url?: string; timestamp?: string; status?: string } } };
     const c = j.archived_snapshots?.closest;
-    if (!c?.url || !c.timestamp) return null;
+    if (!c?.url || !c.timestamp || (c.status && c.status !== "200")) return null;
     const when = Date.parse(c.timestamp.replace(/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/, "$1-$2-$3T$4:$5:$6Z"));
     return when >= notBefore ? c.url.replace(/^http:/, "https:") : null;
   } catch {
@@ -95,7 +95,8 @@ async function latestSnapshot(target: string, notBefore: number): Promise<string
  * Archive on the Wayback Machine. Reuses a snapshot from the last 90 days;
  * otherwise asks Save Page Now, then confirms through the availability API,
  * because the save endpoint often answers without a usable location header
- * even when the snapshot was created.
+ * even when the snapshot was created. If no fresh snapshot can be made, falls
+ * back to the most recent earlier snapshot that returned HTTP 200.
  */
 export async function archive(target: string): Promise<{ url: string | null; status: "ok" | "failed" }> {
   const recent = await latestSnapshot(target, Date.now() - 90 * 86400e3);
@@ -114,6 +115,10 @@ export async function archive(target: string): Promise<{ url: string | null; sta
     const made = await latestSnapshot(target, started);
     if (made) return { url: made, status: "ok" };
   }
+  // A fresh save failed. Any earlier successful snapshot still preserves the document (government
+  // PDFs and releases rarely change after publication), so use the most recent one if it exists.
+  const older = await latestSnapshot(target, 0);
+  if (older) return { url: older, status: "ok" };
   return { url: null, status: "failed" };
 }
 
