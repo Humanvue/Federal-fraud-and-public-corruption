@@ -78,9 +78,21 @@ export function findDate(html: string): string | null {
   return null;
 }
 
+/** The availability lookup is rate limited too; a 429 must not be read as "no snapshot". */
+async function availability(target: string): Promise<Response | null> {
+  const url = `https://archive.org/wayback/available?url=${encodeURIComponent(target)}&timestamp=${new Date().toISOString().replace(/\D/g, "").slice(0, 14)}`;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const res = await fetch(url, { headers: { "user-agent": UA } });
+    if (res.status !== 429) return res;
+    await new Promise((r) => setTimeout(r, 30_000 * (attempt + 1)));
+  }
+  return null;
+}
+
 async function latestSnapshot(target: string, notBefore: number): Promise<string | null> {
   try {
-    const avail = await fetch(`https://archive.org/wayback/available?url=${encodeURIComponent(target)}&timestamp=${new Date().toISOString().replace(/\D/g, "").slice(0, 14)}`, { headers: { "user-agent": UA } });
+    const avail = await availability(target);
+    if (!avail) return null;
     const j = (await avail.json()) as { archived_snapshots?: { closest?: { url?: string; timestamp?: string; status?: string } } };
     const c = j.archived_snapshots?.closest;
     if (!c?.url || !c.timestamp || (c.status && c.status !== "200")) return null;

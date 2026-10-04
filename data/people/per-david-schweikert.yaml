@@ -1,0 +1,7 @@
+id: per-david-schweikert
+name: "David Schweikert"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "U.S. Representative", org_id: org-house, start: null, end: null, source_ids: [src-house-ethics-20200730-01, src-govinfo-20200731-01] }
+party_affiliation: { value: "Republican", basis: elected, source_ids: [src-govinfo-20200722-02] }

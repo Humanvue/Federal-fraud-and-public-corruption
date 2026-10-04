@@ -1,0 +1,6 @@
+id: org-fema
+name: "Federal Emergency Management Agency"
+org_type: agency
+parent_org_id: org-dhs
+uei: null
+wikidata_qid: null

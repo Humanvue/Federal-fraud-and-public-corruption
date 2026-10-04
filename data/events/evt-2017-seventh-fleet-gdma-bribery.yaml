@@ -1,0 +1,488 @@
+id: evt-2017-seventh-fleet-gdma-bribery
+title: Nine Seventh Fleet officers charged in Glenn Defense Marine Asia bribery case
+categories:
+  - bribery_kickbacks
+  - false_statements_obstruction
+agencies:
+  - org-navy
+  - org-seventh-fleet
+  - org-marine-corps
+investigating_agencies:
+  - org-dcis
+  - org-ncis
+  - org-dcaa
+prosecuting_office: org-usao-sdca
+court_cases:
+  - court: S.D. Cal.
+    docket: 3:17-cr-00623-JLS
+    courtlistener_id: null
+    source_ids:
+      - src-govinfo-20230912-01
+      - src-govinfo-20240530-03
+      - src-usao-sdca-20220202-01
+  - court: S.D. Cal.
+    docket: 13-CR-3781, 13-CR-3782 and 13-CR-4287
+    courtlistener_id: null
+    source_ids:
+      - src-usao-sdca-20241105-01
+jurisdiction_note: null
+summary: |
+  In March 2017 a federal grand jury in San Diego indicted nine members of the U.S. Navy's Seventh Fleet (a rear admiral, four captains, a Marine Corps colonel, two commanders and a chief warrant officer) for conspiring with Leonard Glenn Francis, owner and chief executive of the Singapore ship-husbanding contractor Glenn Defense Marine Asia (GDMA), and for receiving bribes from him. According to the plea agreements described in U.S. Attorney's Office releases, the officers accepted dinners, hotel stays, entertainment and the services of prostitutes between 2006 and 2008 and, in return, steered ships to ports GDMA serviced, shared confidential and classified ship schedules, and advocated for GDMA before other Navy officials. Commander Stephen Shedd's plea agreement states that the nine officers collectively received more than $250,000 in things of value. Francis admitted in his 2015 plea agreement that GDMA overbilled the Navy for goods and services; at his November 2024 sentencing the court ordered $20 million in restitution to the Navy, a $150,000 fine and forfeiture of $35 million, and GDMA was ordered to pay a $36 million fine. The case was investigated by the Defense Criminal Investigative Service, the Naval Criminal Investigative Service and the Defense Contract Audit Agency.
+dates:
+  conduct_start: 2006-02
+  conduct_end: 2008-08
+  first_public_action: 2017-03
+money:
+  loss_to_government: null
+  bribe_or_kickback:
+    amount: 250000
+    basis: admitted
+    source_ids:
+      - src-usao-sdca-20220126-01
+    note: "More than $250,000 received collectively by the nine indicted Seventh Fleet officers, per Stephen Shedd's plea agreement as described in the USAO release. Individual admitted figures: Hornbeck at least $67,830; DeGuzman more than $67,000; Gorsuch more than $45,000."
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered:
+    amount: 20000000
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdca-20241105-01
+    note: Ordered against Leonard Glenn Francis, payable to the U.S. Navy, at his 2024-11-05 sentencing.
+  fines:
+    amount: 150000
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdca-20241105-01
+    note: Ordered against Francis. GDMA was separately ordered to pay a $36 million fine; each of the seven officers sentenced on misdemeanor pleas was fined $100.
+  forfeiture:
+    amount: 35000000
+    basis: adjudicated
+    source_ids:
+      - src-usao-sdca-20241105-01
+    note: Ordered against Francis.
+  whistleblower_share: null
+participants:
+  - entity_id: per-donald-hornbeck
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Captain, U.S. Navy; directed the operations of all combatant ships in the Seventh Fleet
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20220202-01
+        note: Indicted by a federal grand jury with eight other Seventh Fleet members; defendant (3) in 3:17-cr-00623-JLS.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2022-02-02
+        source_ids:
+          - src-usao-sdca-20220202-01
+        note: Bribery of a public official, 18 U.S.C. § 201(b)(2); admitted accepting at least $67,830 in things of value. Sentencing was set for 2022-09-08.
+      - track: criminal
+        status: partially_dismissed
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-03
+        note: Remaining counts of the indictment (the felony counts) dismissed on the motion of the United States, per the judgment.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-03
+        note: "Count 1 of a one-count information: 18 U.S.C. § 1905, disclosing information (misdemeanor)."
+      - track: criminal
+        status: sentenced
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-03
+        note: Time served; $100 fine; assessment waived. Judgment filed 2024-05-30 (Doc. 1327).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-enrico-deguzman
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Colonel, U.S. Marine Corps; Fleet Marine Officer, Seventh Fleet staff
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20210903-01
+        note: Indicted by a federal grand jury; defendant (2) in 3:17-cr-00623-JLS.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2021-09-03
+        source_ids:
+          - src-usao-sdca-20210903-01
+        note: Bribery of a public official, 18 U.S.C. § 201(b)(2); admitted accepting more than $67,000 in meals, drinks, entertainment and hotel stays.
+      - track: criminal
+        status: partially_dismissed
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-01
+        note: Remaining counts of the indictment (the felony counts) dismissed on the motion of the United States, per the judgment.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-01
+        note: "Count 1 of a one-count information: 18 U.S.C. § 1905, disclosing information (misdemeanor)."
+      - track: criminal
+        status: sentenced
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-01
+        note: Time served; $100 fine; assessment waived. Judgment filed 2024-05-30 (Doc. 1325).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-robert-gorsuch
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Chief Warrant Officer, U.S. Navy; Flag Administration Officer, Seventh Fleet
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20210831-01
+        note: Indicted; defendant (9) in 3:17-cr-00623-JLS.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2021-08-31
+        source_ids:
+          - src-usao-sdca-20210831-01
+        note: Bribery, 18 U.S.C. § 201; admitted receiving more than $45,000 in bribes and sending Francis classified Seventh Fleet ship schedules.
+      - track: criminal
+        status: partially_dismissed
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-02
+        note: Remaining counts of the indictment (the felony counts) dismissed on the motion of the United States, per the judgment.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-02
+        note: "Count 1 of a one-count information: 18 U.S.C. § 1905, disclosing information (misdemeanor)."
+      - track: criminal
+        status: sentenced
+        date: 2024-05-21
+        source_ids:
+          - src-govinfo-20240530-02
+        note: Time served; $100 fine; assessment waived. Judgment filed 2024-05-30 (Doc. 1326).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-david-newland
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Captain, U.S. Navy; Chief of Staff to the Commander of the Seventh Fleet
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: Indicted; defendant (1) in 3:17-cr-00623-JLS.
+      - track: criminal
+        status: convicted
+        date: 2022-06-29
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: "Jury verdict of guilty on all counts: conspiracy to commit bribery (18 U.S.C. § 371), bribery (§ 201) and conspiracy to commit honest services wire fraud (§§ 1349, 1346, 1343)."
+      - track: criminal
+        status: partially_dismissed
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-01
+        note: Remaining counts of the indictment (the felony counts on which the jury had convicted) dismissed on the motion of the United States, per the judgment.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-01
+        note: "Count 1 of a one-count information: 18 U.S.C. § 1905, disclosing information (misdemeanor)."
+      - track: criminal
+        status: sentenced
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-01
+        note: 0 months imprisonment; $100 fine. Judgment filed 2023-09-12 (Doc. 1245).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-james-dolan
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Captain, U.S. Navy; Assistant Chief of Staff for Logistics for the Seventh Fleet
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: Indicted; defendant (4) in 3:17-cr-00623-JLS.
+      - track: criminal
+        status: convicted
+        date: 2022-06-29
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: "Jury verdict of guilty on all counts: conspiracy to commit bribery, bribery and conspiracy to commit honest services wire fraud."
+      - track: criminal
+        status: partially_dismissed
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-02
+        note: Remaining counts of the indictment (the felony counts on which the jury had convicted) dismissed on the motion of the United States, per the judgment.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-02
+        note: "Count 1 of a one-count information: 18 U.S.C. § 1905, disclosing information (misdemeanor)."
+      - track: criminal
+        status: sentenced
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-02
+        note: 0 months imprisonment; $100 fine. Judgment filed 2023-09-12 (Doc. 1246).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-david-lausman
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Captain, U.S. Navy; Commanding Officer of USS Blue Ridge; Commanding Officer of USS George Washington
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: Indicted; defendant (6) in 3:17-cr-00623-JLS. Charges included an obstruction of justice count (18 U.S.C. § 1519) unique to Lausman.
+      - track: criminal
+        status: convicted
+        date: 2022-06-29
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: Jury verdict of guilty on all counts, including obstruction of justice. On 2022-07-28 the court granted Lausman's motion to compel discovery regarding a Brady/Giglio violation (Doc. 1020).
+      - track: criminal
+        status: partially_dismissed
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-03
+        note: Remaining counts of the indictment (the felony counts on which the jury had convicted) dismissed on the motion of the United States, per the judgment.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-03
+        note: "Count 1 of a one-count information: 18 U.S.C. § 1361, destruction of government property (misdemeanor)."
+      - track: criminal
+        status: sentenced
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-03
+        note: 0 months imprisonment; $100 fine. Judgment filed 2023-09-12 (Doc. 1247).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-mario-herrera
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Commander, U.S. Navy; Fleet Operations and Schedules Officer for the Seventh Fleet
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: Indicted; defendant (8) in 3:17-cr-00623-JLS.
+      - track: criminal
+        status: convicted
+        date: 2022-06-29
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: "Jury verdict of guilty on all counts: conspiracy to commit bribery, bribery and conspiracy to commit honest services wire fraud."
+      - track: criminal
+        status: partially_dismissed
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-04
+        note: Remaining counts of the indictment (the felony counts on which the jury had convicted) dismissed on the motion of the United States, per the judgment.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-04
+        note: "Count 1 of a one-count information: 18 U.S.C. § 1905, disclosing information (misdemeanor)."
+      - track: criminal
+        status: sentenced
+        date: 2023-09-06
+        source_ids:
+          - src-govinfo-20230912-04
+        note: 0 months imprisonment; $100 fine. Judgment filed 2023-09-12 (Doc. 1248).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-bruce-loveless
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+    position: Rear Admiral, U.S. Navy
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: Indicted; defendant (5) in 3:17-cr-00623-JLS; charged with conspiracy to commit bribery, bribery and conspiracy to commit honest services wire fraud.
+      - track: criminal
+        status: mistrial
+        date: 2022-06-29
+        source_ids:
+          - src-usao-sdca-20220629-01
+        note: The jury did not reach a verdict on the charges against Loveless.
+      - track: criminal
+        status: dismissed
+        date: 2022-09-15
+        source_ids:
+          - src-govinfo-20220915-01
+        note: All charges in the indictment dismissed with prejudice on the government's motion (ECF No. 1034); bond exonerated (Doc. 1035).
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-stephen-shedd
+    actor_type: official
+    roles:
+      - defendant
+      - bribe_recipient
+      - cooperating_witness
+    position: Commander, U.S. Navy; South Asia Policy and Planning Officer, Seventh Fleet
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2017-03
+        source_ids:
+          - src-usao-sdca-20220126-01
+        note: Indicted by a federal grand jury with eight other Seventh Fleet members.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2022-01-26
+        source_ids:
+          - src-usao-sdca-20220126-01
+        note: Conspiracy to commit bribery (18 U.S.C. § 371) and bribery of a public official (§ 201(b)(2)); sentencing was set for 2022-07-21. Testified for the government at the June 2022 trial.
+      - track: criminal
+        status: dismissed
+        date: 2024-05-21
+        source_ids:
+          - src-casd-20240530-01
+        note: Court granted the government's motion to dismiss the indictment with prejudice; judgment signed 2024-05-21, entered 2024-05-30.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-leonard-francis
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    position: Owner and Chief Executive Officer, Glenn Defense Marine Asia
+    status_history:
+      - track: criminal
+        status: pleaded_guilty
+        date: 2015
+        source_ids:
+          - src-usao-sdca-20241105-01
+        note: "First guilty plea, concerning bribery and fraud, per the 2024 sentencing release; the 2015 plea release itself was not fetched, so the day is not recorded. Charges: conspiracy to commit bribery (18 U.S.C. § 371), bribery (§ 201), conspiracy to defraud the United States (§ 371). Arrested in San Diego 2013-09-16."
+      - track: criminal
+        status: fugitive
+        date: 2022-09-04
+        source_ids:
+          - src-usao-sdca-20241105-01
+        note: Cut off his GPS monitor while on house arrest and fled to Mexico, Cuba and Venezuela before his September 2022 sentencing; arrested in Venezuela and returned to the U.S. 2023-12-20.
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-11-05
+        source_ids:
+          - src-usao-sdca-20241105-01
+        note: "Second plea agreement: failure to appear, 18 U.S.C. § 3146."
+      - track: criminal
+        status: sentenced
+        date: 2024-11-05
+        source_ids:
+          - src-usao-sdca-20241105-01
+        note: 180 months (164 months for bribery and fraud plus 16 months for failure to appear, consecutive); $20 million restitution to the Navy; $150,000 fine; $35 million forfeiture. Case numbers 13-CR-3781, 3782 and 4287.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-glenn-defense-marine-asia
+    actor_type: contractor
+    roles:
+      - defendant
+      - briber
+    status_history:
+      - track: criminal
+        status: sentenced
+        date: 2024-11-05
+        source_ids:
+          - src-usao-sdca-20241105-01
+        note: The GDMA corporation was sentenced to five years of probation and ordered to pay a $36 million fine. The corporation's charging and plea dates are not on the fetched pages.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: org-navy
+    actor_type: official
+    roles:
+      - victim_agency
+    status_history: []
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships: []
+government_sources:
+  - src-usao-sdca-20210831-01
+  - src-usao-sdca-20210903-01
+  - src-usao-sdca-20220126-01
+  - src-usao-sdca-20220202-01
+  - src-usao-sdca-20220629-01
+  - src-usao-sdca-20241105-01
+  - src-govinfo-20220728-01
+  - src-govinfo-20220915-01
+  - src-govinfo-20230912-01
+  - src-govinfo-20230912-02
+  - src-govinfo-20230912-03
+  - src-govinfo-20230912-04
+  - src-govinfo-20240530-01
+  - src-govinfo-20240530-02
+  - src-govinfo-20240530-03
+  - src-casd-20240530-01
+news_sources: []
+tags:
+  - fat-leonard
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

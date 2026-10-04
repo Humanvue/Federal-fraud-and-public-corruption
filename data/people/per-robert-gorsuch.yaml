@@ -1,0 +1,7 @@
+id: per-robert-gorsuch
+name: "Robert Gorsuch"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Chief Warrant Officer, U.S. Navy; Flag Administration Officer, Seventh Fleet", org_id: org-seventh-fleet, start: 2005-01, end: 2008-03, source_ids: ["src-usao-sdca-20210831-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

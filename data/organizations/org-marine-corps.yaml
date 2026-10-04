@@ -1,0 +1,6 @@
+id: org-marine-corps
+name: "U.S. Marine Corps"
+org_type: agency
+parent_org_id: org-dod
+uei: null
+wikidata_qid: null

@@ -1,0 +1,175 @@
+id: evt-2016-brown-one-door-charity
+title: U.S. representative sentenced to time served on a tax-obstruction plea after charity-fraud convictions were vacated on appeal
+categories:
+  - embezzlement_theft
+  - false_statements_obstruction
+agencies:
+  - org-house
+investigating_agencies:
+  - org-fbi
+  - org-irs-ci
+prosecuting_office: org-usao-mdfl
+court_cases:
+  - court: M.D. Fla.
+    docket: 3:16-cr-00093-TJC-JRK
+    courtlistener_id: null
+    source_ids:
+      - src-ca11-20210506-01
+  - court: 11th Cir.
+    docket: 17-15470
+    courtlistener_id: null
+    source_ids:
+      - src-ca11-20210506-01
+jurisdiction_note: Prosecuted jointly by the Criminal Division's Public Integrity Section and the U.S. Attorney's Office for the Middle District of Florida. Carla Wiley pleaded guilty on March 3, 2016, before the July 2016 indictment of Brown and Simmons; that plea is treated as the first public action.
+summary: |
+  According to the indictment returned on July 8, 2016, U.S. Representative Corrine Brown and her chief of staff, Elias "Ronnie" Simmons, solicited more than $800,000 in donations between late 2012 and early 2016 to One Door for Education – Amy Anderson Scholarship Fund, whose president was Carla Wiley, by representing that the money would fund scholarships and school computer drives, while using most of it for personal and professional benefit; the indictment states that One Door was associated with only two scholarships totaling $1,200. Simmons was also charged with diverting over $80,000 of a relative's U.S. House salary. At the December 2017 sentencing the court ordered Brown and Wiley to forfeit $654,292.39 and Simmons to forfeit $727,964.90, total restitution of $452,515.87 to fraud victims, $62,650.99 from Brown to the IRS and $91,621.38 from Simmons to the U.S. House of Representatives. After the Eleventh Circuit, sitting en banc, vacated Brown's convictions and sentence in May 2021 and remanded for a new trial, Brown entered a 2022 plea agreement stating that between 2009 and 2015 she caused tax returns to be filed that omitted income from cash deposits and over-reported charitable giving; the court ordered $62,650.99 in restitution to the IRS.
+dates:
+  conduct_start: 2012
+  conduct_end: 2016
+  first_public_action: 2016-03-03
+money:
+  loss_to_government:
+    amount: 80000
+    basis: admitted
+    kind: actual
+    source_ids:
+      - src-doj-opa-20171204-01
+    note: Simmons admitted diverting over $80,000 of a relative's U.S. House salary; restitution of $91,621.38 to the House was ordered. One Door donations were private funds and are not counted here.
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered:
+    amount: 452516
+    basis: adjudicated
+    source_ids:
+      - src-doj-opa-20171204-01
+      - src-usao-mdfl-20220519-01
+    note: $452,515.87 total restitution to fraud victims ordered 2017-12-04 against all three defendants (vacated as to Brown on 2021-05-06); plus $62,650.99 from Brown to the IRS (ordered in 2017 and again on the 2022 plea) and $91,621.38 from Simmons to the U.S. House
+  fines: null
+  forfeiture:
+    amount: 654292
+    basis: adjudicated
+    source_ids:
+      - src-doj-opa-20171204-01
+    note: $654,292.39 ordered against Brown and Wiley; $727,964.90 against Simmons (2017-12-04); the order against Brown was vacated with her convictions on 2021-05-06
+  whistleblower_share: null
+participants:
+  - entity_id: per-corrine-brown
+    actor_type: official
+    roles:
+      - defendant
+      - co_conspirator
+    position: U.S. Representative (Florida)
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2016-07-08
+        source_ids:
+          - src-doj-opa-20160708-01
+        note: 24-count indictment with Simmons
+      - track: criminal
+        status: convicted
+        date: 2017-05-11
+        source_ids:
+          - src-doj-opa-20171204-01
+        note: Jury verdict on 18 counts
+      - track: criminal
+        status: sentenced
+        date: 2017-12-04
+        source_ids:
+          - src-doj-opa-20171204-01
+        note: 60 months' imprisonment; forfeiture of $654,292.39 (with Wiley); restitution of $452,515.87 to victims and $62,650.99 to the IRS
+      - track: criminal
+        status: overturned
+        date: 2021-05-06
+        source_ids:
+          - src-ca11-20210506-01
+        note: Eleventh Circuit en banc vacated the convictions and sentence and remanded for a new trial (removal of a deliberating juror; Sixth Amendment)
+      - track: criminal
+        status: pleaded_guilty
+        date: 2022-05-19
+        source_ids:
+          - src-usao-mdfl-20220519-01
+        note: One count of corruptly obstructing the administration of the internal revenue laws
+      - track: criminal
+        status: sentenced
+        date: 2022-05-19
+        source_ids:
+          - src-usao-mdfl-20220519-01
+        note: Time served (two years, eight months, nine days); $62,650.99 restitution to the IRS
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-elias-simmons
+    actor_type: official
+    roles:
+      - defendant
+      - co_conspirator
+    position: Chief of Staff to Representative Corrine Brown
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2016-07-08
+        source_ids:
+          - src-doj-opa-20160708-01
+      - track: criminal
+        status: sentenced
+        date: 2017-12-04
+        source_ids:
+          - src-doj-opa-20171204-01
+        note: 48 months' imprisonment; forfeiture of $727,964.90; restitution of $452,515.87 to victims and $91,621.38 to the U.S. House. The sentencing release says Simmons previously pleaded guilty but prints the date as Feb. 8, 2016, which predates the indictment; the plea entry is omitted pending a docket check.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+  - entity_id: per-carla-wiley
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    position: President, One Door for Education – Amy Anderson Scholarship Fund
+    status_history:
+      - track: criminal
+        status: pleaded_guilty
+        date: 2016-03-03
+        source_ids:
+          - src-doj-opa-20160708-01
+          - src-doj-opa-20171204-01
+        note: Charging date not on a fetched page
+      - track: criminal
+        status: sentenced
+        date: 2017-12-04
+        source_ids:
+          - src-doj-opa-20171204-01
+        note: 21 months' imprisonment; forfeiture of $654,292.39 (with Brown); restitution of $452,515.87 to victims
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships:
+  - from: per-elias-simmons
+    to: per-corrine-brown
+    type: co_conspirator_with
+    source_ids:
+      - src-doj-opa-20160708-01
+  - from: per-carla-wiley
+    to: per-corrine-brown
+    type: co_conspirator_with
+    source_ids:
+      - src-doj-opa-20171204-01
+government_sources:
+  - src-doj-opa-20160708-01
+  - src-doj-opa-20171204-01
+  - src-ca11-20210506-01
+  - src-usao-mdfl-20220519-01
+news_sources: []
+tags:
+  - member-of-congress
+  - overturned-on-appeal
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

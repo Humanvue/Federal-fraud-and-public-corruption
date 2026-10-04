@@ -1,0 +1,7 @@
+id: per-james-dolan
+name: "James Dolan"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Captain, U.S. Navy; Assistant Chief of Staff for Logistics for the Seventh Fleet", org_id: org-seventh-fleet, start: null, end: null, source_ids: ["src-usao-sdca-20220629-01"] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

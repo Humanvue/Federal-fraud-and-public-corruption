@@ -92,8 +92,6 @@ Drafting agents follow `drafts/DRAFTING-GUIDE.md`; their open items are in `draf
 
 ## Phase status
 - Phase 0 (foundation): complete.
-- Phase 1: pages, citations, review tooling done. 21 of 29 owner-approved cases promoted to `data/`
-  (2026-10-03). The other 8 (Brown, Seventh Fleet, Mnuchin, Schweikert, Fortenberry, Zinke, Santos,
-  Cherfilus-McCormick) are approved and waiting in `drafts/` only on 9 Wayback archives the owner is
-  saving by hand (`drafts/ARCHIVE-BY-HAND.md`); then `npm run rearchive -- drafts --skip-host
-  www.courtlistener.com` and `npm run promote -- --reviewer "Humanvue" --all`.
+- Phase 1 (seed data and core pages): complete 2026-10-03. All 29 owner-approved cases in `data/`,
+  reviewed by Humanvue; statuses checked against court dockets.
+- Next: Phase 2 (Explore table, filters, shareable URLs, Pagefind search, downloads).

@@ -1,0 +1,7 @@
+id: per-ryan-zinke
+name: "Ryan Zinke"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "Secretary of the Interior", org_id: org-interior, start: 2017-03-01, end: 2019-01-02, source_ids: [src-doi-oig-20220216-02, src-doi-oig-20220824-02] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

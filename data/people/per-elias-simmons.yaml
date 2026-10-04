@@ -1,0 +1,7 @@
+id: per-elias-simmons
+name: "Elias Simmons"
+aliases: ["Elias \"Ronnie\" Simmons", "Ronnie Simmons"]
+wikidata_qid: null
+positions:
+  - { title: "Chief of Staff to Representative Corrine Brown, U.S. House of Representatives", org_id: org-house, start: null, end: null, source_ids: [src-doj-opa-20160708-01] }
+party_affiliation: { value: null, basis: null, source_ids: [] }

@@ -1,0 +1,15 @@
+id: src-govinfo-20200731-01
+source_type: government
+publisher: U.S. Government Publishing Office (govinfo)
+publisher_org_id: null
+outlet_id: null
+authors: []
+title: "H.Res. 1074 (116th Congress): In the matter of Representative David Schweikert - bill status"
+date_published: 2020-07-31
+url: https://www.govinfo.gov/bulkdata/BILLSTATUS/116/hres/BILLSTATUS-116hres1074.xml
+archive_url: https://web.archive.org/web/20261003234229/https://www.govinfo.gov/bulkdata/BILLSTATUS/116/hres/BILLSTATUS-116hres1074.xml
+archive_status: ok
+text_file: sources/text/src-govinfo-20200731-01.md
+accessed: 2026-10-03
+report_number: null
+link_status: ok

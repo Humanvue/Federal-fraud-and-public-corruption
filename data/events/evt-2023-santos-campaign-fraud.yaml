@@ -1,0 +1,154 @@
+id: evt-2023-santos-campaign-fraud
+title: U.S. representative sentenced to 87 months for wire fraud and aggravated identity theft; sentence later commuted
+categories:
+  - embezzlement_theft
+  - false_statements_obstruction
+agencies:
+  - org-house
+investigating_agencies:
+  - org-fbi
+  - org-irs-ci
+prosecuting_office: org-usao-edny
+court_cases:
+  - court: E.D.N.Y.
+    docket: 2:23-cr-00197
+    courtlistener_id: 67358432
+    source_ids:
+      - src-usao-edny-20230510-01
+      - src-usao-edny-20240819-01
+      - src-nyed-20231005-02
+      - src-nyed-20250528-01
+jurisdiction_note: Prosecuted by the U.S. Attorney's Office for the Eastern District of New York with the Criminal Division's Public Integrity Section; the Nassau County District Attorney and the Department of Labor Office of Inspector General assisted. The House expulsion reported in news is not on a fetched government page and is omitted.
+summary: |
+  According to the indictment unsealed on May 10, 2023, George Santos, U.S. Representative for New York's Third Congressional District, operated a company through which two donors each transferred $25,000 in the belief that the money would support his campaign; the funds were moved to his personal accounts and spent on personal expenses. The indictment also alleged that from June 2020 to April 2021 Santos received more than $24,000 in unemployment insurance benefits while employed, and that he filed false financial disclosure statements with the House. The plea agreement states that during the 2022 election cycle Santos and his campaign treasurer, Nancy Marks, reported to the Federal Election Commission contributions from family members that were never made and a $500,000 loan from Santos when he had less than $8,000, in order to qualify for a national party committee program that required $250,000 raised in a single quarter. The House Committee on Ethics stated on November 16, 2023 that its investigative subcommittee found substantial evidence of false FEC reports, personal use of campaign funds and Ethics in Government Act violations, and referred the matter to the Department of Justice. The court ordered restitution of $373,749.97 and forfeiture of $205,002.97.
+dates:
+  conduct_start: 2020-06
+  conduct_end: 2022-10
+  first_public_action: 2023-05-10
+money:
+  loss_to_government:
+    amount: 24000
+    basis: admitted
+    kind: actual
+    source_ids:
+      - src-usao-edny-20240819-01
+    note: More than $24,000 in unemployment insurance benefits obtained while employed (stipulated in the plea agreement)
+  bribe_or_kickback: null
+  contract_value_involved: null
+  settlement_amount: null
+  restitution_ordered:
+    amount: 373750
+    basis: adjudicated
+    source_ids:
+      - src-usao-edny-20250425-01
+      - src-pardon-attorney-20260909-01
+    note: $373,749.97
+  fines: null
+  forfeiture:
+    amount: 205003
+    basis: adjudicated
+    source_ids:
+      - src-usao-edny-20250425-01
+    note: $205,002.97
+  whistleblower_share: null
+participants:
+  - entity_id: per-george-santos
+    actor_type: official
+    roles:
+      - defendant
+    position: U.S. Representative, Third Congressional District of New York
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-05-10
+        source_ids:
+          - src-usao-edny-20230510-01
+        note: 13-count indictment unsealed; a superseding indictment followed in October 2023
+      - track: administrative
+        status: finding_issued
+        date: 2023-11-16
+        source_ids:
+          - src-house-ethics-20231116-01
+        note: House Committee on Ethics adopted its Investigative Subcommittee report finding substantial evidence of violations and referred the matter to the Department of Justice
+      - track: criminal
+        status: pleaded_guilty
+        date: 2024-08-19
+        source_ids:
+          - src-usao-edny-20240819-01
+        note: Wire fraud and aggravated identity theft
+      - track: criminal
+        status: sentenced
+        date: 2025-04-25
+        source_ids:
+          - src-usao-edny-20250425-01
+          - src-pardon-attorney-20260909-01
+        note: 87 months' imprisonment; two years' supervised release; $373,749.97 restitution; $205,002.97 forfeiture
+    administrative_actions: []
+    clemency:
+      - type: commutation
+        date: 2025-10-17
+        granted_by: President Donald J. Trump
+        source_ids:
+          - src-pardon-attorney-20260909-01
+        note: Listed as George Anthony Devolder Santos under the October 17, 2025 heading
+    status_verified: 2026-10-03
+  - entity_id: per-nancy-marks
+    actor_type: private
+    roles:
+      - defendant
+      - co_conspirator
+    position: Treasurer, Devolder-Santos for Congress
+    status_history:
+      - track: criminal
+        status: charged
+        date: 2023-10-05
+        source_ids:
+          - src-nyed-20231005-02
+        note: Information filed as to Marks as defendant 2 in E.D.N.Y. No. 2:23-cr-00197 (Doc. 42)
+      - track: criminal
+        status: pleaded_guilty
+        date: 2023-10-05
+        source_ids:
+          - src-nyed-20231005-01
+          - src-usao-edny-20240819-01
+          - src-usao-edny-20250425-01
+        note: Guilty plea to count 1 at a combined arraignment and plea hearing (Doc. 43)
+      - track: criminal
+        status: sentenced
+        date: 2025-05-28
+        source_ids:
+          - src-nyed-20250528-01
+        note: Three years of probation; $178,402.97 restitution; $100 special assessment (Doc. 130). Judgment entered 2025-05-29.
+    administrative_actions: []
+    clemency: []
+    status_verified: 2026-10-03
+contracts: []
+qui_tam: false
+related_events: []
+relationships:
+  - from: per-nancy-marks
+    to: per-george-santos
+    type: co_conspirator_with
+    source_ids:
+      - src-usao-edny-20240819-01
+government_sources:
+  - src-usao-edny-20230510-01
+  - src-house-ethics-20231116-01
+  - src-usao-edny-20240819-01
+  - src-usao-edny-20250425-01
+  - src-pardon-attorney-20260909-01
+  - src-nyed-20231005-01
+  - src-nyed-20231005-02
+  - src-nyed-20250528-01
+news_sources: []
+tags:
+  - member-of-congress
+  - clemency
+  - campaign-funds
+  - house-ethics
+review:
+  reviewed_by: Humanvue
+  reviewed_at: 2026-10-04
+  ai_assisted: true
+  summary_stale: false
+last_updated: 2026-10-04

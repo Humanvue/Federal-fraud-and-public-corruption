@@ -1,0 +1,7 @@
+id: per-corrine-brown
+name: "Corrine Brown"
+aliases: []
+wikidata_qid: null
+positions:
+  - { title: "U.S. Representative (Florida)", org_id: org-house, start: null, end: null, source_ids: [src-doj-opa-20160708-01, src-doj-opa-20171204-01] }
+party_affiliation: { value: "Democratic", basis: elected, source_ids: [src-govinfo-20160212-01] }
