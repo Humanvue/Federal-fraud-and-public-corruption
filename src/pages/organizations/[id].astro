@@ -16,7 +16,7 @@ const own = eventsForEntity(org.id);
 const rolled = subs.flatMap((s) => eventsForEntity(s.id)).filter((e) => !own.includes(e));
 const events = [...own, ...rolled];
 ---
-<Base title={org.name}>
+<Base title={org.name} searchType="Organization">
   <p class="small muted">{ORG_TYPE[org.org_type]}{org.uei ? ` · UEI ${org.uei}` : ""}</p>
   <h1>{org.name}</h1>
   {org.parent_org_id && <p>Part of <a href={entityHref(org.parent_org_id)}>{entityName(org.parent_org_id)}</a>.</p>}

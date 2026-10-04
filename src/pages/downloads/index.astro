@@ -1,0 +1,37 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getData } from "../../lib/data";
+import { TABLES } from "../../lib/export";
+const d = getData();
+const counts = { events: d.events.length, people: d.people.length, organizations: d.organizations.length, sources: d.sources.length };
+---
+<Base title="Download the data" description="Every case, person, organization, status entry, dollar figure, and source as CSV and JSON, licensed CC BY 4.0.">
+  <h1>Download the data</h1>
+  <p class="summary">All of the data behind this site is free to download and reuse under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license. Please credit "Federal Fraud and Public Corruption Tracker". Government and court documents are in the public domain. The files are rebuilt every time the site is updated.</p>
+  <p>The current files cover {counts.events} cases, {counts.people} people, {counts.organizations} organizations, and {counts.sources} sources.</p>
+
+  <h2>Complete dataset</h2>
+  <ul>
+    <li><a href="/downloads/dataset.json" download>dataset.json</a>: every record exactly as stored, plus a <code>derived</code> block for each case with its computed case status, resolution date, and each participant's current status.</li>
+  </ul>
+
+  <h2>Tables (CSV)</h2>
+  <div class="table-wrap">
+    <table>
+      <caption>CSV files. Lists inside a cell are separated by semicolons. Dates may be a year, a month, or a full date, as precise as the source.</caption>
+      <thead><tr><th scope="col">File</th><th scope="col">Contents</th></tr></thead>
+      <tbody>
+        {Object.entries(TABLES).map(([file, t]) => (
+          <tr><td><a href={`/downloads/${file}`} download>{file}</a></td><td>{t.description}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Reading the data correctly</h2>
+  <ul>
+    <li>Status belongs to each person or organization, not to the case. A case is "resolved" only when everyone in it is.</li>
+    <li>Every dollar figure has a basis: <strong>alleged</strong> (from a charging document), <strong>admitted</strong>, <strong>adjudicated</strong>, or <strong>estimated</strong>. Do not add alleged amounts to totals, and do not add different measures together.</li>
+    <li>Inclusion is not a finding of guilt. See <a href="/about/">status definitions and the disclaimer</a>.</li>
+  </ul>
+</Base>

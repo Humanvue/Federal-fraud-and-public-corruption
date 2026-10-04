@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
-interface Props { title: string; description?: string }
-const { title, description = "A fact-first record of public corruption cases involving federal officials, built from cited and archived government sources." } = Astro.props;
+interface Props { title: string; description?: string; searchType?: "Case" | "Person" | "Organization" | "Source" }
+const { title, searchType, description = "A fact-first record of public corruption cases involving federal officials, built from cited and archived government sources." } = Astro.props;
 const site = "Federal Fraud and Public Corruption Tracker";
 ---
 <!doctype html>
@@ -18,12 +18,14 @@ const site = "Federal Fraud and Public Corruption Tracker";
       <div class="inner">
         <a class="brand" href="/">{site}</a>
         <nav aria-label="Primary">
-          <a href="/cases/">Cases</a>
-          <a href="/about/">About and disclaimer</a>
+          <a href="/explore/">Explore</a>
+          <a href="/search/">Search</a>
+          <a href="/downloads/">Data</a>
+          <a href="/about/">About</a>
         </nav>
       </div>
     </header>
-    <main id="main">
+    <main id="main" data-pagefind-body={searchType ? "" : undefined} data-pagefind-filter={searchType ? `type:${searchType}` : undefined}>
       <slot />
     </main>
     <footer class="site">

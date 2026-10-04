@@ -1,0 +1,19 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="Search" description="Search every case, person, organization, and stored government document.">
+  <h1>Search</h1>
+  <p>Search covers every case, person, organization, and the full text of every stored government and court document. Use the filters to limit results to one type.</p>
+  <div id="search" class="search-box"></div>
+  <noscript><p>Search needs JavaScript. You can still browse every case on the <a href="/explore/">Explore</a> page.</p></noscript>
+  <p id="search-missing" class="notice" hidden>The search index is created when the site is built for publishing, so it is not available in the development preview. Run <code>npm run build</code> then <code>npm run preview</code> to try it locally.</p>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    if (window.PagefindUI) {
+      new window.PagefindUI({ element: "#search", showSubResults: true, showImages: false, resetStyles: false });
+    } else {
+      document.getElementById("search-missing").hidden = false;
+    }
+  </script>
+</Base>

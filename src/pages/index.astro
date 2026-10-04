@@ -14,15 +14,16 @@ for (const e of data.events) byStatus[eventStatus(e)] += 1;
     <table>
       <caption>Records in the database</caption>
       <tbody>
-        <tr><th scope="row">Cases</th><td><a href="/cases/">{data.events.length}</a></td></tr>
-        <tr><th scope="row">Cases pending</th><td>{byStatus.pending}</td></tr>
-        <tr><th scope="row">Cases partially resolved</th><td>{byStatus.partially_resolved}</td></tr>
-        <tr><th scope="row">Cases resolved</th><td>{byStatus.resolved}</td></tr>
+        <tr><th scope="row">Cases</th><td><a href="/explore/">{data.events.length}</a></td></tr>
+        <tr><th scope="row">Cases pending</th><td><a href="/explore/?status=pending">{byStatus.pending}</a></td></tr>
+        <tr><th scope="row">Cases partially resolved</th><td><a href="/explore/?status=partially_resolved">{byStatus.partially_resolved}</a></td></tr>
+        <tr><th scope="row">Cases resolved</th><td><a href="/explore/?status=resolved">{byStatus.resolved}</a></td></tr>
         <tr><th scope="row">People</th><td>{data.people.length}</td></tr>
         <tr><th scope="row">Organizations and agencies</th><td>{data.organizations.length}</td></tr>
         <tr><th scope="row">Government sources</th><td>{data.sources.length}</td></tr>
       </tbody>
     </table>
   </div>
+  <p><a href="/explore/">Explore all cases</a> · <a href="/explore/?cat=hatch_act">Hatch Act findings</a> · <a href="/search/">Search</a> · <a href="/downloads/">Download the data</a></p>
   <p class="notice">Counts reflect official actions, not the total amount of corruption. Changes over time can reflect enforcement priorities, staffing, and policy, not only changes in misconduct. Recent years are incomplete: cases are often charged years after the conduct.</p>
 </Base>
