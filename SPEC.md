@@ -56,6 +56,7 @@ The event's actor mix is derived from its participants at build time (`officials
 - Allegations with no official trigger
 - Campaign-finance matters handled only by the FEC (revisit in v2)
 - IG audit findings about improper payments, waste, or program management (not misconduct)
+- Routine theft of mail by postal employees or contract carriers, and workers' compensation or disability-benefit fraud by federal employees, unless bribery or misuse of an official position is also involved (owner decision, 2026-10-04): these are theft as an employee or as a beneficiary, not misuse of an office, and their volume would dominate counts
 
 ### Inclusion triggers (at least one required)
 - Federal indictment, information, criminal complaint, plea, or conviction

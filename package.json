@@ -21,7 +21,8 @@
     "queue:discover": "tsx scripts/queue/discover-feeds.ts",
     "queue": "tsx scripts/queue/run.ts",
     "queue:list": "tsx scripts/queue/list.ts",
-    "queue:set": "tsx scripts/queue/set.ts"
+    "queue:set": "tsx scripts/queue/set.ts",
+    "queue:peek": "tsx scripts/queue/peek.ts"
   },
   "keywords": [],
   "author": "",
