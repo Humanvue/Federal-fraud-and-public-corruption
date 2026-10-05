@@ -1,6 +1,23 @@
 # Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
 # Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
 candidates:
+  - id: q-216d3f9948
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ndga/pr/former-sba-and-irs-employee-sentenced-federal-prison-taking-bribes-35-million-covid
+    title: Former SBA and IRS Employee Sentenced to Federal Prison for Taking Bribes in $3.5 Million COVID Fraud Scheme
+    date: 2026-09-03
+    feed: usao-ndga
+    tags:
+      - bribery
+      - fraud
+      - agency_named
+      - excluded:pandemic
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-04
+    state: open
+    note: null
   - id: q-f54deb651c
     kind: new_case
     source: doj
@@ -286,23 +303,6 @@ candidates:
     first_seen: 2026-10-04
     state: rejected
     note: "Out of scope for v1 by owner policy 2026-10-04: routine mail theft by postal employees."
-  - id: q-216d3f9948
-    kind: new_case
-    source: doj
-    url: https://www.justice.gov/usao-ndga/pr/former-sba-and-irs-employee-sentenced-federal-prison-taking-bribes-35-million-covid
-    title: Former SBA and IRS Employee Sentenced to Federal Prison for Taking Bribes in $3.5 Million COVID Fraud Scheme
-    date: 2026-09-03
-    feed: usao-ndga
-    tags:
-      - bribery
-      - fraud
-      - agency_named
-      - excluded:pandemic
-    event_id: null
-    entity_id: null
-    first_seen: 2026-10-04
-    state: open
-    note: null
   - id: q-a3bb70c878
     kind: new_case
     source: doj
