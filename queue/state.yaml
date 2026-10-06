@@ -1,43 +1,43 @@
 # Bookkeeping for the queue job: last docket entry seen per watched docket.
-last_run: 2026-10-05T19:41:34.459Z
+last_run: 2026-10-06T17:05:25.411Z
 dockets:
   ilnd:1:21-cr-00086:
     last_entry: 2026-10-03
-    checked: 2026-10-05
+    checked: 2026-10-06
   nysd:1:23-cr-00490:
     last_entry: 2026-10-03
-    checked: 2026-10-05
+    checked: 2026-10-06
   ca2:25-296:
     last_entry: 2026-10-03
-    checked: 2026-10-05
+    checked: 2026-10-06
   nyed:2:23-cr-00197:
     last_entry: 2026-10-03
-    checked: 2026-10-05
+    checked: 2026-10-06
   dcd:1:24-cr-00265:
     last_entry: 2026-10-03
-    checked: 2026-10-05
+    checked: 2026-10-06
   cadc:25-3104:
     last_entry: 2026-10-03
-    checked: 2026-10-05
+    checked: 2026-10-06
   flsd:1:25-cr-20500:
     last_entry: 2026-10-03
-    checked: 2026-10-05
+    checked: 2026-10-06
   dcd:1:26-mj-00032:
     last_entry: 2026-10-03
-    checked: 2026-10-05
+    checked: 2026-10-06
   mdd:8:25-cr-00397:
     last_entry: 2026-10-04
-    checked: 2026-10-05
+    checked: 2026-10-06
   mdd:8:24-cr-00370:
     last_entry: 2026-10-04
-    checked: 2026-10-05
+    checked: 2026-10-06
   mdd:8:25-cr-00094:
     last_entry: 2026-10-04
-    checked: 2026-10-05
+    checked: 2026-10-06
   mdd:8:25-cr-00217:
     last_entry: 2026-10-04
-    checked: 2026-10-05
+    checked: 2026-10-06
   txnd:3:26-cr-00661:
-    last_entry: 2026-10-04
-    checked: 2026-10-05
+    last_entry: 2026-10-05
+    checked: 2026-10-06
 pardon_pages: {}

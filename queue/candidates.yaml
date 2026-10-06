@@ -1,6 +1,20 @@
 # Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
 # Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
 candidates:
+  - id: q-4e29e17300
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/74845742/13/united-states-v-ganiyu/
+    title: "New docket entry #13 filed 2026-10-05 in txnd 3:26-cr-00661"
+    date: 2026-10-05
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2026-uscis-officer-gratuities-immigration-approvals
+    entity_id: null
+    first_seen: 2026-10-06
+    state: open
+    note: null
   - id: q-216d3f9948
     kind: new_case
     source: doj
