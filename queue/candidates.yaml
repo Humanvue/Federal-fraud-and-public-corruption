@@ -15,6 +15,20 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-4bf3dc6afb
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/opa/pr/former-td-bank-employee-pleads-guilty-accepting-bribes-laundering-48-million-colombia
+    title: Former TD Bank Employee Pleads Guilty to Accepting Bribes, Laundering $4.8 Million to Colombia
+    date: 2026-10-06
+    feed: doj-opa
+    tags:
+      - bribery
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-07
+    state: open
+    note: null
   - id: q-216d3f9948
     kind: new_case
     source: doj
