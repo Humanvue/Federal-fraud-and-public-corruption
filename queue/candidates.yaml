@@ -1,6 +1,20 @@
 # Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
 # Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
 candidates:
+  - id: q-bbbebb7eea
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/71655817/01208896052/united-states-v-robert-burke/
+    title: "New docket entry #1208896052 filed 2026-10-08 in cadc 25-3104"
+    date: 2026-10-08
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2024-burke-next-jump-bribery
+    entity_id: null
+    first_seen: 2026-10-08
+    state: open
+    note: null
   - id: q-4e29e17300
     kind: status_update
     source: courtlistener
