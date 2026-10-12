@@ -29,6 +29,21 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-2b1511fd4c
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/opa/pr/homeland-security-task-force-arrests-alvaro-pulido-vargas-face-charges-multibillion-dollar
+    title: Homeland Security Task Force Arrests Alvaro Pulido Vargas to Face Charges in Multibillion-Dollar Venezuelan Money Laundering and Bribery Schemes
+    date: 2026-10-11
+    feed: doj-opa
+    tags:
+      - bribery
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-12
+    state: open
+    note: null
   - id: q-4bf3dc6afb
     kind: new_case
     source: doj
