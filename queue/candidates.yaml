@@ -1,6 +1,48 @@
 # Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
 # Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
 candidates:
+  - id: q-718050e3fa
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/74845758/15/united-states-v-ganiyu/
+    title: "New docket entry #15 filed 2026-10-13 in txnd 3:26-cr-00661"
+    date: 2026-10-13
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2026-uscis-officer-gratuities-immigration-approvals
+    entity_id: null
+    first_seen: 2026-10-13
+    state: open
+    note: null
+  - id: q-c1fef89766
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/72292165/19/united-states-v-cordero/
+    title: "New docket entry #19 filed 2026-10-13 in dcd 1:26-mj-00032"
+    date: 2026-10-13
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2026-cordero-visa-bribery
+    entity_id: null
+    first_seen: 2026-10-13
+    state: open
+    note: null
+  - id: q-dd38bd3aab
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/74845758/14/united-states-v-ganiyu/
+    title: "New docket entry #14 filed 2026-10-13 in txnd 3:26-cr-00661"
+    date: 2026-10-13
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2026-uscis-officer-gratuities-immigration-approvals
+    entity_id: null
+    first_seen: 2026-10-13
+    state: open
+    note: null
   - id: q-bbbebb7eea
     kind: status_update
     source: courtlistener
