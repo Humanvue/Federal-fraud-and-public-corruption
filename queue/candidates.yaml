@@ -43,6 +43,20 @@ candidates:
     first_seen: 2026-10-13
     state: open
     note: null
+  - id: q-e0a3dac762
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/71941035/89/united-states-v-cherfilus-mccormick/
+    title: "New docket entry #89 filed 2026-10-13 in flsd 1:25-cr-20500"
+    date: 2026-10-13
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2025-cherfilus-mccormick-fema-funds
+    entity_id: null
+    first_seen: 2026-10-14
+    state: open
+    note: null
   - id: q-bbbebb7eea
     kind: status_update
     source: courtlistener
@@ -69,6 +83,21 @@ candidates:
     event_id: evt-2026-uscis-officer-gratuities-immigration-approvals
     entity_id: null
     first_seen: 2026-10-06
+    state: open
+    note: null
+  - id: q-440e0b7721
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edny/pr/bureau-prisons-correctional-officer-indicted-bribery
+    title: Bureau of Prisons Correctional Officer Indicted for Bribery
+    date: 2026-10-14
+    feed: usao-edny
+    tags:
+      - bribery
+      - prison
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-14
     state: open
     note: null
   - id: q-2b1511fd4c
