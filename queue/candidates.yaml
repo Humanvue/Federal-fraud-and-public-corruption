@@ -1,6 +1,20 @@
 # Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
 # Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
 candidates:
+  - id: q-6e68f7ab6e
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/71941035/
+    title: New docket entry filed 2026-10-14 in flsd 1:25-cr-20500
+    date: 2026-10-14
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2025-cherfilus-mccormick-fema-funds
+    entity_id: null
+    first_seen: 2026-10-15
+    state: open
+    note: null
   - id: q-718050e3fa
     kind: status_update
     source: courtlistener
@@ -98,6 +112,21 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-10-14
+    state: open
+    note: null
+  - id: q-78304e65fb
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edpa/pr/jalen-smith-leader-bribery-and-point-shaving-scheme-fix-ncaa-mens-basketball-games
+    title: Jalen Smith, a Leader of Bribery and Point-Shaving Scheme to Fix NCAA Men’s Basketball Games, Sentenced to Six Years in Prison
+    date: 2026-10-13
+    feed: usao-edpa
+    tags:
+      - bribery
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-15
     state: open
     note: null
   - id: q-2b1511fd4c
