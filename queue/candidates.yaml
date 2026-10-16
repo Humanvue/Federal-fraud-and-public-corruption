@@ -1,6 +1,20 @@
 # Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
 # Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
 candidates:
+  - id: q-d739419741
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/71941035/
+    title: New docket entry filed 2026-10-16 in flsd 1:25-cr-20500
+    date: 2026-10-16
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2025-cherfilus-mccormick-fema-funds
+    entity_id: null
+    first_seen: 2026-10-16
+    state: open
+    note: null
   - id: q-6e68f7ab6e
     kind: status_update
     source: courtlistener
@@ -97,6 +111,55 @@ candidates:
     event_id: evt-2026-uscis-officer-gratuities-immigration-approvals
     entity_id: null
     first_seen: 2026-10-06
+    state: open
+    note: null
+  - id: q-c3af6daa14
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-or/pr/federal-prosecutors-uncover-over-25-million-tax-fraud-additional-cases-move-forward
+    title: Federal Prosecutors Uncover Over $1.5 Million in Tax Fraud as Additional Cases Move Forward
+    date: 2026-10-15
+    feed: usao-or
+    tags:
+      - fraud
+      - federal_employee
+      - official_is_subject
+      - excluded:tax
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-16
+    state: open
+    note: null
+  - id: q-e1cc437bde
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edpa/pr/high-stakes-sports-gambler-pleads-guilty-connection-cbancaa-bribery-and-game-fixing
+    title: High-Stakes Sports Gambler Pleads Guilty in Connection With CBA/NCAA Bribery and Game-Fixing Scheme, NBA Betting and Money Laundering Conspiracy
+    date: 2026-10-15
+    feed: usao-edpa
+    tags:
+      - bribery
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-16
+    state: open
+    note: null
+  - id: q-fb27a3a95b
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edmi/pr/former-postal-employee-sentenced-20-months-prison-fraud-connection-unemployment
+    title: Former Postal Employee Sentenced to 20 Months in Prison for Fraud in Connection with Unemployment Insurance Benefits
+    date: 2026-10-15
+    feed: usao-edmi
+    tags:
+      - fraud
+      - postal
+      - official_is_subject
+      - excluded:pandemic
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-16
     state: open
     note: null
   - id: q-440e0b7721
