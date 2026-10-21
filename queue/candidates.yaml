@@ -1,6 +1,20 @@
 # Daily queue written by the queue job (npm run queue). Links, public titles, dates, and rule tags only.
 # Never drafts or summaries. The weekly session changes `state` with npm run queue:set. See SPEC.md §7.
 candidates:
+  - id: q-1b429aa6ff
+    kind: status_update
+    source: courtlistener
+    url: https://www.courtlistener.com/docket/71941035/
+    title: New docket entry filed 2026-10-21 in flsd 1:25-cr-20500
+    date: 2026-10-21
+    feed: null
+    tags:
+      - docket
+    event_id: evt-2025-cherfilus-mccormick-fema-funds
+    entity_id: null
+    first_seen: 2026-10-21
+    state: open
+    note: null
   - id: q-089a8c2bc4
     kind: status_update
     source: courtlistener
@@ -125,6 +139,20 @@ candidates:
     event_id: evt-2026-uscis-officer-gratuities-immigration-approvals
     entity_id: null
     first_seen: 2026-10-06
+    state: open
+    note: null
+  - id: q-5eddee968a
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edla/pr/former-residential-reentry-center-employee-charged-illegally-accepting-gratuities
+    title: Former Residential Reentry Center Employee Charged with Illegally Accepting Gratuities from Inmate
+    date: 2026-10-20
+    feed: usao-edla
+    tags:
+      - gratuity
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-21
     state: open
     note: null
   - id: q-c3af6daa14
