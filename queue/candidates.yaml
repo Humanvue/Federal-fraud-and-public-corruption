@@ -141,6 +141,36 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-51209c5648
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ma/pr/missouri-surgeon-and-kansas-medical-device-distributor-sentenced-conspiring-pay-and
+    title: Missouri Surgeon and Kansas Medical Device Distributor Sentenced for Conspiring to Pay and Receive Kickbacks to Induce Use of Spinal Implants and Obstructing a Federal Investigation
+    date: 2026-10-22
+    feed: usao-ma
+    tags:
+      - kickback
+      - obstruction
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-23
+    state: open
+    note: null
+  - id: q-b01d44f0b5
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-nj/pr/new-jersey-real-estate-investor-and-online-influencer-admits-committing-multi-million
+    title: New Jersey Real Estate Investor and Online Influencer Admits to Committing Multi-Million Dollar Investment Fraud Scheme, Laundering Drug Proceeds, and Bribing a New Jersey Politician
+    date: 2026-10-22
+    feed: usao-nj
+    tags:
+      - bribery
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-23
+    state: open
+    note: null
   - id: q-5eddee968a
     kind: new_case
     source: doj
