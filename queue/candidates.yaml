@@ -141,6 +141,22 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-405f924d50
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-mdfl/pr/federal-correctional-officer-indicted-receiving-bribe-and-providing-contraband-federal
+    title: Federal Correctional Officer Indicted for Receiving a Bribe and Providing Contraband to A Federal Prisoner
+    date: 2026-10-23
+    feed: usao-mdfl
+    tags:
+      - bribery
+      - smuggling
+      - prison
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-24
+    state: open
+    note: null
   - id: q-51209c5648
     kind: new_case
     source: doj
