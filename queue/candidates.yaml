@@ -141,6 +141,22 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-c4821bf4fa
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/opa/pr/contractor-pleads-guilty-paying-kickbacks-related-us-postal-service-facilities-repair
+    title: Contractor Pleads Guilty to Paying Kickbacks Related to U.S. Postal Service Facilities Repair Contracts
+    date: 2026-10-27
+    feed: doj-opa
+    tags:
+      - kickback
+      - procurement
+      - postal
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-28
+    state: open
+    note: null
   - id: q-e124f7ef28
     kind: new_case
     source: doj
