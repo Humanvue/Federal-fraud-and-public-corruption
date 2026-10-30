@@ -141,6 +141,23 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-7e93d28c85
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/opa/pr/former-us-postal-service-official-pleads-guilty-bribery-scheme-related-contracts-worth
+    title: Former U.S. Postal Service Official Pleads Guilty to Bribery Scheme Related to Contracts Worth Hundreds of Millions of Dollars
+    date: 2026-10-29
+    feed: doj-opa
+    tags:
+      - bribery
+      - procurement
+      - fraud
+      - postal
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-30
+    state: open
+    note: null
   - id: q-c61632a0b4
     kind: new_case
     source: doj
