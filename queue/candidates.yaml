@@ -141,6 +141,23 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-b32f9dfc68
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-ma/pr/former-veterans-affairs-employee-sentenced-fraudulently-obtaining-multiple-covid-19
+    title: Former Veterans Affairs Employee Sentenced for Fraudulently Obtaining Multiple Covid-19 Benefits
+    date: 2026-10-30
+    feed: usao-ma
+    tags:
+      - fraud
+      - agency_named
+      - official_is_subject
+      - excluded:pandemic
+    event_id: null
+    entity_id: null
+    first_seen: 2026-10-31
+    state: open
+    note: null
   - id: q-7e93d28c85
     kind: new_case
     source: doj
