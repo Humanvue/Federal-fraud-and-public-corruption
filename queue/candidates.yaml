@@ -141,6 +141,50 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-217423952a
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edny/pr/former-fbi-special-agent-charged-federal-civil-rights-violation-and-making-false
+    title: Former FBI Special Agent Charged with Federal Civil Rights Violation and Making False Statements
+    date: 2026-11-05
+    feed: usao-edny
+    tags:
+      - false_statements
+      - law_enforcement
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-05
+    state: open
+    note: null
+  - id: q-47d68df42b
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/opa/pr/homeland-security-task-force-investigation-leads-mexican-federal-judges-arrest-us-charges
+    title: Homeland Security Task Force Investigation Leads to Mexican Federal Judge’s Arrest on U.S. Charges of Accepting $2 Million Bribe to Free Canadian Drug Trafficker Charged with Ryan Wedding
+    date: 2026-11-05
+    feed: doj-opa
+    tags:
+      - bribery
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-05
+    state: open
+    note: null
+  - id: q-56ffe64d80
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-cdca/pr/homeland-security-task-force-investigation-leads-mexican-federal-judges-arrest-us
+    title: Homeland Security Task Force Investigation Leads to Mexican Federal Judge’s Arrest on U.S. Charges of Accepting $2 Million Bribe to Free Canadian Drug Trafficker
+    date: 2026-11-05
+    feed: usao-cdca
+    tags:
+      - bribery
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-05
+    state: open
+    note: null
   - id: q-b32f9dfc68
     kind: new_case
     source: doj
