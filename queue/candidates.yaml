@@ -141,6 +141,20 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-0bdd8bbb1c
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/opa/pr/california-laboratory-and-its-owner-pay-125m-settle-allegations-kickbacks-marketers
+    title: California Laboratory and Its Owner Pay $1.25M to Settle Allegations of Kickbacks to Marketers
+    date: 2026-11-06
+    feed: doj-opa
+    tags:
+      - kickback
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-06
+    state: open
+    note: null
   - id: q-217423952a
     kind: new_case
     source: doj
@@ -169,6 +183,38 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-11-05
+    state: open
+    note: null
+  - id: q-4c3745b171
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edva/pr/former-fbi-agent-pleads-guilty-cryptocurrency-theft
+    title: Former FBI agent pleads guilty to Cryptocurrency theft
+    date: 2026-11-05
+    feed: usao-edva
+    tags:
+      - embezzlement
+      - law_enforcement
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-06
+    state: open
+    note: null
+  - id: q-4eefba48c3
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/opa/pr/ceo-and-va-employee-sentenced-paying-and-receiving-illegal-health-care-kickbacks-and-bribes
+    title: CEO and VA Employee Sentenced for Paying and Receiving Illegal Health Care Kickbacks and Bribes
+    date: 2026-11-05
+    feed: doj-opa
+    tags:
+      - bribery
+      - kickback
+      - agency_named
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-06
     state: open
     note: null
   - id: q-56ffe64d80
