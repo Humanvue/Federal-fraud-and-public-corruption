@@ -155,6 +155,34 @@ candidates:
     first_seen: 2026-11-06
     state: open
     note: null
+  - id: q-51a138124d
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-md/pr/baltimore-man-facing-federal-indictment-attempted-bribery-port-official
+    title: Baltimore Man Facing Federal Indictment for Attempted Bribery of Port Official
+    date: 2026-11-06
+    feed: usao-md
+    tags:
+      - bribery
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-07
+    state: open
+    note: null
+  - id: q-a924479122
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-nj/pr/quest-diagnostics-inc-pays-over-13-million-settle-allegations-providing-illegal
+    title: Quest Diagnostics, Inc. Pays over $13 Million to Settle Allegations of Providing Illegal Kickbacks to Doctors and Health Care Executives
+    date: 2026-11-06
+    feed: usao-nj
+    tags:
+      - kickback
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-07
+    state: open
+    note: null
   - id: q-217423952a
     kind: new_case
     source: doj
