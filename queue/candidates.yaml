@@ -141,6 +141,21 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-4911f88f43
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-sdny/pr/former-owner-and-ceo-telecommunications-construction-company-pleads-guilty-commercial
+    title: Former Owner And CEO Of Telecommunications Construction Company Pleads Guilty To Commercial Bribery And Fraud Offenses
+    date: 2026-11-12
+    feed: usao-sdny
+    tags:
+      - bribery
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-14
+    state: open
+    note: null
   - id: q-0bdd8bbb1c
     kind: new_case
     source: doj
