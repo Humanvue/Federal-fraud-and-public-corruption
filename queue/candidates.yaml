@@ -141,6 +141,21 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-5bf5e607b9
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-edpa/pr/two-former-division-i-athletes-sentenced-roles-bribery-and-point-shaving-scheme-fix
+    title: Two Former Division I Athletes Sentenced for Roles in Bribery and Point-Shaving Scheme to Fix NCAA Men’s Basketball Games
+    date: 2026-11-19
+    feed: usao-edpa
+    tags:
+      - bribery
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-19
+    state: open
+    note: null
   - id: q-27eabd08ec
     kind: new_case
     source: doj
@@ -155,6 +170,37 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-11-18
+    state: open
+    note: null
+  - id: q-3f4f731ce3
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-nj/pr/former-hudson-county-parks-department-director-sentenced-72-months-imprisonment-his-role
+    title: Former Hudson County Parks Department Director Sentenced to 72 Months Imprisonment for His Role in Bribe and Kickback Scheme
+    date: 2026-11-18
+    feed: usao-nj
+    tags:
+      - bribery
+      - kickback
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-19
+    state: open
+    note: null
+  - id: q-6ecf5b5641
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-sdny/pr/former-supervisory-ice-deportation-officer-sentenced-37-months-prison-bribery
+    title: Former Supervisory ICE Deportation Officer Sentenced To 37 Months In Prison For Bribery Conspiracy
+    date: 2026-11-18
+    feed: usao-sdny
+    tags:
+      - bribery
+      - law_enforcement
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-19
     state: open
     note: null
   - id: q-dd93829c71
