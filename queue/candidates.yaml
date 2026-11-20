@@ -141,6 +141,38 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-779305733d
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-nj/pr/former-employee-federal-official-and-her-co-conspirator-indicted-conspiring-falsely
+    title: Former Employee of Federal Official and Her Co-Conspirator Indicted for Conspiring to Falsely Report a Violent Attack and Lying to Law Enforcement
+    date: 2026-11-20
+    feed: usao-nj
+    tags:
+      - false_statements
+      - federal_employee
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-20
+    state: open
+    note: null
+  - id: q-9e85dc6540
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-pr/pr/former-social-security-administration-employee-sentenced-four-years-prison-theft-social
+    title: Former Social Security Administration Employee Sentenced to Four Years in Prison for Theft of Social Security Funds, Social Security Misuse and Aggravated Identity Theft
+    date: 2026-11-20
+    feed: usao-pr
+    tags:
+      - embezzlement
+      - agency_named
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-20
+    state: open
+    note: null
   - id: q-5bf5e607b9
     kind: new_case
     source: doj
@@ -154,6 +186,21 @@ candidates:
     event_id: null
     entity_id: null
     first_seen: 2026-11-19
+    state: open
+    note: null
+  - id: q-ee0c1b6610
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/usao-wdmo/pr/former-jackson-county-elected-official-and-attorney-indicted-fraud-bribery
+    title: Former Jackson County Elected Official and Attorney Indicted for Fraud, Bribery
+    date: 2026-11-19
+    feed: usao-wdmo
+    tags:
+      - bribery
+      - fraud
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-20
     state: open
     note: null
   - id: q-27eabd08ec

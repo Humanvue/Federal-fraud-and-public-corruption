@@ -1,5 +1,5 @@
 # Bookkeeping for the queue job: last docket entry seen per watched docket.
-last_run: 2026-11-19T19:18:11.261Z
+last_run: 2026-11-20T18:56:42.543Z
 dockets:
   ilnd:1:21-cr-00086:
     last_entry: 2026-10-03
