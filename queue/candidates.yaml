@@ -141,6 +141,22 @@ candidates:
     first_seen: 2026-10-06
     state: open
     note: null
+  - id: q-5c2ce832dc
+    kind: new_case
+    source: doj
+    url: https://www.justice.gov/opa/pr/peruvian-national-extradited-overseeing-transnational-scheme-impersonate-government
+    title: Peruvian National Extradited for Overseeing a Transnational Scheme to Impersonate Government Officials and Defraud U.S. Consumers
+    date: 2026-11-24
+    feed: doj-opa
+    tags:
+      - fraud
+      - federal_employee
+      - official_is_subject
+    event_id: null
+    entity_id: null
+    first_seen: 2026-11-25
+    state: open
+    note: null
   - id: q-779305733d
     kind: new_case
     source: doj
